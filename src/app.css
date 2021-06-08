@@ -27,3 +27,12 @@ h1,h2,h3{line-height:1.2}
 /* Accessibility from perfectmotherfuckingwebsite */
 
 @media (prefers-color-scheme: dark){body{color:white;background:#444}a:link{color:#5bf}a:visited{color:#ccf}}
+
+a {
+	text-decoration: none;
+	color:#444;
+}
+
+a:hover {
+	color: rgba(239, 68, 68, 1);
+}

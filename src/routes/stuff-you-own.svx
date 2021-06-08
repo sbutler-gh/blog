@@ -1,0 +1,104 @@
+---
+title: Stuff you own
+
+---
+
+**Stuff You Own**
+
+What do you actually own these days?
+
+Your phone?  You own a brick and a battery, but Google or Apple could lock you out, shut you down, or bug your phone to obsolesence with a software update any day of the week.
+
+Your movies?  Until Amazon takes them out of the digital catalog.
+
+Your Gmail inbox, Facebook account, WhatsApp number, LinkedIn network, and all the other software + apps you use in everyday life?
+
+It’s quite clear that none of us, own none of this.
+
+We can be locked out or removed from these services at any time.  They can spy on us, track us, manipulate our emotions and worldviews, and extract from our lives like factory farms extract milk from nursing mothers.
+
+It should be noted, that this relationship hasn't been all bad.  Google and Gmail have provided people with immense knowledge and tools for collaboration.  Facebook, for sharing perspectives and worldviews and thoughts and businesses.  LinkedIn, for connecting people and work opportunities and professional networks and new peers.
+
+This can, and often has been, aligned and supportive of things that we’re trying to do.
+
+The issue is, this comes at a cost: dependence.  Ritalin can also align with and support things that we’re trying to do.  Using it can also make us dependent on it.  So you don’t want the people prescribing you Ritalin, to be the same people who benefit from you using it.
+
+<hr>
+
+**There is** a way to address the problem of us owning nothing around us.
+
+Start owning it.
+
+For any service you use, any tool in your toolkit, there is a way for you to own it.  
+
+It goes like this:
+
+* You desire a service, perhaps to address a problem, or to make your life better.  Other people share this desire.
+
+* You and others who share a desire for a specific service / piece of technology form a user-owned cooperative, with a purpose of creating and providing the service you desire.
+
+* You and your user-peers each help bootstrap the creation of your new service.  Your contribution — instead of a donation, or a subscription — is actually a **member due**. It behaves just like a donation or a subscription, except it gives you voting rights and a profit-share in the coop.  (Member dues could also be paid through non-monetary contributions, for example, putting work into the coop).
+
+* Now, you have a group of peers aligned around the purpose of creating a service you desire, and the resources to create that service.  Find some ethical/aligned builders (e.g. software developers) — perhaps, even builders within the coop — and provide resources for the creation and provision of the service.
+
+* And now, your new service is live!  Whether this is an app, a social network, a work of art, a real-world service, you and all your fellow coop members can now use this service — **and you own it**. You have a profit-share in the financial outcomes, and you have voting rights to shape the project’s future.  The service can only be used as the members of the coop collectively desire.
+
+* Of course, it’s easy to imagine how this could go wrong.  (Just because it has “coop” in the name, doesn’t mean it can’t be extractive or manipulative.)  For that reason, it’s important to have clarity around the coop’s mission and bylaws.  <br/><br/> If the coop’s mission is to create + provide a service — which, in order to create useful and harmonious new things, it probably should be — then you shouldn’t be expecting any significant financial returns from your member share.  <br/><br/> The point isn’t for you make money, it’s for you to have a service that you desired.  With that in mind, it’s probably more sensible and long-term aligned to focus your coop’s growth on expanding access to your your service, and making it ever more affordable and productive for the people who use it.
+
+However, there is still a way to harmoniously profit from this model.
+
+Your profit share, even if just $10 or $20 per year, can actually pay for your **usage of the service** (or your **member dues**).
+
+You may not be getting a large ROI, but you’re getting the tool/service you wanted — and now, you're getting it **for free.**
+
+___________________________
+
+As a technologist, builder, or problem-solver, what does this mean for you?
+
+If you see problems or opportunities, and want to find ways to address them, this is a straightforward way to raise funding and actually build — alongside the people you are building for.
+
+* You recognize a desire for a service, a job to be done, or an invention that could make life better.
+
+* You articulate your vision and put it on a crowdfunding website.
+
+* Any person who contributes to the campaign becomes a member of the coop.  The contribution isn’t simply pre-payment for a product/service, like we often see.  It’s a pre-payment for a product/service, which comes with *ownership* of that product/service and its future.  Quite compelling!
+
+* If you’re building something that people actually want, you will probably be successful in the crowdfunding campaign.
+
+* Now you have the funds to build and (be compensated for your work), supported directly by the people you’re building for.
+
+* Finally, deliver the product/service to the user-owned coop — and then, make yourself unnecessary.  <br/><br/> If the coop’s mission and bylaws are about providing a service, then earning money for the builder probably isn’t part of the purpose.  You have been well compensated for your time and skills, and now there’s no need to rent-seek with your technical expertise on top of the project.  You should make it as easy as possible for the cooperative to fully own this new service.  <br/><br/> There may be some maintenance required, or later work to improve the service.  However, this should be aligned and true to the coop’s purpose — and the coop should not be dependent on you to make this progress.  Then, you’d just be extracting from the people who paid you.  (If you’re more interested in making money, and are seeking funding for your work, traditional angel and VC investors are more sensible for that.  Don’t abuse the coop model or the people who believed in you.)
+
+* There’s a lesson for organizations in general here on **making ourselves unnecessary.**  What would startups, nonprofits, NGOs, and governments look like if they focused on accomplishing their stated missions?  They wouldn’t be trying to create long-term job security for themselves.  They would be focused on completing their mission - and then, getting out of the way.
+
+If you give a man a fish, you can keep collecting donations and tax dollars and earning a salary as “fish-giver” for the rest of your life.
+
+If you give a man a fish, while teaching that man to fish, you can eventually stop giving fish — because the man already knows how to fish for himself.
+
+Then, instead of being a “fish-giver” for the rest of your life, you can move onto other work that will make your life and others’ — teaching a man to read, teaching a man to build a house, teaching a man to teach.
+
+TLDR: Organizations with a mission shouldn’t last forever.  Longevity, with regards to getting something done, is not necessarily a positive attribute like we seem to attribute to it.
+
+Organizations, laws, and institutions should focus on achieving their mission, and then sunsetting themselves — making themselves unnecessary, getting out of the way, and finding a new hill to climb.
+
+The same is true for the people building products, services, and technology.
+
+If your mission is to provide a service, climb that hill and put the service in the hands of the people who will use it, and gracefully make yourself unnecessary.    
+
+(There could always be ways to improve the service — and you can keep being compensated for your work to improve the service — but remember, *you being compensated* is not the purpose.  The *service* is the purpose.)
+
+Then, you can look out from your new vista, and find a whole new world of hills to climb.
+
+Have a product, service, technology, or invention that you desire?  (And feel others would to?)  Share it in a comment below, start a discussion about it somewhere else, or write me at sam@ysli.be, and we can explore how to create it as a product / service / technology / invention that **you and your peers** own, cooperatively.
+
+About the Author
+
+I’m diligently working on the most important problems I can, to create better environmental and social outcomes.  That’s why I wrote this on a Sunday morning, and spent yesterday working on coordination tools for community regeneration, gauze pads for natural systems, and funding models for useful things that are free of extraction and rent-seeking.  Often, this doesn’t align with “making a living”, because that’s not the point.  So if you want to support my work and help me focus on what’s important — instead of taking up contracts and unrelated work opportunities — your patronage would be much appreciated.  Possibly, it could make a big difference — for your life and others, today and in the future.  (Proceeds will go towards student loan payments, laptop electricity, and vegetarian grocieries).
+
+Other ways to give:
+
+* Help connect me with fellowships, residences, and organizations where I can pursue my work
+* Involve my work in grant projects and commercial opportunities
+* Hire me/contract me for important work and important projects
+
+I can afford to make these choices because of a lot of privilege and abundance in my life.  If you have been afforded similar opportunities — you have adequate savings, a few years of runway, no urgent need to make more money or put more food on the table — consider doing the same.  Civilization could use more people working with service in mind.  It’s not just about *finding a job* in a more productive industry.  It’s not about the status quo of *having a job.* It’s about thinking from first principles, understanding how life could be a bit better and how you could contribute to that, and actually doing it.  If that aligns with consistent employment and paychecks, that will be comfortable.  If it doesn’t — well, sometimes, doing what’s uncomfortable is what’s best for us.

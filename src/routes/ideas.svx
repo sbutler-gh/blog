@@ -1,0 +1,7 @@
+<script>
+
+import { children } from "svelte/internal";
+
+</script>
+<h4 style="margin-bottom: 0px;"><a href="/stuff-you-own">Stuff You Own</a></h4>
+<p style="margin-top: 5px;">A way for people to own the services and infrastructure they use every day.</p>

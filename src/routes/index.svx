@@ -1,0 +1,15 @@
+<script>
+
+import { children } from "svelte/internal";
+
+</script>
+<h3 style="text-align: left;">Hi, I'm Sam</h3>
+<p>I work on projects for a better future — usually, with a focus on environmental and social outcomes.</p>
+
+**About Me** (*Under Construction*)
+
+You can check out my <a href="https://sambutler.tech" style="font-weight: bold;">digital resume</a> and <a style="font-weight: bold;" href="https://sambutler.world">portfolio</a> in the meantime.
+________________
+sam@ysli.be   
+
+https://linkedin.com/in/sambutler8
