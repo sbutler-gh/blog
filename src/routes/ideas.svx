@@ -3,5 +3,12 @@
 import { children } from "svelte/internal";
 
 </script>
+
 <h4 style="margin-bottom: 0px;"><a href="/stuff-you-own">Stuff You Own</a></h4>
 <p style="margin-top: 5px;">A way for people to own the services and infrastructure they use every day.</p>
+
+<h4 style="margin-bottom: 0px;"><a href="/gauze-pads">Gauze Pads for the Ice</a></h4>
+<p style="margin-top: 5px;">If our planet's ice is bleeding out, we probably should stop the bleeding.</p>
+
+<h4 style="margin-bottom: 0px;"><a href="/counting-carbon">Counting Carbon</a></h4>
+<p style="margin-top: 5px;">A fix for carbon offsets: <em>count</em> them.</p>

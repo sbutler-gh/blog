@@ -1,0 +1,49 @@
+### Gauze Pads for the Ice
+
+If you were in a situation where someone was wounded — a cut on their head, a wound in their chest, an arrow in the knee — what is the first thing you would do?
+
+Stop the bleeding.
+
+It is practically instinct.  You would look for whatever cloth, paper, or shirt you have around you, press it on the wound, and stop the bleeding.
+
+If our ice is bleeding out — why don’t we try to stop the bleeding?
+
+The reason for this question, is that 30 years of climate action *will not* stop the bleeding today.  That is like going in for a 12-hour operation to repair the internal wound, without stopping the bleeding first.  By all common sense, by the time the internal wound is repaired, there will be no blood left.
+
+By the time we reduce our emissions and restore all the nature, there may be no ice left.
+
+With that, I propose **Gauze Pads for the Ice**.
+
+The most obvious way to stop the ice from melting is to reflect sunlight away and minimize the heat that reaches the ice’s environment.  The Arctic Ice Project (https://www.arcticiceproject.org/) has done excellent material innovation for this purpose, creating non-toxic silicon sand that can be spread over ice, to help reflect more sunlight.  However, at scale, this would require layering most of Antartica and the North Pole with this material.
+
+As we move from the land, to the atmosphere, to outer space, to the sun itself, we can cover less and less surface area to reflect more and more sun.
+
+Perhaps there is a sweet spot — far enough into the atmosphere / outer space, that we can reflect a practical amount of sun, with a feasible surface area based on today’s technologies.  For example:
+
+* For the upper atmosphere, an [umbrella-style satellite like Umbra](https://joemorrison.substack.com/p/why-im-leaving-azavea-to-join-umbra), which is relatively inexpensive to manufacture and deploy — and could approach our sweet spot in terms of altitude and surface area.
+
+* Lower in the Earth’s atmosphere, an array of solar powered drones — perhaps holding some reflective umbrella-type material between them.
+
+The benefits of these approaches are: (a) they’re lean (we could do them today, and do them quickly, with current technology and capacity), (b) they’re reversible (we can quickly fold up the umbrellas and put a kibosh on the experiment), and (c) they’re simple — essentially, being umbrellas, we understand how they would work and the expected consequences, and we’re not tinkering with complex natural systems or unknown dynamics.
+
+And finally, these approaches could immediately stop the melting.
+
+Gauze pads for the ice.
+
+The benefits noted here, are in contrast to approaches that are (a) less lean (would take more years to implement — and more years of melting), (b) not-quite reversible (we’re not sure if we can undo our experiment), and (c) complex (featuring a lot of known unknowns and unknown unknowns, like changing the chemical composition of our atmosphere to reflect more light.)
+
+A blog post on the Internet is nice, but it would be nicer to actually stop the bleeding.  So if you have any ideas, interest, or inspiration, perhaps we should take this further — in terms of design, collaboration, implementation.  On the spectrum of all climate action, putting a drone-powered umbrella in the sky over a glacier seems like a pretty simple and feasible experiment.
+
+Write a comment below, share this in your own network to engage others, or write me at sam@ysli.be
+
+About the Author
+
+I’m diligently working on the most important problems I can, to create better environmental and social outcomes.  That’s why I wrote this on a Sunday morning, and spent yesterday working on coordination tools for community regeneration, user-owned cooperatives for services and daily infrastructure, and funding models for useful things that are free of extraction and rent-seeking.  Often, this doesn’t align with “making a living”, because that’s not the point.  So if you want to support my work and help me focus on what’s important — instead of taking up contracts and unrelated work opportunities — your patronage would be much appreciated.  Possibly, it could make a big difference — for your life and others, today and in the future.  (Proceeds will go towards student loan payments, laptop electricity, and vegetarian grocieries).
+
+Other ways to give:
+
+* Help connect me with fellowships, residences, and organizations where I can pursue my work
+* Involve my work in grant projects and commercial opportunities
+* Hire me/contract me for important work and important projects
+
+I can afford to make these choices because of a lot of privilege and abundance in my life.  If you have been afforded similar opportunities — you have adequate savings, a few years of runway, no urgent need to make more money or put more food on the table — consider doing the same.  Civilization could use more people working with service in mind.  It’s not just about *finding a job* in a more productive industry.  It’s not about the status quo of *having a job.* It’s about thinking from first principles, understanding how life could be a bit better and how you could contribute to that, and actually doing it.  If that aligns with consistent employment and paychecks, that will be comfortable.  If it doesn’t — well, sometimes, doing what’s uncomfortable is what’s best for us.

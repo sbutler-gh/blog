@@ -3,7 +3,7 @@ title: Stuff you own
 
 ---
 
-**Stuff You Own**
+### Stuff You Own
 
 What do you actually own these days?
 
