@@ -21,7 +21,7 @@ It should be noted, that this relationship hasn't been all bad.  Google and Gmai
 
 This can, and often has been, aligned and supportive of things that we’re trying to do.
 
-The issue is, this comes at a cost: dependence.  Ritalin can also align with and support things that we’re trying to do.  Using it can also make us dependent on it.  So you don’t want the people prescribing you Ritalin, to be the same people who benefit from you using it.
+The issue is, this comes at a cost: dependence.  Medicines can also align with us and support things that we’re trying to do.  Certain ones also make us dependent.  So you don’t want the people prescribing you medicine, to have any interest in you becoming dependent on it.
 
 <hr>
 
@@ -67,7 +67,7 @@ If you see problems or opportunities, and want to find ways to address them, thi
 
 * Now you have the funds to build and (be compensated for your work), supported directly by the people you’re building for.
 
-* Finally, deliver the product/service to the user-owned coop — and then, make yourself unnecessary.  <br/><br/> If the coop’s mission and bylaws are about providing a service, then earning money for the builder probably isn’t part of the purpose.  You have been well compensated for your time and skills, and now there’s no need to rent-seek with your technical expertise on top of the project.  You should make it as easy as possible for the cooperative to fully own this new service.  <br/><br/> There may be some maintenance required, or later work to improve the service.  However, this should be aligned and true to the coop’s purpose — and the coop should not be dependent on you to make this progress.  Then, you’d just be extracting from the people who paid you.  (If you’re more interested in making money, and are seeking funding for your work, traditional angel and VC investors are more sensible for that.  Don’t abuse the coop model or the people who believed in you.)
+* Finally, deliver the product/service to the user-owned coop — and then, make yourself unnecessary.  <br/><br/> If the coop’s mission and bylaws are about providing a service, then earning money for the builder probably isn’t part of the purpose.  You have been well compensated for your time and skills, and now there’s no need to rent-seek with your technical expertise on top of the project.  You should make it as easy as possible for the cooperative to fully own this new service.  <br/><br/> There may be some maintenance required, or later work to improve the service.  However, this should be aligned and true to the coop’s purpose — and the coop should not be dependent on you to make this progress.  Rather, by helping upskill others and building others' capacity through our work, we can improve the chances that others will be able to provide fixes when things break — and provide new value from new perspectives, in a way that we couldn't do alone.
 
 * There’s a lesson for organizations in general here on **making ourselves unnecessary.**  What would startups, nonprofits, NGOs, and governments look like if they focused on accomplishing their stated missions?  They wouldn’t be trying to create long-term job security for themselves.  They would be focused on completing their mission - and then, getting out of the way.
 
