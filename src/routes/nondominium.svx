@@ -1,0 +1,243 @@
+<script>
+ import {afterUpdate, getContext, onMount, setContext} from 'svelte';
+
+ let infrastructure = "community microgrid"
+ let capital = 80000
+ let users = "users";
+ let users_per_month = 10;
+ let use_cost = 40;
+ let discount_rate = 50;
+ let years;
+ let min_years;
+
+ $: years_display = years;
+ $: discount_rate_display = discount_rate;
+
+ $: arr = (100 - discount_rate) / years;
+
+
+  onMount (() =>{
+    years = (capital / (users_per_month * 12 * use_cost * (discount_rate/100))).toFixed(0);
+
+    // Since the maximum discount is 99%, we can calculate the minimum number of years for this example, to prevent calculations that use discount rates above 100%
+    min_years = capital / (users_per_month * 12 * use_cost * (99/100));
+
+    //years = years.toFixed(0);
+
+    //years_display = years.toFixed(0);
+ });
+
+ function crunchNumbers() {
+     console.log('crunching');
+     years = (capital / (users_per_month * 12 * use_cost * (discount_rate/100))).toFixed(0);
+
+    // Since the maximum discount is 99%, we can calculate the minimum number of years for this example, to prevent calculations that use discount rates above 100%
+    min_years = capital / (users_per_month * 12 * use_cost * (99/100));
+
+    years = years.toFixed(0);
+
+    // years_display = years.toFixed(0);
+ }
+
+ function changeYears() {
+
+     discount_rate = ((capital / (users_per_month * 12 * use_cost * years)) * 100).toFixed(0);
+
+     //discount_rate_display = discount_rate.toFixed(0);
+
+     //discount_rate = discount_rate.toFixed(0);
+ }
+
+  function changeDiscountRate() {
+
+     years = (capital / (users_per_month * 12 * use_cost * (discount_rate/100))).toFixed(0);
+
+     years_display = years.toFixed(0);
+
+     years = years.toFixed(0);
+
+ }
+</script>
+## Nondominium
+
+ This is a model for creating useful new things for society — from affordable housing, to renewable energy, to improved water + utility infrastructure, to any imaginable _thing_ which provides future value — which are free from equity, debt, interest, loans, owners, rent-seeking, and extraction.
+
+This model was architected by [Chris Cook](https://nondominium.co.uk/author/chriscook/) (University College London), and he&#39;s the person who understands it best. This document is my effort to &quot;learn in public&quot; from his work, and here are some of the resources which helped me:
+
+- Video overview: [https://www.youtube.com/watch?v=SCDqQGaVEm4](https://www.youtube.com/watch?v=SCDqQGaVEm4)
+- Discussion in the context of affordable housing: [https://www.youtube.com/watch?v=zHTr5MkRMSU](https://www.youtube.com/watch?v=zHTr5MkRMSU)
+- Energy credits, with historical observations on Denmark&#39;s energy strategy: [https://bellacaledonia.org.uk/2018/08/21/energising-scotland-introducing-the-eco/](https://bellacaledonia.org.uk/2018/08/21/energising-scotland-introducing-the-eco/)
+
+Here is an interactive model, to give a sense:
+
+<form on:input={crunchNumbers}>
+<label for="infrastructure">What do you want to create?</label>
+<input name="infrastructure" bind:value={infrastructure} placeholder="Affordable housing development, local microgrid, solar + storage, etc.">
+<label for="capital">How much capital do you need to build it?</label>
+<span style="display: inline-block">$</span><input bind:value={capital} style="display: inline-block" name="capital" placeholder="XXXXX.XX" type="number">
+<label for="users">How would you describe the main users?</label>
+<input style="display: inline-block" name="users" bind:value={users} placeholder="XXXXX.XX">
+<label for="users_per_month">How many {users} will use it per month?</label>
+<input style="display: inline-block" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX">
+<label for="use_cost">How much will {users} pay to use {infrastructure} every month?</label>
+<span style="display: inline-block">$</span><input bind:value={use_cost} style="display: inline-block" name="use_cost" placeholder="XXXXX.XX" type="number">
+</form>
+
+{#if infrastructure && capital && users && use_cost && users_per_month}
+* Assuming a capped monthly price of ${use_cost} to use {infrastructure}
+
+* To raise ${capital} for a {infrastructure}
+
+* You can sell {years_display} years worth of {discount_rate}% discounted <strong>use credits</strong> to the {infrastructure} today, to people in the community, as well as long-term funders like local banks, pension funds, local businesses, and institutions.
+
+<div class="input-years-discount" style="display: flex; width: fit-content; margin: auto;">
+<div style="">
+<input type="range" bind:value={years} min={min_years} on:change={changeYears}>
+<label>{years} years</label>
+</div>
+
+<div style="">
+<input type="range" bind:value={discount_rate} min="1" max="99" on:change={changeDiscountRate}>
+<label>{discount_rate}% discount</label>
+</div>
+</div>
+
+* Those who buy use credits today, can earn up to {arr.toFixed(2)}% per year, over {years_display} years, by selling credits to local {users} at the capped affordable price.
+
+* That rate is a lot better than negative interest — already the status quo in many parts of the world — and it beats the 0.05% interest on your bank account too.
+
+{/if}
+
+If you&#39;re interested in discussing this further or have any questions, feel free to add a comment to the document, reach out to [Chris Cook](https://nondominium.co.uk/contact-us/), or reach me at [sam@ysli.be](mailto:sam@ysli.be)
+
+For more details, here is a summary example (with an even more detailed explanation further below):
+
+ 1\. A grassroots organization wants to build a $2.5 million dollar microgrid to provide affordable, clean power for 1000 local homes.
+
+ 2\. The grassroots organization raises $2.5 million dollars from investors, called &quot;capital partners&quot; (because they provide the up-front capital). When the grid is completed, the capital partners will receive an absolute return of $3 million dollars — the repayment of the initial $2.5 million, plus a profit of $500K. This $500k profit is an absolute return of 20%, on the original $2.5 million investment.
+
+These investors have no ownership of the grid — rather, their returns are simply through the payment of the $3 million absolute return.
+
+ If this takes 1 year, it will be 20% ARR (20% return / 1 year). If this takes 2 years, it will be 10% ARR (20% return / 2 years), and such.
+
+ 3\. When the grid is built, the grassroots organization must deliver $3 million to the capital partners.
+
+ To do this, the organization sells _energy credits_ — the right to use energy produced by the grid — to long-term funders, like pension funds, banks, and local institutions.
+
+ In terms of pricing, to ensure the energy will remain affordable over the long term, the price of energy from the grid will be capped at a rate of $0.03/kwh. (So even when demand spikes, like in the case of the Texas blackouts, the cost of electricity will never exceed this cap of $0.03/kwh.)
+
+ On average, local homes purchasing energy at $0.03/kwh will spend about $240/year.
+
+ So 25 years of average electricity use at that price, across 1000 homes in the community, generates ~$6 million. ($240/year x 1000 units x 25 years)
+
+ What does that mean? The grassroots organization could sell 25 years worth of energy credits, for a total return of $6 million. However, they don&#39;t need $6 million — they only need half that, $3 million, to pay back the capital partners.
+
+ So the organization can sell 25 years of energy credits at a _discount_ — a discount of _50% —_ to long-term funders.
+
+ Instead of paying $0.03/kwh for energy, these long-term funders are getting it at $0.015/kwh.
+
+ These long-term funders will earn their own returns, by selling energy credits over time to the local homes. As long as locals are willing to pay at least $0.015/kwh for energy, these long-term funders will earn a positive return on their investment in energy credits.
+
+ If locals are willing to pay $0.03/kwh for their energy — the maximum rate, to keep energy affordable — the funders&#39; absolute return over 25 years will be 50%, or a 2% ARR. However, even if the average monthly average is only $0.02/kwh, these long-term funders will still earn 30% return over 25 years, about a 1% ARR.
+
+ (When you consider our financial system&#39;s problem with _negative interest_, 1-2% ARR could certainly be viable for long-term institutional funders — it beats the 0.05% interest in your savings account, too.)
+
+ In turn, this means that long-term funders can only earn their returns by actually _selling_ energy credits to the people who will use them. Since they don&#39;t have ownership in the grid, the long-term funders have no benefit to not selling the energy credits — as they don&#39;t have an appreciating stake in the grid as an asset.
+
+ So even when supply drops or demand spikes, the funders are still interested in selling as much energy as possible at the affordable price of $0.03/kwh — instead of being able to raise prices when supply drops or demand spikes, like during the Texas blackouts.
+
+ In sum:
+
+ - We raised $2.5 million to fund an affordable, local grid.
+
+ - Our initial investors, the capital partners, received a 20% absolute return of $3 million ($2.5 million paid back, plus $500K profit)
+
+ - Long-term funders, like pension funds and banks, can earn up to 2% ARR _positive interest_ over 25 years, by selling affordable energy to local homes.
+
+ - Local people have access to affordable, clean energy, which will stay affordable at a capped rate of $0.03/kwh
+
+ - And the grid itself is in the custody of the local organization, to manage it over the long-term and ensure it sticks to its mission (e.g. providing electricity at an affordable rate)
+
+ Finally, this model is equally applicable to affordable housing, local infrastructure + utilities (e.g. water), and any other projects which generate long-term value through usage.
+
+ For example, you can take this same scenario, and switch it to an affordable housing development. All of the mechanisms are the same.
+
+A grassroots organization wants to build a $2.5 million affordable housing development in a local community. They will provide an absolute $3 million (20%) return to capital partners, by selling 25 years of rental credits (e.g. &quot;use credits&quot;) from the housing units at a discount to long-term funders.
+
+ The price of rental credits will be capped to ensure the housing stays affordable, and long-term funders can only earn their ROI by selling these affordable credits to renters. Because they don&#39;t have an appreciating stake in the property, the long-term funders will always be interested in selling their rental credits to the community, and the rate will always be affordable based on the price cap.
+
+ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+ If you want to better understand this concept, here is a more detailed version of the scenario described above:
+
+Say a grassroots organization wants to build affordable clean energy in an underserved community, through a local grid. The cost for the project is $2.5 million, and it will power 1000 local homes.
+
+However, the grassroots organization doesn&#39;t have $2.5 million dollars, and neither do the people in the community.
+
+They could raise the money by selling equity in the project — giving investors ownership in the grid — or by issuing debt in the project — where the lenders have an incentive to receive ongoing interest payments, and should the project fail to pay back the debt, the lenders could possess it entirely.
+
+In both of these scenarios, it&#39;s clear that the incentives are not aligned. Equity/debt investors in the grid don&#39;t necessarily have an incentive to provide affordable energy to locals. Their focus is on their return on investment.
+
+However, the grassroots organization must raise $2.5 million dollars to fund the grid somehow. What could they do instead?
+
+First, the organization starts a limited liability corporation (LLC) for managing the development (and eventually, custodianship) of the local grid.
+
+The grassroots organization does not _own_ the LLC. Rather, it is a _member_ of the LLC, with the specific responsibility of stewarding the local grid that the LLC will eventually own. Thus, when the grid comes online, nobody will _own_ it (or be able to sell it) — but the grassroots organization will be the custodian of it, and manage it into the future.
+
+In order to raise the $2.5 million, the organization offers an investment opportunity. However, this will not be through debt or equity.
+
+In exchange for $2.5 million _today_, investors will earn an _absolute return_ of $3 million when the clean energy grid is complete and comes online. Investors will be paid back their $2.5 million investment, plus a profit of $500k — giving them a 20% absolute return. (On a securitization note, if anything goes wrong with the project or if it fails to deliver the agreed returns, investors will be eligible for a tax writeoff in the amount of their losses)
+
+In this model, these investors are called &quot;capital partners&quot; — they are partners to the LLC, who provide capital.
+
+The _rate of return_ is thus dependent on how long it takes for the grid to be built and come online. If it takes one year, the capital partners&#39; rate of return is 20% ARR. If it takes two years, the capital partners&#39; rate of return is 10% ARR. If things go smoothly and it only takes 10 months, the capital partners&#39; rate of return is actually more than 20% ARR.
+
+Additionally, if the project is delivered below budget — say at a cost of $2 million — the absolute return to capital partners increases as well. (They have now earned $1 million in profit on a $2 million budget, as compared to $0.5 million profit on a $2.5 million budget, given the absolute return of $3 million)
+
+With this model, all participants and investors have a shared incentive for the project to be delivered on-time and on-budget (or better). If a project runs late, nobody benefits — unlike a more conventional situation, where investors/lenders could benefit from a project running late, through interest payments.
+
+This model can even extend to the suppliers / companies who are building the project. If any suppliers, contractors, or participants are willing to accept sweat equity in exchange for services, they can be offered the same absolute return (e.g. if their cost-of-service is $500K, they can receive an absolute return of $600K when the project is complete, if they&#39;re willing to accept sweat equity).
+
+So now, even the suppliers and contractors have the same shared incentive for the project to be delivered on-time and on-budget (or better). If a project runs late, or over budget, it decreases their return on investment. If a project goes ahead of schedule, or under budget, it increases their return on investment.
+
+Now, couldn&#39;t these investors have a short-term incentive in a faster/cheaper project, at the expense of the project&#39;s integrity? (E.g. Doing hasty work to get the project built, in order to speed up the timeline and increase the ROI). They could, although this could threaten their chances of seeing their return on investment. More on that below.
+
+Fast forward one year — the local grid is complete, connected to local homes, and providing clean electricity.
+
+Now, since the purpose of this project is to provide _affordable_ electricity, the price of electricity will be capped at a maximum of $0.03/kwh — in this community, working out to an average of about $20/month.
+
+25 years of electricity at that price, across 1000 homes in the community, generates ~$6 million. ($240/year x 1000 units x 25 years)
+
+To pay the $3 million absolute return to capital partners, the grassroots organization can now sell 25 years of **energy credits** — the right to _use_ a kwh of energy from the grid, thus termed &#39;use credits&#39; in more general contexts — to long-term funders like pension funds and banks, at a discount of 50%. This means that these long-term funders are paying 50 cents on the dollar for a kilowatt hour. Instead of buying energy at the maximum $0.03/kwh rate, the funders get it at $0.015/kwh.
+
+These long-term funders will earn _their_ return on investment, by selling energy credits to the locals connected to the grid. As long as locals are willing to pay at least $0.015/kwh for energy, these long-term funders will earn a positive return. If locals are willing to pay $0.03/kwh — the maximum, to keep the energy affordable — the funders&#39; absolute return will be 50%. However, even if the average monthly average is only $0.02/kwh, these long-term funders will still earn 30% absolute return.
+
+This also ensures that the grid will always be used and remain affordable to the local community. The only way for the long-term funders to get their ROI is to sell energy credits to locals. Since they don&#39;t have ownership in the grid, there is no benefit to them not selling the energy credits — as they don&#39;t have an appreciating stake in the grid as an asset.
+
+This avoids a situation like the Texas blackouts this year, where demand and costs spiked, leaving many houses freezing without power, and many other houses thousands in debt from the spike in costs.
+
+ In our scenario, the price of the electricity is capped at $0.03/kwh to keep it affordable. When energy is sold to locals at this price, the funders earn their maximum return. So even when supply drops or demand spikes, the funders are still interested in selling as much energy as possible at the affordable price of $0.03/kwh. Furthermore, by providing a reliable source of affordable clean energy, this offers further benefits to the local community — in terms of local health, local capacity, and the local environment — which consequently benefits the world at large.
+
+Finally, this up-front sale of 25 years of energy credits to long-term funders, with a 50% discount, generates about ~$3 million. The proceeds from this sale are used to pay back the $3 million absolute return to the capital partners, who provided the initial capital to build the grid — including investors, as well as any suppliers or other participants who accepted sweat equity.
+
+ (This is the mechanism which protects us against people taking shortcuts in the development process, for the sake of greater returns. The capital partners&#39; return is dependent on being able to sell the energy credits. If everything was built the right way, this should be straightforward and low-risk. However, if issues emerge as long-term funders conduct due diligence, it will be more difficult to sell credits and deliver the capital partners&#39; return. So the incentive is to build everything the right way, with an eye towards long-term outcomes and utility.)
+
+And now, we have clean + affordable energy for the community, in the custody of a local organization, with no owners or rentiers. Initial capital partners received an absolute rate of return of 20%. And the longer-term funders, who bought the discounted energy credits, can earn up to a 50% return over 25 years — a 2% annual rate of return. For institutions like pension funds, banks, and sovereign wealth funds, this is more competitive than negative interest rates — in addition to the many other benefits it creates for the local community, and global environment.
+
+And of course, you can also adjust the years of energy credits sold and the discount provided, to increase the maximum annual rate of return for long-term funders. For example, by selling 30 years of energy credits to long-term funders at a 75% discount, you could increase the maximum return to 2.5% per year.
+
+The sweet spot and boundary here, is that the sale of energy credits generates an acceptable long-term ARR for the funders (e.g. pension funds, banks, NGOs, sovereign funds), while also generating enough to provide the absolute return owed to the initial capital partners.
+
+Finally, this model is equally applicable to affordable housing, local infrastructure + utilities (e.g. water), and any other projects which generate long-term value through usage.
+
+For example, a grassroots organization wants to build a $2.5 million affordable housing project in an underserved community. All of the mechanisms here are the same — providing an absolute $3 million (20%) return to capital partners + suppliers to fund the grid&#39;s creation, selling 25 years of rental credits (e.g. &quot;use credits&quot;) from the housing units at a discount to long-term funders, and finally, the affordable housing units living on in the custody of a local organization. Now, the housing will always be utilized to its best and contribute to community + society, without any extractive dynamics and without any empty units — like we have in so many communities, where housing owners can afford for units to go unoccupied because they have an appreciating stake in the property, and thus, we have a lack of affordable housing.
+
+<style>
+ form input, label {
+     display: block;
+ }
+
+ .input-years-discount input, label {
+     display: block;
+ }
+</style>
