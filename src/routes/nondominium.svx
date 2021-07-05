@@ -2,18 +2,18 @@
  import {afterUpdate, getContext, onMount, setContext} from 'svelte';
 
  let infrastructure = "community microgrid"
- let capital = 80000
+ let capital = 3000000
  let users = "users";
- let users_per_month = 10;
- let use_cost = 40;
+ let users_per_month = 1000;
+ let use_cost = 20;
  let discount_rate = 50;
- let years;
+ let years = "";
  let min_years;
 
  $: years_display = years;
  $: discount_rate_display = discount_rate;
 
- $: arr = (100 - discount_rate) / years;
+ $: arr = (discount_rate) / years;
 
 
   onMount (() =>{
@@ -88,12 +88,12 @@ Here is an interactive model, to give a sense:
 
 * To raise ${capital} for a {infrastructure}
 
-* You can sell {years_display} years worth of {discount_rate}% discounted <strong>use credits</strong> to the {infrastructure} today, to people in the community, as well as long-term funders like local banks, pension funds, local businesses, and institutions.
+* You can sell {Math.round(years)} years worth of {discount_rate}% discounted <strong>use credits</strong> to the {infrastructure} today, to people in the community, as well as long-term funders like local banks, pension funds, local businesses, and institutions.
 
 <div class="input-years-discount" style="display: flex; width: fit-content; margin: auto;">
 <div style="">
 <input type="range" bind:value={years} min={min_years} on:change={changeYears}>
-<label>{years} years</label>
+<label>{Math.round(years)} years</label>
 </div>
 
 <div style="">
@@ -102,7 +102,7 @@ Here is an interactive model, to give a sense:
 </div>
 </div>
 
-* Those who buy use credits today, can earn up to {arr.toFixed(2)}% per year, over {years_display} years, by selling credits to local {users} at the capped affordable price.
+* Those who buy use credits today, can earn up to {arr.toFixed(2)}% per year, over {Math.round(years_display)} years, by selling credits to local {users} at the capped affordable price.
 
 * That rate is a lot better than negative interest — already the status quo in many parts of the world — and it beats the 0.05% interest on your bank account too.
 
