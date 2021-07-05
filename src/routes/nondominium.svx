@@ -88,8 +88,10 @@ Here is an interactive model, to give a sense:
 
 * And ${capital} needed to build it
 
-* You can sell {Math.round(years)} years worth of {discount_rate}% discounted <strong>use credits</strong> to the {infrastructure} today — to people in the community, as well as long-term funders like local banks, pension funds, local businesses, and institutions.
+* You can sell {Math.round(years)} years worth of {discount_rate}% discounted <strong>use credits</strong> for the {infrastructure} today — to people in the community, as well as long-term funders like local banks, pension funds, local businesses, and institutions.
 
+<p style="text-align: center; margin: auto; white-space: pre;">${capital} = (${use_cost}/month * {discount_rate}% discount) * {users_per_month} users * 12 months * {Math.round(years)} years</p>
+<br>
 <div class="input-years-discount" style="display: flex; width: fit-content; margin: auto;">
 <div style="">
 <input type="range" bind:value={years} min={min_years} on:change={changeYears} on:input={changeYears}>
