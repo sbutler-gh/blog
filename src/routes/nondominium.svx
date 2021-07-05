@@ -110,7 +110,7 @@ Here is an interactive model, to give a sense:
 
 {/if}
 
-If you&#39;re interested in discussing this further or have any questions, feel free to add a comment to the document, reach out to [Chris Cook](https://nondominium.co.uk/contact-us/), or reach me at [sam@ysli.be](mailto:sam@ysli.be)
+If you&#39;re interested in discussing this further or have any questions, feel free to reach out to [Chris Cook](https://nondominium.co.uk/contact-us/), or myself at [sam@ysli.be](mailto:sam@ysli.be)
 
 For more details, here is a summary example (with an even more detailed explanation further below):
 
