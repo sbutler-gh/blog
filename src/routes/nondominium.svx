@@ -86,18 +86,18 @@ Here is an interactive model, to give a sense:
 {#if infrastructure && capital && users && use_cost && users_per_month}
 * Assuming a capped monthly price of ${use_cost} to use {infrastructure}
 
-* To raise ${capital} for a {infrastructure}
+* And ${capital} needed to build it
 
-* You can sell {Math.round(years)} years worth of {discount_rate}% discounted <strong>use credits</strong> to the {infrastructure} today, to people in the community, as well as long-term funders like local banks, pension funds, local businesses, and institutions.
+* You can sell {Math.round(years)} years worth of {discount_rate}% discounted <strong>use credits</strong> to the {infrastructure} today — to people in the community, as well as long-term funders like local banks, pension funds, local businesses, and institutions.
 
 <div class="input-years-discount" style="display: flex; width: fit-content; margin: auto;">
 <div style="">
-<input type="range" bind:value={years} min={min_years} on:change={changeYears}>
+<input type="range" bind:value={years} min={min_years} on:change={changeYears} on:input={changeYears}>
 <label>{Math.round(years)} years</label>
 </div>
 
 <div style="">
-<input type="range" bind:value={discount_rate} min="1" max="99" on:change={changeDiscountRate}>
+<input type="range" bind:value={discount_rate} min="1" max="99" on:change={changeDiscountRate} on:input={changeDiscountRate}>
 <label>{discount_rate}% discount</label>
 </div>
 </div>
