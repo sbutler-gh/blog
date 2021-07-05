@@ -86,11 +86,11 @@ Here is an interactive model, to give a sense:
 {#if infrastructure && capital && users && use_cost && users_per_month}
 * Assuming a capped monthly price of ${use_cost} to use {infrastructure}
 
-* And ${capital} needed to build it
+* And ${capital.toLocaleString()} needed to build it
 
 * You can sell {Math.round(years)} years worth of {discount_rate}% discounted <strong>use credits</strong> for the {infrastructure} today — to people in the community, as well as long-term funders like local banks, pension funds, local businesses, and institutions.
 
-<p style="text-align: center; margin: auto; white-space: pre;">${capital} = (${use_cost}/month * {discount_rate}% discount) * {users_per_month} users * 12 months * {Math.round(years)} years</p>
+<p style="text-align: center; margin: auto; white-space: pre;"><strong>${capital}</strong> = (<strong>${use_cost}</strong>/month * <strong>{discount_rate}%</strong> discount) * <strong>{Math.round(years)}</strong> years * <strong>12</strong> months * <strong>{users_per_month}</strong> users </p>
 <br>
 <div class="input-years-discount" style="display: flex; width: fit-content; margin: auto;">
 <div style="">
