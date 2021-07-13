@@ -44,18 +44,21 @@ $: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.roun
 
     new d3plus.TextBox()
     .data(data)
+    .padding(5)
     .fontResize(true)
     .select("#wrap_1")
     .render();
 
      new d3plus.TextBox()
     .data(data)
+     .padding(5)
     .fontResize(true)
     .select("#wrap_2")
     .render();
 
    new d3plus.TextBox()
     .data(data)
+    .padding(5)
     .fontResize(true)
     .select("#wrap_3")
     .render();
@@ -81,18 +84,21 @@ $: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.roun
 
     new d3plus.TextBox()
     .data(data)
+    .padding(5)
     .fontResize(true)
     .select("#wrap_1")
     .render();
 
      new d3plus.TextBox()
     .data(data)
+    .padding(5)
     .fontResize(true)
     .select("#wrap_2")
     .render();
 
    new d3plus.TextBox()
     .data(data)
+    .padding(5)
     .fontResize(true)
     .select("#wrap_3")
     .render();
@@ -140,6 +146,7 @@ $: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.roun
     new d3plus.TextBox()
     .data(data)
     .fontResize(true)
+    .padding(5)
     .select("#wrap_2")
     .render();
  }, 100);
@@ -158,6 +165,7 @@ $: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.roun
         setTimeout(function(){
     new d3plus.TextBox()
     .data(data)
+    .padding(5)
     .fontResize(true)
     .select("#wrap_3")
     .render();
@@ -166,34 +174,6 @@ $: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.roun
 
  }
 
- function updateD3Boxes() {
-
-     infrastructure = infrastructure;
-
-    var data = [{
-    "height": 100,
-    "text": infrastructure,
-    "width": 100
-    }];
-
-    new d3plus.TextBox()
-    .data(data)
-    .fontResize(true)
-    .select("#wrap_1")
-    .render();
-
-     new d3plus.TextBox()
-    .data(data)
-    .fontResize(true)
-    .select("#wrap_2")
-    .render();
-
-   new d3plus.TextBox()
-    .data(data)
-    .fontResize(true)
-    .select("#wrap_3")
-    .render();
- }
 </script>
 
 <svelte:head>
