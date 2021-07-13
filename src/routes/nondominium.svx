@@ -346,7 +346,7 @@ How will you fund it?
 
         In exchange for ${use_cost}, you receieve a month's worth of {service} from the {infrastructure}.   
         
-        ${(use_cost - funder_rate).toFixed(2)} of that goes to local funders, who can now sell their discounted {service} credits back to the community, and earn {arr.toFixed(2)}% returns over the next {Math.round(years_display)} years for their ${capital.toLocaleString()} in capital.
+        ${(use_cost - funder_rate).toFixed(2)} of that goes to local funders, who can now sell their discounted {service} credits back to the community, and earn {arr.toFixed(2)}% ARR over the next {Math.round(years_display)} years for their ${capital.toLocaleString()} in capital.
 
         If these funders include a bank, credit union, pension fund, or community members like you, you can be earning those returns too!
 
