@@ -28,13 +28,16 @@
 
  $: funder_rate = use_cost * ((100 - discount_rate) /100);
 
+$: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.round(years_display);  
+
+
 
   onMount (() =>{
 
     console.log(d3plus);
 
     var data = [{
-    "height": 100,
+    "height": 60,
     "text": infrastructure,
     "width": 100
     }];
@@ -71,7 +74,7 @@
      console.log('crunching');
 
          var data = [{
-    "height": 100,
+    "height": 60,
     "text": infrastructure,
     "width": 100
     }];
@@ -127,7 +130,7 @@
      sell_discounted_use_credits = true;
 
          var data = [{
-    "height": 100,
+    "height": 60,
     "text": infrastructure,
     "width": 100
     }];
@@ -147,7 +150,7 @@
      sell_credits_and_build = true;
 
     var data = [{
-    "height": 100,
+    "height": 60,
     "text": infrastructure,
     "width": 100
     }];
@@ -199,7 +202,12 @@
 
 ## Nondominium
 
- This is a model for creating useful new things for society — from affordable housing, to renewable energy, to improved water + utility infrastructure, to any imaginable _thing_ which provides future value — which are free from equity, debt, interest, loans, owners, rent-seeking, and extraction.
+*The Nondominium model was architected by [Chris Cook](https://nondominium.co.uk/author/chriscook/) (University College London), and he&#39;s the person who understands it best. This resource is my effort to &quot;learn in public&quot; from his work*
+
+*If you're interested in discussing this further or have any questions, feel free to reach out to [Chris](https://nondominium.co.uk/contact-us/), or myself at [sam@ysli.be](mailto:sam@ysli.be)*  
+
+
+This is a model for creating useful new things for society — from affordable housing, to renewable energy, to improved water + utility infrastructure, to any imaginable _thing_ which provides future value — which are free from equity, debt, interest, loans, owners, rent-seeking, and extraction.
 
 Here is an interactive experience, to give a sense:
 
@@ -216,7 +224,7 @@ Here is an interactive experience, to give a sense:
 <span style="font-size: 12px; color: gray">Community microgrid, local gardens, housing units ...</span><br/>
 <input name="infrastructure" style="display: block" bind:value={infrastructure} placeholder="Affordable housing development, local microgrid, solar + storage, etc.">
 
-<label for="users" style="margin-bottom: -8px">How would you describe the main users?</label>
+<label for="users" style="margin-bottom: -8px">How would you describe the main users of the {infrastructure}?</label>
 <span style="font-size: 12px; color: gray">Families, homes, residents, businesses, organizations ...</span>
 <input style="display: block" name="users" bind:value={users} placeholder="XXXXX.XX">
 
@@ -277,6 +285,8 @@ How will you fund it?
     <label>{discount_rate}% discount</label>
     </div>
     </div>
+
+        **{users_per_month}** {users} \* **${use_cost}**/month \* **{discount_rate}%** discount \* **12** months \* **{Math.round(years_display)}** years = **${full_calc.toLocaleString()}**  
 
         By buying {service} credits in advance, local funders — like banks, credit unions, pension funds, small businesses, schools, offices, and people in the community — can help pay for the {infrastructure}, and sell {service} credits back to the community later for a {discount_rate}% return.
 
@@ -491,17 +501,7 @@ Finally, this model is equally applicable to affordable housing, local infrastru
 
 For example, a grassroots organization wants to build a $2.5 million affordable housing project in an underserved community. All of the mechanisms here are the same — providing an absolute $3 million (20%) return to capital partners + suppliers to fund the grid&#39;s creation, selling 25 years of rental credits (e.g. &quot;use credits&quot;) from the housing units at a discount to long-term funders, and finally, the affordable housing units living on in the custody of a local organization. Now, the housing will always be utilized to its best and contribute to community + society, without any extractive dynamics and without any empty units — like we have in so many communities, where housing owners can afford for units to go unoccupied because they have an appreciating stake in the property, and thus, we have a lack of affordable housing.
 
-<details><summary>Credit and thanks to Chris Cook</summary>
 
-The Nondominium model was architected by [Chris Cook](https://nondominium.co.uk/author/chriscook/) (University College London), and he&#39;s the person who understands it best. This document is my effort to &quot;learn in public&quot; from his work, and here are some of the resources which helped me:
-
-- [Video overview](https://www.youtube.com/watch?v=SCDqQGaVEm4)
-- Discussion in the context of [affordable housing](https://www.youtube.com/watch?v=zHTr5MkRMSU)
-- Energy credits, with [historical observations on Denmark&#39;s energy strategy](https://bellacaledonia.org.uk/2018/08/21/energising-scotland-introducing-the-eco/)
-
-
-If you&#39;re interested in discussing this further or have any questions, feel free to reach out to [Chris](https://nondominium.co.uk/contact-us/), or myself at [sam@ysli.be](mailto:sam@ysli.be)
-</details>
 {/if}
 
 <style>
