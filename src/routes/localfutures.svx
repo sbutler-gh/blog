@@ -259,7 +259,7 @@ The lack of **tools to work together** — and in some cases, a **lack of resou
 
 Placeflow is a tool to work together, with the people in your local community, accessible anywhere around the world.
 
-It's still in development - and yet, it already works, and [you can use it today](placeflow.netlify.app).
+It's still in development - and yet, it already works, and [you can use it today](https://placeflow.netlify.app).
 
 In terms of resources, it should be pointed out that not all local improvement projects require funds or capital. Community led campaign and initiatives can happen just through conversation and organizing.  Hands-on projects, like gardens and compost sites and local repairs, can also happen with little funding.
 
