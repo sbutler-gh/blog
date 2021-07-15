@@ -469,7 +469,7 @@ Let's get to work.
 
 **Sold on these ideas?  Want to get to work?**
 
-Placeflow is live and free to use.  Anybody can start a local project, get others on board, and arrange funding for these projects with local stakeholders in the ways described here — raising the capital, while keeping custody in the community.
+Placeflow is live and [free to use](https://placeflow.netlify.app).  Anybody can start a local project, get others on board, and arrange funding for these projects with local stakeholders in the ways described here — raising the capital, while keeping custody in the community.
 
 **Want to discuss ideas, share feedback, or ask questions?**
 
