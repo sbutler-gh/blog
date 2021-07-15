@@ -1,0 +1,482 @@
+<script>
+
+
+// You want to raise ______ to build a _____.  
+
+// [ Sell future credits ]
+
+ import {afterUpdate, getContext, onMount, setContext} from 'svelte';
+
+ let service = "energy"
+ let infrastructure = "community microgrid"
+ let capital = 3000000
+ let users = "homes";
+ let users_per_month = 1000;
+ let use_cost = 20;
+ let discount_rate = 50;
+ let years = "";
+ let min_years;
+
+ let sell_discounted_use_credits = false;
+ let sell_credits_and_build = false;
+ let use_infrastructure = false;
+
+ $: years_display = years;
+ $: discount_rate_display = discount_rate;
+
+ $: arr = (discount_rate) / years;
+
+ $: funder_rate = use_cost * ((100 - discount_rate) /100);
+
+$: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.round(years_display);  
+
+
+
+  onMount (() =>{
+
+    console.log(d3plus);
+
+    var data = [{
+    "height": 60,
+    "text": infrastructure,
+    "width": 100
+    }];
+
+    new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_1")
+    .render();
+
+     new d3plus.TextBox()
+    .data(data)
+     .padding(5)
+    .fontResize(true)
+    .select("#wrap_2")
+    .render();
+
+   new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_3")
+    .render();
+
+    years = (capital / (users_per_month * 12 * use_cost * (discount_rate/100))).toFixed(0);
+
+    // Since the maximum discount is 99%, we can calculate the minimum number of years for this example, to prevent calculations that use discount rates above 100%
+    min_years = capital / (users_per_month * 12 * use_cost * (99/100));
+
+    //years = years.toFixed(0);
+
+    //years_display = years.toFixed(0);
+ });
+
+ function crunchNumbers() {
+     console.log('crunching');
+
+         var data = [{
+    "height": 60,
+    "text": infrastructure,
+    "width": 100
+    }];
+
+    new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_1")
+    .render();
+
+     new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_2")
+    .render();
+
+   new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_3")
+    .render();
+
+     years = (capital / (users_per_month * 12 * use_cost * (discount_rate/100))).toFixed(0);
+
+    // Since the maximum discount is 99%, we can calculate the minimum number of years for this example, to prevent calculations that use discount rates above 100%
+    min_years = capital / (users_per_month * 12 * use_cost * (99/100));
+
+    years = years.toFixed(0);
+
+    // years_display = years.toFixed(0);
+ }
+
+ function changeYears() {
+
+     discount_rate = ((capital / (users_per_month * 12 * use_cost * years)) * 100).toFixed(0);
+
+     //discount_rate_display = discount_rate.toFixed(0);
+
+     //discount_rate = discount_rate.toFixed(0);
+ }
+
+  function changeDiscountRate() {
+
+     years = (capital / (users_per_month * 12 * use_cost * (discount_rate/100))).toFixed(0);
+
+     years_display = years.toFixed(0);
+
+     years = years.toFixed(0);
+
+ }
+
+ function sellDiscountedUseCredits() {
+     sell_discounted_use_credits = true;
+
+         var data = [{
+    "height": 60,
+    "text": infrastructure,
+    "width": 100
+    }];
+
+    setTimeout(function(){
+
+    new d3plus.TextBox()
+    .data(data)
+    .fontResize(true)
+    .padding(5)
+    .select("#wrap_2")
+    .render();
+ }, 100);
+
+    }
+
+  function sellCreditsAndBuild() {
+     sell_credits_and_build = true;
+
+    var data = [{
+    "height": 60,
+    "text": infrastructure,
+    "width": 100
+    }];
+
+        setTimeout(function(){
+    new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_3")
+    .render();
+ }, 100);
+
+
+ }
+
+</script>
+
+<svelte:head>
+	<script src="https://cdn.jsdelivr.net/npm/d3plus-text@1"></script>
+</svelte:head>
+
+
+*Placeflow is a tool to help local communities shape their own local futures.*
+
+*In this post, I’ll walk through why we need a tool like this, and how Placeflow delivers.*
+
+Placeflow is a website that enables anybody to propose, join, and collaborate on projects in their community.
+
+Proposing and joining projects takes a single click.  You can stay up-to-date, join discussions and share your feedback on initiatives, and log contributions towards the creation of new projects.  All transparent and open.
+
+To borrow a phrase from community organizing, this enables people who are *closest to the problem* to get to work and take the lead — and likewise, enables people who are *closest to the place* to determine what the future of that place holds.  For their own futures, and for future generations to come.
+
+* * * * 
+
+Why do we need this?
+
+The places around us are in a constant state of change.  Through inaction, and falling out-of-sync with a changing world.  Through decay, and a failure to maintain and improve what exists today.  Through the status quo, and local decisions made behind closed doors, by external stakeholders (e.g. real estate developers, financial institutions, government offices).
+
+The only pattern we’re missing, is change being led by the people who actually live in a place.  The people with skin-in-the-game, who have been there for generations and will be there for generations, and who have most on the line — as well as the most to gain  — from better local futures.
+
+It is only sensible that the people who are closest to a decision, who understand it best and will live with its consequences, are empowered in local decisionmaking.
+
+A world in which decisions are made by people and communities closest to them — supported by all of the knowhow and experience and perspectives the world has to offer — is a more truthful, productive, and valuable world for all of us.
+
+* * * * 
+
+We also need to empower distributed, local decision-making and determination, because we are in a time of epic change.
+
+Around the world, our environments are rapidly changing.  Our failure to adapt, is directly affecting the futures we’ll be living in.
+<!--
+The rate of change — our atmosphere is heating up at a rate of 4 nuclear bombs per second — is urgent.  The scale of change spans across the world.
+-->
+And yet, we’re living in a paradigm of individual change.
+
+Government programs focus on individual home energy loans and electric vehicle rebates.  Applications target individual users, on their individual phone screens, and prompt individual changes.  Advocacy campaigns promote eating more plants and creating less waste, in our own individual shopping carts and our own private kitchens.
+
+This isn't how change spreads.
+
+And if we wait to for individuals to change, home-by-home and kitchen-by-kitchen across millions of communities and billions of people, most of our future will be determined before any of us lift up our heads.
+
+But we have hope.
+
+By shifting from individual-scale to community-scale perspectives — street blocks, neighborhoods, towns and cities — we can increase the scale of our impact, and the rate of our change.
+<!--
+And perhaps, we can even give ourselves a chance to determine our own local futures, even at the rate the world is changing around us.
+-->
+Imagine 10 people on a street working on their own home improvement projects.
+
+Now imagine those same 10 people, working together on a *community* improvement project.  Moving from individual-scale to community-scale, the project will make a bigger difference in each of their individual lives — and more, the project will touch many more lives altogether.
+
+It will be more affordable and less time consuming for every person involved — and probably, come together even faster.
+
+Working with our neighbors and the community around us, it could be more enjoyable, educational, recreational, and fun.
+
+And by working in public, transparently and openly, countless more people could discover our project, share it with others, contribute themselves, and carry our work on to new places.
+
+Scaling the idea and the impact, to countless more communities and futures.
+<!--
+When we move from individual scale to neighborhood and community-scale, the impact we're making — in terms of our own better lives, and better futures for anyone who lives *here* — becomes cheaper, faster to implement, and more cost-effective.
+-->
+Now, moving from individual-scale to community-scale, we can talk seriously about determining our own local futures — even at the rate the world is changing around us.
+
+* * * * 
+
+Finally, as governments spend trillions of dollars (often, our taxpayer dollars) on projects which will shape all of our futures, we want those investements to foster the best outcomes that they can.
+
+That means government spending should be distributed to the people *closest to the problems* — and it should be distributed *transparently.*  For integrity and accountability, to improve learning cycles around these investments, and to enable us to swiftly identify problems and adapt.
+
+Also, to minimize risks of friction and corruption, and any opportunity costs along the way (e.g. losing time, money, knowledge, insights, opportunities, as a result of closed-door processes).
+
+In short: building back better, **transparently.**
+
+* * * * 
+
+So what's stopping us from starting these projects, shaping our own local futures, and getting to work?
+
+The lack of **tools to work together** — and in some cases, a **lack of resources.**
+
+Placeflow is a tool to work together, with the people in your local community, accessible anywhere around the world.
+
+It's still in development - and yet, it already works, and [you can use it today](placeflow.netlify.app).
+
+In terms of resources, it should be pointed out that not all local improvement projects require funds or capital. Community led campaign and initiatives can happen just through conversation and organizing.  Hands-on projects, like gardens and compost sites and local repairs, can also happen with little funding.
+
+Since 2020, we've seen projects and initiatives like this happening in communities around the world.
+
+However, when resources are required — or, simply, when they'd make life a little bit easier — we have an answer as well:
+
+We can fund *anything* through the *future value it creates.*
+
+<!--
+Say you want fresh, daily, locally grown food for 10,000 families in your community, at a maximum price of $50 per month.
+
+A local food system like this will cost $5 million to create.
+
+To raise $5 million, we can sell the rights to *future produce* from this food system at a *discount today.*. For this specific example, you can sell rights to 4 years worth of future produce at a rate of $40/month (a 20% discount).
+
+Once the food system is created and producing locally grown foods, the up-front buyers can use their discounted service — $40/month for locally grown food — and they can also sell their produce rights back to the others in the community, for a price of up to $50/month (netting them a return of $10, and up to 5% ARR over 4 years).
+
+Of course, people would pay much more than $50/month for a daily supply of fresh locally grown food.  But the point of this model isn't to make money.  The point is simply to help us fund things that we want — for today, and for our future — and keep custody of those things in our community.
+-->
+
+> Say you want a community-owned Internet network for 1000 local homes and apartments.  In the future, we know that people in the community would gladly pay $1/month for local high-speed home Internet + WiFi.
+
+> This network will cost $60,000 to build.
+
+> To raise $60,000, we can sell the *future rights* to Internet services at a *discount today.* For this specific example, you can sell future rights to high-speed local Internet at $0.50/month, for up to 10 years.
+
+> Once the network is built, the up-front buyers can use their discounted service — $60 upfront, for 10 years of high-speed Internet access (or $0.50/month).  And they can also sell their service rights back to others in the community, for a price of up to $1/month (netting them a return of $0.50/month, or 5% ARR).
+
+Of course, people would pay much more than $1/month for high-speed local Internet.  But the point of this model isn't to make money.  The point is simply to help us fund things that we want — for today, and for our future — and keep custody of those things in our community.
+
+And this same approach — funding things today, through the future value they create — can be used to create housing, energy, food systems, clean water supplies, public transportation, schools, community services, and anything else we wish for.
+
+<details><summary>See how it works</summary>
+{#if infrastructure && capital && users && use_cost && users_per_month}
+
+<form class="variablesForm" on:input={crunchNumbers}>
+<p>You want <input style="width: 70px; display: inline-block;" name="service" bind:value={service} placeholder="{service}"> for an affordable price of $<input bind:value={use_cost} style="display: inline-block; width: 30px;" name="use_cost" placeholder="XXXXX.XX">/month.  A <input name="infrastructure" style="display: inline-block; width: 150px;" bind:value={infrastructure} placeholder=""> for <input style="display: inline-block; width: 50px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> local <input style="display: inline-block; width: 80px;" name="users" bind:value={users} placeholder="XXXXX.XX"> costs $<input bind:value={capital} style="display: inline-block; width: 80px;" name="capital" placeholder="XXXXX.XX"></p>
+</form>
+
+<!--
+You want {service} for an affordable price of ${use_cost}/month.  A {infrastructure} for {users_per_month} local {users} costs ${capital.toLocaleString()}.
+-->
+
+<svg width="340" height="100" viewBox="0 0 340 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="291" cy="36" rx="49" ry="36" fill="#88F693"/>
+<path d="M122.293 52.2929C121.902 52.6834 121.902 53.3166 122.293 53.7071L128.657 60.0711C129.047 60.4616 129.681 60.4616 130.071 60.0711C130.462 59.6805 130.462 59.0474 130.071 58.6569L124.414 53L130.071 47.3431C130.462 46.9526 130.462 46.3195 130.071 45.9289C129.681 45.5384 129.047 45.5384 128.657 45.9289L122.293 52.2929ZM230 52L123 52V54L230 54V52Z" fill="black" fill-opacity="0.46"/>
+<path d="M230.707 27.7071C231.098 27.3166 231.098 26.6834 230.707 26.2929L224.343 19.9289C223.953 19.5384 223.319 19.5384 222.929 19.9289C222.538 20.3195 222.538 20.9526 222.929 21.3431L228.586 27L222.929 32.6569C222.538 33.0474 222.538 33.6805 222.929 34.0711C223.319 34.4616 223.953 34.4616 224.343 34.0711L230.707 27.7071ZM123 28L230 28V26L123 26V28Z" fill="black" fill-opacity="0.46"/>
+<text x="125" y="0" fill="rgba(0,0,0,0.7)" width="140">{service} for</text>
+<text x="125" y="20" fill="rgba(0,0,0,0.7)" width="140">${use_cost}/month</text>
+<text x="130" y="75" fill="rgba(0,0,0,0.7)" width="140">${capital.toLocaleString()}</text>
+<text x="270" y="30" fill="black" width="140">{users_per_month}</text>
+<text x="270" y="50" fill="black" width="140">{users}</text>
+<svg width="109" id="wrap_1">
+<rect x="0.5" y="0.5" width="109" height="71" fill="#87F6F6" stroke="#B4B4B4" stroke-dasharray="10 10"/>
+</svg>
+</svg>
+
+<div style="text-align: right">
+
+How will you fund it?
+
+{#if sell_discounted_use_credits == false}
+<button on:click={sellDiscountedUseCredits}>Sell discounted {service} credits for the {infrastructure}</button>
+{:else}
+<svg style="display: inline-block; vertical-align: top;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M9 12l2 2l4 -4" />
+</svg>
+<strong>Sell discounted {service} credits for the {infrastructure}</strong>
+{/if}
+</div>
+
+    {#if sell_discounted_use_credits == true}
+
+    Based on {users_per_month} {users} using {service} at a price of ${use_cost}/month, you can raise ${capital.toLocaleString()} by selling {Math.round(years_display)} years of **{service} credits** at a {discount_rate}% discount.
+
+    <div class="input-years-discount" style="display: flex; width: fit-content; margin: auto;">
+    <div style="">
+    <input type="range" bind:value={years} min={min_years} on:change={changeYears} on:input={changeYears}>
+    <label>{Math.round(years)} years</label>
+    </div>
+
+    <div style="">
+    <input type="range" bind:value={discount_rate} min="1" max="99" on:change={changeDiscountRate} on:input={changeDiscountRate}>
+    <label>{discount_rate}% discount</label>
+    </div>
+    </div>
+
+        **{users_per_month}** {users} \* **${use_cost}**/month \* **{discount_rate}%** discount \* **12** months \* **{Math.round(years_display)}** years = **${full_calc.toLocaleString()}**  
+
+        By buying {service} credits in advance, local funders — like banks, credit unions, pension funds, small businesses, schools, offices, and people in the community — can help pay for the {infrastructure}, and sell {service} credits back to the community later for a {discount_rate}% return.
+
+
+    <br>
+    <br>
+
+    <svg width="340" height="240" viewBox="0 0 340 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="109" id="wrap_2">
+<rect x="0.5" y="0.5" width="109" height="71" fill="#87F6F6" stroke="#B4B4B4" stroke-dasharray="10 10"/>
+</svg>
+<ellipse cx="291" cy="36" rx="49" ry="36" fill="#88F693"/>
+<path d="M121.293 35.2929C120.902 35.6834 120.902 36.3166 121.293 36.7071L127.657 43.0711C128.047 43.4616 128.681 43.4616 129.071 43.0711C129.462 42.6805 129.462 42.0474 129.071 41.6569L123.414 36L129.071 30.3431C129.462 29.9526 129.462 29.3195 129.071 28.9289C128.681 28.5384 128.047 28.5384 127.657 28.9289L121.293 35.2929ZM229.707 36.7071C230.098 36.3166 230.098 35.6834 229.707 35.2929L223.343 28.9289C222.953 28.5384 222.319 28.5384 221.929 28.9289C221.538 29.3195 221.538 29.9526 221.929 30.3431L227.586 36L221.929 41.6569C221.538 42.0474 221.538 42.6805 221.929 43.0711C222.319 43.4616 222.953 43.4616 223.343 43.0711L229.707 36.7071ZM122 37L229 37V35L122 35V37Z" fill="black" fill-opacity="0.46"/>
+<path d="M82.6147 93.0772C82.1051 93.29 81.8644 93.8756 82.0772 94.3853L85.5445 102.691C85.7572 103.2 86.3429 103.441 86.8525 103.228C87.3622 103.015 87.6028 102.43 87.3901 101.92L84.3081 94.5376L91.6906 91.4555C92.2002 91.2428 92.4409 90.6571 92.2281 90.1475C92.0153 89.6378 91.4297 89.3972 90.9201 89.6099L82.6147 93.0772ZM229.385 154.923C229.895 154.71 230.136 154.124 229.923 153.615L226.456 145.309C226.243 144.8 225.657 144.559 225.147 144.772C224.638 144.985 224.397 145.57 224.61 146.08L227.692 153.462L220.309 156.544C219.8 156.757 219.559 157.343 219.772 157.853C219.985 158.362 220.57 158.603 221.08 158.39L229.385 154.923ZM82.6199 94.9249L228.62 154.925L229.38 153.075L83.3801 93.0751L82.6199 94.9249Z" fill="black" fill-opacity="0.46"/>
+<path d="M45.6254 104.073C45.1133 104.28 44.8659 104.863 45.0728 105.375L48.4443 113.719C48.6511 114.231 49.234 114.479 49.7461 114.272C50.2581 114.065 50.5055 113.482 50.2986 112.97L47.3018 105.553L54.7192 102.556C55.2313 102.349 55.4787 101.766 55.2718 101.254C55.0649 100.742 54.4821 100.494 53.97 100.701L45.6254 104.073ZM230.492 182.226L46.3907 104.08L45.6092 105.921L229.71 184.067L230.492 182.226Z" fill="black" fill-opacity="0.46"/>
+<ellipse cx="293" cy="169" rx="47" ry="45" fill="#F688EB"/>
+<text x="130" y="0" fill="rgba(0,0,0,0.7)" width="140">{service} for</text>
+<text x="130" y="20" fill="rgba(0,0,0,0.7)" width="140">${use_cost}/month</text>
+       <text x="135" y="100" fill="rgba(0,0,0,0.7)" width="140">{service} for ${funder_rate.toFixed(2)}/month</text>
+    <text x="165" y="120" fill="rgba(0,0,0,0.7)" width="140">(for {Math.round(years)} years)</text>
+        <text x="50" y="170" fill="rgba(0,0,0,0.7)" width="140">${capital.toLocaleString()}</text>
+    <text x="270" y="165" fill="rgba(0,0,0,0.7)" width="140">Local</text>
+     <text x="260" y="185" fill="rgba(0,0,0,0.7)" width="140">Funders</text>
+         <text x="270" y="30" fill="black" width="140">{users_per_month}</text>
+<text x="270" y="50" fill="black" width="140">{users}</text>
+</svg>
+    
+
+    After {Math.round(years_display)} years, the funders' capital will be paid back (with {arr.toFixed(2)}% ARR), and the community will have full custody over the {infrastructure} — the community can then sell further {service} credits, provide more affordable {service} for local {users}, and use the {infrastructure} as desired.
+
+    <div style="text-align: right">
+    Want to proceed?
+    <br/>
+    {#if sell_credits_and_build == false}
+    <button on:click={sellCreditsAndBuild} style="text-align: right" id="step_1">Sell {service} credits and build {infrastructure}</button>
+    {:else}
+    <svg style="display: inline-block; vertical-align: top;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M9 12l2 2l4 -4" />
+</svg>
+    <strong>Sell {service} credits and build {infrastructure}</strong>
+    {/if}
+
+    </div>
+
+        {#if sell_discounted_use_credits == true && sell_credits_and_build == true}
+        It's built!  You can now get {service} from the {infrastructure}, at an affordable rate of ${use_cost}/month.
+
+        <button style="display: none;">Use {infrastructure}</button>
+
+            <br>
+
+
+    <svg width="340" height="214" viewBox="0 0 340 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M122.293 21.2929C121.902 21.6834 121.902 22.3166 122.293 22.7071L128.657 29.0711C129.047 29.4616 129.681 29.4616 130.071 29.0711C130.462 28.6805 130.462 28.0474 130.071 27.6569L124.414 22L130.071 16.3431C130.462 15.9526 130.462 15.3195 130.071 14.9289C129.681 14.5384 129.047 14.5384 128.657 14.9289L122.293 21.2929ZM230 21L123 21V23L230 23V21Z" fill="black" fill-opacity="0.46"/>
+    <text x="150" y="15" fill="rgba(0,0,0,0.7)" width="140">${use_cost}</text>
+    <path d="M230.707 55.7071C231.098 55.3166 231.098 54.6834 230.707 54.2929L224.343 47.9289C223.953 47.5384 223.319 47.5384 222.929 47.9289C222.538 48.3195 222.538 48.9526 222.929 49.3431L228.586 55L222.929 60.6569C222.538 61.0474 222.538 61.6805 222.929 62.0711C223.319 62.4616 223.953 62.4616 224.343 62.0711L230.707 55.7071ZM123 56L230 56V54L123 54V56Z" fill="black" fill-opacity="0.46"/>
+    <text x="130" y="75" fill="rgba(0,0,0,0.7)" width="140">{service}</text>
+    <path d="M83.9754 83.2347C83.4634 83.4416 83.216 84.0244 83.4228 84.5365L86.7943 92.8811C87.0012 93.3932 87.584 93.6406 88.0961 93.4337C88.6082 93.2268 88.8556 92.644 88.6487 92.1319L85.6518 84.7145L93.0693 81.7176C93.5814 81.5107 93.8288 80.9279 93.6219 80.4158C93.415 79.9037 92.8321 79.6563 92.3201 79.8632L83.9754 83.2347ZM230.041 144.918L84.7408 83.2414L83.9593 85.0824L229.259 146.759L230.041 144.918Z" fill="black" fill-opacity="0.46"/>
+     <text x="170" y="115" fill="rgba(0,0,0,0.7)" width="140">{service} credit</text>
+
+    <path d="M230.476 184.073C230.988 183.867 231.235 183.284 231.028 182.772L227.657 174.427C227.45 173.915 226.867 173.667 226.355 173.874C225.843 174.081 225.595 174.664 225.802 175.176L228.799 182.594L221.382 185.591C220.87 185.797 220.622 186.38 220.829 186.892C221.036 187.404 221.619 187.652 222.131 187.445L230.476 184.073ZM45.6093 105.921L229.71 184.067L230.492 182.226L46.3907 104.079L45.6093 105.921Z" fill="black" fill-opacity="0.46"/>
+    <text x="50" y="170" fill="rgba(0,0,0,0.7)" width="140">${(use_cost - funder_rate).toFixed(2)}</text>
+
+    <ellipse cx="293" cy="169" rx="47" ry="45" fill="#F688EB"/>
+
+    <svg id="wrap_3">
+    <rect x="0.5" y="0.5" width="109" height="71" rx="9.5" fill="#87F6F6" stroke="#545454" stroke-width="2"/>
+    </svg>
+    <ellipse cx="291" cy="36" rx="49" ry="36" fill="#88F693"/>
+        <text x="270" y="165" fill="rgba(0,0,0,0.7)" width="140">Local</text>
+     <text x="260" y="185" fill="rgba(0,0,0,0.7)" width="140">Funders</text>
+     <text x="270" y="40" fill="rgba(0,0,0,0.7)" width="30">You</text>
+
+    </svg>
+
+        In exchange for ${use_cost}, you receieve a month's worth of {service} from the {infrastructure}.   
+        
+        ${(use_cost - funder_rate).toFixed(2)} of that goes to local funders, who can now sell their discounted {service} credits back to the community, and earn {arr.toFixed(2)}% ARR over the next {Math.round(years_display)} years for their ${capital.toLocaleString()} in capital.
+
+        If these funders include a bank, credit union, pension fund, or community members like you, you can be earning those returns too!
+
+        {/if}
+
+    {/if}
+
+{/if}
+</details>
+
+* * * * 
+
+Would would fund projects like this?
+
+Anybody who is close enough to the project, to understand the future value that it will create.  That could be local banks, credit unions, municipalities, local businesses and schools, members of the community, and anybody who wants to use the project themselves a discount.
+
+Likewise, anybody who would prefer their money invested into assets with *intrinsic value* — as opposed to negative interest bank accounts, or speculative markets and investments.
+
+> **Intrinsic value:** Even if the rights to local high-speed Internet lose their "market value" and you can't resell them, you would still have rights to cheap local high-speed Internet — and as long as you use Internet, that asset will always have an intrinsic value to you.
+
+Imagine all of the money in your bank account, backed not by government fiat or market conditions, but by backed by rights to local things — energy, food, water, Internet, housing — which will always have value to you.  Every dollar, signifying a right to a local project or service or *thing*, which will always have value for you.
+
+And likewise, imagine the billions in local banks, credit unions, pension funds, municipal treasuries, school treasuries, business accounts, all going towards local projects which improve life and futures in the places around you.
+
+Everyone gets returns from a better local community, and the community as a whole builds generational wealth as well.
+
+So in reality, we don't need to have any problem getting funding for our local projects — as long as we start seeing the *future value* they create.
+
+And with a tool to work together, empowering local decisonmakers and community-scale projects — with transparent and open processes — there's nothing stopping us.
+
+We can start shaping our local futures, today.
+
+Let's get to work.
+
+<hr>
+
+**Sold on these ideas?  Want to get to work?**
+
+Placeflow is live and free to use.  Anybody can start a local project, get others on board, and arrange funding for these projects with local stakeholders in the ways described here — raising the capital, while keeping custody in the community.
+
+**Want to discuss ideas, share feedback, or ask questions?**
+
+You're welcome to join the community Slack or join an office hours session.
+
+The door is always open.
+
+**Want to incorporate Placeflow or any of these ideas into your work, and looking for a little help or collaboration?**
+
+Send me an email with your request at sam@ysli.be, and set up a time to chat if you'd like.
