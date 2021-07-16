@@ -189,7 +189,9 @@ Placeflow is a website that enables anybody to propose, join, and collaborate on
 
 Proposing and joining projects takes a single click.  You can stay up-to-date, join discussions and share your feedback on initiatives, and log contributions towards the creation of new projects.  All transparent and open.
 
-To borrow a phrase from community organizing, this enables people who are *closest to the problem* to get to work and take the lead — and likewise, enables people who are *closest to the place* to determine what the future of that place holds.  For their own futures, and for future generations to come.
+To borrow a phrase from community organizing, this enables people who are *closest to the problem* to get to work and take the lead — and likewise, enables people who are *closest to the place* to determine what the future of that place holds.
+
+For their own futures, and for future generations to come.
 
 * * * * 
 
@@ -205,7 +207,7 @@ A world in which decisions are made by people and communities closest to them �
 
 * * * * 
 
-We also need to empower distributed, local decision-making and determination, because we are in a time of epic change.
+We also need to empower distributed, local decision-making, because we are in a time of epic change.
 
 Around the world, our environments are rapidly changing.  Our failure to adapt, is directly affecting the futures we’ll be living in.
 <!--
@@ -239,17 +241,33 @@ Scaling the idea and the impact, to countless more communities and futures.
 <!--
 When we move from individual scale to neighborhood and community-scale, the impact we're making — in terms of our own better lives, and better futures for anyone who lives *here* — becomes cheaper, faster to implement, and more cost-effective.
 -->
-Now, moving from individual-scale to community-scale, we can talk seriously about determining our own local futures — even at the rate the world is changing around us.
+Now, moving from individual-scale to community-scale, we can talk seriously about determining our own futures — even at the rate the world is shaping them, as we speak.
 
 * * * * 
 
-Finally, as governments spend trillions of dollars (often, our taxpayer dollars) on projects which will shape all of our futures, we want those investements to foster the best outcomes that they can.
+Finally, as governments spend trillions of dollars (often, our taxpayer dollars) on projects which will shape all of our futures, we want that public spending to produce the best outcomes it can.
 
-That means government spending should be distributed to the people *closest to the problems* — and it should be distributed *transparently.*  For integrity and accountability, to improve learning cycles around these investments, and to enable us to swiftly identify problems and adapt.
+Not only should public spending be distributed to *the people closest to the problem* — it should also be distributed *transparently.*  
 
-Also, to minimize risks of friction and corruption, and any opportunity costs along the way (e.g. losing time, money, knowledge, insights, opportunities, as a result of closed-door processes).
+Imagine trillions of dollars flowing out of national treasuries.  Where does that money go?  How long does it take to get there?  Who makes these decisions?  How much of it is getting lost in the cracks, or spent on bookkeeping and management?
 
-In short: building back better, **transparently.**
+With transparency, the system gains integrity and accountability.
+
+It enables us to work faster and with less friction.
+
+By making the spending open, we can save money on bookkeeping and oversight — by opening up oversight to the whole public — and put that overhead towards more impactful projects.
+
+And it enables us to better learn from allocation decisions and the outcomes they produce — so we can speed up our learning cycles, iterate more quickly, and make better decisions tomorrow.
+
+Transparency minimizes our opportunity costs — in time, money, learning, knowledge, insights, possibilities — as we undergo a pivotal chapter in human history, and need every opportunity we have available.
+
+<!--
+Inspired by Jack Dorsey's [transparent COVID relief fund](https://startsmall.llc/), Placeflow is transparent by design.  Discussions, contributions, and disbursements are publicly available.  Data is open and interoperable.  Anybody can see what's happening in a community, the decisions being made, learn from that activity, and get involved.
+-->
+
+Placeflow is transparent by design.  Discussions, contributions, and disbursements are publicly available.  Data is open and interoperable.  Anybody can see what's happening in a community, the decisions being made, and learn from that activity and get involved.
+
+In short: it's a tool to build back better, **transparently.**
 
 * * * * 
 
@@ -259,9 +277,9 @@ The lack of **tools to work together** — and in some cases, a **lack of resou
 
 Placeflow is a tool to work together, with the people in your local community, accessible anywhere around the world.
 
-It's still in development - and yet, it already works, and [you can use it today](https://placeflow.netlify.app).
+It's still in development - and yet, the prototype already works, and [you can use it today](https://placeflow.netlify.app).
 
-In terms of resources, it should be pointed out that not all local improvement projects require funds or capital. Community led campaign and initiatives can happen just through conversation and organizing.  Hands-on projects, like gardens and compost sites and local repairs, can also happen with little funding.
+In terms of resources, it should be pointed out that not all local improvement projects require funds or capital. Community-led campaigns and initiatives can happen through conversation and organizing.  Hands-on projects, like gardens and compost sites and local repairs, can also happen with little funding.
 
 Since 2020, we've seen projects and initiatives like this happening in communities around the world.
 
