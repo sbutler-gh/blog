@@ -185,7 +185,7 @@ $: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.roun
 
 *In this post, I’ll walk through why we need a tool like this, and how Placeflow delivers.*
 
-Placeflow is a website that enables anybody to propose, join, and collaborate on projects in their community.
+Placeflow is a tool that enables anybody to propose, join, and collaborate on projects in their community.
 
 Proposing and joining projects takes a single click.  You can stay up-to-date, join discussions and share your feedback on initiatives, and log contributions towards the creation of new projects.  All transparent and open.
 
