@@ -299,19 +299,23 @@ Once the food system is created and producing locally grown foods, the up-front 
 Of course, people would pay much more than $50/month for a daily supply of fresh locally grown food.  But the point of this model isn't to make money.  The point is simply to help us fund things that we want — for today, and for our future — and keep custody of those things in our community.
 -->
 
-> Say you want a community-owned Internet network for 1000 local homes and apartments.  In the future, we know that people in the community would gladly pay $1/month for local high-speed home Internet + WiFi.
+> Say you want a community-owned Internet network for 1000 local homes and apartments.  In the future, we know that people in the community would gladly pay $1/month for local high-speed Internet + WiFi.
 
 > This network will cost $60,000 to build.
 
-> To raise $60,000, we can sell the *future rights* to Internet services at a *discount today.* For this specific example, you can sell future rights to high-speed local Internet at $0.50/month, for up to 10 years.
+> To raise $60,000 to provide the service, we can sell the *future rights* to Internet services at a *discount today.* For this specific example, you can sell future rights to high-speed local Internet at $0.50/month, for up to 10 years.
 
-> Once the network is built, the up-front buyers can use their discounted service — $60 upfront, for 10 years of high-speed Internet access (or $0.50/month).  And they can also sell their service rights back to others in the community, for a price of up to $1/month (netting them a return of $0.50/month, or 5% ARR).
+> The people who buy up-front can get Internet access at $0.50/month, instead of $1/month.
+
+> Once the network is built, the up-front buyers can use their discounted Internet service — $0.50/month, for up to 10 years.
+
+> And they can also sell their service rights back to others in the community, for a price of up to $1/month (netting them a return of $0.50/month, or 5% ARR).
 
 Of course, people would pay much more than $1/month for high-speed local Internet.  But the point of this model isn't to make money.  The point is simply to help us fund things that we want — for today, and for our future — and keep custody of those things in our community.
 
-And this same approach — funding things today, through the future value they create — can be used to create housing, energy, food systems, clean water supplies, public transportation, schools, community services, and anything else we wish for.
+This same approach — funding things today, through the future value they create — can be used to create housing, energy, food systems, clean water supplies, public transportation, schools, community services, and anything else we wish for.
 
-<details><summary>See how it works</summary>
+<details><summary>Try it yourself</summary>
 {#if infrastructure && capital && users && use_cost && users_per_month}
 
 <form class="variablesForm" on:input={crunchNumbers}>
@@ -469,17 +473,17 @@ Likewise, anybody who would prefer their money invested into assets with *intrin
 
 > **Intrinsic value:** Even if the rights to local high-speed Internet lose their "market value" and you can't resell them, you would still have rights to cheap local high-speed Internet — and as long as you use Internet, that asset will always have an intrinsic value to you.
 
-Imagine all of the money in your bank account, backed not by government fiat or market conditions, but by backed by rights to local things — energy, food, water, Internet, housing — which will always have value to you.  Every dollar, signifying a right to a local project or service or *thing*, which will always have value for you.
+Imagine all of the money in your bank account, backed not by government reputation or market conditions, but by backed by rights to local things — energy, food, water, Internet, housing — which will always have value to you.  Every dollar, signifying a right to a local project or service or *thing*, which will always have value for you.
 
 And likewise, imagine the billions in local banks, credit unions, pension funds, municipal treasuries, school treasuries, business accounts, all going towards local projects which improve life and futures in the places around you.
 
-Everyone gets returns from a better local community, and the community as a whole builds generational wealth as well.
+Everyone gets returns from a better local community, and the community builds generational wealth in the process.
 
 So in reality, we don't need to have any problem getting funding for our local projects — as long as we start seeing the *future value* they create.
 
-And with a tool to work together, empowering local decisonmakers and community-scale projects — with transparent and open processes — there's nothing stopping us.
+And with a tool to work together, empowering local decisonmakers and community-scale projects, transparently and openly, there's nothing stopping us.
 
-We can start shaping our local futures, today.
+We can start shaping our futures, today.
 
 Let's get to work.
 
@@ -497,4 +501,4 @@ The door is always open.
 
 **Want to incorporate Placeflow or any of these ideas into your work, and looking for a little help or collaboration?**
 
-Send me an email with your request at sam@ysli.be, and set up a time to chat if you'd like.
+Send me an email with what you have in mind at sam@ysli.be, and set up a time to chat if you'd like.
