@@ -1,4 +1,28 @@
 <script>
+
+  // PROTOCOL
+
+  // One project / location (e.g. geoweb) stores a certain amount of carbon
+
+  // Many people can own carbon from one project / location
+
+  // Many companies can own carbon from one project / location
+
+  // One person can own carbon from many projects / locations
+
+  // One company can own carbon from many projects / locations
+
+  // One person can have carbon emissions from many sources
+
+  // Many people can have carbon emissions from one source (e.g. local electricity, local transportation, local food, city averages?)
+
+  // One company can have carbon emissions from many sources
+
+  // Many comapnies can have carbon emissions from one source
+
+  // <----- Amazon Project | Blue Carbon Project          | UK Rewiliding Project ----->
+  // <---- Factory 1 |    Factory 2 |     Factory 3 | ------->
+
     // import { LayerCake, Svg, flatten, uniques } from 'layercake';
     // import LayerCake from '/src/lib/layercake/src/LayerCake.svelte';
     // import Svg from '/src/lib/layercake/src/layouts/Svg.svelte';
@@ -50,13 +74,15 @@
     <div class="e-content">
         <p>I presume you've read the news.</p>
 
-        <p>By and large, most carbon offsets to date — even the best of them — <a href="https://carbon-direct.com/wp-content/uploads/2021/04/CD-Commentary-on-Voluntary-Registry-Offsets-Database_April-2021.pdf">are basically bullshit. <img src="" style="display: none;"/></a></p>
+        <p>Most carbon offsets — even the best of them — are <a href="https://carbon-direct.com/wp-content/uploads/2021/04/CD-Commentary-on-Voluntary-Registry-Offsets-Database_April-2021.pdf">leaky band-aids<img src="" style="display: none;"/></a>, half-way to falling off and releasing the carbon again.</p>
         
-        <!-- <p>And yet, because we have not yet gathered the social muster to force a more prudent and sane course of action to avoiding environmental collapse (like, the decisionmakers at polluting firms deciding to ... stop polluting), it appears politicians and industry chiefs and great Bankers around the world are set on a new messiah, a new boss: carbon offset regimes.</p> -->
+        <!-- <p>And yet, because we have not yet gathered the social muster to force a more prudent and sane course of action to avoiding environmental collapse (like, the decisionmakers at polluting firms deciding to ... stop polluting), it appears politicians and industry chiefs and great Bankers around the world are set on a new boss: carbon offset markets.</p> -->
         
-        <p>And yet, because we have not yet gathered the social muster to force a more prudent and sane course of action to avoid environmental collapse (like, the decisionmakers at polluting firms deciding to ... stop polluting), it appears politicians and industry chiefs and great leaders around the world are set on a new messiah, a new boss: carbon offset regimes.</p>
-        
-        <p>At this point, we must answer a pivotal question, which should guide all our future thought and actions.</p>
+        <!--
+        <p>And yet, because we are not choosing a more prudent and sane course of action (like ... stop polluting), it appears politicians and industry chiefs and great minds around the world are fixated on a new horizon and financial opportunity: carbon offset markets.</p>
+        -->
+
+        <p>With this in mind, we must answer a pivotal question, which should guide all our future thought and actions.</p>
         
         <h4>What are we trying to do?</h4>
         
@@ -72,7 +98,7 @@
         
         <p>In short, because our ways of life are too burdensome on the environment.</p>
         
-        <p>Ex: If our environment had a greater carrying capacity, or our ways of life were less burdensome, the environment would not be collapsing.</p>
+        <p>Ex: If our environment had a greater carrying capacity, or if our ways of life were less burdensome, the environment would not be collapsing.</p>
         
             <p>... But right now, it is.</p>
         
@@ -82,7 +108,8 @@
         
         <p>And one of the biggest burdens on the environment is carbon in the atmosphere.</p>
         
-        <p>How?</p>
+        <!--
+        <details><summary>How?</summary>
         
         <p>1. Excessive absorption of CO2 is killing ocean life (by reducing PH levels and making the water acidic).</p>
         
@@ -92,6 +119,9 @@
         
         <p>The more heat trapped in the atmosphere → the more heat trapped in the atmosphere → the more heat trapped in the atmosphere.  (Maybe we'll get some luck with increasing heat causing increasing cloudcover and albedo reflection.  Don't count on it.)</p>
         
+        </details>
+        -->
+
         <p>To slow down this rollercoaster of a not-so-idyllic future, and remove this existential burden from our environment, we need to permanently decrease the amount of carbon and GHGs that are in the atmosphere.</p>
         
         <p>How much?</p>
@@ -140,7 +170,7 @@
         
         <ul>
             <li>Five years ago, you emitted 100 tons of GHG.</li>
-            <li>Instead of reducing your emissions in the first place, you decided to plant 150 of acres of trees, to fetch your emissions after the fact.</li>
+            <li>Instead of reducing your emissions in the first place, you decided to plant 150 acres of trees, to fetch your emissions after the fact.</li>
             <li>Congratulations!  As of yesterday, the trees you planted removed 100 tons of carbon from the atmosphere.  You have reduced atmospheric carbon levels enough to offset your original 100 tons of emissions — and it only took planting 100,000 trees.</li>
             <li>Now, it's like those 100 tons were never even emitted, leaving us with nothing in the air but the opportunity cost of running around with a butterfly catcher for 5 years, instead of just addressing the problem at the source.</li>
         </ul>
@@ -149,7 +179,7 @@
         
         <p>Today, you wake up to all 100,000 of your trees burning up in a forest fire, releasing all 100 tons of carbon back into the atmosphere.</p>
         
-        <p>Now, it’s like those 100 tons were never even <em>removed</em> in the first place (and you just spent 5 years running around with a butterfly catcher.)</p>
+        <p>Now, it’s like those 100 tons were never even <em>removed</em> in the first place.</p>
         
         <!-- Five years ago, you emitted 100 tons of GHG.
         - You plant enough trees to pull 100 tons of GHG out of the atmosphere by yesterday.
@@ -192,7 +222,10 @@
         <p>Since impermanent removal is cheaper, impermanent removal is incentivized.</p>
             
         <p>Since impermanent removal is incentivized, impermanent removal is a likely outcome.</p>
-            
+        
+        And impermanent removal gets us nowhere.
+
+        <!--
         <p>And impermanent removal leads us back to ...</p>
         
         <blockquote>
@@ -204,18 +237,22 @@
             <p>The more heat trapped in the atmosphere → the more heat trapped in the atmosphere → the more heat trapped in the atmosphere ...</p>
         
         </blockquote>
+        -->
         
         <p>Let's revisit an important question:</p>
         
         <h4>What are we trying to do?</h4>
         
-        <p>Avoid environment collapse, and improve social outcomes, by lessening burdens, and increasing the environment's carrying capacity.</p>
+
+        > *Avoid environment collapse, and improve social outcomes, by lessening burdens, and increasing the environment's carrying capacity.*
         
+
         <p>Today's carbon offset systems don't necessarily contribute to any of those outcomes.</p>
         
-        <p>Today's carbon offset systems generate credits, which don't necessarily accomplish anything — and in some cases, worse than nothing, they can actually help firms delay <em>reducing emissions.</em></p>
+
+        Today's carbon offset systems generate *credits*, which don't necessarily accomplish anything — and in some cases, worse than nothing, they can actually help firms delay *reducing emissions.*
         
-        <p>So if we resist the path of least resistance and decide, instead of stopping emissions before they occur, to try running around with a butterfly catcher for the next 30 years — how can we ensure that our carbon offset systems actually support <strong>what we're trying to do?</strong></p>
+        So if we decide, instead of stopping emissions before they occur, to try and fetch them after the fact for the next 100 years — how can we ensure that our carbon offset systems actually support **what we're trying to do?**
         
         <p>Count.</p>
         
@@ -233,7 +270,7 @@
         
         <!-- <p>If a carbon offset burns up in a pile of smoke, or was nothing more than smoke to begin with, it is counted as such.</p> -->
         
-        <p>So if an entity had purchased that no-longer-removed carbon, the no-longer-removed carbon would no longer offset any of the entity's past emissions.</p>
+        <p>So if an entity had purchased no-longer-removed carbon, the no-longer-removed carbon would no longer offset any of the entity's past emissions.</p>
         
         <p>When carbon buyers know that removed carbon will be <em>counted</em> in the long-term (instead of "credited" on arrival), that will create <em>accountability</em> in the system.</p>
         
