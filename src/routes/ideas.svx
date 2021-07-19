@@ -4,6 +4,12 @@ import { children } from "svelte/internal";
 
 </script>
 
+<h4 style="margin-bottom: 0px;"><a href="/localfutures">Local Futures</a></h4>
+<p style="margin-top: 5px;">Tools to help communities can shape their own local futures.  Today.</p>
+
+<h4 style="margin-bottom: 0px;"><a href="/nondominium">Nondominium</a></h4>
+<p style="margin-top: 5px;">A model to pay for <em>anything</em> through the future value it creates.</p>
+
 <h4 style="margin-bottom: 0px;"><a href="/stuff-you-own">Stuff You Own</a></h4>
 <p style="margin-top: 5px;">A way for people to own the services and infrastructure they use every day.</p>
 
