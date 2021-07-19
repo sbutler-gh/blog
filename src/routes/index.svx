@@ -10,6 +10,6 @@ import { children } from "svelte/internal";
 
 You can check out my <a href="https://sambutler.tech">digital resume</a> and <a href="https://sambutler.world">portfolio</a> in the meantime.
 ________________
-sam@ysli.be   
+sam@sambutler.us 
 
 https://linkedin.com/in/sambutler8

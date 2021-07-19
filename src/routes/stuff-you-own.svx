@@ -3,7 +3,7 @@ title: Stuff you own
 
 ---
 
-### Stuff You Own
+<h3>Stuff You Own</h3>
 
 What do you actually own these days?
 
@@ -83,7 +83,7 @@ If your mission is to provide a service, climb that hill and put the service in 
 
 Then, you can look out from your new vista, and find a whole new world of hills to climb.
 
-Have a product, service, technology, or invention that you desire?  (And feel others would to?)  Share it in a comment below, start a discussion about it somewhere else, or write me at sam@ysli.be, and we can explore how to create it as a product / service / technology / invention that **you and your peers** own, cooperatively.
+Have a product, service, technology, or invention that you desire?  (And feel others would to?)  Share it in a comment below, start a discussion about it somewhere else, or write me at sam@sambutler.us, and we can explore how to create it as a product / service / technology / invention that **you and your peers** own, cooperatively.
 
 About the Author
 

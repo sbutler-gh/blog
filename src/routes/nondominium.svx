@@ -180,11 +180,11 @@ $: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.roun
 	<script src="https://cdn.jsdelivr.net/npm/d3plus-text@1"></script>
 </svelte:head>
 
-## Nondominium
+<h2>Nondominium</h2>
 
 *The Nondominium model was architected by [Chris Cook](https://nondominium.co.uk/author/chriscook/) (University College London), and he&#39;s the person who understands it best. This resource is my effort to &quot;learn in public&quot; from his work, along with some personal spins.*
 
-*If you're interested in discussing this further or have any questions, feel free to reach out to [Chris](https://nondominium.co.uk/contact-us/), or myself at [sam@ysli.be](mailto:sam@ysli.be)*  
+*If you're interested in discussing this further or have any questions, feel free to reach out to [Chris](https://nondominium.co.uk/contact-us/), or myself at [sam@sambutler.us](mailto:sam@sambutler.us)*  
 
 This is a model to fund useful things — from affordable housing, to renewable energy, to improved water + utility infrastructure, to any imaginable _thing_ which provides future value — through *the future value they create.*
 
@@ -369,12 +369,12 @@ How will you fund it?
 {#if sell_credits_and_build == true && sell_discounted_use_credits == true}
 <hr>
 
-*Again, if you want to discuss this or have any questions, feel free to reach out to [Chris](https://nondominium.co.uk/author/chriscook/), or myself at sam@ysli.be*
+*Again, if you want to discuss this or have any questions, feel free to reach out to [Chris](https://nondominium.co.uk/author/chriscook/), or myself at sam@sambutler.us*
 
 *If you'd like to see how this fits into a larger thread of community-led futures and local decisionmaking, [see here](https://rebrand.ly/localfutures)*
 
 *Otherwise, the knowledge is yours — use it for a better future, for those around you, and for all of us.*
 
-*Finally, if you'd like to explore utilizing this model in your work/project and would like some assistance, feel free to send a request to sam@ysli.be.*
+*Finally, if you'd like to explore utilizing this model in your work/project and would like some assistance, feel free to send a request to sam@sambutler.us.*
 
 {/if}

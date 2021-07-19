@@ -1,4 +1,4 @@
-### Gauze Pads for the Ice
+<h3>Gauze Pads for the Ice</h3>
 
 If you were in a situation where someone was wounded — a cut on their head, a wound in their chest, an arrow in the knee — what is the first thing you would do?
 
@@ -34,7 +34,7 @@ The benefits noted here, are in contrast to approaches that are (a) less lean (w
 
 A blog post on the Internet is nice, but it would be nicer to actually stop the bleeding.  So if you have any ideas, interest, or inspiration, perhaps we should take this further — in terms of design, collaboration, implementation.  On the spectrum of all climate action, putting a drone-powered umbrella in the sky over a glacier seems like a pretty simple and feasible experiment.
 
-Write a comment below, share this in your own network to engage others, or write me at sam@ysli.be
+Write a comment below, share this in your own network to engage others, or write me at sam@sambutler.us
 
 About the Author
 
