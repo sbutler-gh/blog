@@ -509,7 +509,7 @@ a {
     border-bottom: solid 1px #191fd0;
 }
  a:hover {
-     color: rgba(239, 68, 68, 1);
-     border-bottom: solid 1px rgba(239, 68, 68, 1);
+     color: #D0191F;
+     border-bottom: solid 1px #D0191F;
  }
 </style>
