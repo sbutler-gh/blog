@@ -180,14 +180,21 @@ $: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.roun
 	<script src="https://cdn.jsdelivr.net/npm/d3plus-text@1"></script>
 </svelte:head>
 
+<h3>Local Futures</h3>
 
+<!--
 *Placeflow is a tool to help communities shape their own local futures.*
 
 *In this post, I’ll walk through why we need a tool like this, and how it delivers.*
+-->
 
+I'm working on a tool to help communities shape their own local futures.
+
+<!--
 Placeflow is a tool that enables anybody to propose, join, and collaborate on projects in their community.
+-->
 
-Proposing and joining projects takes a single click.  You can stay up-to-date, join discussions, and share your feedback on initiatives, and log contributions towards the creation of new projects.  All transparent and open.
+Proposing and joining local projects takes a single click.  You can stay up-to-date on local initiatives, join discussions, share your feedback, and log contributions towards the creation of new projects.  All transparent and open.
 
 To borrow a phrase from community organizing, this enables people who are *closest to the problem* to get to work and take the lead — and likewise, enables people who are *closest to the place* to determine what the future of that place holds.
 
@@ -512,4 +519,17 @@ a {
      color: #D0191F;
      border-bottom: solid 1px #D0191F;
  }
+ hr {
+  background: none;
+  border: 0;
+  margin: 0.5em 0;
+  padding: 0;
+}
+hr::after {
+  content: '*   *   *';
+  display: block;
+  opacity: 0.8;
+  line-height: 1;
+  text-align: center;
+}
 </style>
