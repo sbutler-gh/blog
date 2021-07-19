@@ -1,0 +1,18 @@
+<h4 class="success">Subscription Confirmed!</h4>
+
+Look forward to learning, exploring, and building together.
+
+In the meantime, feel free to jump in the Slack or Discord — made for people who are interested in ideas like these and putting them to use.
+
+You can also always reach me via email at sam@sambutler.us or [LinkedIn](https://linkedin.com/in/sambutler8).
+
+<style>
+.success {
+    background: #d3fbeb;
+    border-color: #10bf7a;
+    color: #0c905c;
+    padding: 10px;
+    border: solid 0.5px;
+    border-radius: 5px;
+}
+</style>
