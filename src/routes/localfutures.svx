@@ -181,9 +181,9 @@ $: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.roun
 </svelte:head>
 
 
-*Placeflow is a tool to help local communities shape their own local futures.*
+*Placeflow is a tool to help communities shape their own local futures.*
 
-*In this post, I’ll walk through why we need a tool like this, and how Placeflow delivers.*
+*In this post, I’ll walk through why we need a tool like this, and how it delivers.*
 
 Placeflow is a tool that enables anybody to propose, join, and collaborate on projects in their community.
 
