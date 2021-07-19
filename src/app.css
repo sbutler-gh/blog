@@ -57,3 +57,9 @@ p a {
      border-bottom: solid 1px #D0191F;
 	 text-decoration: none;
  }
+
+ .formkit-alert .formkit-alert-success {
+    font-size: 12px !important;
+    margin: 0px !important;
+    padding: 5px !important;
+    }
