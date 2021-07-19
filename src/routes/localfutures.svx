@@ -502,3 +502,14 @@ The door is always open.
 **Want to incorporate Placeflow or any of these ideas into your work, and looking for a little help or collaboration?**
 
 Send an email with your request to sam@ysli.be, and set up a time to chat if you'd like.
+
+<style>
+a {
+    color: #191fd0;
+    border-bottom: solid 1px #191fd0;
+}
+ a:hover {
+     color: rgba(239, 68, 68, 1);
+     border-bottom: solid 1px rgba(239, 68, 68, 1);
+ }
+</style>
