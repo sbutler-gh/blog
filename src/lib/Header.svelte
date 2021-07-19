@@ -19,7 +19,7 @@
 <h3 style="margin:0px; margin-right: 15px;"><a class="h-card" href="https://sambutler.us/">Sam Butler</a></h3>
 <h4 style="margin:0px; margin-right: 15px;"><a href="/ideas">Ideas</a></h4>
 <h4 style="margin:0px;"><a href="/">About</a></h4>
-<div style="margin-left: auto;">
+<div id="subscribe_div" style="margin-left: auto;">
 <div id="subscribe_form" style="display: none; position: relative;">
 {#if subscribe_open == true}
 <span class="text-gray-500 text-sm" style="position: absolute; top: -25px; left: 50%; transform:translate(-50%); width: max-content; font-size: 14px; color: gray;">Stay up-to-date on future content
@@ -70,5 +70,20 @@
     font-size: 12px !important;
     margin: 0px !important;
     padding: 5px !important;
+    }
+
+    @media only screen and (max-width: 700px) {
+
+        #subscribe_div {
+          position: absolute;
+          right: 5px;
+          top: 5px;
+          z-index: 100;
+        }
+
+        #subscribe_form {
+        padding: 5px;
+        background: aliceblue;
+    }
     }
 </style>
