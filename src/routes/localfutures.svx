@@ -299,9 +299,9 @@ So what's stopping us from taking the lead, and starting to shape our own local 
 
 The lack of **tools to work together** — and in some cases, a **lack of resources.**
 
-I'm working on a tool to work together, with the people in your local community, accessible anywhere around the world.
+I'm building a tool to help people work together, to shape futures in their local community, freely available around the world.
 
-It's still in development - and yet, the prototype already works, and [you can use it today](https://placeflow.netlify.app).
+It's still in development - and yet, it already works, and [you can use it today](https://placeflow.netlify.app).
 
 In terms of resources, it should be pointed out that not all local improvement projects require funds or capital. Community-led campaigns and initiatives can happen through conversation and organizing.  Hands-on projects, like gardens and compost sites and local repairs, can also happen with little funding.
 
