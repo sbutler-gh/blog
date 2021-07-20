@@ -503,9 +503,9 @@ And likewise, imagine the billions in local banks, credit unions, pension funds,
 
 Everyone gets returns from a better local community, and the community builds generational wealth in the process.
 
-So in reality, we don't need to have any problem getting funding for our local projects — as long as we start seeing the *future value* they create.
+So in reality, we don't have any problem getting funding for our local projects — as long as we start seeing the *future value* they create.
 
-And with a tool to work together, empowering local decisonmakers and community-scale projects, transparently and openly, there's nothing stopping us.
+And with ways to work together, empowering local decisonmakers and community-scale projects, transparently and openly, there's nothing stopping us.
 
 We can start shaping our futures, today.
 
@@ -515,7 +515,7 @@ Let's get to work.
 
 **Sold on these ideas?  Want to get to work?**
 
-The tool I'm working on is live and [free to use](https://placeflow.netlify.app).  Anybody can start a local project, get others on board, and arrange funding for these projects with local stakeholders in the ways described here — raising the capital, while keeping custody in the community.
+The tool I'm building is live and [free to use](https://placeflow.netlify.app).  Anybody can start a local project, get others on board, and arrange funding for these projects with local stakeholders in the ways described here — raising the capital, while keeping custody in the community.
 
 **Want to discuss ideas, share feedback, or ask questions?**
 
