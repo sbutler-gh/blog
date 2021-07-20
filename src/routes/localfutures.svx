@@ -5,6 +5,8 @@
 
 // [ Sell future credits ]
 
+// don't foul the nest quote, generations and generations
+
  import {afterUpdate, getContext, onMount, setContext} from 'svelte';
 
  let service = "energy"
@@ -182,15 +184,14 @@ $: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.roun
 
 <h3>Local Futures</h3>
 
+<!--
 *Placeflow is a tool to help communities shape their own local futures.*
 
 *In this post, I’ll walk through why we need a tool like this, and how it delivers.*
-<!--
+
 I'm working on a tool to help communities shape their own local futures.
 
 Proposing and joining local projects takes a single click.  You can stay up-to-date on local initiatives, join discussions, share your feedback, and log contributions towards the creation of new projects.  All transparent and open.
-
--->
 
 Placeflow is a tool that enables anybody to propose, join, and collaborate on projects in their community.
 
@@ -199,10 +200,21 @@ Proposing and joining local projects takes a single click.  You can stay up-to-d
 To borrow a phrase from community organizing, this enables people who are *closest to the problem* to get to work and take the lead — and likewise, enables people who are *closest to the place* to determine what the future of that place holds.
 
 For their own futures, and for future generations to come.
+-->
+
+Imagine a world where **you** — and *the people around you* — interact and collaborate, to shape the future of your community.
+
+A world where people *closest to the problems* are empowered to solve them — and where people *closest to the place* determine the future their places hold.
+
+For their own lives, and for the lives of generations to come.
+
+<!--
+If that's a world you want to live in, read on.
+-->
 
 * * * * 
 
-Why do we need this?
+Why does that world matter?
 
 The places around us are in a constant state of change.  Through inaction, and falling out-of-sync with a changing world.  Through decay, and a failure to maintain and improve what exists today.  Through the status quo, and local decisions made behind closed doors, by external stakeholders (e.g. real estate developers, financial institutions, government offices).
 
@@ -272,9 +284,14 @@ Transparency minimizes our opportunity costs — in time, money, learning, knowl
 Inspired by Jack Dorsey's [transparent COVID relief fund](https://startsmall.llc/), Placeflow is transparent by design.  Discussions, contributions, and disbursements are publicly available.  Data is open and interoperable.  Anybody can see what's happening in a community, the decisions being made, learn from that activity, and get involved.
 -->
 
+<!--
 Placeflow is transparent by design.  Discussions, contributions, and disbursements are publicly available.  Data is open and interoperable.  Anybody can see what's happening in a community, the decisions being made, and learn from that activity and get involved.
 
 In short: it's a tool to build back better, **transparently.**
+-->
+
+In short: building back better, **transparently.**
+
 
 * * * * 
 
@@ -282,7 +299,7 @@ So what's stopping us from starting these projects, shaping our own local future
 
 The lack of **tools to work together** — and in some cases, a **lack of resources.**
 
-Placeflow is a tool to work together, with the people in your local community, accessible anywhere around the world.
+I'm working on a tool to work together, with the people in your local community, accessible anywhere around the world.
 
 It's still in development - and yet, the prototype already works, and [you can use it today](https://placeflow.netlify.app).
 
@@ -498,7 +515,7 @@ Let's get to work.
 
 **Sold on these ideas?  Want to get to work?**
 
-Placeflow is live and [free to use](https://placeflow.netlify.app).  Anybody can start a local project, get others on board, and arrange funding for these projects with local stakeholders in the ways described here — raising the capital, while keeping custody in the community.
+The tool I'm working on is live and [free to use](https://placeflow.netlify.app).  Anybody can start a local project, get others on board, and arrange funding for these projects with local stakeholders in the ways described here — raising the capital, while keeping custody in the community.
 
 **Want to discuss ideas, share feedback, or ask questions?**
 
@@ -506,7 +523,7 @@ Join the [community Slack](https://join.slack.com/t/localfuturesgroup/shared_inv
 
 The door is always open.
 
-**Want to incorporate Placeflow or any of these ideas into your work, and looking for a little help or collaboration?**
+**Want to incorporate this vision or any of these ideas into your work, and looking for a little help or collaboration?**
 
 Send an email with your request to sam@sambutler.us, and set up a time to chat if you'd like.
 
