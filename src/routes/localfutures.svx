@@ -180,6 +180,10 @@ $: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.roun
 
 <svelte:head>
 	<script src="https://cdn.jsdelivr.net/npm/d3plus-text@1"></script>
+    <meta property='og:title' content='Local Futures'/>
+    <!-- <meta property='og:image' content='//media.example.com/ 1234567.jpg'/> -->
+    <meta property='og:description' content='Imagine a world where you and the people around you shape the future of your community ...'/>
+    <meta property='og:url' content='//www.sambutler.us/localfutures'/>
 </svelte:head>
 
 <h3>Local Futures</h3>
@@ -301,7 +305,7 @@ The lack of **tools to work together** — and in some cases, a **lack of resou
 
 I'm building a tool to help people work together, to shape futures in their local community, freely available around the world.
 
-It's still in development - and yet, it already works, and [you can use it today](https://placeflow.netlify.app).
+It's still in development - and yet, it already works, and [you can use it today](https://coform.pages.dev/).
 
 In terms of resources, it should be pointed out that not all local improvement projects require funds or capital. Community-led campaigns and initiatives can happen through conversation and organizing.  Hands-on projects, like gardens and compost sites and local repairs, can also happen with little funding.
 
@@ -515,7 +519,7 @@ Let's get to work.
 
 **Sold on these ideas?  Want to get to work?**
 
-The tool I'm building is live and [free to use](https://placeflow.netlify.app).  Anybody can start a local project, get others on board, and arrange funding for these projects with local stakeholders in the ways described here — raising the capital, while keeping custody in the community.
+The tool I'm building is live and [free to use](https://coform.pages.dev/).  Anybody can start a local project, get others on board, and arrange funding for these projects with local stakeholders in the ways described here — raising the capital, while keeping custody in the community.
 
 **Want to discuss ideas, share feedback, or ask questions?**
 
