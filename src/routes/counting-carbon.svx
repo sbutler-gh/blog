@@ -67,291 +67,81 @@
   </script>
 
 <article class="h-entry">
-    <h3 class="p-name">If we're going to count, count.</h3>
-    <p class="p-summary">A simple fix for carbon offset systems: count the carbon.</p>
+    <!-- <h3 class="p-name">If we're going to count, count.</h3>
+    <p class="p-summary">A simple fix for carbon offset systems: count the carbon.</p> -->
+
+    <h3 class="p-name">Make carbon ac<em>countable</em></h3>
+    <!--
+    <p class="p-summary">A simple fix for carbon offset systems: count the carbon.</p> 
+    -->
+
     <p class="p-byline">Published by <a class="p-author h-card" href="/">Sam Butler</a>
        <!-- on <time class="dt-published" datetime="2013-06-13 12:00:00">13<sup>th</sup> June 2013</time></p> -->    
     <div class="e-content">
-        <p>I presume you've read the news.</p>
 
-        <p>Most carbon offsets — even the best of them — are <a href="https://carbon-direct.com/wp-content/uploads/2021/04/CD-Commentary-on-Voluntary-Registry-Offsets-Database_April-2021.pdf">leaky band-aids<img src="" style="display: none;"/></a>, half-way to falling off and releasing the carbon again.</p>
-        
-        <!-- <p>And yet, because we have not yet gathered the social muster to force a more prudent and sane course of action to avoiding environmental collapse (like, the decisionmakers at polluting firms deciding to ... stop polluting), it appears politicians and industry chiefs and great Bankers around the world are set on a new boss: carbon offset markets.</p> -->
-        
-        <!--
-        <p>And yet, because we are not choosing a more prudent and sane course of action (like ... stop polluting), it appears politicians and industry chiefs and great minds around the world are fixated on a new horizon and financial opportunity: carbon offset markets.</p>
-        -->
+In order for carbon markets to be productive, carbon accounting must be based on the reality of how carbon moves through our atmosphere.
 
-        <p>With this in mind, we must answer a pivotal question, which should guide all our future thought and actions.</p>
-        
-        <h4>What are we trying to do?</h4>
-        
-        <p>When you say "climate", or I say "sustainability", what are we trying to do?</p>
-        
-        <p>For me, I'd sum it up as:</p>
-        
-        <strong>Avoid environmental collapse, and improve social outcomes.</strong>
-        
-        <p>This begs a second question:</p>
-            
-            <strong>Why is the environment collapsing?</strong>
-        
-        <p>In short, because our ways of life are too burdensome on the environment.</p>
-        
-        <p>Ex: If our environment had a greater carrying capacity, or if our ways of life were less burdensome, the environment would not be collapsing.</p>
-        
-            <p>... But right now, it is.</p>
-        
-        <!-- <p>To avoid environmental collapse, we must shift to ways of life that are <em>less burdensome</em> on the environment (reduce / reuse / repair / recycle),  and which <em>increase the carrying capacity</em> of the environment (regenerate), while improving social outcomes.</p>
-        
-        <p>Burdens include activities like overharvesting, polluting, and mining.  Increasing carrying capacity include reforestation, regenerative agriculture, rewilding, re-everything.</p> -->
-        
-        <p>And one of the biggest burdens on the environment is carbon in the atmosphere.</p>
-        
-        <!--
-        <details><summary>How?</summary>
-        
-        <p>1. Excessive absorption of CO2 is killing ocean life (by reducing PH levels and making the water acidic).</p>
-        
-        <p>2. Excessive GHG in the atmosphere is reducing insect fertility, driving species extinction, destabilizing weather patterns, increasing rates of natural disasters, and simultaneously creating flood and drought risks (by heating the atmosphere at a rate of 4 nuclear bombs per second, h/t <a href="https://continuations.com/post/187534394205/climate-crisis">Albert Wenger</a>), along with diminishing global food productivity.</p>
-        
-        <p>Better yet, these consequences are happening faster and faster every day.</p>
-        
-        <p>The more heat trapped in the atmosphere → the more heat trapped in the atmosphere → the more heat trapped in the atmosphere.  (Maybe we'll get some luck with increasing heat causing increasing cloudcover and albedo reflection.  Don't count on it.)</p>
-        
-        </details>
-        -->
+<!--
+Currently, that's not the case.
 
-        <p>To slow down this rollercoaster of a not-so-idyllic future, and remove this existential burden from our environment, we need to permanently decrease the amount of carbon and GHGs that are in the atmosphere.</p>
-        
-        <p>How much?</p>
-        
-        <p>Enough to maintain a maximum of ~350 parts per million CO2.</p>
-            
-        <p>We were last at 350 ppm <a href="https://keelingcurve.ucsd.edu/">in 1987</a>, so that means we need to remove all of the carbon put into the atmosphere over the last 34 years, and all of the new of the carbon we emit while we clean up the mess behind us.</p>
-        
-        <p>So when it's all said and done, we'll have removed 64 years of carbon emitted during the peak oil period of human civilization.</p>
-        
-        <!-- <p>If we had 5 rings and were in a Marvel movie, maybe we could do this in a snap.</p>
-        
-        <p>Unfortunately, this will be much more difficult here in our universe.</p> -->
+Carbon removal projects recieve decades worth of future "credits" up-front, based on decades-long estimations of natural systems and how well those projects will perform.
 
-        <p><em>(pause)</em></p>
-        
-        <p>On the bright side, our environment is capable of permanently removing carbon from the atmosphere.  Also, human inventions are becoming more and more capable of permanently removing carbon from the atmosphere.</p>
-        
-        <p>So, if we just (a) stop putting carbon into the atmosphere in the first place, (b) increase the Earth's capacity to remove carbon, and (c) rapidly iterate + evolve our human techniques for removing carbon from the atmosphere, we have a plan that is as good as we can muster. (See <a href="https://globalecoguy.org/we-need-4-waves-of-climate-solutions-6e58adbc5ad6">4 Waves of Climate Action</a> by Dr. Jonathan Foley)</p>
-        
-        <p>And then, we just have to move as fast as concievably possible on removing those 64 years worth of peak oil emissions.</p>
-        
-        <p>One idea for moving fast is <strong>carbon offsets</strong>.</p>
-        
-        <p>The purpose of a carbon offset is to offset/counteract/nullify a previous carbon emission — in effect, returning atmospheric carbon levels to a point before your emission took place, such that for the purposes of counting carbon in the atmosphere, your original emission never took place.</p>
-        
-        <p>This leaves us only with an opportunity cost, of the time and energy spent in going out to fetch your emission, instead of you just not emitting in the first place.</p>
-        
-        <p>To emphasize: It's way simpler for you, and way better for your future (and everyone else's), to just stop emitting in the first place.</p>
-        
-        <p>Invest your R&D into ending your emissions before they happen, not running around with a butterfly catcher trying to fetch them back later.  (And if you eliminate your emissions, you don't have to buy any more carbon offsets, because you have no more emissions to offset!)</p>
-        
-        <p>Maybe enough people reading this will actually start the wheels of industry turning in that direction.  If you do, congratulations!  You've made the rest of this article irrelevant, and I hope that becomes the case.</p>
-        
-        <p>In the case that carbon offsets remain a thing, well, as the title says:</p>
-            
-        <h4>If we're going to count, count.</h4>
-        
-        <p>As you know, pulling carbon out of the atmosphere — only for it to return to the atmosphere — doesn't accomplish anything.</p>
-            
-        <p>It's like digging a hole in a circle, where every shovelfull ahead of you refills the hole behind you — except, perhaps, you get incrementally better at your technique for temporary displacement.</p>
-        
-        <p>A pure waste of time, energy, and resources.</p>
-        
-        <p>So consider this real-world (and ever more common) scenario:</p>
-        
-        <ul>
-            <li>Five years ago, you emitted 100 tons of GHG.</li>
-            <li>Instead of reducing your emissions in the first place, you decided to plant 150 acres of trees, to fetch your emissions after the fact.</li>
-            <li>Congratulations!  As of yesterday, the trees you planted removed 100 tons of carbon from the atmosphere.  You have reduced atmospheric carbon levels enough to offset your original 100 tons of emissions — and it only took planting 100,000 trees.</li>
-            <li>Now, it's like those 100 tons were never even emitted, leaving us with nothing in the air but the opportunity cost of running around with a butterfly catcher for 5 years, instead of just addressing the problem at the source.</li>
-        </ul>
-        
-        <p>After all of that ...</p>
-        
-        <p>Today, you wake up to all 100,000 of your trees burning up in a forest fire, releasing all 100 tons of carbon back into the atmosphere.</p>
-        
-        <p>Now, it’s like those 100 tons were never even <em>removed</em> in the first place.</p>
-        
-        <!-- Five years ago, you emitted 100 tons of GHG.
-        - You plant enough trees to pull 100 tons of GHG out of the atmosphere by yesterday.
-        - Yay!  You have reduced atmospheric GHG levels enough to offset your original 100 tons of emissions.  Now, it’s like those 100 tons were never even emitted, leaving us with nothing in the air but the opportunity cost of running around with a butterfly catcher for 5 years.
-        
-        Then, this morning, all of your trees burned down in a wildfire, releasing 100 tons of GHG back into the atmosphere.
-        
-        <p>Now, it’s like those 100 tons were never pulled out of the atmosphere (and you wasted 5 years of time, energy, and resources).</p> -->
-        
-        <p>Question:</p>
-        
-        <strong>Are your 100 emissions still offset?</strong>
-        
-        <p><em>In reality?</em>  Obviously not.  Those emissions are still in the atmosphere.</p>
-        
-        <p><em>In the world of carbon offsets?</em></p>
-        
-        <p>Why is that a seperate question?</p>
-            
-        <p>Why is the world of carbon offsets different from reality?</p>
-        
-        <!-- <p>In part, because the people who make "carbon offsets" into things that polluters can buy for money, tend to think of carbon pulled out of the atmosphere as a "credit."  (As in, "carbon credits.")</p> -->
-        
-        <p>Because the people and organizations and regulators who make "carbon offsets" into things that polluters can buy, tend to regard carbon pulled out of the atmosphere as a "credit."  (As in, <em>"carbon credits".</em>)</p>
-        
-        <p>This worldview considers removed carbon <strong>credited</strong> on arrival.  Debt paid.  A sum received.
-        
-        <p>Once the carbon has been pulled from the atmosphere, the polluter's initial emission is offset.  There is nothing more to do.  It is as though the original emission never took place.</p>
-        
-            <p>This perspective contains an obvious error:</p>
-                
-                <p>Carbon removed can return to the atmosphere, such that the original <em>removal</em> never took place, and we are back to square one with the original emission.</p>
-        
-            <p>The idea of removed carbon as "credits" is a fundamental error, and as a result, the systems built on it are broken on first principles.</p>
-        
-        <p>Crediting removed carbon on arrival — and ignoring the long-term outcome of that removed carbon — literally incentivizes removal <em>without permanence</em>.</p>
-        
-        <p>Since permanent removal is more difficult to achieve, less permanent offsets are cheaper to produce and sell.</p>
-        
-        <p>Since impermanent removal is cheaper, impermanent removal is incentivized.</p>
-            
-        <p>Since impermanent removal is incentivized, impermanent removal is a likely outcome.</p>
-        
-        And impermanent removal gets us nowhere.
+A new forest doesn't remove decades worth of carbon on day one.  It removes carbon gradually, and we can only know how much carbon that forest has removed by measuring the data over time.
 
-        <!--
-        <p>And impermanent removal leads us back to ...</p>
-        
-        <blockquote>
-        
-            <p>1. Excessive absorption of CO2 is killing ocean life (by reducing PH levels and making the water acidic).</p>
-        
-            <p>2. Excessive GHG in the atmosphere is reducing insect fertility, driving species extinction, destabilizing weather patterns, increasing rates of natural disasters, and simultaneously creating flood and drought risks (by heating the atmosphere at a rate of 4 nuclear bombs per second, h/t Albert Wenger), along with diminishing global food productivity.</p>
-                        
-            <p>The more heat trapped in the atmosphere → the more heat trapped in the atmosphere → the more heat trapped in the atmosphere ...</p>
-        
-        </blockquote>
-        -->
-        
-        <p>Let's revisit an important question:</p>
-        
-        <h4>What are we trying to do?</h4>
-        
+When carbon removal projects eventually release carbon back into the atmosphere — due to forest fires, floods, erosion, illegal logging, and natural cycles — the entities which own credits from that project still own those credits.
 
-        > *Avoid environment collapse, and improve social outcomes, by lessening burdens, and increasing the environment's carrying capacity.*
-        
+Meaning, companies are clamining carbon removal, while the carbon is returning to the sky and continuing to heat up the atmosphere.
 
-        <p>Today's carbon offset systems don't necessarily contribute to any of those outcomes.</p>
-        
+Only by counting carbon as it exists in reality — where the molecules of carbon are, at any given time, with respect to their free-flowing nature — can we create carbon offset systems with accountability.
 
-        Today's carbon offset systems generate *credits*, which don't necessarily accomplish anything — and in some cases, worse than nothing, they can actually help firms delay *reducing emissions.*
-        
-        So if we decide, instead of stopping emissions before they occur, to try and fetch them after the fact for the next 100 years — how can we ensure that our carbon offset systems actually support **what we're trying to do?**
-        
-        <p>Count.</p>
-        
-        <p>It's that simple.</p>
-        
-        <p>When a company buys a carbon offset from a carbon removal project, and the project successfully removes carbon, that removed carbon is not "credited" or "recieved" or past-tense at all.</p>
-        
-        <p>That removed carbon is a dynamic, freeflowing chemical compound, which can return to the atmosphere at any time.</p>
-        
-        <p>And obviously, if removed carbon returns to the atmosphere, it is no longer <em>removed</em> carbon — so it no longer counts as removed carbon if words have any meaning, and if it's no longer removed carbon, it no longer offsets any prior emissions.</p>
-            
-            <!-- which is counted <em>in the moment</em> for how much carbon it actually contains, at any given time.</p> -->
-        
-        <!-- diagram of the vertical bar graph stack, and the horizontal line graph where they fill the curve (going above the curve or under the curve) -->
-        
-        <!-- <p>If a carbon offset burns up in a pile of smoke, or was nothing more than smoke to begin with, it is counted as such.</p> -->
-        
-        <p>So if an entity had purchased no-longer-removed carbon, the no-longer-removed carbon would no longer offset any of the entity's past emissions.</p>
-        
-        <p>When carbon buyers know that removed carbon will be <em>counted</em> in the long-term (instead of "credited" on arrival), that will create <em>accountability</em> in the system.</p>
-        
-        <p>Accountability could lead to a variety of new behaviors, generally aligned with the goal of <strong>long-term carbon removal:</strong></p>
-        
-        <ul>
-            <li><p>Since permanent carbon removal projects are the least risky (the most likely to be counted as removed carbon, for the longest period of time), they will have the highest demand, and fetch the highest values in the market.</p></li>
-            <li><p>It could be so expensive, that many companies could likely choose to swallow the medicine of a better future — and actually invest in stopping their emissions at the source!</p>
-            <p>^ This is exactly what we want carbon offsets to do!</p>
-            </li>
-            <li><p>And if companies decide to buy cheaper carbon removal from impermanent projects, they will do so knowing their investment is ... impermanent.  Risky.</p></li>
-            <li><p>Perhaps it could make them "net-zero" for a few years.  But once that removed carbon goes back into the atmosphere, those companies know it will be <strong>counted</strong> as such.  Thus, they know they will be <strong>accountable</strong> for that outcome — and they know they'll have to remove more carbon in a few year's time.</p></li>
-        </ul> 
-        
-        <!-- <div class="chart-container">
-            <LayerCake
-                 padding={{ top: 0, right: 0, bottom: 20, left: 20 }}
-                 x={d => d.data[xKey]}
-                 y={yKey}
-                 z={zKey}
-                 xScale={scaleBand().paddingInner([0.02]).round(true)}
-                 xDomain={uniques(data, xKey)}
-                zScale={scaleOrdinal()}
-                zDomain={seriesNames}
-                zRange={seriesColors}
-                 flatData={flatten(series)}
-                 data={series}
-            >
-              <Svg>
-                <AxisX
-                  gridlines={false}
-                />
-                <AxisY
-                  ticks={4}
-                  gridlines={false}
-                  formatTick={formatTickY}
-                />
-                <ColumnStacked/>
-              </Svg>
-            </LayerCake>
-          
-          </div> -->
-                    
-        <p>By <strong>counting</strong> carbon, we can even arrive at a more legitimate role for <em>impermanent</em> carbon removal.</p>
-            
-        <p>Some carbon buyers could choose to invest in short-term, impermanent carbon removal — with the idea that it could <em>buy them time</em> until more permanent carbon removal is more available and less costly.</p>
-        
-        <p>There is no illusion.  These buyers know they will have to buy more carbon down the road.  But, perhaps in the meantime, they can invest further into eliminating their own emissions.</p>
-        
-        <p>So even though they'd have to buy more carbon once the impermanent carbon releases back into the atmosphere, they will have fewer emissions to emit in the long-term.</p>
-        
-        <p>Exactly what we're aiming for.</p>
-        
-        <p>This is only a strategy with the possibility of integrity — and not an outright gimmick/scam — if the carbon is <strong>counted</strong>, so buyers are <strong>accountable.</strong></p>
-        
-        <!-- <p>This is only a strategy with the possibility of integrity, and not an outright gimmick/scam, if <em>the carbon is actually counted.</em></p> -->
-        
-        <p>(Kudos to <a href="https://www.keikicapital.com/bio">Dan Lichtenberg</a> for pointing out this possibility.)</p>
-        
-        <!-- <p>(Credit to Dan Licthenberg, for pointing out a not-so-cynical strategy here. Some companies could, with integrity, invest in short-term carbon removal — with the idea that, it would buy time until more permanent carbon removal is more powerful and more available.  This seems reasonable.  And yet, this is only a strategy with integrity — not a gimmick — if you actually <strong>count the carbon</strong>.)</p> -->
-        
-        <!-- <p>Who would benefit from counting carbon?</p>
-        
-        <ul>
-            <li>The environment.</li>
-            <li>Everybody who breathes air, today and in the future.</li>
-            <li>Permanent carbon removal projects, which become more valuable in a system that actually counts.</li>
-            <li>Impermanent carbon removal projects, who now have a legitimate role in the system (and sleep well at night).</li>
-            <li>Politicians and regulators, who can feel proud for changing history for the better.</li>
-            <li>Carbon verifiers and standards, who would have a more interesting — and more impactful — job to do.</li>
-            <li>Companies, who are forced to take responsibility and actually confront emissions issues – which could significantly improve their future successes.</li>
-            <li>CEOs and shareholders, who (I think) breathe air too.</li>
-        </ul> -->
-        
-        <p>So, thanks for reading, that's everything.</p>
-        
-        <p>If we want to see if carbon offsets actually work — if you want to even seem them do what they were <em>designed for</em> — we need to count removed carbon, in real-time, on a continuously updated basis.</p>
-        
-        <h4>If we're going to count, we must count.</h4>
+Without proper measurement, none of the carbon market holds up.
+-->
 
-        About the Author
+1. A carbon removal project can only generate carbon credits, as it demonstrates in **real-time** that it has removed carbon. <br><br> This is now verifiable via remote sensing, meaning we have no need for predictions about how much carbon a project will remove decades into the future. <br><br> Every day or week, as a project demonstrates that it has removed carbon, carbon credits are generated for that project.  <br><br> Without verified carbon removal, carbon credits cannot be generated.
+
+2. If a carbon removal project releases emissions back into the atmosphere, an equivalent amount of credits are **rescinded.**  <br> <br> If you're invested in a carbon removal project, and that project releases carbon back into the atmosphere, that project has lost carbon — so you lose an equivalent amount of credits. <br><br> Taking this a step further, if your project eventually emits more carbon than it removes (e.g. due to mismanagement, short-term approaches, natural disasters, bad luck), than you are **liable** for those further emissions.  <br><br> You funded the project — if it eventually starts releasing carbon, who else should be responsible for the emissions?
+
+<hr>
+
+Simply put, this is a call to actually **count carbon** — ensuring the way we count matches the physical reality of the molecules we’re counting.
+
+How can we accomplish this?
+
+Every carbon removal project has a ledger of entities, which own the carbon removal produced by that project.  For example, in an Amazonia offset project, Airline Corp owns 50% of the carbon removal, Energy Corp owns 40% of the carbon removal, and a group of smaller entities own 10% of the carbon removal.
+
+When the Amazonia project removes 1 ton of carbon (as verified by remote sensing), then Airline Corp will own 0.5 tons of removed carbon, Energy Corp will own 0.4 tons of removed carbon, and the rest of the entities will own 0.1 tons of removed carbon between them.
+
+<!--
+Over the course of 5 years, if the Amazonia project eventually removes 1 million tons of carbon (as verified by remote sensing, gradually), then Airline Corp will own 500,000 tons of removed carbon, Energy Corp will own 400,000 tons of removed carbon, and the rest of the entities in the project will own 100,000 tons of removed carbon between them.
+-->
+
+If/when the Amazonia project releases carbon - via forest fire, flood, erosion, natural decay, all observed via remote sensing of carbon emissions in that location (e.g. ClimateTrace) — then each of the project entities will own less carbon, as the project itself has removed less carbon.
+
+<!--
+In 2025, if the Amazonia project has removed 1 million tons of carbon, then Airline Corp owns 500K tons of removed carbon, Energy Corp owns 400K tons of removed carbon, and other entities own 100K tons of removed carbon.
+-->
+
+If the Amazonia project removes 1 million tons of carbon, then Airline Corp owns 500k tons of removed carbon, Energy Corp owns 400K tons of removed carbon, and other entities own 100K tons of removed carbon.
+
+If the Amazonia project removes 2 million tons of carbon *and* releases 1 million tons of carbon (net 1M tons removed), then Airline Corp still owns 500k tons of removed carbon, Energy Corp still owns 400K tons of removed carbon, and other entities still own 100K tons of removed carbon.
+
+If the Amazonia project removes 3 million tons of carbon *and* releases 3 million tons of carbon back into the atmosphere (net 0 tons removed), then Airline Corp owns 0 tons of removed carbon, Energy Corp owns 0 tons of removed carbon, and other entities own 0 tons of removed carbon.
+
+And if the Amazonia project removes 5 million tons of carbon *and* releases 10 million tons of carbon back into the atmosphere (net 5M tons emitted), then Airline Corp has 2.5M tons of carbon emissions from this project, Energy Corp has 2M tons of emissions from this project, and other entities have 500K tons of emissions.
+
+Not only would this system account for carbon removal as it exists in reality — it would actually penalize any future emissions created from that project, forcing entities to take all of the precautions we’d expect, if they were investing for long-term carbon removal.
+
+**How to take this approach forward?**
+
+* We need data from existing carbon removal projects, including how much carbon they've removed *to-date* (not what they're *estimated* to remove), which entities owns the carbon credits from those projects, and real-time verification of carbon removal and emissions from that project site.
+
+* We also need data from corporations and entities about their ongoing carbon emissions, to compare against their carbon removal in real-time. <br><br> So you can look up an entity, see their emissions numbers over time, and see where they stand on carbon negative commitments — and with this transparency, foster accountability.
+
+* And to include these princples in carbon offset systems around the world, just share this material with the decisionmakers who are annointing those systems – the public sector agencies, the nonprofits, the private sector and financial industry leads.
+
+If you're interested in collaborating, send a message to sam@sambutler.us.
+
+About the Author
 
 I’m diligently working on the most important problems I can, to create better environmental and social outcomes.  That’s why I wrote this on a Sunday morning, and spent yesterday working on coordination tools for community regeneration, gauze pads for natural systems, and user-owned cooperatives for services and daily infrastructure.  Often, this doesn’t align with “making a living”, because that’s not the point.  So if you want to support my work and help me focus on what’s important, that support would be much appreciated.  Possibly, it could make a big difference — for your life and others, today and in the future.  (Proceeds will generally go towards student loan payments, laptop electricity, and vegetarian brain food 🧠 💪🏽 — blueberries, usually!)
 
@@ -362,7 +152,7 @@ Ways to contribute:
 * Involve my work in grant projects and commercial opportunities
 * Hire me/contract me for important work and important projects
 
-I can afford to make these choices because of a lot of privilege and abundance in my life.  If you have been afforded similar opportunities — you have adequate savings, a few years of runway, no urgent need to make more money or put more food on the table — consider doing the same.  Civilization could use more people working with service in mind.  It’s not just about *finding a job* in a more productive industry.  It’s not about the status quo of *having a job.* It’s about thinking from first principles, understanding how life could be a bit better and how you could contribute to that, and actually doing it.  If that aligns with consistent employment and paychecks, that will be comfortable.  If it doesn’t — well, sometimes, doing what’s uncomfortable is what’s best for us.
+I can afford to make these choices because of a lot of privileges and opportunities in my life.  If you have been afforded similar opportunities — you have adequate savings, a few years of runway, no urgent need to make more money or put more food on the table — consider doing the same.  Civilization could use more people working with service in mind.  It’s not just about *finding a job* in a more productive industry.  It’s not about the status quo of *having a job.* It’s about thinking from first principles, understanding how life could be a bit better and how you could contribute to that, and actually doing it.  If that aligns with consistent employment and paychecks, that will be comfortable.  If it doesn’t — well, sometimes, doing what’s uncomfortable is what’s best for us.
                 
     </div>
   </article>
