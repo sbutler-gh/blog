@@ -71,15 +71,11 @@
     <p class="p-summary">A simple fix for carbon offset systems: count the carbon.</p> -->
 
     <h3 class="p-name">Make carbon ac<em>countable</em></h3>
-    <!--
     <p class="p-summary">A simple fix for carbon offset systems: count the carbon.</p> 
-    -->
 
     <p class="p-byline">Published by <a class="p-author h-card" href="/">Sam Butler</a>
        <!-- on <time class="dt-published" datetime="2013-06-13 12:00:00">13<sup>th</sup> June 2013</time></p> -->    
     <div class="e-content">
-
-In order for carbon markets to be productive, carbon accounting must be based on the reality of how carbon moves through our atmosphere.
 
 <!--
 Currently, that's not the case.
@@ -97,17 +93,34 @@ Only by counting carbon as it exists in reality — where the molecules of carbo
 Without proper measurement, none of the carbon market holds up.
 -->
 
-1. A carbon removal project can only generate carbon credits, as it demonstrates in **real-time** that it has removed carbon. <br><br> This is now verifiable via remote sensing, meaning we have no need for predictions about how much carbon a project will remove decades into the future. <br><br> Every day or week, as a project demonstrates that it has removed carbon, carbon credits are generated for that project.  <br><br> Without verified carbon removal, carbon credits cannot be generated.
+In order for carbon credits to help us mitigate emissions, carbon accounting must be based on physical reality.
+
+<!--
+This is a call to actually **count carbon** — ensuring our accounting matches the physical reality of carbon removal.
+-->
+
+Currently, our accounting is far from reality.  Carbon credits are granted to removal projects decades in advance — creating the risk that the credited "removal" will never actually occur.
+
+We likewise have no mechansims to deal with leakage and impermanence — which is happening and unaccounted for in almost every carbon removal project.
+
+The better our carbon acccounting matches reality, the better our carbon removal + mitigation efforts will be.
+
+Here are two principles we can incorporate into carbon accounting, to start making these systems better today:
+
+1. A carbon removal project can only generate carbon credits, as it demonstrates in **real-time** that it has removed carbon. <br><br> This is now verifiable via remote sensing, meaning we have no need for predictions about how much carbon a project will remove decades into the future. <br><br> Every day or week, as a project demonstrates that it has removed carbon — and *only* as a project demonstrates that it has removed carbon — credits are generated for that project.  <br><br> Without verified carbon removal, carbon credits cannot be generated — and of course, credits cannot be generated in advance.
 
 2. If a carbon removal project releases emissions back into the atmosphere, an equivalent amount of credits are **rescinded.**  <br> <br> If you're invested in a carbon removal project, and that project releases carbon back into the atmosphere, that project has lost carbon — so you lose an equivalent amount of credits. <br><br> Taking this a step further, if your project eventually emits more carbon than it removes (e.g. due to mismanagement, short-term approaches, natural disasters, bad luck), than you are **liable** for those further emissions.  <br><br> You funded the project — if it eventually starts releasing carbon, who else should be responsible for the emissions?
 
 <hr>
-
+<!---
 Simply put, this is a call to actually **count carbon** — ensuring the way we count matches the physical reality of the molecules we’re counting.
+-->
 
-How can we accomplish this?
+How can we implement these principles?
 
-Every carbon removal project has a ledger of entities, which own the carbon removal produced by that project.  For example, in an Amazonia offset project, Airline Corp owns 50% of the carbon removal, Energy Corp owns 40% of the carbon removal, and a group of smaller entities own 10% of the carbon removal.
+Every carbon removal project has a ledger of entities, which own the carbon removal produced by that project.
+
+For example, in an Amazonia offset project, Airline Corp owns 50% of the carbon removal, Energy Corp owns 40% of the carbon removal, and a group of smaller entities own 10% of the carbon removal.
 
 When the Amazonia project removes 1 ton of carbon (as verified by remote sensing), then Airline Corp will own 0.5 tons of removed carbon, Energy Corp will own 0.4 tons of removed carbon, and the rest of the entities will own 0.1 tons of removed carbon between them.
 
@@ -125,9 +138,9 @@ If the Amazonia project removes 1 million tons of carbon, then Airline Corp owns
 
 If the Amazonia project removes 2 million tons of carbon *and* releases 1 million tons of carbon (net 1M tons removed), then Airline Corp still owns 500k tons of removed carbon, Energy Corp still owns 400K tons of removed carbon, and other entities still own 100K tons of removed carbon.
 
-If the Amazonia project removes 3 million tons of carbon *and* releases 3 million tons of carbon back into the atmosphere (net 0 tons removed), then Airline Corp owns 0 tons of removed carbon, Energy Corp owns 0 tons of removed carbon, and other entities own 0 tons of removed carbon.
+If the Amazonia project removes 3 million tons of carbon *and* releases 3 million tons of carbon (net 0 tons removed), then Airline Corp owns 0 tons of removed carbon, Energy Corp owns 0 tons of removed carbon, and other entities own 0 tons of removed carbon.
 
-And if the Amazonia project removes 5 million tons of carbon *and* releases 10 million tons of carbon back into the atmosphere (net 5M tons emitted), then Airline Corp has 2.5M tons of carbon emissions from this project, Energy Corp has 2M tons of emissions from this project, and other entities have 500K tons of emissions.
+And if the Amazonia project removes 5 million tons of carbon *and* releases 10 million tons of carbon (net 5M tons emitted), then Airline Corp has 2.5M tons of carbon emissions from this project, Energy Corp has 2M tons of emissions from this project, and other entities have 500K tons of emissions.
 
 Not only would this system account for carbon removal as it exists in reality — it would actually penalize any future emissions created from that project, forcing entities to take all of the precautions we’d expect, if they were investing for long-term carbon removal.
 
