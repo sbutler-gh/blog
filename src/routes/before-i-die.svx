@@ -1,0 +1,169 @@
+This post is what I’d share before I die.
+
+First of all, there are no dogmas / universal rules.
+
+Every situation and context has its own form.  Understand your context, and determine what makes sense from there.
+
+Of course, there are useful heuristics, but they aren’t universal.  The heuristic is not reality.  The map is not the planet you walk on.
+
+With that out of the way, what is our current context?  See this video:
+
+If you’re reading this on LinkedIn, things may still be somewhat normal for you.  Like frogs boiling in a hottub, that is soon to change.
+
+Most of us will spend far more of our lives in the future — the 10, 20, 30, 50, 70 years to come.
+
+Our current context is a trajectory that will make our future experiences full of challenges.  Drought, conflict, warfare, isolation, unrest, breathlenssness, hopelessness.
+
+If you want different future experiences — for yourself, for your children, for strangers and descandandants and life across the planer — understand the current context, and do what is appropriate.
+
+Every day, we’re writing future history.
+
+If you want a different future, step back and consider what must be done to shape it — and do.
+
+Forget the heuristics, maps, and conventions.
+
+What must be done?
+
+What must be done, probably has little to do with what you’re doing today.
+
+One must eat, one must have shelter, one must have security — in some cases, one must provide for others.
+
+How can we reconcile those two realities — that doing little provides what we need today, while doing what we feel is important leaves us with nothing today?
+
+Understand the context — your context — and determine what must be done.
+
+In my case, that’s been minimizing my expenses, minimizing rent obligations, minimizing wants and expectations, being careful to avoid depdendents (not all of us have this choice) — and freelancing a small amount part time, while focusing on doing important work with the rest of my days.
+
+For you, it will be different.  You have your own context to consider and understand.
+
+In any case, if food, shelter, security, providing, is keeping you from doing what you feel is important,  here is a method that can be used to make / fund anything you wish to do.
+
+From albmus, to films, to software, to local projects, to companies, to board games, to apps, to quitting smoking, to gardens, to shops, to [fill in the blank.]
+
+You want to make a thing.  This is a valuable thing for the world — it will make a difference in people’s lives and futures, and people would probably even pay for it.
+
+You just don’t have the time or money to make it.
+
+You think about investment — that’s long, challenging, complicated, and will probably take many months of time and work that you don’t have.
+
+You think about crowdfunding — but will people really just give money so you can make your thing?  Does that work?  Do I want to ask for money like that?
+
+Now, consider the context of what you’re making.  What’s required to make it?  What would the time and money, if available, go towards?
+
+And consider making it, like this:
+
+Communicate the vision of your thing.  Why do people want it?  What is the value your thing will create?
+
+And enable people to buy access to this thing, in advance, in a way that benefits them.  That can be:
+
+- Selling future credits/access for your thing at a discount — so when it’s ready, people got a valuable thing for cheap.
+
+- Creating the thing as a coop, enabling people who buy in advance to become cooperative owners of it — and giving them a similar vested interest in spreading the thing and seeing its success.  This can include profit sharing from the sale of the thing, — or, simpler, cooperative owners getting profits in the form of free access to the thing.
+
+If you’re trying to do something important, your coop should probably have a mission — and profit sharing is just a means to that end, not the end itself.  For example, the coop’s mission could be to make your thing available to everyone who wants to use it, for as low cost as possible.  Profit-sharing can help people spread your thing via word of mouth, creating economies of scale and enabling you to make your thing available to more people at lower costs.  However, this isn’t to deliver greater dividends — it’s to serve your mission.
+
+- If your thing is strictly non-profit, it also seems possible that you can offer tax-deductible donations, even if you’re an unincorporated nonprofit (https://www.nolo.com/legal-encyclopedia/what-an-unincorporated-nonprofit-association.html).  I’m not a lawyer, don’t consider this financial or legal advice, and read it for yourself.
+
+Once you’ve communicated the vision for your thing, with a mission, and provided a beneficial way for people to help fund it — buying discounted in advance, becoming cooperative owners, tax deductible donations, etc — then put your thing on a crowdfunding site, and give it a shot.
+
+(To avoid 5% platform fees, you can even just use a Stripe payment link — and add that link to social media posts or websites, so people can discover your funding campaign wherever you want to post it.)
+
+At this point, your thing will either get funding — or you’ll get valuable feedback about why people don’t want it currently.
+
+And with that knowledge, you can step back, observe the context, and determine what to do next.
+
+If you do get the funding and make your thing, what comes next?  Congratulations, you’ll probably start being compensated for work that you felt was important — and you’re making a better future for all of us in the process.
+
+Now, again observe your current context, and determine what you feel is most important to do.
+
+Is it important for you to stay with your thing forever?  Does your thing need you, in order to achieve the vision and mission you architected?
+
+Or is there a way to make yourself unnecessary — so the thing would succeed, even if you aren’t around — and you can turn your attention to other important work to do?
+
+It’s the same choice you faced at the start of this journey.  Stick with the security and convention of your thing — or observe the context, consider what’s most important to do, and find a way to make that thing happen next.
+
+If you give a person a fish, you can earn a salary for giving fish for the rest of your life.
+
+If you give a person a fish, while teaching them how to catch a fish, you can eventually stop giving fish — because they’ve learned how to fish for themselves.
+
+Then, instead of giving fish for the rest of your life, you can move onto other work that will make your future and other’s better — teaching others to read, teaching others to plant trees, teaching others to teach.
+
+Basically, if you have a thing to make — climb that hill and put your thing in the hands of people who will use it, and then, you can make yourself unnecessary.
+
+(There could always be ways to improve the thing — and you can keep being compensated for your work to improve the thing — but remember, you being compensated is not the mission.  The mission is why you’re making this thing in the first place.)
+
+Then, you can look out from your new vista, and find a whole new world of hills to climb and things to make.
+
+What if you don’t know what to do or make yet?
+
+Think about the future world and experiences you want to live in — and the context of the present moment — and do what will help you shape those futures.
+
+Of course, that can include learning more, to better understand the current context and what’s important to do.  Jean Marc recommends spending 20 hours studying climate drift, and then, identifying important things you can do.
+
+With that in mind, here are some resources that have helped me to learn more about our current context (e.g. climate drift, digital interaction, systems, metacrises) the futures I’m working for, and what feels important to do — along with what’s possible.
+
+- Vincovici
+
+- Grantham
+
+- Donella Meadows
+
+- Bret Victor technologist
+
+- Hintjens
+
+- Bret Victor dynamic media
+
+- Peter Singer perspective of the universe
+
+- The Little Prince
+
+- Antifragile and Fooled by Randomness (and as a short preview, principia) - Taleb
+
+- Island by Aldous Huxley (possible futures, and more grounded, how to be present in your muscles and physical interactions, and what you can learn from observing your body in motion)
+
+- Kurt Vonnegut Slaughterhouse Five, Cat’s Cradle, and writing in general — on stories without villains, morality, time, perspectives
+
+- Josh McKenty on Open Source
+
+- KE Mitchell on no dogmas
+
+- BBC documentary guy, on what has shaped our world today, better understanding our current context, why things are the way they are, and wisdom about unintended consequences
+
+- Rushkoff / Cory Doctorow podcast on the foundation of property rights, and what that means today with machines and digital and the world around us
+
+- Dark Matter Labs piece on indigenous languages
+
+- Damon Centola on how behavior spreads
+
+- Grist and on individual action
+
+- Swyx on 35 thigs learned
+
+- Veil of ignorance thought experience
+
+- Eating for physical and mental health (way less meat, lots of fat / protein from seeds + nuts + cheeses + skyr yogurt, the importance of probiotic for the gut, cutting out carbs and sugars and alcohol, eating after 11 and before 7, going on a 24-72 hour fast once in a while, drinking apple vinegar before a meal to lower insulin spikes, drinking lots of water, cinnamon to wake up the brain, blueberries and other berries for antibiotic health, mixing ingredients like this together in bowls to spend less time preparing food)
+
+- Dan Gillmor on solutions for media, disinformation, and less fact-based coverage in media
+
+- Michael Floering: “When you’re 40% sure that something is 70% ready, it’s ready.”  (Good heuristic to check our perfectionist selves, and get comfortable putting things out there before we feel fully comfortable with it.”
+
+- Rationality, effective altruism, 80000 hours, Moneyball
+
+- Postrationality, emotions and feelings, and trusting intuition — recognizing that sometimes, an intuition or feeling about something, can be giving us information about the world that we can’t rationally detect.  Likewise, recognizing that intuition / feeling can sometimes lead us astray or give us false signals, and learning how to balance the two.
+
+— Man in the Arena, from my dad.
+
+- If by Rudyard Kipling.
+
+- Appreciating the wrinkles in life, and a discussion of passivist vs activist lives, from Doors of Perception (Huxley)
+
+- Book on education (from Bret Vcitor)
+
+- Chris Cook / Alejandro Aviles on transcending rentseeking, and upskilling + building capacity in others.
+
+- Paul Permies on the future value of simple, ecological changes we can make around us — and the real value those changes can make.
+
+If you want any help putting this into practice, in lieu of a seperate discussion community, treat this post as a thread in our global discussion community — and add any questions / comments / tags below.
+
+Share your qusetions, ideas, possibilities, and the things your imagining.  Tag others who may be interested.  Ask for help and advice.
