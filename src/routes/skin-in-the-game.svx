@@ -12,7 +12,7 @@ Pollute a place, live in the sacrifice zone.
 
 Make a decision, your future is tied to it.
 
-Whoever volunteers for the job can have it @nntaleb
+Whoever volunteers for the job can have it
   </div>
 
       <p style="font-style: italic"> - <a rel="author" class="p-author h-card" href="https://sambutler.us">Sam Butler</a> (<time class="dt-published" datetime="2021-08-08 15:50:00+02:00">8<sup>th</sup> August 2021</time>)</p>
