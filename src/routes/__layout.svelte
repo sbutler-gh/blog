@@ -16,6 +16,8 @@
 <link rel="me" href="https://linkedin.com/in/sambutler8" />
 <link rel="me" href="mailto:sam@sambutler.us" />
 <link rel="me" href="https://github.com/sbutler-gh" />
+<link rel="webmention" href="https://webmention.io/www.sambutler.us/webmention" />
+<link rel="pingback" href="https://webmention.io/www.sambutler.us/xmlrpc" />
 </svelte:head>
 
 <Header></Header>
