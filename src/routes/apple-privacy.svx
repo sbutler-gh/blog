@@ -1,5 +1,15 @@
-The argument was: Apple is a hardware company.  Google is a data company.  Apple doesn't want to risk their hardware business over privacy issues.
+<article class="h-entry">
+  <h1 class="p-name">On Apple and Privacy/h1>
+  <p>Published by <a class="p-author h-card" href="https://sambutler.us">Sam Butler</a>
+     on <time class="dt-published" datetime="2021-08-08 11:02:00">8<sup>th</sup> August 2021</time></p>
+  
+  <p class="p-summary">A response to <a href="https://twitter.com/albertwenger/status/1423942239009583107">Albert Wenger on Apple's privacy developments</a></p>
+  
+  <div class="e-content">
+    The argument was: Apple is a hardware company.  Google is a data company.  Apple doesn't want to risk their hardware business over privacy issues.
 
-Thus, based on business, Apple is a better bet on privacy.  Sensible argument.
+    Thus, based on business, Apple is a better bet on privacy.  Sensible argument.
 
-This news suggests that Apple is pivoting to data.
+    This news suggests that Apple is pivoting to data.
+  </div>
+</article>
