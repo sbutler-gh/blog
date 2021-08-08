@@ -1,12 +1,10 @@
 <article class="h-entry">
   <h1 class="p-name"><a class="u-url" href="https://sambutler.us/apple-privacy">On Apple and Privacy</a></h1>
-
-  <div class="e-content">
+  <a class="u-in-reply-to" href="https://twitter.com/schnarfed/status/448205453911015425"></a>
   <blockquote class="twitter-tweet u-in-reply-to"><p lang="en" dir="ltr">Amused by all the people suddenly discovering that Apple might not be all that serious about privacy after all.</p>&mdash; Albert Wenger 🌎🔥⌛ (@albertwenger) <a href="https://twitter.com/albertwenger/status/1423942239009583107?ref_src=twsrc%5Etfw">August 7, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-   
-      <!--
-      <p class="p-summary">A response to <a href="https://twitter.com/albertwenger/status/1423942239009583107">Albert Wenger on Apple's privacy developments</a></p>
-       --> 
+
+
+  <div class="e-content">   
 The argument was:  Apple sells hardware.  Google sells data.  Apple doesn't want to risk their hardware sales over privacy issues.
 
 Therefore, Apple is a better bet on privacy. (Sensible argument.)
