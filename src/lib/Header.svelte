@@ -16,7 +16,7 @@
 </script>
 
 <div style="display: flex">
-<h3 style="margin:0px; margin-right: 15px;"><a class="h-card p-org u-url" href="https://sambutler.us">Sam Butler</a></h3>
+<h3 style="margin:0px; margin-right: 15px;"><a class="h-card p-org u-url p-author" href="https://sambutler.us">Sam Butler</a></h3>
 <h4 style="margin:0px; margin-right: 15px;"><a href="https://sambutler.us/ideas">Ideas</a></h4>
 <h4 style="margin:0px;"><a href="https://sambutler.us">About</a></h4>
 <div id="subscribe_div" style="margin-left: auto;">
