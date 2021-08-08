@@ -13,3 +13,5 @@ ________________
 sam@sambutler.us 
 
 https://linkedin.com/in/sambutler8
+
+<p style="font-style: italic; color: gray; font-size: 14px; margin-top: 15px; text-align: center;">© 2021 Sam Butler</p>
