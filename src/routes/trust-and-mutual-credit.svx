@@ -1,0 +1,16 @@
+<article class="h-entry">
+  <h1 class="p-name"><a class="u-url" href="https://sambutler.us/trust-and-mutual-credit">Trust and Mutual Credit</a></h1>
+  <a class="u-in-reply-to" href="https://twitter.com/normonics/status/1425544516380069888"></a>
+<blockquote class="twitter-tweet u-in-reply-to"><p lang="en" dir="ltr">The glorification of &quot;trustless&quot; is a huge red flag. We should be figuring out how to build trust again, not trying to &quot;do without&quot;</p>&mdash; Joe Norman (@normonics) <a href="https://twitter.com/normonics/status/1425544516380069888?ref_src=twsrc%5Etfw">August 11, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <div class="e-content">   
+The answer is local mutual credit systems.
+
+Money consists of promises and paying back promises.
+
+Trust is essential, accounting is simple, this is the origins of local exchange #lindy
+
+http://creditcommons.net/ — theyve done the heavy lifting already, our choice to implement/adopt
+  </div>
+
+      <p style="font-style: italic"> - <a rel="author" class="p-author h-card" href="https://sambutler.us">Sam Butler</a> (<time class="dt-published" datetime="2021-08-08 15:50:00+02:00">8<sup>th</sup> August 2021</time>)</p>
+</article>    
