@@ -12,5 +12,5 @@ Trust is essential, accounting is simple, this is the origins of local exchange 
 http://creditcommons.net/ — theyve done the heavy lifting already, our choice to implement/adopt
   </div>
 
-      <p style="font-style: italic"> - <a rel="author" class="p-author h-card" href="https://sambutler.us">Sam Butler</a> (<time class="dt-published" datetime="2021-08-08 15:50:00+02:00">8<sup>th</sup> August 2021</time>)</p>
+      <p style="font-style: italic"> - <a rel="author" class="p-author h-card" href="https://sambutler.us">Sam Butler</a> (<time class="dt-published" datetime="2021-08-12 09:39:00+02:00">12<sup>th</sup> August 2021</time>)</p>
 </article>    
