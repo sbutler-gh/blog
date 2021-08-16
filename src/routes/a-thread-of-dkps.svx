@@ -1,0 +1,11 @@
+<article class="h-entry">
+  <h1 class="p-name"><a class="u-url" href="https://sambutler.us/a-thread-of-dkps">Trust and Mutual Credit</a></h1>
+  <a class="u-in-reply-to" href="https://twitter.com/keikreutler/status/1417861127590092802"></a>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A Prehistory of DAOs<br>Cooperatives, gaming guilds, and the networks to come<br><br>Read the second in my <a href="https://twitter.com/GnosisGuild?ref_src=twsrc%5Etfw">@GnosisGuild</a> series of essays bridging cryptonetworks, web3, and gaming.<a href="https://t.co/UxlxK8Hssv">https://t.co/UxlxK8Hssv</a></p>&mdash; kei 🗝️ (@keikreutler) <a href="https://twitter.com/keikreutler/status/1417861127590092802?ref_src=twsrc%5Etfw">July 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  <div class="e-content">   
+I would love a thread focused on coordination protocols like The Leftovers' DKP — whether from MMOs or novels or economic textbooks.
+
+Diving into the mechanisms of how these protocols function (as you explained with DKP), and how they support collaborative outcomes.
+  </div>
+
+      <p style="font-style: italic"> - <a rel="author" class="p-author h-card" href="https://sambutler.us">Sam Butler</a> (<time class="dt-published" datetime="2021-08-16 10:57:00+02:00">16<sup>th</sup> August 2021</time>)</p>
+</article>    
