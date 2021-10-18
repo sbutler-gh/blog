@@ -8,7 +8,7 @@ import { children } from "svelte/internal";
 
 **About Me** (*Under Construction*)
 
-You can check out my <a href="https://sambutler.tech">digital resume</a> and <a href="https://sambutler.world">portfolio</a> in the meantime.
+You can check out my <a href="https://sbresume.netlify.app/">digital resume</a> and <a href="https://ysli.be">portfolio</a> in the meantime.
 ________________
 sam@sambutler.us 
 
