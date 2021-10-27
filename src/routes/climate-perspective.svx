@@ -1,0 +1,93 @@
+The discussion about heroes, technologism, and hopelessness, are all distractions in my opinion.
+
+After 3 years of trying to understand meaningful things we can do about climate change, I've come around to a simple perspective:
+
+The way we mitigate + respond to climate change, and other crises happening around us, is by *organizing in our communities.*
+
+Why organize?  Organizing begets collective action.  Individual and collective action are both crucial to dealing with these issues.  Building relationships at a local level, listening to issues and worldviews from our neighbors, and organizing to address shared challenges, can help us support individual changes (like lower impact lifestyles) and community-level transformation at the same time.
+
+How do we organize?  
+
+Just start doing it.  Find out the community activities happening around you, or call over a few friends and discuss some local issues you each care about.
+
+Here's a [simple tool](https://rebrand.ly/just-start) to help you find activities near you (pulled from calendars of community organizations), and resoruces to help you start / publish your own organizing activities.  It also includes local data, which could open your eyes about some important things happening in your community (e.g. air quality level, cancer risks from air toxics, vulnerability and resilience indicators).
+
+It's also [open-source](https://github.com/sbutler-gh/just-start) — would love to collaborate, and hear your perspectives, if it interests you.
+
+___________
+
+If you're interested in three years of mis-steps and learnings about climate change, here's my story:
+
+In late 2018, I had a realization.  If the adults around me knew what was happening with climate change in the 90s, why didn't they do *everything* to deal with it then?  I would not want to ask myself the same question in 30 years time.
+
+Around that time, I read the *Foundation* trilogy and real-life histories of how we averted potentially long periods of suffering, which seemed relevant.  I also read Naomi Klein's *This Changes Everything*, which imparted the impact of resistance movements like Blockadia (protecting 80% of the world's biodiversity) — as well as evidencing why billionaire pledges and carbon markets won't save us.  (Branson made climate pledges while simultaneously starting a new airline.  Carbon markets have been tried and failed before.)
+
+With a sense of urgency, and some initial understanding, I started learning by fire.
+
+**PART ONE**: Throughout 2019, I worked on a solutions repository [Time To Solve](timetosolve.com).  On reflection, I wasn't actually solving a problem here.  I was just finding all of the solutions that seemed impactful, putting them on a website, and hoping that awareness could make a difference and somebody could fund me trying to urgently respond to climate change.
+
+In late 2019-early 2020, I came across Erica Chenoweth's research on [the 3.5% rule](https://www.bbc.com/future/article/20190513-it-only-takes-35-of-people-to-change-the-world), John Javna's personal transformation to [advocating for collective action](https://grist.org/climate/how-people-came-to-believe-that-individual-choices-could-save-the-earth/), and [*Building a Better World In Your Backyard*](https://permies.com/w/better-world) (which demonstrates the cost-savings of many small changes, like hang-drying clothes, you can do around you).
+
+I also found several perspectives on Indigenous worldview and language, initially [this piece from Dark Matter Labs](https://provocations.darkmatterlabs.org/civic-indigenous-7-0-459436b6f60).  Some of the big takeaways were the focus on verbs rather than nouns, and interpreting ourselves as part of the world around us, and interpreting all the different relationships in that world to help us make decisions (e.g. seeing how animals behave around a river, to understand weather patterns happening upstream.)
+
+On the heels of these learnings, I came to discard approaches involving individual action.  It wouldn't scale, it doesn't diffuse (per Centola's [*How Behavior Spreads*](https://www.youtube.com/watch?v=o0fDcUJMzkI)).  Collective action was the way.
+
+**PART TWO**: In January 2020, building on the importance of collective action, I made a tool to connect you via email to climate organizations relevant to your background ([whatican.org](https://whatican.org) — no longer maintained FYI)
+
+Recognizing the distribution problem, I wanted to distribute this simple two-line form as iFrame banners, which people could embed on their own websites/subreddits.  So there could be lots of places where you encounter the banner, and fill out a 10-second form to connect with collectives for climate action relevant to your own profession / interests.
+
+(Still could be a useful tool, I just never had the technical chops to realize this as an embeddable banner.  Also FYI, the site still has a useful [digital privacy page](whatican.org/https://www.whatican.org/privacy.html) experience as well.)
+
+Inspired by Bret Victor, I also put together a [Climate Resource Map](https://rebrand.ly/climate-resource-map) — to give people an intuitive, self-guided way to explore the many things I'd learned and researched over the years.  (This was done to support students at a climate conference).
+
+**PART THREE**: Also inspired by Bret Victor and his vision of seeing spaces and problem-finding, I made a [tool for visualizing](https://situation-earth.netlify.app/) the most important environmental challenges and their geospatial relationships (e.g. supply chains, biodiversity externalities).  This was summer 2020.
+
+Around this time, I came across Donella Meadows work on leverage points, and the impact of [changing paradigms](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/).
+
+**PART FOUR**: From Late 2020 - mid 2021, I went deeper into collective action — starting to understand this from a local community perspective, and the host of benefits that can come with community mitigation (e.g. energy resilience lowers emissions, lowers utility bills, and avoids blackout situations like Texas).
+
+The problem of focus, was that we lack the means to coordinate and collaboratively influence the development of the places where we live.  I built a full-stack app called [Placeflow](https://placeflow.net) enabling people to share ideas for local action and connect with others.  Here's the [theory of change](https://rebrand.ly/localfutures), which is focused on self-determination and localized problem solving, and also shows the economic viability.
+
+During this period, I also found guidance and knowledge in Indigenous perspectives around self-determination (from people like Michael Johnson of the [NDN Collective](https://ndncollective.org/), [Nicholas Estes](https://www.youtube.com/watch?v=lT87HBpi0_M), and incredible stories of [Indigenous-led resistance](https://viewpointmag.com/2021/10/11/below-the-barricades-on-infrastructure-self-determination-and-defense/) that have supported all of our futures.  All of these stories come back to collective action.)
+
+**PART FIVE**: In September 2021, I realized that Placeflow didn't quite feel right.  I took a step back, and continued researching and exploring.
+
+I kept finding evidence that collective action at the community/city scale is the right direction — but how to implement and support those processes?
+
+Some notable influences during this latest phase:
+
+* Karen O'Brien's work on *Quantum Social Theory*.  Once we step back from a deterministic, individual-centric worldview, we may encounter that our personal actions and intentions matter more than we think ([Short paper](https://projectqsydney.com/wp-content/uploads/2016/06/obrien-2016-wiley_interdisciplinary_reviews__climate_change.pdf), [manuscript draft](https://us14.campaign-archive.com/?u=2e1fd6362b09f5ea47642b2de&id=b3a717e943&e=90b75c7e78), [video conversation](https://www.youtube.com/watch?v=jJcSXKu4TG8)).  Of course, systems and collective change are of paramount importance as well.  The point is an **[I/we]** perspective of the world (similar to **[both/and]**), which aligns with Meadows' perspective on the impact of changing paradigms.
+
+* Andrew Pickering's piece on [agency, performance, and *being* in an environment](https://syntheticzero.net/2021/10/04/being-in-an-environment-a-performative-perspective/amp/?__twitter_impression=true).  For example, in contrast to high-cost, monolithic dam infrastructures — adaptive management that look more like a dance.  Experimenting with a small change, observing the river's reaction, and responding to that reaction, step-in-step with the river.
+
+* Discovering similar ideas and practices from movements across continents, including [Strong Towns](https://www.strongtowns.org/about), [Citizen Action Networks](https://www.thealternative.org.uk/dailyalternative/tag/CANs), [Systems Convening](https://wenger-trayner.com/systems-convening/) — which are all about getting diverse stakeholders in a room together, listening and understanding, and moving from shared perspectives, to creating desired future states together.
+
+Where this came together, is understanding that what I'd built with Placeflow was focused on action prior to collective organizing.
+
+Now, it seems `organizing` comes first.  Once we build relationshps and trust, listen and share perspectives, we have `community` and a `collective capacity` — along with broader perspectives, to understand our priorities and our possibilities for action.
+
+From there, we can can engage in action to create our desired changes — decarbonization, localized food production and economies, cleaner air, better education, productive + supportive technology, *whatever we wish for.*
+
+And along the way, we'll probably start making changes in our own lives as well.
+
+So what can we do?  [Just start](https://rebrand.ly/just-start).
+
+(_Especially if you're a [student, teacher, or have any ties to schools/education](https://www.brookings.edu/research/unleashing-the-creativity-of-teachers-and-students-to-combat-climate-change-an-opportunity-for-global-leadership/)_)
+
+_____________________________
+
+If you're still here, you now know how I've spent the last 3 years (pretty much night and day, with contract on the side work and time allocated for physical/mental rejuvenation)
+
+I can code, design, write stories/scripts (paradigm work), but my greatest impact is in understanding impactful ends, and scoping simple means to get there (whether software, movements, stories, activism, etc.)
+
+With that in mind, if any of this resonates and you'd be interested in collaborating on better futures, I'd love to create together.  Here's a [Discord channel](https://rebrand.ly/better-futures), and you can also reach me on [Twitter](https://rebrand.ly/sam-twitter), [LinkedIn](https://rebrand.ly/sam-linkedin) or *hn [at] ysli [dot] be*
+
+Besides Just Start, the main things I'm thinking about are economic engines to fund community-led development (e.g. [Outcomes Financing](https://ravencapitalpartners.ca/investments/outcomes-financing), [Community-Owned Infrastructure](https://www.sambutler.us/stuff-you-own)), ways to collaborate and share perspectives and learn together, stories and experiences that can impart new paradigms, and decentralized production for things like computing devices and cargo bikes.
+
+I also feel like solar-powered drone arrays could be an effective [gauze pad](https://www.sambutler.us/gauze-pads) to help stop glacial "bleeding", if anybody with an engineering background wants to help me understand if that's crazy or not.
+
+_P.S. For the sake of documentation, a question I've kept coming back to is whether to prescribe actions ("here's a checklist of actions/steps your communities should take") — or support processes for communities to discover actions for themselves, with inspiring examples / knowledge to give an idea of what's possible._
+
+_The former seems more direct and pragmatic, but the latter more truthful and prudent._
+
+_As evidence for the latter, Karen O'Brien articulated the presence of *adoption barriers* when it comes to these kinds of transformations.  A community may know everything they should do — but they still need to *adopt* those changes.  And if the changes come from the community themselves, as opposed to being told/instructed/prescribed what to do, it's easy to see how community-led inquiry can be more direct and pragmatic as well._
