@@ -1,0 +1,380 @@
+<script>
+
+
+// You want to raise ______ to build a _____.  
+
+// [ Sell future credits ]
+
+ import {afterUpdate, getContext, onMount, setContext} from 'svelte';
+
+ let service = "energy"
+ let infrastructure = "community microgrid"
+ let capital = 4000000;
+ let users = "homes";
+ let users_per_month = 1000;
+ let use_cost = 2000;
+ let discount_rate = 50;
+ let years = "";
+ let min_years;
+
+ let percent_savings_shared = 50;
+
+ let payback_years = 12.5;
+
+ let per_time_unit = 1;
+
+  let percent_savings = 40;
+
+$: community_cost_annual = use_cost * users_per_month * per_time_unit;
+
+$: total_savings = community_cost_annual * (percent_savings/100);
+
+ let sell_discounted_use_credits = false;
+ let sell_credits_and_build = false;
+ let use_infrastructure = false;
+
+ $: years_display = years;
+ $: discount_rate_display = discount_rate;
+
+ $: yearly_return = total_savings * (percent_savings_shared/100);
+
+ $: absolute_return = yearly_return * payback_years;
+
+ $: roi = ((absolute_return - capital) / capital) * 100;
+
+ $: arr = roi / payback_years;
+
+ // $: arr = (discount_rate) / years;
+
+ $: funder_rate = use_cost * ((100 - discount_rate) /100);
+
+$: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.round(years_display);  
+
+
+
+  onMount (() =>{
+
+    console.log(d3plus);
+
+    var data = [{
+    "height": 60,
+    "text": infrastructure,
+    "width": 100
+    }];
+
+    new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_1")
+    .render();
+
+     new d3plus.TextBox()
+    .data(data)
+     .padding(5)
+    .fontResize(true)
+    .select("#wrap_2")
+    .render();
+
+   new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_3")
+    .render();
+
+    years = (capital / (users_per_month * 12 * use_cost * (discount_rate/100))).toFixed(0);
+
+    // Since the maximum discount is 99%, we can calculate the minimum number of years for this example, to prevent calculations that use discount rates above 100%
+    min_years = capital / (users_per_month * 12 * use_cost * (99/100));
+
+    //years = years.toFixed(0);
+
+    //years_display = years.toFixed(0);
+ });
+
+ function crunchNumbers() {
+     console.log('crunching');
+
+         var data = [{
+    "height": 60,
+    "text": infrastructure,
+    "width": 100
+    }];
+
+    new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_1")
+    .render();
+
+     new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_2")
+    .render();
+
+   new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_3")
+    .render();
+
+     years = (capital / (users_per_month * 12 * use_cost * (discount_rate/100))).toFixed(0);
+
+    // Since the maximum discount is 99%, we can calculate the minimum number of years for this example, to prevent calculations that use discount rates above 100%
+    min_years = capital / (users_per_month * 12 * use_cost * (99/100));
+
+    years = years.toFixed(0);
+
+    // years_display = years.toFixed(0);
+ }
+
+ function changeYears() {
+
+     discount_rate = ((capital / (users_per_month * 12 * use_cost * years)) * 100).toFixed(0);
+
+     //discount_rate_display = discount_rate.toFixed(0);
+
+     //discount_rate = discount_rate.toFixed(0);
+ }
+
+  function changeDiscountRate() {
+
+     years = (capital / (users_per_month * 12 * use_cost * (discount_rate/100))).toFixed(0);
+
+     years_display = years.toFixed(0);
+
+     years = years.toFixed(0);
+
+ }
+
+ function sellDiscountedUseCredits() {
+     sell_discounted_use_credits = true;
+
+         var data = [{
+    "height": 60,
+    "text": infrastructure,
+    "width": 100
+    }];
+
+    setTimeout(function(){
+
+    new d3plus.TextBox()
+    .data(data)
+    .fontResize(true)
+    .padding(5)
+    .select("#wrap_2")
+    .render();
+ }, 100);
+
+    }
+
+  function sellCreditsAndBuild() {
+     sell_credits_and_build = true;
+
+    var data = [{
+    "height": 60,
+    "text": infrastructure,
+    "width": 100
+    }];
+
+        setTimeout(function(){
+    new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_3")
+    .render();
+ }, 100);
+
+
+ }
+
+</script>
+
+<svelte:head>
+	<script src="https://cdn.jsdelivr.net/npm/d3plus-text@1"></script>
+    <meta property='og:title' content='Futurity'/>
+    <!-- <meta property='og:image' content='//www.sambutler.us/img/nondominium-cover'/> -->
+    <meta property='og:description' content='Funding useful new things, through the future value they create.'/>
+    <meta property='og:url' content='//www.sambutler.us/futurity'/>
+</svelte:head>
+<audio controls src="./../lib/futuresave.mp3">
+</audio>
+
+{#if infrastructure && capital && users && use_cost && users_per_month}
+
+<!--
+<form class="variablesForm" on:input={crunchNumbers}>
+<p>You want <input style="width: 70px; display: inline-block;" name="service" bind:value={service} placeholder="{service}"> for an affordable price of $<input bind:value={use_cost} style="display: inline-block; width: 30px;" name="use_cost" placeholder="XXXXX.XX">/month.  A <input name="infrastructure" style="display: inline-block; width: 150px;" bind:value={infrastructure} placeholder=""> for <input style="display: inline-block; width: 50px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> local <input style="display: inline-block; width: 80px;" name="users" bind:value={users} placeholder="XXXXX.XX"> costs $<input bind:value={capital} style="display: inline-block; width: 80px;" name="capital" placeholder="XXXXX.XX"></p>
+</form>
+-->
+
+<form class="variablesForm2" on:input={crunchNumbers}>
+<p>I pay $<input bind:value={use_cost} style="display: inline-block; width: 30px;" name="use_cost" placeholder="XXXXX.XX"> <select bind:value={per_time_unit}><option value={12}>per month</option><option value={1}>per year</option><option value={52}>per week</option><option value={365}>per day</option><option value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block;" name="service" bind:value={service} placeholder="{service}">. <br> <br>With <input style="display: inline-block; width: 50px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> <input style="display: inline-block; width: 80px;" name="users" bind:value={users} placeholder="XXXXX.XX"> in our community, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
+<br>
+<br>
+With a <input name="infrastructure" style="display: inline-block; width: 150px;" bind:value={infrastructure} placeholder="">, we could save <input type="range" bind:value={percent_savings} min={0} max={100} on:change={changeYears} on:input={changeYears}>{percent_savings}% on food — creating <strong>${total_savings.toLocaleString()}</strong> in savings every year.
+<br>
+<br>
+If a {infrastructure} costs $<input bind:value={capital} style="display: inline-block; width: 80px;" name="capital" placeholder="XXXXX.XX">, and creates <strong>${total_savings.toLocaleString()}</strong> in savings per year, we can share 
+<input type="range" bind:value={percent_savings_shared} min={0} max={100} on:change={changeYears} on:input={changeYears}>{percent_savings_shared}% of the savings and pay back the funding in <input type="range" bind:value={payback_years} min={0} max={100} on:change={changeYears} on:input={changeYears}>{payback_years} years — giving the funders a <input style="display: none;" type="range" bind:value={arr} min={0} max={100} on:change={changeYears} on:input={changeYears}><strong>{arr.toFixed(2)}% annual rate of return.</strong>
+<br><br>
+And from then on, we enjoy the <strong>{infrastructure}</strong> and a full <strong>${total_savings.toLocaleString()} in yearly savings</strong> in our community.
+</p>
+</form>
+
+<!--
+<svg width="340" height="100" viewBox="0 0 340 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="291" cy="36" rx="49" ry="36" fill="#88F693"/>
+<path d="M122.293 52.2929C121.902 52.6834 121.902 53.3166 122.293 53.7071L128.657 60.0711C129.047 60.4616 129.681 60.4616 130.071 60.0711C130.462 59.6805 130.462 59.0474 130.071 58.6569L124.414 53L130.071 47.3431C130.462 46.9526 130.462 46.3195 130.071 45.9289C129.681 45.5384 129.047 45.5384 128.657 45.9289L122.293 52.2929ZM230 52L123 52V54L230 54V52Z" fill="black" fill-opacity="0.46"/>
+<path d="M230.707 27.7071C231.098 27.3166 231.098 26.6834 230.707 26.2929L224.343 19.9289C223.953 19.5384 223.319 19.5384 222.929 19.9289C222.538 20.3195 222.538 20.9526 222.929 21.3431L228.586 27L222.929 32.6569C222.538 33.0474 222.538 33.6805 222.929 34.0711C223.319 34.4616 223.953 34.4616 224.343 34.0711L230.707 27.7071ZM123 28L230 28V26L123 26V28Z" fill="black" fill-opacity="0.46"/>
+<text x="125" y="0" fill="rgba(0,0,0,0.7)" width="140">{service} for</text>
+<text x="125" y="20" fill="rgba(0,0,0,0.7)" width="140">${use_cost}/month</text>
+<text x="130" y="75" fill="rgba(0,0,0,0.7)" width="140">${capital.toLocaleString()}</text>
+<text x="270" y="30" fill="black" width="140">{users_per_month}</text>
+<text x="270" y="50" fill="black" width="140">{users}</text>
+<svg width="109" id="wrap_1">
+<rect x="0.5" y="0.5" width="109" height="71" fill="#87F6F6" stroke="#B4B4B4" stroke-dasharray="10 10"/>
+</svg>
+</svg>
+
+<div style="text-align: right">
+
+How will you fund it?
+
+{#if sell_discounted_use_credits == false}
+<button on:click={sellDiscountedUseCredits}>Sell discounted {service} credits for the {infrastructure}</button>
+{:else}
+<svg style="display: inline-block; vertical-align: top;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M9 12l2 2l4 -4" />
+</svg>
+<strong>Sell discounted {service} credits for the {infrastructure}</strong>
+{/if}
+</div>
+
+    {#if sell_discounted_use_credits == true}
+
+    Based on {users_per_month} {users} using {service} at a price of ${use_cost}/month, you can raise ${capital.toLocaleString()} by selling {Math.round(years_display)} years of **{service} credits** at a {discount_rate}% discount.
+
+    <div class="input-years-discount" style="display: flex; width: fit-content; margin: auto;">
+    <div style="">
+    <input type="range" bind:value={years} min={min_years} on:change={changeYears} on:input={changeYears}>
+    <label>{Math.round(years)} years</label>
+    </div>
+
+    <div style="">
+    <input type="range" bind:value={discount_rate} min="1" max="99" on:change={changeDiscountRate} on:input={changeDiscountRate}>
+    <label>{discount_rate}% discount</label>
+    </div>
+    </div>
+
+        **{users_per_month}** {users} \* **${use_cost}**/month \* **{discount_rate}%** discount \* **12** months \* **{Math.round(years_display)}** years = **${full_calc.toLocaleString()}**  
+
+        By buying {service} credits in advance, local funders — like banks, credit unions, pension funds, small businesses, schools, offices, and people in the community — can help pay for the {infrastructure}, and sell {service} credits back to the community later for a {discount_rate}% return.
+
+
+    <br>
+    <br>
+
+    <svg width="340" height="240" viewBox="0 0 340 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="109" id="wrap_2">
+<rect x="0.5" y="0.5" width="109" height="71" fill="#87F6F6" stroke="#B4B4B4" stroke-dasharray="10 10"/>
+</svg>
+<ellipse cx="291" cy="36" rx="49" ry="36" fill="#88F693"/>
+<path d="M121.293 35.2929C120.902 35.6834 120.902 36.3166 121.293 36.7071L127.657 43.0711C128.047 43.4616 128.681 43.4616 129.071 43.0711C129.462 42.6805 129.462 42.0474 129.071 41.6569L123.414 36L129.071 30.3431C129.462 29.9526 129.462 29.3195 129.071 28.9289C128.681 28.5384 128.047 28.5384 127.657 28.9289L121.293 35.2929ZM229.707 36.7071C230.098 36.3166 230.098 35.6834 229.707 35.2929L223.343 28.9289C222.953 28.5384 222.319 28.5384 221.929 28.9289C221.538 29.3195 221.538 29.9526 221.929 30.3431L227.586 36L221.929 41.6569C221.538 42.0474 221.538 42.6805 221.929 43.0711C222.319 43.4616 222.953 43.4616 223.343 43.0711L229.707 36.7071ZM122 37L229 37V35L122 35V37Z" fill="black" fill-opacity="0.46"/>
+<path d="M82.6147 93.0772C82.1051 93.29 81.8644 93.8756 82.0772 94.3853L85.5445 102.691C85.7572 103.2 86.3429 103.441 86.8525 103.228C87.3622 103.015 87.6028 102.43 87.3901 101.92L84.3081 94.5376L91.6906 91.4555C92.2002 91.2428 92.4409 90.6571 92.2281 90.1475C92.0153 89.6378 91.4297 89.3972 90.9201 89.6099L82.6147 93.0772ZM229.385 154.923C229.895 154.71 230.136 154.124 229.923 153.615L226.456 145.309C226.243 144.8 225.657 144.559 225.147 144.772C224.638 144.985 224.397 145.57 224.61 146.08L227.692 153.462L220.309 156.544C219.8 156.757 219.559 157.343 219.772 157.853C219.985 158.362 220.57 158.603 221.08 158.39L229.385 154.923ZM82.6199 94.9249L228.62 154.925L229.38 153.075L83.3801 93.0751L82.6199 94.9249Z" fill="black" fill-opacity="0.46"/>
+<path d="M45.6254 104.073C45.1133 104.28 44.8659 104.863 45.0728 105.375L48.4443 113.719C48.6511 114.231 49.234 114.479 49.7461 114.272C50.2581 114.065 50.5055 113.482 50.2986 112.97L47.3018 105.553L54.7192 102.556C55.2313 102.349 55.4787 101.766 55.2718 101.254C55.0649 100.742 54.4821 100.494 53.97 100.701L45.6254 104.073ZM230.492 182.226L46.3907 104.08L45.6092 105.921L229.71 184.067L230.492 182.226Z" fill="black" fill-opacity="0.46"/>
+<ellipse cx="293" cy="169" rx="47" ry="45" fill="#F688EB"/>
+<text x="130" y="0" fill="rgba(0,0,0,0.7)" width="140">{service} for</text>
+<text x="130" y="20" fill="rgba(0,0,0,0.7)" width="140">${use_cost}/month</text>
+       <text x="135" y="100" fill="rgba(0,0,0,0.7)" width="140">{service} for ${funder_rate.toFixed(2)}/month</text>
+    <text x="165" y="120" fill="rgba(0,0,0,0.7)" width="140">(for {Math.round(years)} years)</text>
+        <text x="50" y="170" fill="rgba(0,0,0,0.7)" width="140">${capital.toLocaleString()}</text>
+    <text x="270" y="165" fill="rgba(0,0,0,0.7)" width="140">Local</text>
+     <text x="260" y="185" fill="rgba(0,0,0,0.7)" width="140">Funders</text>
+         <text x="270" y="30" fill="black" width="140">{users_per_month}</text>
+<text x="270" y="50" fill="black" width="140">{users}</text>
+</svg>
+    
+
+    After {Math.round(years_display)} years, the funders' capital will be paid back (with {arr.toFixed(2)}% ARR), and the community will have full custody over the {infrastructure} — the community can then sell further {service} credits, provide more affordable {service} for local {users}, and use the {infrastructure} as desired.
+
+    <div style="text-align: right">
+    Want to proceed?
+    <br/>
+    {#if sell_credits_and_build == false}
+    <button on:click={sellCreditsAndBuild} style="text-align: right" id="step_1">Sell {service} credits and build {infrastructure}</button>
+    {:else}
+    <svg style="display: inline-block; vertical-align: top;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M9 12l2 2l4 -4" />
+</svg>
+    <strong>Sell {service} credits and build {infrastructure}</strong>
+    {/if}
+
+    </div>
+
+        {#if sell_discounted_use_credits == true && sell_credits_and_build == true}
+        It's built!  You can now get {service} from the {infrastructure}, at an affordable rate of ${use_cost}/month.
+
+        <button style="display: none;">Use {infrastructure}</button>
+
+            <br>
+
+
+    <svg width="340" height="214" viewBox="0 0 340 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M122.293 21.2929C121.902 21.6834 121.902 22.3166 122.293 22.7071L128.657 29.0711C129.047 29.4616 129.681 29.4616 130.071 29.0711C130.462 28.6805 130.462 28.0474 130.071 27.6569L124.414 22L130.071 16.3431C130.462 15.9526 130.462 15.3195 130.071 14.9289C129.681 14.5384 129.047 14.5384 128.657 14.9289L122.293 21.2929ZM230 21L123 21V23L230 23V21Z" fill="black" fill-opacity="0.46"/>
+    <text x="150" y="15" fill="rgba(0,0,0,0.7)" width="140">${use_cost}</text>
+    <path d="M230.707 55.7071C231.098 55.3166 231.098 54.6834 230.707 54.2929L224.343 47.9289C223.953 47.5384 223.319 47.5384 222.929 47.9289C222.538 48.3195 222.538 48.9526 222.929 49.3431L228.586 55L222.929 60.6569C222.538 61.0474 222.538 61.6805 222.929 62.0711C223.319 62.4616 223.953 62.4616 224.343 62.0711L230.707 55.7071ZM123 56L230 56V54L123 54V56Z" fill="black" fill-opacity="0.46"/>
+    <text x="130" y="75" fill="rgba(0,0,0,0.7)" width="140">{service}</text>
+    <path d="M83.9754 83.2347C83.4634 83.4416 83.216 84.0244 83.4228 84.5365L86.7943 92.8811C87.0012 93.3932 87.584 93.6406 88.0961 93.4337C88.6082 93.2268 88.8556 92.644 88.6487 92.1319L85.6518 84.7145L93.0693 81.7176C93.5814 81.5107 93.8288 80.9279 93.6219 80.4158C93.415 79.9037 92.8321 79.6563 92.3201 79.8632L83.9754 83.2347ZM230.041 144.918L84.7408 83.2414L83.9593 85.0824L229.259 146.759L230.041 144.918Z" fill="black" fill-opacity="0.46"/>
+     <text x="170" y="115" fill="rgba(0,0,0,0.7)" width="140">{service} credit</text>
+
+    <path d="M230.476 184.073C230.988 183.867 231.235 183.284 231.028 182.772L227.657 174.427C227.45 173.915 226.867 173.667 226.355 173.874C225.843 174.081 225.595 174.664 225.802 175.176L228.799 182.594L221.382 185.591C220.87 185.797 220.622 186.38 220.829 186.892C221.036 187.404 221.619 187.652 222.131 187.445L230.476 184.073ZM45.6093 105.921L229.71 184.067L230.492 182.226L46.3907 104.079L45.6093 105.921Z" fill="black" fill-opacity="0.46"/>
+    <text x="50" y="170" fill="rgba(0,0,0,0.7)" width="140">${(use_cost - funder_rate).toFixed(2)}</text>
+
+    <ellipse cx="293" cy="169" rx="47" ry="45" fill="#F688EB"/>
+
+    <svg id="wrap_3">
+    <rect x="0.5" y="0.5" width="109" height="71" rx="9.5" fill="#87F6F6" stroke="#545454" stroke-width="2"/>
+    </svg>
+    <ellipse cx="291" cy="36" rx="49" ry="36" fill="#88F693"/>
+        <text x="270" y="165" fill="rgba(0,0,0,0.7)" width="140">Local</text>
+     <text x="260" y="185" fill="rgba(0,0,0,0.7)" width="140">Funders</text>
+     <text x="270" y="40" fill="rgba(0,0,0,0.7)" width="30">You</text>
+
+    </svg>
+
+        In exchange for ${use_cost}, you receieve a month's worth of {service} from the {infrastructure}.   
+        
+        ${(use_cost - funder_rate).toFixed(2)} of that goes to local funders, who can now sell their discounted {service} credits back to the community, and earn {arr.toFixed(2)}% ARR over the next {Math.round(years_display)} years for their ${capital.toLocaleString()} in capital.
+
+        If these funders include a bank, credit union, pension fund, or community members like you, you can be earning those returns too!
+
+        {/if}
+
+    {/if}
+-->
+{/if}
+
+{#if sell_credits_and_build == true && sell_discounted_use_credits == true}
+
+*In the next piece, see how we can apply this model to support community-led futures and local deicision making. [>> Continue](/localfutures)*
+
+<hr>
+
+*If you want to discuss this or have any questions, feel free to reach out to Chris or myself.*
+
+*Otherwise, the knowledge is yours — use it for a better future, for yourself and for the generations to come.*
+
+*Finally, if you'd like to explore utilizing this model in your work/project and would like some assistance, feel free to send your request to sam@sambutler.us.*
+
+{/if}
