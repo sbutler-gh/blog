@@ -206,8 +206,8 @@ $: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.roun
 <audio controls src="./../lib/futuresave.mp3">
 </audio>
 
-{#if infrastructure && capital && users && use_cost && users_per_month}
-
+<!-- {#if infrastructure && capital && users && use_cost && users_per_month} -->
+{#if "lamb" == "lamb"}
 <!--
 <form class="variablesForm" on:input={crunchNumbers}>
 <p>You want <input style="width: 70px; display: inline-block;" name="service" bind:value={service} placeholder="{service}"> for an affordable price of $<input bind:value={use_cost} style="display: inline-block; width: 30px;" name="use_cost" placeholder="XXXXX.XX">/month.  A <input name="infrastructure" style="display: inline-block; width: 150px;" bind:value={infrastructure} placeholder=""> for <input style="display: inline-block; width: 50px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> local <input style="display: inline-block; width: 80px;" name="users" bind:value={users} placeholder="XXXXX.XX"> costs $<input bind:value={capital} style="display: inline-block; width: 80px;" name="capital" placeholder="XXXXX.XX"></p>
@@ -215,14 +215,16 @@ $: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.roun
 -->
 
 <form class="variablesForm2" on:input={crunchNumbers}>
-<p>I pay $<input bind:value={use_cost} style="display: inline-block; width: 30px;" name="use_cost" placeholder="XXXXX.XX"> <select bind:value={per_time_unit}><option value={12}>per month</option><option value={1}>per year</option><option value={52}>per week</option><option value={365}>per day</option><option value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block;" name="service" bind:value={service} placeholder="{service}">. <br> <br>With <input style="display: inline-block; width: 50px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> <input style="display: inline-block; width: 80px;" name="users" bind:value={users} placeholder="XXXXX.XX"> in our community, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
+<p>I pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="XXXXX.XX"> <select bind:value={per_time_unit}><option value={12}>per month</option><option value={1}>per year</option><option value={52}>per week</option><option value={365}>per day</option><option value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * 11}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br>With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> <input style="display: inline-block; width: {users.length * 11}px; min-width: 30px;" name="users" bind:value={users} placeholder="XXXXX.XX"> in our community, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
 <br>
 <br>
-With a <input name="infrastructure" style="display: inline-block; width: 150px;" bind:value={infrastructure} placeholder="">, we could save <input type="range" bind:value={percent_savings} min={0} max={100} on:change={changeYears} on:input={changeYears}>{percent_savings}% on food — creating <strong>${total_savings.toLocaleString()}</strong> in savings every year.
+With a <input name="infrastructure" style="display: inline-block; width: {infrastructure.length * 10}px; min-width: 30px;" bind:value={infrastructure} placeholder="">, we could save
+<span class="range-div">{percent_savings}%<input type="range" bind:value={percent_savings} min={0} max={100} on:change={changeYears} on:input={changeYears}></span> on {service}
+— creating <strong>${total_savings.toLocaleString()}</strong> in savings every year.
 <br>
 <br>
-If a {infrastructure} costs $<input bind:value={capital} style="display: inline-block; width: 80px;" name="capital" placeholder="XXXXX.XX">, and creates <strong>${total_savings.toLocaleString()}</strong> in savings per year, we can share 
-<input type="range" bind:value={percent_savings_shared} min={0} max={100} on:change={changeYears} on:input={changeYears}>{percent_savings_shared}% of the savings and pay back the funding in <input type="range" bind:value={payback_years} min={0} max={100} on:change={changeYears} on:input={changeYears}>{payback_years} years — giving the funders a <input style="display: none;" type="range" bind:value={arr} min={0} max={100} on:change={changeYears} on:input={changeYears}><strong>{arr.toFixed(2)}% annual rate of return.</strong>
+If a {infrastructure} costs $<input bind:value={capital} style="display: inline-block; width: {capital.toString().length * 11}px; min-width: 30px;" name="capital" placeholder="XXXXX.XX">, and creates <strong>${total_savings.toLocaleString()}</strong> in savings per year, we can share 
+<span class="range-div">{percent_savings_shared}% <input type="range" bind:value={percent_savings_shared} min={0} max={100} on:change={changeYears} on:input={changeYears}></span>of the savings and pay back the funding in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100} on:change={changeYears} on:input={changeYears}></span> years — giving the funders a <input style="display: none;" type="range" bind:value={arr} min={0} max={100} on:change={changeYears} on:input={changeYears}><strong>{arr.toFixed(2)}% annual rate of return.</strong>
 <br><br>
 And from then on, we enjoy the <strong>{infrastructure}</strong> and a full <strong>${total_savings.toLocaleString()} in yearly savings</strong> in our community.
 </p>
@@ -378,3 +380,29 @@ How will you fund it?
 *Finally, if you'd like to explore utilizing this model in your work/project and would like some assistance, feel free to send your request to sam@sambutler.us.*
 
 {/if}
+
+<style>
+input {
+  border: none;
+  border-bottom: solid 1px grey;
+  height: 1.5rem;
+  font-size: 18px;
+}
+
+.range-div {
+    display: inline-grid; 
+    text-align: center; 
+    font-weight: 600; 
+    position: relative;
+    height: 40px;
+    margin-right: 4px;
+}
+input[type="range"] {
+    height: 0.5rem;
+    width: 70px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+}
+</style>
