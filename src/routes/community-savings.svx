@@ -198,10 +198,10 @@ $: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.roun
 
 <svelte:head>
 	<script src="https://cdn.jsdelivr.net/npm/d3plus-text@1"></script>
-    <meta property='og:title' content='Futurity'/>
+    <meta property='og:title' content='Community Savings'/>
     <!-- <meta property='og:image' content='//www.sambutler.us/img/nondominium-cover'/> -->
-    <meta property='og:description' content='Funding useful new things, through the future value they create.'/>
-    <meta property='og:url' content='//www.sambutler.us/futurity'/>
+    <meta property='og:description' content='Building Back Better w/ Community Savings (That Pay for Themselves)'/>
+    <meta property='og:url' content='//www.sambutler.us/community-savings'/>
 </svelte:head>
 
 <article class="h-entry">
