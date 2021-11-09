@@ -203,8 +203,6 @@ $: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.roun
     <meta property='og:description' content='Funding useful new things, through the future value they create.'/>
     <meta property='og:url' content='//www.sambutler.us/futurity'/>
 </svelte:head>
-<audio controls src="./../lib/futuresave.mp3">
-</audio>
 
 <!-- {#if infrastructure && capital && users && use_cost && users_per_month} -->
 {#if "lamb" == "lamb"}
@@ -213,6 +211,10 @@ $: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.roun
 <p>You want <input style="width: 70px; display: inline-block;" name="service" bind:value={service} placeholder="{service}"> for an affordable price of $<input bind:value={use_cost} style="display: inline-block; width: 30px;" name="use_cost" placeholder="XXXXX.XX">/month.  A <input name="infrastructure" style="display: inline-block; width: 150px;" bind:value={infrastructure} placeholder=""> for <input style="display: inline-block; width: 50px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> local <input style="display: inline-block; width: 80px;" name="users" bind:value={users} placeholder="XXXXX.XX"> costs $<input bind:value={capital} style="display: inline-block; width: 80px;" name="capital" placeholder="XXXXX.XX"></p>
 </form>
 -->
+
+<h2 class="none">Government Spending that Gets Returns — by Saving Communities Money</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v4QuphODK-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <form class="variablesForm2" on:input={crunchNumbers}>
 <p>I pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="XXXXX.XX"> <select bind:value={per_time_unit}><option value={12}>per month</option><option value={1}>per year</option><option value={52}>per week</option><option value={365}>per day</option><option value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * 11}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br>With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> <input style="display: inline-block; width: {users.length * 11}px; min-width: 30px;" name="users" bind:value={users} placeholder="XXXXX.XX"> in our community, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.

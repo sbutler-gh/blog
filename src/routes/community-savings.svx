@@ -1,0 +1,262 @@
+<script>
+
+
+// You want to raise ______ to build a _____.  
+
+// [ Sell future credits ]
+
+ import {afterUpdate, getContext, onMount, setContext} from 'svelte';
+
+ let service = "energy"
+ let infrastructure = "community microgrid"
+ let capital = 4000000;
+ let users = "homes";
+ let users_per_month = 1000;
+ let use_cost = 2000;
+ let discount_rate = 50;
+ let years = "";
+ let min_years;
+
+ let percent_savings_shared = 50;
+
+ let payback_years = 12.5;
+
+ let per_time_unit = 1;
+
+  let percent_savings = 40;
+
+$: community_cost_annual = use_cost * users_per_month * per_time_unit;
+
+$: total_savings = community_cost_annual * (percent_savings/100);
+
+ let sell_discounted_use_credits = false;
+ let sell_credits_and_build = false;
+ let use_infrastructure = false;
+
+ $: years_display = years;
+ $: discount_rate_display = discount_rate;
+
+ $: yearly_return = total_savings * (percent_savings_shared/100);
+
+ $: absolute_return = yearly_return * payback_years;
+
+ $: roi = ((absolute_return - capital) / capital) * 100;
+
+ $: arr = roi / payback_years;
+
+ // $: arr = (discount_rate) / years;
+
+ $: funder_rate = use_cost * ((100 - discount_rate) /100);
+
+$: full_calc = users_per_month * use_cost * (discount_rate/100) * 12 * Math.round(years_display);  
+
+
+
+  onMount (() =>{
+
+    console.log(d3plus);
+
+    var data = [{
+    "height": 60,
+    "text": infrastructure,
+    "width": 100
+    }];
+
+    new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_1")
+    .render();
+
+     new d3plus.TextBox()
+    .data(data)
+     .padding(5)
+    .fontResize(true)
+    .select("#wrap_2")
+    .render();
+
+   new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_3")
+    .render();
+
+    years = (capital / (users_per_month * 12 * use_cost * (discount_rate/100))).toFixed(0);
+
+    // Since the maximum discount is 99%, we can calculate the minimum number of years for this example, to prevent calculations that use discount rates above 100%
+    min_years = capital / (users_per_month * 12 * use_cost * (99/100));
+
+    //years = years.toFixed(0);
+
+    //years_display = years.toFixed(0);
+ });
+
+ function crunchNumbers() {
+     console.log('crunching');
+
+         var data = [{
+    "height": 60,
+    "text": infrastructure,
+    "width": 100
+    }];
+
+    new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_1")
+    .render();
+
+     new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_2")
+    .render();
+
+   new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_3")
+    .render();
+
+     years = (capital / (users_per_month * 12 * use_cost * (discount_rate/100))).toFixed(0);
+
+    // Since the maximum discount is 99%, we can calculate the minimum number of years for this example, to prevent calculations that use discount rates above 100%
+    min_years = capital / (users_per_month * 12 * use_cost * (99/100));
+
+    years = years.toFixed(0);
+
+    // years_display = years.toFixed(0);
+ }
+
+ function changeYears() {
+
+     discount_rate = ((capital / (users_per_month * 12 * use_cost * years)) * 100).toFixed(0);
+
+     //discount_rate_display = discount_rate.toFixed(0);
+
+     //discount_rate = discount_rate.toFixed(0);
+ }
+
+  function changeDiscountRate() {
+
+     years = (capital / (users_per_month * 12 * use_cost * (discount_rate/100))).toFixed(0);
+
+     years_display = years.toFixed(0);
+
+     years = years.toFixed(0);
+
+ }
+
+ function sellDiscountedUseCredits() {
+     sell_discounted_use_credits = true;
+
+         var data = [{
+    "height": 60,
+    "text": infrastructure,
+    "width": 100
+    }];
+
+    setTimeout(function(){
+
+    new d3plus.TextBox()
+    .data(data)
+    .fontResize(true)
+    .padding(5)
+    .select("#wrap_2")
+    .render();
+ }, 100);
+
+    }
+
+  function sellCreditsAndBuild() {
+     sell_credits_and_build = true;
+
+    var data = [{
+    "height": 60,
+    "text": infrastructure,
+    "width": 100
+    }];
+
+        setTimeout(function(){
+    new d3plus.TextBox()
+    .data(data)
+    .padding(5)
+    .fontResize(true)
+    .select("#wrap_3")
+    .render();
+ }, 100);
+
+
+ }
+
+</script>
+
+<svelte:head>
+	<script src="https://cdn.jsdelivr.net/npm/d3plus-text@1"></script>
+    <meta property='og:title' content='Futurity'/>
+    <!-- <meta property='og:image' content='//www.sambutler.us/img/nondominium-cover'/> -->
+    <meta property='og:description' content='Funding useful new things, through the future value they create.'/>
+    <meta property='og:url' content='//www.sambutler.us/futurity'/>
+</svelte:head>
+
+<article class="h-entry">
+
+<h3 class="p-name">Building Back Better w/ Community Savings (That Pay for Themselves)</h3>
+
+    <div class="e-content">
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v4QuphODK-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<h4>Create your own Community Savings Program</h4>
+<form class="variablesForm2" style="border-radius: 5px; padding: 2px 10px; background: #f8f8f8;" on:input={crunchNumbers}>
+<p>I pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="XXXXX.XX"> <select bind:value={per_time_unit}><option value={12}>per month</option><option value={1}>per year</option><option value={52}>per week</option><option value={365}>per day</option><option value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * 11}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br>With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> <input style="display: inline-block; width: {users.length * 11}px; min-width: 30px;" name="users" bind:value={users} placeholder="XXXXX.XX"> in our community, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
+<br>
+<br>
+With a <input name="infrastructure" style="display: inline-block; width: {infrastructure.length * 10}px; min-width: 30px;" bind:value={infrastructure} placeholder="">, we could save
+<span class="range-div">{percent_savings}%<input type="range" bind:value={percent_savings} min={0} max={100} on:change={changeYears} on:input={changeYears}></span> on {service}
+— creating <strong>${total_savings.toLocaleString()}</strong> in savings every year.
+<br>
+<br>
+If a {infrastructure} costs $<input bind:value={capital} style="display: inline-block; width: {capital.toString().length * 11}px; min-width: 30px;" name="capital" placeholder="XXXXX.XX">, and creates <strong>${total_savings.toLocaleString()}</strong> in savings per year, we can share 
+<span class="range-div">{percent_savings_shared}% <input type="range" bind:value={percent_savings_shared} min={0} max={100} on:change={changeYears} on:input={changeYears}></span>of the savings and pay back the funding in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100} on:change={changeYears} on:input={changeYears}></span> years — giving the funders a <input style="display: none;" type="range" bind:value={arr} min={0} max={100} on:change={changeYears} on:input={changeYears}><strong>{arr.toFixed(2)}% annual rate of return.</strong>
+<br><br>
+And from then on, we enjoy the <strong>{infrastructure}</strong> and a full <strong>${total_savings.toLocaleString()} in yearly savings</strong> in our community.
+</p>
+</form>
+
+</div>
+</article>
+
+<style>
+input {
+  border: none;
+  border-bottom: solid 1px grey;
+  height: 1.5rem;
+  font-size: 18px;
+  background: #fce9ff;
+}
+
+.range-div {
+    display: inline-grid; 
+    text-align: center; 
+    font-weight: 600; 
+    position: relative;
+    height: 40px;
+    margin-right: 4px;
+}
+input[type="range"] {
+    height: 0.5rem;
+    width: 70px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+}
+</style>
