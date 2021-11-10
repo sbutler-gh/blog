@@ -99,7 +99,7 @@ else {
 <article class="h-entry">
 
 <!-- <h3 class="p-name">Building Back Better w/ Community Savings (That Pay for Themselves)</h3> -->
-<h3 class="p-name">Building Back Better<br>with Community Savings</h3>
+<h2 class="p-name">Building Back Better<br>with Community Savings</h2>
 
     <div class="e-content">
 
@@ -156,7 +156,7 @@ else {
         
                   <div>
                     <label for="contact_method">What's the best way to contact you?</label>
-                    <!-- <label style="font-size: 14px; padding-bottom: 2px;">You can choose whether to make this public later.</label> -->
+                    <!-- <label style="font-size: 14px; padding-bottom: 2px;">If you want to chat ...</label> -->
                     <textarea type="text" name="contact_method" placeholder="e.g. Message on me Signal at +1 555 555 5555 or via email at hey@example.com"></textarea>
                   </div>
         
@@ -284,6 +284,11 @@ height: 100%;
 .profile-form, .success-alert {
   width: 95%;
 }
+
+.p-name {
+  width: 100%;
+  text-align: center;
+}
 }
 
 @media only screen and (min-width: 801px) {
@@ -291,6 +296,11 @@ height: 100%;
   .profile-form, .success-alert {
       width: 75%;
   }
+
+  .p-name {
+  width: 80%;
+  text-align: center;
+}
 }
 
 .register {
