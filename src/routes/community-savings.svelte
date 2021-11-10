@@ -90,10 +90,23 @@ else {
 
 <svelte:head>
 	<script src="https://cdn.jsdelivr.net/npm/d3plus-text@1"></script>
-    <meta property='og:title' content='Community Savings'/>
-    <!-- <meta property='og:image' content='//www.sambutler.us/img/nondominium-cover'/> -->
-    <meta property='og:description' content='Building Back Better w/ Community Savings (That Pay for Themselves)'/>
-    <meta property='og:url' content='//www.sambutler.us/community-savings'/>
+  <title>Community Savings</title>
+  <meta name="description" content="Building Back Better w/ Community Savings (That Pay for Themselves)">
+  
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://sambutler.us/community-savings/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Community Savings">
+  <meta property="og:description" content="Building Back Better w/ Community Savings (That Pay for Themselves)">
+  <meta property="og:image" content="https://i.imgur.com/Qatqm4A.png">
+  
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="sambutler.us">
+  <meta property="twitter:url" content="https://sambutler.us/community-savings/">
+  <meta name="twitter:title" content="Community Savings">
+  <meta name="twitter:description" content="Building Back Better w/ Community Savings (That Pay for Themselves)">
+  <meta name="twitter:image" content="https://i.imgur.com/Qatqm4A.png">
 </svelte:head>
 
 <article class="h-entry">
@@ -107,6 +120,13 @@ else {
         <div class="embed-youtube">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/v4QuphODK-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            <details><summary style="font-size: 14px;">References</summary>
+              <div class="footnotes">
+                <p>1. A 1MW grid, capable of powering <a href="https://www.nwcouncil.org/reports/columbia-river-history/megawatt" target="_blank">powers 600+ homes</a>, costs <a href="https://www.nrel.gov/docs/fy19osti/67821.pdf" target="_blank">$2.1 million</a>.  Calculation for 1000 homes is based on 2MW of power at $4 million.</p>
+                <p>2. Microgrids save an average of <a href="https://www.ase.org/blog/microgrids-resilience-yes-dont-overlook-their-efficiency-potential" target="_blank"> 5% in transmission</a> (and can save as much to 30%), by lowering the distance that electricity travels to your home.  Further energy savings can come from lower prices of renewable energy generation — savings are more profound <a href="https://blogs.constellation.com/energy-management/how-energy-technology-may-reduce-consumption-and-spend-a-look-at-microgrids/" target="_blank">where energy prices are higher today.</a> (Also see: <a href="https://www.renewableenergyworld.com/solar/new-research-shows-transitioning-to-100-clean-energy-could-save-us-households-321b/" target="_blank">analysis of Rewiring America report</a>)</p>
+  
+              </div>
+            </details>
 
             <div class="register register-2">
               {#if profile_form == true}
@@ -281,7 +301,7 @@ width: 100%;
 height: 100%;
 }
 
-.profile-form, .success-alert {
+.profile-form, .success-alert, .footnotes {
   width: 95%;
 }
 
@@ -289,6 +309,7 @@ height: 100%;
   width: 100%;
   text-align: center;
 }
+
 }
 
 @media only screen and (min-width: 801px) {
@@ -300,6 +321,10 @@ height: 100%;
   .p-name {
   width: 80%;
   text-align: center;
+}
+
+.footnotes {
+  width: 85%;
 }
 }
 
@@ -399,5 +424,12 @@ height: 100%;
     .success-link:hover {
       border-bottom: solid 1px #003cff;
       text-decoration: none;
+    }
+
+    .footnotes {
+      font-size: 14px;
+      background: #f8f8f8;
+      padding: 2px 10px;
+      border-radius: 10px;
     }
 </style>
