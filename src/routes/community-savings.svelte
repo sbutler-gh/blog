@@ -1,0 +1,393 @@
+<script>
+
+  import supabase from "$lib/db.js";
+
+
+// You want to raise ______ to build a _____.  
+
+// [ Sell future credits ]
+
+
+ let service = "energy"
+ let infrastructure = "community microgrid"
+ let capital = 4000000;
+ let users = "homes";
+ let users_per_month = 1000;
+ let use_cost = 2000;
+
+ let percent_savings_shared = 50;
+
+ let payback_years = 12.5;
+
+ let per_time_unit = 1;
+
+  let percent_savings = 40;
+
+$: community_cost_annual = use_cost * users_per_month * per_time_unit;
+
+$: total_savings = community_cost_annual * (percent_savings/100);
+
+
+ $: yearly_return = total_savings * (percent_savings_shared/100);
+
+ $: absolute_return = yearly_return * payback_years;
+
+ $: roi = ((absolute_return - capital) / capital) * 100;
+
+ $: arr = roi / payback_years;
+
+
+ let profile_form = false;
+
+ async function addEmail(e) {
+
+let formData = new FormData(e.target);
+
+console.log(formData.get('email'));
+
+localStorage.setItem('email', formData.get('email'));
+
+profile_form = true;
+}
+
+async function addProfileInformation(e) {
+
+let formData = new FormData(e.target);
+
+// console.log(formData.get('email'));
+
+console.log([...formData]);
+
+profile_form = "submitted";
+
+let random_password = Math.random().toString(36).substr(2, 8);
+
+const { data, error } = await supabase.auth.signUp(
+  { email: localStorage.getItem('email'),
+    password: random_password },
+  {
+    data: {
+      full_name: formData.get('full_name'),
+      introduction: formData.get('introduction'),
+      website_url: formData.get('website_url'),
+      linkedin_url: formData.get('linkedin_url'),
+      twitter_handle: formData.get('twitter_handle'),
+      contact_method: formData.get('contact_method')
+  }
+})
+if (data) {
+  console.log(data);
+  let new_user = data;
+  profile_form = "submitted";
+  return data;
+}
+else {
+  console.log(error);
+}
+}
+
+</script>
+
+<svelte:head>
+	<script src="https://cdn.jsdelivr.net/npm/d3plus-text@1"></script>
+    <meta property='og:title' content='Community Savings'/>
+    <!-- <meta property='og:image' content='//www.sambutler.us/img/nondominium-cover'/> -->
+    <meta property='og:description' content='Building Back Better w/ Community Savings (That Pay for Themselves)'/>
+    <meta property='og:url' content='//www.sambutler.us/community-savings'/>
+</svelte:head>
+
+<article class="h-entry">
+
+<!-- <h3 class="p-name">Building Back Better w/ Community Savings (That Pay for Themselves)</h3> -->
+<h3 class="p-name">Building Back Better<br>with Community Savings</h3>
+
+    <div class="e-content">
+
+
+        <div class="embed-youtube">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/v4QuphODK-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="register register-2">
+              {#if profile_form == true}
+              <form class="profile-form" on:submit|preventDefault={addProfileInformation}>
+                <p style="font-weight: bold;">About You — A Few More Details</p>
+                <!-- <label>Email</label> -->
+                <div>
+                <label for="full_name">Name</label>
+                <input style="padding: 0.5rem;" autofocus type="text" name="full_name" placeholder=""><br>
+                </div>
+        
+                <!-- <div>
+                  <label for="what_i_do">What do you do?</label>
+                  <input style="padding: 0.5rem;" type="text" name="what_i_do" placeholder="I'm a ..."><br>
+                  </div> -->
+        
+                  <div>
+                    <label for="introduction">Introduce yourself and your interests in Community Savings</label>
+                    <textarea type="text" name="introduction" placeholder=""></textarea><br>
+                    </div>
+        
+                <!-- <div>
+                  <label for="interests">What are your interests in Community Savings programs?</label>
+                  <textarea style="padding: 0.5rem;" type="text" name="interests" placeholder=""></textarea><br>
+                  </div> -->
+        
+                  <div>
+                    <label for="website_url">Website / Personal Page</label>
+                    <input style="padding: 0.5rem;" type="url" name="website_url" placeholder="https://..."><br>
+                  </div>
+        
+                  <div>
+                    <label for="linkedin_url">LinkedIn</label>
+                    <input style="padding: 0.5rem;" type="url" name="linkedin_url" placeholder="https://..."><br>
+                  </div>
+        
+                  <div>
+                    <label for="twitter_handle">Twitter Handle</label>
+                    <input style="padding: 0.5rem;" type="text" name="twitter_handle" placeholder="mytwittername"><br>
+                  </div>
+        
+        
+                  <!-- <div>
+                    <label for="site_url">GitHub Handle</label>
+                    <input style="padding: 0.5rem;" type="text" name="twitter_url" placeholder="mygithubname"><br>
+                  </div> -->
+        
+                  <div>
+                    <label for="contact_method">What's the best way to contact you?</label>
+                    <!-- <label style="font-size: 14px; padding-bottom: 2px;">You can choose whether to make this public later.</label> -->
+                    <textarea type="text" name="contact_method" placeholder="e.g. Message on me Signal at +1 555 555 5555 or via email at hey@example.com"></textarea>
+                  </div>
+        
+                  <!-- <div>
+                    <label for="name">LinkedIn URL</label>
+                    <input style="padding: 0.5rem;" type="url" name="name" placeholder="https://linkedin.com/in/..."><br>
+                  </div>
+        
+                  <div>
+                    <label for="name">Twitter Handle</label>
+                    <input style="padding: 0.5rem;" type="url" name="name" placeholder="https://twitter.com/..."><br>
+                  </div>
+        
+                  <div>
+                    <label for="name">GitHub Handle</label>
+                    <input style="padding: 0.5rem;" type="url" name="name" placeholder="https://github.com/..."><br>
+                  </div> -->
+                <button style="margin-left: auto;">Finish</button>
+              </form>
+              {:else if profile_form == false}
+            <form class="email-form" on:submit|preventDefault={addEmail}>
+              <p style="font-weight: bold;">Enter your email to collaborate and recieve updates</p>
+              <!-- <label>Email</label> -->
+              <input style="padding: 0.5rem;" autofocus type="email" name="email" placeholder="Your Email (hey@example.com)">
+              <button>Submit</button>
+            </form>
+            {:else if profile_form == "submitted"}
+            <div class="success-alert" style="background: #d1ffd1; color: #094609fc; padding: 5px 10px;">
+              <div style="text-align: center; margin: auto;"><p>Success!</p>
+              <p>Keep an eye out for updates.  In the meantime, you can <a class="success-link" href="mailto:sam@sambutler.us" style="color: #003cff;">send us an email</a>, share this page, and try the tool below!</p></div>
+            </div>
+              {/if}
+            </div>
+
+<div class="program">
+<h4 style="padding-left: 10px">Create your own Community Savings Program</h4>
+<form class="variablesForm2" style="border-radius: 5px; padding: 0px 10px;">
+<p>I pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="XXXXX.XX"> <select bind:value={per_time_unit}><option value={12}>per month</option><option value={1}>per year</option><option value={52}>per week</option><option value={365}>per day</option><option value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * 11}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br>With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> <input style="display: inline-block; width: {users.length * 11}px; min-width: 30px;" name="users" bind:value={users} placeholder="XXXXX.XX"> in our community, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
+<br>
+<br>
+With a <input name="infrastructure" style="display: inline-block; width: {infrastructure.length * 10}px; min-width: 30px;" bind:value={infrastructure} placeholder="">, we could save
+<span class="range-div">{percent_savings}%<input type="range" bind:value={percent_savings} min={0} max={100}></span> on {service}
+— creating <strong>${total_savings.toLocaleString()}</strong> in savings every year.
+<br>
+<br>
+If a {infrastructure} costs $<input bind:value={capital} style="display: inline-block; width: {capital.toString().length * 11}px; min-width: 30px;" name="capital" placeholder="XXXXX.XX">, and creates <strong>${total_savings.toLocaleString()}</strong> in savings per year, we can share 
+<span class="range-div">{percent_savings_shared}% <input type="range" bind:value={percent_savings_shared} min={0} max={100}></span>of the savings and pay back the funding in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the funders a <input style="display: none;" type="range" bind:value={arr} min={0} max={100}><strong>{arr.toFixed(2)}% annual rate of return.</strong>
+<br><br>
+And from then on, we enjoy the <strong>{infrastructure}</strong> and a full <strong>${total_savings.toLocaleString()} in yearly savings</strong> in our community.
+</p>
+</form>
+</div>
+
+</div>
+</article>
+
+<style>
+.program {
+    border: solid 1px black;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.program input {
+  border: none;
+  border-bottom: solid 1px grey;
+  height: 1.5rem;
+  font-size: 18px;
+}
+
+.program .range-div {
+    display: inline-grid; 
+    text-align: center; 
+    font-weight: 600; 
+    position: relative;
+    height: 40px;
+    margin-right: 4px;
+}
+.program input[type="range"] {
+    height: 0.5rem;
+    width: 70px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.email-form {
+    margin: 10px 0px;
+}
+
+@media only screen and (max-width: 800px) {
+
+/* .register button {
+  margin: auto;
+  text-align: center;
+}
+
+.profile-form {
+  width: 100%;
+} */
+
+.embed-youtube {
+position: relative;
+padding-bottom: 56.25%; /* - 16:9 aspect ratio (most common) */
+/* padding-bottom: 62.5%; - 16:10 aspect ratio */
+/* padding-bottom: 75%; - 4:3 aspect ratio */
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+width: 100%;
+}
+
+.embed-youtube iframe,
+.embed-youtube object,
+.embed-youtube embed {
+border: 0;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.profile-form, .success-alert {
+  width: 95%;
+}
+}
+
+@media only screen and (min-width: 801px) {
+
+  .profile-form, .success-alert {
+      width: 75%;
+  }
+}
+
+.register {
+      /* padding: 20px 20px; */
+      border-radius: 10px;
+      /* border: solid black 1px; */
+      /* background: ghostwhite; */
+      /* background: white; */
+      /* width: 50%; */
+    }
+
+    .register-2 {
+      /* text-align: center; */
+      margin: 20px auto;
+      /* box-shadow: 0 -1px 10px rgb(0 0 0 / 5%), 0 1px 4px rgb(0 0 0 / 10%), 0 10px 30px #f3ece8; */
+    }
+
+    .register-2 input:focus {
+      border-color: #a4d2ff;
+      box-shadow: 0 0 6px rgb(27 106 201 / 50%);
+      outline: none;
+    }
+
+    .register-2 input {
+      /* margin: auto; */
+      width: 80%;
+    }
+
+    .profile-form {
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 -1px 10px rgb(0 0 0 / 5%), 0 1px 4px rgb(0 0 0 / 10%), 0 10px 30px #f3ece8;
+      /* text-align: center; */
+      /* margin: auto; */
+    }
+
+    .email-form input {
+      /* margin: auto !important; */
+    }
+
+    .profile-form input {
+      max-width: 50%;
+    }
+
+    .profile-form textarea {
+      height: 70px;
+      width: 95%;
+    }
+
+    .profile-form div {
+      text-align: left;
+      margin: 0 !important;
+      width: 100%;
+    }
+
+    .profile-form label {
+      font-size: 16px;
+    }
+
+    .register-2 button {
+      border-radius: 20px;
+      color: white;
+      border: none;
+      background: #2da562;
+      padding: 0.5em 2em;
+      margin-top: 10px;
+      /* text-align: center;
+      margin-left: auto; */
+      /* padding: 5px 10px; */
+      /* width: 30%; */
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .register label, .register input, .register button, .register textarea {
+      display: block;
+    }
+
+    .register input {
+      box-sizing: border-box;
+      font-size: 16px;
+      line-height: 1.5rem;
+      padding: 1px 2px;
+    }
+
+    .register input {
+      padding: 3px 3px;
+    }
+
+    .register textarea, .register input {
+      border-radius: 5px;
+      /* background: #fbfbfb; */
+      border: solid lightgrey 1px;
+    }
+
+    .success-link:hover {
+      border-bottom: solid 1px #003cff;
+      text-decoration: none;
+    }
+</style>
