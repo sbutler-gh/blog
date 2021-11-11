@@ -98,7 +98,7 @@ else {
   <meta property="og:type" content="website">
   <meta property="og:title" content="Community Savings">
   <meta property="og:description" content="Building Back Better w/ Community Savings (That Pay for Themselves)">
-  <meta property="og:image" content="https://i.imgur.com/Qatqm4A.png">
+  <meta property="og:image" content="https://i.imgur.com/k7CqmBO.png">
   
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
@@ -106,7 +106,7 @@ else {
   <meta property="twitter:url" content="https://sambutler.us/community-savings/">
   <meta name="twitter:title" content="Community Savings">
   <meta name="twitter:description" content="Building Back Better w/ Community Savings (That Pay for Themselves)">
-  <meta name="twitter:image" content="https://i.imgur.com/Qatqm4A.png">
+  <meta name="twitter:image" content="https://i.imgur.com/k7CqmBO.png">
 </svelte:head>
 
 <article class="h-entry">
