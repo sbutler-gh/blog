@@ -38,16 +38,28 @@ $: total_savings = community_cost_annual * (percent_savings/100);
 
 
  let profile_form = false;
+ let new_user;
 
  async function addEmail(e) {
 
 let formData = new FormData(e.target);
 
-console.log(formData.get('email'));
-
-localStorage.setItem('email', formData.get('email'));
-
 profile_form = true;
+
+let random_password = Math.random().toString(36).substr(2, 8);
+
+const { data, error } = await supabase.auth.signUp(
+  { email: formData.get('email'),
+    password: random_password })
+if (data) {
+  console.log(data);
+  new_user = data;
+  return data;
+}
+else {
+  console.log(error);
+  localStorage.setItem('email', formData.get('email'));
+}
 }
 
 async function addProfileInformation(e) {
@@ -58,31 +70,57 @@ let formData = new FormData(e.target);
 
 console.log([...formData]);
 
-profile_form = "submitted";
+if (new_user) {
+  const { data, error } = await supabase
+  .from('profiles')
+  .update([
+    {
+        full_name: formData.get('full_name'),
+        introduction: formData.get('introduction'),
+        website_url: formData.get('website_url'),
+        linkedin_url: formData.get('linkedin_url'),
+        twitter_handle: formData.get('twitter_handle'),
+        contact_method: formData.get('contact_method')
+    },
+  ])
+  .eq('user_id', new_user.id)
 
-let random_password = Math.random().toString(36).substr(2, 8);
-
-const { data, error } = await supabase.auth.signUp(
-  { email: localStorage.getItem('email'),
-    password: random_password },
-  {
-    data: {
-      full_name: formData.get('full_name'),
-      introduction: formData.get('introduction'),
-      website_url: formData.get('website_url'),
-      linkedin_url: formData.get('linkedin_url'),
-      twitter_handle: formData.get('twitter_handle'),
-      contact_method: formData.get('contact_method')
+  if (data) {
+    console.log(data);
+    // let new_user = data;
+    profile_form = "submitted";
+    return data;
   }
-})
-if (data) {
-  console.log(data);
-  let new_user = data;
-  profile_form = "submitted";
-  return data;
+  else {
+    console.log(error);
+  }
 }
+
 else {
-  console.log(error);
+  let random_password = Math.random().toString(36).substr(2, 8);
+
+  const { data, error } = await supabase.auth.signUp(
+    { email: localStorage.getItem('email'),
+      password: random_password },
+    {
+      data: {
+        full_name: formData.get('full_name'),
+        introduction: formData.get('introduction'),
+        website_url: formData.get('website_url'),
+        linkedin_url: formData.get('linkedin_url'),
+        twitter_handle: formData.get('twitter_handle'),
+        contact_method: formData.get('contact_method')
+    }
+  })
+  if (data) {
+    console.log(data);
+    // let new_user = data;
+    profile_form = "submitted";
+    return data;
+  }
+  else {
+    console.log(error);
+  }
 }
 }
 
@@ -107,6 +145,10 @@ else {
   <meta name="twitter:title" content="Community Savings">
   <meta name="twitter:description" content="Building Back Better w/ Community Savings (That Pay for Themselves)">
   <meta name="twitter:image" content="https://i.imgur.com/k7CqmBO.png">
+  <!-- <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_1vs44o3mad3tUwqV5nR6zO8sRwuC5HepCh696Jl2gWr',{api_host:'https://app.posthog.com'})
+</script> -->
 </svelte:head>
 
 <article class="h-entry">
