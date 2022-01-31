@@ -3,15 +3,86 @@
 import { children } from "svelte/internal";
 
 </script>
-<h3 style="text-align: left;">Hi, I'm Sam</h3>
-<p>I work on projects for a better future — usually, with a focus on environmental and social outcomes.</p>
 
-**About Me** (*Under Construction*)
+**Recent Work**
 
-You can check out my <a href="https://sbresume.netlify.app/">digital resume</a> and <a href="https://ysli.be">portfolio</a> in the meantime.
+<div style="display: flex">
+<div class="project">
+<img src="https://i.imgur.com/ck3Yja2.png?fb">
+
+[**Placeflow**](https://placeflow.net/welcome)
+
+Imagine the future of your community, and share visions of what your neighborhood could be.
+
+</div>
+
+<div class="project">
+<img src="https://thefriend.org/assets/ugc/images/growing-pains.jpg">
+
+[**Just Start**](https://juststart.do)
+
+See events from climate and community groups near you, so you can show up and get engaged.
+
+</div>
+
+<div class="project">
+<img src="https://lh6.googleusercontent.com/3nqQ1roSSbdatXLRQV-LTPSF-uBxYtoEra34PNXSub_tOz-Eu0zPnLmNffVSEnzPrTND3HkHv1fn_A=w1200-h630-p">
+
+[**Stories of New Paradigms**](https://rebrand.ly/stories-for-change)
+
+Narratives, stories, and media to help us transcend paradigms — and give us visions to work towards.
+
+</div>
+
+</div>
+
+<div style="display: flex">
+
+<div class="project">
+<img src="https://i.imgur.com/k7CqmBO.png">
+
+[**Community Savings**](https://sambutler.us/community-savings)
+
+How we can fund local projects through the savings they create, without the need for extractive funding / compromise.
+</div>
+
+<div class="project">
+<img src="https://c.gitcoin.co/grants/bfb81cd51aa73b308e3ce1e5e32f5310/Screen_Shot_2021-11-29_at_12.29.47_PM.png">
+
+[**Solidarity and Resistance**](https://rebrand.ly/solidarity-game)
+
+Coordinating international solidarity and agency to support environmental resistance movements and land defenders.
+</div>
+
+<div class="project">
+<img src="https://i.imgur.com/cSBO2CB.png">
+
+[**Manyworlds**](https://manyworlds.pages.dev/about)
+
+Creating projects and initiatives together, and moving towards new ways of working along the way.
+</div>
+
+</div>
+
 ________________
-sam@sambutler.us 
+hello@sambutler.us 
 
 https://linkedin.com/in/sambutler8
 
+[Twitter](https://twitter.com/sambutlerUS)
+
 <p style="font-style: italic; color: gray; font-size: 14px; margin-top: 15px; text-align: center;">© 2021 Sam Butler</p>
+
+<style>
+.project {
+    max-width: 300px;
+    margin-right: 50px;
+}
+.project img {
+  background-size: 50%;
+  object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 200px;
+  width: 200px;
+}
+</style>
