@@ -6,7 +6,7 @@ import { children } from "svelte/internal";
 
 **Recent Work**
 
-<div style="display: flex">
+<div class="project-row">
 <div class="project">
 <img src="https://i.imgur.com/ck3Yja2.png?fb">
 
@@ -36,7 +36,7 @@ Narratives, stories, and media to help us transcend paradigms — and give us v
 
 </div>
 
-<div style="display: flex">
+<div class="project-row">
 
 <div class="project">
 <img src="https://i.imgur.com/k7CqmBO.png">
@@ -74,15 +74,40 @@ https://linkedin.com/in/sambutler8
 <p style="font-style: italic; color: gray; font-size: 14px; margin-top: 15px; text-align: center;">© 2021 Sam Butler</p>
 
 <style>
+
+@media only screen and (min-width: 801px) {
+.project-row {
+  display: flex;
+}
 .project {
     max-width: 300px;
     margin-right: 50px;
 }
+
 .project img {
   background-size: 50%;
   object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
   height: 200px;
   width: 200px;
+}
+}
+
+@media only screen and (max-width: 800px) {
+.project-row {
+  display: block;
+}
+.project {
+  margin: auto;
+  text-align: center;
+}
+
+.project img {
+  background-size: 50%;
+  object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 200px;
+  width: 200px;
+}
 }
 </style>
