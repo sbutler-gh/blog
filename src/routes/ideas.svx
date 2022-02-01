@@ -4,6 +4,9 @@ import { children } from "svelte/internal";
 
 </script>
 
+<h4 style="margin-bottom: 0px;"><a href="/community-savings">Community Savings</a></h4>
+<p style="margin-top: 5px;">Building local initiatives through the savings they create, without the need for extractive funding.</p>
+
 <h4 style="margin-bottom: 0px;"><a href="/localfutures">Local Futures</a></h4>
 <p style="margin-top: 5px;">Tools to help communities can shape their own local futures.  Today.</p>
 
