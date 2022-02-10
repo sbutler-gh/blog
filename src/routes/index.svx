@@ -4,9 +4,13 @@ import { children } from "svelte/internal";
 
 </script>
 
-**Recent Work**
+Hi, I'm Sam 👋
 
-<div class="project-row">
+Feel free to start a conversation [via email](hello@sambutler.us), schedule a [time to chat](https://calendly.com/sambutler8/meeting?month=2022-02), or message me on Signal / WhatsApp at *seven zero three four eight nine one six nine seven*.
+
+**Portfolio**
+
+<div class="project-row" style="display: flex; flex-wrap: wrap;  justify-content: space-between;">
 <div class="project">
 <img src="https://i.imgur.com/ck3Yja2.png?fb">
 
@@ -34,10 +38,6 @@ Narratives, stories, and media to help us transcend paradigms — and give us v
 
 </div>
 
-</div>
-
-<div class="project-row">
-
 <div class="project">
 <img src="https://i.imgur.com/k7CqmBO.png">
 
@@ -62,9 +62,50 @@ Coordinating international solidarity and agency to support environmental resist
 Creating projects and initiatives together, and moving towards new ways of working along the way.
 </div>
 
+<div class="project">
+<img src="https://imgur.com/TuEKpXT.png">
+
+[**Situation Earth**](https://situation-earth.netlify.app/)
+
+A global situation room for environmental challenges.
 </div>
 
+<div class="project">
+<img src="https://roumupdesign.com/wp-content/uploads/2019/12/ROUM_LOGO.png">
+
+[**Roum / Mattereum Project**](https://roumupdesign.com/virtual-expo/)
+
+Working with Mattereum (led by Vinay Gupta) and artists on the ground in Europe (Roum) to create the first generation of Mattereum digital assets.
+</div>
+
+<div class="project">
+<img src="https://referralrock.com/hub/wp-content/uploads/2020/03/blueRRicon300.png">
+
+[**Referral Rock**](https://referralrock.com/)
+
+Led product and design industry-leading referral marketing software, with customers including AT&T, TripAdvisor, and Random House publishing.
+</div>
+
+<div class="project">
+<iframe width="200" height="200" src="https://www.youtube.com/embed/E735Zio8w-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[**Presentation at iAnno**](https://referralrock.com/)
+
+Discussion of the Annotation Commons, what could go wrong, and approaches for sustainable development. [Presentation slides](https://docs.google.com/presentation/d/1T7ATWlHxhAYpId41doFIvaXbPUl0RoKb5plQmU-hJVs/edit?usp=sharing)
+</div>
+
+<div class="project">
+<img src="https://flamboyant-dubinsky-d0db47.netlify.app/tts.png">
+
+[**Time to Solve**](https://timetosolve.com/)
+
+Building urgent solutions for climate change and the sustainable transition.
+</div>
+
+
+</div>
 ________________
+
 hello@sambutler.us 
 
 https://linkedin.com/in/sambutler8
@@ -81,7 +122,6 @@ https://linkedin.com/in/sambutler8
 }
 .project {
     max-width: 300px;
-    margin-right: 50px;
 }
 
 .project img {
