@@ -6,7 +6,7 @@ import { children } from "svelte/internal";
 
 Hi, I'm Sam 👋
 
-Feel free to start a conversation [via email](hello@sambutler.us), schedule a [time to chat](https://calendly.com/sambutler8/meeting?month=2022-02), or message me on Signal / WhatsApp at *seven zero three four eight nine one six nine seven*.
+Feel free to start a conversation [via email](hello@sambutler.us) or schedule a [time to chat](https://calendly.com/sambutler8/meeting?month=2022-02).
 
 **Portfolio**
 
