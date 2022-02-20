@@ -1,0 +1,477 @@
+<script>
+
+    import supabase from "$lib/db.js";
+  
+  
+  // You want to raise ______ to build a _____.  
+  
+  // [ Sell future credits ]
+  
+  // community microgrid example
+  //  let service = "energy"
+  //  let infrastructure = "community microgrid"
+  //  let capital = 4000000;
+  //  let users = "homes";
+  //  let users_per_month = 1000;
+  //  let use_cost = 2000;
+  
+  //  let percent_savings_shared = 50;
+  
+  //  let payback_years = 12.5;
+  
+  // let per_time_unit = 1;
+  
+  // let percent_savings = 40;
+
+  let service = "transportation"
+   let infrastructure = "cargo bike"
+   let capital = 20000000;
+   let users = "drivers";
+   let users_per_month = 10000;
+   let use_cost = 500;
+  
+   let percent_savings_shared = 40;
+  
+   let payback_years = 1;
+  
+  let per_time_unit = 12;
+  
+  let percent_savings = 90;
+  
+  $: community_cost_annual = use_cost * users_per_month * per_time_unit;
+  
+  $: total_savings = community_cost_annual * (percent_savings/100);
+  
+  
+   $: yearly_return = total_savings * (percent_savings_shared/100);
+  
+   $: absolute_return = yearly_return * payback_years;
+  
+   $: roi = ((absolute_return - capital) / capital) * 100;
+  
+   $: arr = roi / payback_years;
+  
+  
+   let profile_form = false;
+   let new_user;
+  
+   async function addEmail(e) {
+  
+  let formData = new FormData(e.target);
+  
+  profile_form = true;
+  
+  let random_password = Math.random().toString(36).substr(2, 8);
+  
+  const { data, error } = await supabase.auth.signUp(
+    { email: formData.get('email'),
+      password: random_password })
+  if (data) {
+    console.log(data);
+    new_user = data;
+    return data;
+  }
+  else {
+    console.log(error);
+    localStorage.setItem('email', formData.get('email'));
+  }
+  }
+  
+  async function addProfileInformation(e) {
+  
+  let formData = new FormData(e.target);
+  
+  // console.log(formData.get('email'));
+  
+  console.log([...formData]);
+  
+  if (new_user) {
+    const { data, error } = await supabase
+    .from('profiles')
+    .update([
+      {
+          full_name: formData.get('full_name'),
+          introduction: formData.get('introduction'),
+          website_url: formData.get('website_url'),
+          linkedin_url: formData.get('linkedin_url'),
+          twitter_handle: formData.get('twitter_handle'),
+          contact_method: formData.get('contact_method')
+      },
+    ])
+    .eq('user_id', new_user.id)
+  
+    if (data) {
+      console.log(data);
+      // let new_user = data;
+      profile_form = "submitted";
+      return data;
+    }
+    else {
+      console.log(error);
+    }
+  }
+  
+  else {
+    let random_password = Math.random().toString(36).substr(2, 8);
+  
+    const { data, error } = await supabase.auth.signUp(
+      { email: localStorage.getItem('email'),
+        password: random_password },
+      {
+        data: {
+          full_name: formData.get('full_name'),
+          introduction: formData.get('introduction'),
+          website_url: formData.get('website_url'),
+          linkedin_url: formData.get('linkedin_url'),
+          twitter_handle: formData.get('twitter_handle'),
+          contact_method: formData.get('contact_method')
+      }
+    })
+    if (data) {
+      console.log(data);
+      // let new_user = data;
+      profile_form = "submitted";
+      return data;
+    }
+    else {
+      console.log(error);
+    }
+  }
+  }
+  
+  </script>
+  
+  <article class="h-entry">
+  
+  <!-- <h3 class="p-name">Building Back Better w/ Community Savings (That Pay for Themselves)</h3> -->
+  <h2 class="p-name" style="margin-bottom: 20px;">Saves for Itself</h2>
+  <!-- <p style="margin-top: 5px;"><em><a href="#program">Create your own program</a></em></p> -->
+
+      <div class="e-content">
+  
+            <div>
+                “You know what happened in Cuba in the 90s?”
+
+The aide, in their mid-thirties — just old enough to be listened to, young enough to see new things — speaks across the mahogany desk, in the iconic room.
+
+“They lost access to fertilizer and oil, after the fall of the Soviet Union. … They imported *millions* of bicycles.  People, doctors, engineers, were gardening over every inch of Havana to grow food and survive.  The average person lost 20 pounds.  And now?”
+
+Across the table, an older politician — wrinkled forehead, thinning hair, burdened shoulders, and attentive eyes, making it difficult to guess just how old — awaits the answer.
+
+“They have the same life expectancy we do.  Better health.  And do it with 8 times less energy.”
+
+The aide continues.
+
+“The only question is, do you want to wait until it hits, or start preparing now?”
+
+The politician across the table speaks up.
+
+“… What can we do?”
+
+“What do you think?” the aide prompts, genuinely.
+
+In a head full of situations, thousands of things on mind — not so much different from everyday people, except for the stakes and consequences of them — the politician carves space and attention for that one question …
+
+“We’re trying to get resilient … We’re already doing what we can with renewables —“
+
+“Renewables don’t grow food.  And they’re expensive.  Take time.”
+
+“So what are we talking about?  Organic gardening?”
+
+“Native too — 70% — or the plants don’t fruit and the pollinators die.”
+
+“So, just a gardening revolution …” the politician muses, not entirely confident.
+
+“Remind you of a time?”
+
+We see a MONTAGE of Victory Garden footage, showing how Americans — some still among us — once grew 50% of their own food.
+
+“How could we possibly do that today?”
+
+“Food prices are up 7%.  You have 1.1 million military reserves, 50 million kids keeping busy at school, 5 million people working at home, and gardeners and conservationists all across the country … We can do anything.”
+
+Considering it, the politician nods, understanding the possibilities available.
+
+“… Alright.  What else?”
+
+“What else is hurting people?”
+
+The politician ponders it.
+
+“Cars.  Gas prices.  Roads.  Bankrupt cities, traffic, emissions, deaths.  … But we’re stuck with it.  It’s what we’ve inherited.”
+
+The aide reaches into a briefcase, lifts out a paper, and slides it onto the desk.
+
+It’s filled with pictures of new-looking vehicles - with open sides, covered tops, wheels on the ground, and people sitting in them like cockpits.
+
+“Are those … bikes?”
+
+“They’re *vehicles* — with the storage capacity of an SUV, 500 pounds of towing, multiple passenger seating, can fit two in a lane, no emissions, and you can *pedal* them.  You don’t even need a license.”
+
+The politician lifts up the picture, studying the vehicles.
+
+“How much do they cost?
+
+“If you make em?”
+
+The politician looks at the aide.
+
+“We’re not a manufacturer.”
+
+... The aide offers a skeptical look.
+
+We see a MONTAGE of Defense Production Act manufacturing, of jet planes and tanks and hummvees and all sorts of vehicles, and more recently, respirators and equipment for COVID.
+
+“It’s an emergency,” the aide responds.  “We either prepare, or take losses.  … So how much do they cost?
+
+The politician studies the vehicles.  “With a bid, at scale, I could see two thousand a pop?”
+
+“And how much would they save?”
+
+“They wouldn’t save anything.”
+
+“— People.  How much would they save?”
+
+The politician considers it.  “Five hundred a month maybe, with payments and gas and insurance?”
+
+“And that means?”
+
+The politician considers the numbers.
+
+“… People could pay it back in half-a-year.  10 months, on gas and insurance alone.”
+
+“And it’s not just the savings.  This an economy.  You make these with an open design, and people across the country can learn to become mechanics, local repairmen.  People can make em and sell em local in their own shops.  It’s taking industry, resilience, mobility — all of the costs, and control, and liability that’s always come with managing that — and putting it in the hands of people.  You’re just giving a platform to get started.”
+
+The politician listens, seeing the possibility open.  The aide continues.
+
+“Giving people something to *do* — for real.  Autonomy, responsibility, agency in their lives and communities.  To lead their own way … make their own worlds.  People can own these, communities can share them … walking around your neighborhood, jumping in a ride — like picking an apple off a tree, taking you wherever you want to go.  And it pays for itself.”
+
+“*Saves* for itself,” the politician adds.  “After a couple months, nobody’s paying anything.  That’s how we can pay for all of this.”
+
+The politician gets it — even starting to understand the language, the communication of it.  The aide is grateful — and energized — to see it.
+
+"Where else can it go?”
+            </div>
+  
+  <div id="program" class="program">
+  <h4 style="padding-left: 10px">Create your "Saves For Itself" program</h4>
+  <form class="variablesForm2" style="border-radius: 5px; padding: 0px 10px;">
+  <p>I pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="XXXXX.XX"> <select bind:value={per_time_unit}><option value={12}>per month</option><option value={1}>per year</option><option value={52}>per week</option><option value={365}>per day</option><option value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * 11}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br>With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> <input style="display: inline-block; width: {users.length * 11}px; min-width: 30px;" name="users" bind:value={users} placeholder="XXXXX.XX"> in our community, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
+  <br>
+  <br>
+  With a <input name="infrastructure" style="display: inline-block; width: {infrastructure.length * 10}px; min-width: 30px;" bind:value={infrastructure} placeholder=""> program, we could save
+  <span class="range-div">{percent_savings}%<input type="range" bind:value={percent_savings} min={0} max={100}></span> on {service}
+  — creating <strong>${total_savings.toLocaleString()}</strong> in savings every year.
+  <br>
+  <br>
+  If a {infrastructure} program costs $<input bind:value={capital} style="display: inline-block; width: {capital.toString().length * 11}px; min-width: 30px;" name="capital" placeholder="XXXXX.XX">, and creates <strong>${total_savings.toLocaleString()}</strong> in savings per year, we can share 
+  <span class="range-div">{percent_savings_shared}% <input type="range" bind:value={percent_savings_shared} min={0} max={100}></span>of the savings and pay back the funding in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the funders a <input style="display: none;" type="range" bind:value={arr} min={0} max={100}><strong>{arr.toFixed(2)}% annual rate of return.</strong>
+  <br><br>
+  And from then on, we enjoy the <strong>{service}</strong> with <strong>${total_savings.toLocaleString()} in yearly savings</strong> in our community.
+  </p>
+  </form>
+  </div>
+  
+  </div>
+  </article>
+  
+  <style>
+  .program {
+      border: solid 1px black;
+      padding: 2px 10px;
+      border-radius: 10px;
+      margin-top: 30px;
+  }
+  .program input {
+    border: none;
+    border-bottom: solid 1px grey;
+    height: 1.5rem;
+    font-size: 18px;
+  }
+  
+  .program .range-div {
+      display: inline-grid; 
+      text-align: center; 
+      font-weight: 600; 
+      position: relative;
+      height: 40px;
+      margin-right: 4px;
+  }
+  .program input[type="range"] {
+      height: 0.5rem;
+      width: 70px;
+      position: absolute;
+      bottom: 0%;
+      left: 50%;
+      transform: translate(-50%);
+  }
+  
+  .email-form {
+      margin: 10px 0px;
+  }
+  
+  @media only screen and (max-width: 800px) {
+  
+  /* .register button {
+    margin: auto;
+    text-align: center;
+  }
+  
+  .profile-form {
+    width: 100%;
+  } */
+  
+  .embed-youtube {
+  position: relative;
+  padding-bottom: 56.25%; /* - 16:9 aspect ratio (most common) */
+  /* padding-bottom: 62.5%; - 16:10 aspect ratio */
+  /* padding-bottom: 75%; - 4:3 aspect ratio */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  }
+  
+  .embed-youtube iframe,
+  .embed-youtube object,
+  .embed-youtube embed {
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+  
+  .profile-form, .success-alert, .footnotes {
+    width: 95%;
+  }
+  
+  /* .p-name {
+    width: 100%;
+    text-align: center;
+  } */
+  
+  }
+  
+  @media only screen and (min-width: 801px) {
+  
+    .profile-form, .success-alert {
+        width: 75%;
+    }
+  
+    /* .p-name {
+    width: 80%;
+    text-align: center;
+  } */
+  
+  .footnotes {
+    width: 85%;
+  }
+  }
+  
+  .register {
+        /* padding: 20px 20px; */
+        border-radius: 10px;
+        /* border: solid black 1px; */
+        /* background: ghostwhite; */
+        /* background: white; */
+        /* width: 50%; */
+      }
+  
+      .register-2 {
+        /* text-align: center; */
+        margin: 20px auto;
+        /* box-shadow: 0 -1px 10px rgb(0 0 0 / 5%), 0 1px 4px rgb(0 0 0 / 10%), 0 10px 30px #f3ece8; */
+      }
+  
+      .register-2 input:focus {
+        border-color: #a4d2ff;
+        box-shadow: 0 0 6px rgb(27 106 201 / 50%);
+        outline: none;
+      }
+  
+      .register-2 input {
+        /* margin: auto; */
+        width: 80%;
+      }
+  
+      .profile-form {
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 -1px 10px rgb(0 0 0 / 5%), 0 1px 4px rgb(0 0 0 / 10%), 0 10px 30px #f3ece8;
+        /* text-align: center; */
+        /* margin: auto; */
+      }
+  
+      .email-form input {
+        /* margin: auto !important; */
+      }
+  
+      .profile-form input {
+        max-width: 50%;
+      }
+  
+      .profile-form textarea {
+        height: 70px;
+        width: 95%;
+      }
+  
+      .profile-form div {
+        text-align: left;
+        margin: 0 !important;
+        width: 100%;
+      }
+  
+      .profile-form label {
+        font-size: 16px;
+      }
+  
+      .register-2 button {
+        border-radius: 20px;
+        color: white;
+        border: none;
+        background: #2da562;
+        padding: 0.5em 2em;
+        margin-top: 10px;
+        /* text-align: center;
+        margin-left: auto; */
+        /* padding: 5px 10px; */
+        /* width: 30%; */
+        font-size: 16px;
+        cursor: pointer;
+      }
+  
+      .register label, .register input, .register button, .register textarea {
+        display: block;
+      }
+  
+      .register input {
+        box-sizing: border-box;
+        font-size: 16px;
+        line-height: 1.5rem;
+        padding: 1px 2px;
+      }
+  
+      .register input {
+        padding: 3px 3px;
+      }
+  
+      .register textarea, .register input {
+        border-radius: 5px;
+        /* background: #fbfbfb; */
+        border: solid lightgrey 1px;
+      }
+  
+      .success-link:hover {
+        border-bottom: solid 1px #003cff;
+        text-decoration: none;
+      }
+  
+      .footnotes {
+        font-size: 14px;
+        background: #f8f8f8;
+        padding: 2px 10px;
+        border-radius: 10px;
+      }
+  </style>
