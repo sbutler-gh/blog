@@ -196,7 +196,7 @@ In a head full of situations, thousands of things on mind — not so much diffe
 We see a MONTAGE of Victory Garden footage, showing how Americans — some still among us — once grew 50% of their own food.
 
 <div class="embed-youtube">
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pf0qr8r5YRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pf0qr8r5YRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
   </div>
 
 “How could we possibly do that today?”
@@ -217,10 +217,10 @@ The aide reaches into a briefcase, lifts out a paper, and slides it onto the des
 
 It’s filled with pictures of new-looking vehicles - with open sides, covered tops, wheels on the ground, and people sitting in them like cockpits.
 
-<img style="max-width: 300px;" src="https://i.pinimg.com/originals/80/04/db/8004db45c08f4fb2f1aa407c9d5ec148.jpg" />
-<img style="max-width: 300px;" src="https://avialbikes.com/wp-content/webpc-passthru.php?src=https://avialbikes.com/wp-content/uploads/2019/07/CityQ-electric_4.jpg&nocache=1" />
-<img style="max-width: 300px;" src="https://velocar.net/wp-content/uploads/2021/01/Scouter.jpg" />
-<img style="max-width: 300px;" src="https://velocar.net/wp-content/uploads/2021/02/zox-DSC09341_ergebnis.jpg" />
+<img style="max-width: 300px;" src="https://i.pinimg.com/originals/80/04/db/8004db45c08f4fb2f1aa407c9d5ec148.jpg" loading="lazy"/>
+<img style="max-width: 300px;" src="https://avialbikes.com/wp-content/webpc-passthru.php?src=https://avialbikes.com/wp-content/uploads/2019/07/CityQ-electric_4.jpg&nocache=1" loading="lazy"/>
+<img style="max-width: 300px;" src="https://velocar.net/wp-content/uploads/2021/01/Scouter.jpg" loading="lazy"/>
+<img style="max-width: 300px;" src="https://velocar.net/wp-content/uploads/2021/02/zox-DSC09341_ergebnis.jpg" loading="lazy"/>
 
 
 “Are those … bikes?”
@@ -242,7 +242,7 @@ The politician looks at the aide.
 We see a MONTAGE of Defense Production Act manufacturing, of jet planes and tanks and hummvees and all sorts of vehicles, and more recently, respirators and equipment for COVID.
 
 <div class="embed-youtube">
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wp3wQhDpQG8?start=67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wp3wQhDpQG8?start=67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
   </div>
 
 “It’s an emergency,” the aide responds.  “We either prepare, or take losses.  … So how much do they cost?
