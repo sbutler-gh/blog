@@ -35,14 +35,23 @@
    let payback_years = 1;
   
   let per_time_unit = 12;
+
+  // for years, this should be 1.  For months, 12.  For weeks, 7.
+  let per_time_coefficient = 12
   
   let percent_savings = 90;
   
-  $: community_cost_annual = use_cost * users_per_month * per_time_unit;
+  $: community_cost_annual = use_cost * users_per_month * (per_time_unit/per_time_coefficient);
+
+  $: community_cost_monthly = use_cost * users_per_month * 12;
+
+  $: community_savings = community_cost_annual * (percent_savings/100);
   
   $: total_savings = community_cost_annual * (percent_savings/100);
+
+  $: payback_months = capital / community_savings;
   
-  
+
    $: yearly_return = total_savings * (percent_savings_shared/100);
   
    $: absolute_return = yearly_return * payback_years;
@@ -186,6 +195,10 @@ In a head full of situations, thousands of things on mind — not so much diffe
 
 We see a MONTAGE of Victory Garden footage, showing how Americans — some still among us — once grew 50% of their own food.
 
+<div class="embed-youtube">
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pf0qr8r5YRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
 “How could we possibly do that today?”
 
 “Food prices are up 7%.  You have 1.1 million military reserves, 50 million kids keeping busy at school, 5 million people working at home, and gardeners and conservationists all across the country … We can do anything.”
@@ -204,6 +217,12 @@ The aide reaches into a briefcase, lifts out a paper, and slides it onto the des
 
 It’s filled with pictures of new-looking vehicles - with open sides, covered tops, wheels on the ground, and people sitting in them like cockpits.
 
+<img style="max-width: 300px;" src="https://i.pinimg.com/originals/80/04/db/8004db45c08f4fb2f1aa407c9d5ec148.jpg" />
+<img style="max-width: 300px;" src="https://avialbikes.com/wp-content/webpc-passthru.php?src=https://avialbikes.com/wp-content/uploads/2019/07/CityQ-electric_4.jpg&nocache=1" />
+<img style="max-width: 300px;" src="https://velocar.net/wp-content/uploads/2021/01/Scouter.jpg" />
+<img style="max-width: 300px;" src="https://velocar.net/wp-content/uploads/2021/02/zox-DSC09341_ergebnis.jpg" />
+
+
 “Are those … bikes?”
 
 “They’re *vehicles* — with the storage capacity of an SUV, 500 pounds of towing, multiple passenger seating, can fit two in a lane, no emissions, and you can *pedal* them.  You don’t even need a license.”
@@ -221,6 +240,10 @@ The politician looks at the aide.
 ... The aide offers a skeptical look.
 
 We see a MONTAGE of Defense Production Act manufacturing, of jet planes and tanks and hummvees and all sorts of vehicles, and more recently, respirators and equipment for COVID.
+
+<div class="embed-youtube">
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wp3wQhDpQG8?start=67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 
 “It’s an emergency,” the aide responds.  “We either prepare, or take losses.  … So how much do they cost?
 
@@ -256,18 +279,17 @@ The politician gets it — even starting to understand the language, the communi
   <div id="program" class="program">
   <h4 style="padding-left: 10px">Create your "Saves For Itself" program</h4>
   <form class="variablesForm2" style="border-radius: 5px; padding: 0px 10px;">
-  <p>I pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="XXXXX.XX"> <select bind:value={per_time_unit}><option value={12}>per month</option><option value={1}>per year</option><option value={52}>per week</option><option value={365}>per day</option><option value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * 11}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br>With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> <input style="display: inline-block; width: {users.length * 11}px; min-width: 30px;" name="users" bind:value={users} placeholder="XXXXX.XX"> in our community, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
+  <p>I pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="XXXXX.XX"> <select bind:value={per_time_unit}><option value={12}>per month</option><option value={1}>per year</option><option value={52}>per week</option><option value={365}>per day</option><option value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * 11}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br>With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> <input style="display: inline-block; width: {users.length * 11}px; min-width: 30px;" name="users" bind:value={users} placeholder="XXXXX.XX"> in our community, all together, we spend <strong>${community_cost_annual.toLocaleString()} per month on {service}</strong>.
   <br>
   <br>
   With a <input name="infrastructure" style="display: inline-block; width: {infrastructure.length * 10}px; min-width: 30px;" bind:value={infrastructure} placeholder=""> program, we could save
   <span class="range-div">{percent_savings}%<input type="range" bind:value={percent_savings} min={0} max={100}></span> on {service}
-  — creating <strong>${total_savings.toLocaleString()}</strong> in savings every year.
+  — creating <strong>${total_savings.toLocaleString()}</strong> in savings every month.
   <br>
   <br>
-  If a {infrastructure} program costs $<input bind:value={capital} style="display: inline-block; width: {capital.toString().length * 11}px; min-width: 30px;" name="capital" placeholder="XXXXX.XX">, and creates <strong>${total_savings.toLocaleString()}</strong> in savings per year, we can share 
-  <span class="range-div">{percent_savings_shared}% <input type="range" bind:value={percent_savings_shared} min={0} max={100}></span>of the savings and pay back the funding in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the funders a <input style="display: none;" type="range" bind:value={arr} min={0} max={100}><strong>{arr.toFixed(2)}% annual rate of return.</strong>
+  If a {infrastructure} program costs $<input bind:value={capital} style="display: inline-block; width: {capital.toString().length * 11}px; min-width: 30px;" name="capital" placeholder="XXXXX.XX">, and creates <strong>${total_savings.toLocaleString()}</strong> in savings per month, the program can "save for itself" in <strong>{payback_months.toFixed(2)} months.</strong>
   <br><br>
-  And from then on, we enjoy the <strong>{service}</strong> with <strong>${total_savings.toLocaleString()} in yearly savings</strong> in our community.
+  And from then on, we enjoy <strong>{service}</strong> with <strong>${(total_savings/users_per_month).toLocaleString()} in monthly savings</strong> for each of us.
   </p>
   </form>
   </div>
