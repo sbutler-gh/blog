@@ -18,6 +18,7 @@
 <div style="display: flex">
 <h3 style="margin:0px; margin-right: 15px;"><a class="h-card p-org u-url p-author" href="/" target="_self">Sam Butler</a></h3>
 <h4 style="margin:0px; margin-right: 15px;"><a href="/ideas" target="_self">Ideas</a></h4>
+<h4 style="margin:0px; margin-right: 15px;"><a href="/thread-of-threads" target="_self">About</a></h4>
 <div class="contact-icons">
 <a href="https://twitter.com/sambutlerUS"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="dodgerblue" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
