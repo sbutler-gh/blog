@@ -4,21 +4,13 @@ import { children } from "svelte/internal";
 
 </script>
 
-Hi, I'm Sam 👋
+Hi, I'm Sam. Welcome!
 
 Feel free to start a conversation [via email](hello@sambutler.us) or schedule a [time to chat](https://calendly.com/sambutler8/meeting?month=2022-02).
 
 **Portfolio**
 
 <div class="project-row" style="display: flex; flex-wrap: wrap;  justify-content: space-between;">
-<div class="project">
-<img src="https://i.imgur.com/ck3Yja2.png?fb">
-
-[**Placeflow**](https://placeflow.net/welcome)
-
-Imagine the future of your community, and share visions of what your neighborhood could be.
-
-</div>
 
 <div class="project">
 <img src="https://thefriend.org/assets/ugc/images/growing-pains.jpg">
@@ -35,6 +27,15 @@ See events from climate and community groups near you, so you can show up and ge
 [**Stories of New Paradigms**](https://rebrand.ly/stories-for-change)
 
 Narratives, stories, and media to help us transcend paradigms — and give us visions to work towards.
+
+</div>
+
+<div class="project">
+<img src="https://i.imgur.com/ck3Yja2.png?fb">
+
+[**Placeflow**](https://placeflow.net/welcome)
+
+Imagine the future of your community, and share visions of what your neighborhood could be.
 
 </div>
 
@@ -89,7 +90,7 @@ Led product and design industry-leading referral marketing software, with custom
 <div class="project">
 <iframe width="200" height="200" src="https://www.youtube.com/embed/E735Zio8w-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[**Presentation at iAnno**](https://referralrock.com/)
+[**Presentation at iAnno**](https://youtu.be/E735Zio8w-s/)
 
 Discussion of the Annotation Commons, what could go wrong, and approaches for sustainable development. [Presentation slides](https://docs.google.com/presentation/d/1T7ATWlHxhAYpId41doFIvaXbPUl0RoKb5plQmU-hJVs/edit?usp=sharing)
 </div>
