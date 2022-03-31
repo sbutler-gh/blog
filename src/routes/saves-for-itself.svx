@@ -159,57 +159,59 @@
       <div class="e-content">
   
             <div>
-                “You know what happened in Cuba in the 90s?”
+“You know what happened in Cuba in the 90s?”
 
-The aide, in their mid-thirties — just old enough to be listened to, young enough to see new things — speaks across the mahogany desk, in the iconic room.
+**The aide**, in their mid-thirties — just old enough to be listened to, young enough to see new things — speaks across the mahogany desk in the iconic room.
 
-“They lost access to fertilizer and oil, after the fall of the Soviet Union. … They imported *millions* of bicycles.  People, doctors, engineers, were gardening over every inch of Havana to grow food and survive.  The average person lost 20 pounds.  And now?”
+“They used more fertilizer to grow their food than anybody.  When the Soviet Union fell, overnight, they lost access to their only trading partner.  They couldn’t get oil — no more fertilizer.”
 
-Across the table, an older politician — wrinkled forehead, thinning hair, burdened shoulders, and attentive eyes, making it difficult to guess just how old — awaits the answer.
+Across the mahogany table, an older politician — wrinkled forehead, thinning hair, burdened neck, urgent eyes — listens to the young staffer.
 
-“They have the same life expectancy we do.  Better health.  And do it with 8 times less energy.”
+“Doctors, engineers, citizens — people with no  experience — were gardening over every inch of Havana to survive.  Organic — they didn’t have a choice.  They planted everywhere, failed everywhere, learned everywhere.
 
-The aide continues.
+“The cars stopped running, because there was no oil.  Buses were barely running.  They imported millions of bikes, single-gear bikes for people, from China — their only other trading partner.
 
-“The only question is, do you want to wait until it hits, or start preparing now?”
+“And in those four years, the average Cuban lost 20 pounds ... Now?”
 
-The politician across the table speaks up.
+The politician, silent in attention, awaits the answer.
 
-“… What can we do?”
+“They live as long as we do.  Better health.  And they do it with 8 times less energy — food, transportation, electricity, everything.”
 
-“What do you think?” the aide prompts, genuinely.
+The aide finishes the thought:
 
-In a head full of situations, thousands of things on mind — not so much different from everyday people, except for the stakes and consequences of them — the politician carves space and attention for that one question …
+“… So, do we want to wait until it hits, or start acting now?”
 
-“We’re trying to get resilient … We’re already doing what we can with renewables —“
+The politician speaks up.
 
-“Renewables don’t grow food.  And they’re expensive.  Take time.”
+“What can we do?”
+
+“What do you think?” the aide prompts.
+
+In a head full of situations, matters, legislation, relationships — the politician carves space and attention for that question …
+
+“We’re trying to get resilient … We’re doing what we can with renewables —“
+
+“That doesn’t grow food.”
 
 “So what are we talking about?  Organic gardening?”
 
-“Native too — 70% — or the plants don’t fruit and the pollinators die.”
+“Native too, or the plants don’t fruit, the pollinators die, the birds follow them, and us with rest.”
 
-“So, just a gardening revolution …” the politician muses, not entirely confident.
+“So, just a food revolution …” the politician muses, not confident.
 
-“Remind you of a time?”
-
-We see a MONTAGE of Victory Garden footage, showing how Americans — some still among us — once grew 50% of their own food.
+“Prices are up 7%.  We have 1.1 million military reserves, 50 million kids keeping busy at school, 5 million people working at home, gardeners and conservationists all across the country … We can do anything.”
 
 <div class="embed-youtube">
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pf0qr8r5YRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
   </div>
 
-“How could we possibly do that today?”
+Considering it, the politician nods, understanding the possibilities.
 
-“Food prices are up 7%.  You have 1.1 million military reserves, 50 million kids keeping busy at school, 5 million people working at home, and gardeners and conservationists all across the country … We can do anything.”
-
-Considering it, the politician nods, understanding the possibilities available.
-
-“… Alright.  What else?”
+"Alright, what else?”
 
 “What else is hurting people?”
 
-The politician ponders it.
+The politician considers it.
 
 “Cars.  Gas prices.  Roads.  Bankrupt cities, traffic, emissions, deaths.  … But we’re stuck with it.  It’s what we’ve inherited.”
 
@@ -225,53 +227,37 @@ It’s filled with pictures of new-looking vehicles - with open sides, covered t
 
 “Are those … bikes?”
 
-“They’re *vehicles* — with the storage capacity of an SUV, 500 pounds of towing, multiple passenger seating, can fit two in a lane, no emissions, and you can *pedal* them.  You don’t even need a license.”
+“They’re *vehicles* — with the storage capacity of an SUV, 500 pounds of towing, multiple passenger seating, can fit two in a lane, no emissions, and you can *pedal* them.  You don’t even need a license to drive.”
 
 The politician lifts up the picture, studying the vehicles.
 
-“How much do they cost?
+“How much do they cost?”
 
-“If you make em?”
-
-The politician looks at the aide.
-
-“We’re not a manufacturer.”
-
-... The aide offers a skeptical look.
-
-We see a MONTAGE of Defense Production Act manufacturing, of jet planes and tanks and hummvees and all sorts of vehicles, and more recently, respirators and equipment for COVID.
+“With the Defense Production Act?”
 
 <div class="embed-youtube">
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wp3wQhDpQG8?start=67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
   </div>
 
-“It’s an emergency,” the aide responds.  “We either prepare, or take losses.  … So how much do they cost?
-
-The politician studies the vehicles.  “With a bid, at scale, I could see two thousand a pop?”
+... The politician studies the vehicles.  “With a bid, at scale, I could see two thousand dollars.”
 
 “And how much would they save?”
 
-“They wouldn’t save anything.”
-
-“— People.  How much would they save?”
-
-The politician considers it.  “Five hundred a month maybe, with payments and gas and insurance?”
+“... Five hundred a month maybe, with payments and gas and insurance?”
 
 “And that means?”
 
 The politician considers the numbers.
 
-“… People could pay it back in half-a-year.  10 months, on gas and insurance alone.”
+“People could pay it back in half-a-year.  Ten months, on gas and insurance alone.”
 
-“And it’s not just the savings.  This an economy.  You make these with an open design, and people across the country can learn to become mechanics, local repairmen.  People can make em and sell em local in their own shops.  It’s taking industry, resilience, mobility — all of the costs, and control, and liability that’s always come with managing that — and putting it in the hands of people.  You’re just giving a platform to get started.”
+“And it’s bigger than that," the aide continues.  "This an *economy.*  You make these with an open design, and people across the country can become mechanics, local repairmen.  It's simple.  People can make em and sell em in their own shops.  Giving people something to *do* — for real.  Autonomy, responsibility, agency in their lives and communities.  To lead their own way … make their own worlds.  People can own these, communities can share them … walking around your neighborhood, jumping in a ride, like picking an apple off a tree, taking you wherever you want to go. ... And, as you saw —”
 
-The politician listens, seeing the possibility open.  The aide continues.
+“Saves for itself,” the politician recognizes.  “After a couple months, nobody’s paying anything.  That's how we can pay for all of it.  The food, the bikes, infrastructure, even renewables ...”
 
-“Giving people something to *do* — for real.  Autonomy, responsibility, agency in their lives and communities.  To lead their own way … make their own worlds.  People can own these, communities can share them … walking around your neighborhood, jumping in a ride — like picking an apple off a tree, taking you wherever you want to go.  And it pays for itself.”
+The politician is starting to grasp the language, the communication, the policy, the vision of it.
 
-“*Saves* for itself,” the politician adds.  “After a couple months, nobody’s paying anything.  That’s how we can pay for all of this.”
-
-The politician gets it — even starting to understand the language, the communication of it.  The aide is grateful — and energized — to see it.
+The aide is grateful — *energized* — to see it.
 
 "Where else can it go?”
             </div>
