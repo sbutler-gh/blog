@@ -163,31 +163,29 @@
 
 **The aide**, in their mid-thirties — just old enough to be listened to, young enough to see new things — speaks across the mahogany desk in the iconic room.
 
-“They used more fertilizer to grow their food than anybody.  When the Soviet Union fell, overnight, they lost access to their only trading partner.  They couldn’t get oil — no more fertilizer.”
+“They used more fertilizer than anybody.  When the Soviet Union fell, they lost access to their only trading partner.  No more oil, no more fertilizer.”
 
 Across the mahogany table, an older politician — wrinkled forehead, thinning hair, burdened neck, urgent eyes — listens to the young staffer.
 
-“Doctors, engineers, citizens — people with no  experience — were gardening over every inch of Havana to survive.  Organic — they didn’t have a choice.  They planted everywhere, failed everywhere, learned everywhere.
+“Doctors, engineers, citizens — people with no  experience — were gardening over every inch of Havana.  Organic, they didn’t have a choice.  They planted everywhere, failed everywhere, learned everywhere.
 
-“The cars stopped running, because there was no oil.  Buses were barely running.  They imported millions of bikes, single-gear bikes for people, from China — their only other trading partner.
+“The cars stopped running, because there was no oil.  They imported millions of bikes, single-gear bikes for people, from China — their only other trading partner.
 
-“And in those four years, the average Cuban lost 20 pounds ... Now?”
+“In those four years, the average Cuban lost 20 pounds.  And now?"
 
-The politician, silent in attention, awaits the answer.
+The politician, silent with expectation, awaits the answer.
 
-“They live as long as we do.  Better health.  And they do it with 8 times less energy — food, transportation, electricity, everything.”
+“They live as long as we do.  Better healthcare.  And they do it with 8 times less energy.  Food, transportation, electricity, everything.”
 
-The aide finishes the thought:
+<img src="https://i.imgur.com/L1h2S7z.png" style="width: 400px; display: block;">
 
-“… So, do we want to wait until it hits, or start acting now?”
+<em>Source: <a href="https://youtu.be/aeM5emtaVC0?t=2159">How Cuba Survived Peak Oil</a></em>
 
 The politician speaks up.
 
 “What can we do?”
 
 “What do you think?” the aide prompts.
-
-In a head full of situations, matters, legislation, relationships — the politician carves space and attention for that question …
 
 “We’re trying to get resilient … We’re doing what we can with renewables —“
 
@@ -233,11 +231,7 @@ The politician lifts up the picture, studying the vehicles.
 
 “How much do they cost?”
 
-“With the Defense Production Act?”
-
-<div class="embed-youtube">
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wp3wQhDpQG8?start=67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-  </div>
+“With the [Defense Production Act](https://www.youtube-nocookie.com/embed/wp3wQhDpQG8?start=67)?”
 
 ... The politician studies the vehicles.  “With a bid, at scale, I could see two thousand dollars.”
 
@@ -251,7 +245,7 @@ The politician considers the numbers.
 
 “People could pay it back in half-a-year.  Ten months, on gas and insurance alone.”
 
-“And it’s bigger than that," the aide continues.  "This an *economy.*  You make these with an open design, and people across the country can become mechanics, local repairmen.  It's simple.  People can make em and sell em in their own shops.  Giving people something to *do* — for real.  Autonomy, responsibility, agency in their lives and communities.  To lead their own way … make their own worlds.  People can own these, communities can share them … walking around your neighborhood, jumping in a ride, like picking an apple off a tree, taking you wherever you want to go. ... And, as you saw —”
+“And it’s bigger than that," the aide continues.  "This an *economy.*  You make these with an open design, and people across the country can become mechanics, local repairmen.  People can make em and sell em in their own shops.  Giving people something to *do* — for real.  Autonomy, responsibility, agency in their lives and communities.  To lead their own way … make their own worlds.  People can own these, communities can share them … walking around your neighborhood, jumping in a ride, like picking an apple off a tree, taking you wherever you want to go. ... And, as you saw —”
 
 “Saves for itself,” the politician recognizes.  “After a couple months, nobody’s paying anything.  That's how we can pay for all of it.  The food, the bikes, infrastructure, even renewables ...”
 
