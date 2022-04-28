@@ -1,12 +1,15 @@
 <script>
 
   import supabase from "$lib/db.js";
+import WelcomePopup from "$lib/WelcomePopup.svelte";
 import { onMount } from "svelte";
 
 
 // You want to raise ______ to build a _____.  
 
 // [ Sell future credits ]
+
+let welcome_popup = false;
 
 let copy_tooltip = false;
 
@@ -66,6 +69,14 @@ $: total_savings = community_cost_annual * (percent_savings/100);
 
  percent_savings = params.percent_savings;
 
+ document.getElementsByClassName("program")[0].scrollIntoView({behavior: 'smooth'});
+
+
+//  welcome_popup = true;
+
+//  setTimeout(function () {
+//    welcome_popup = false;
+//  }, 10000)
  
 
   }
@@ -222,6 +233,11 @@ function shareProgram() {
 
     <div class="e-content">
 
+      <!-- {#if welcome_popup}
+      <div class="modal_background_dim" on:click={function() {welcome_popup = false}}></div>
+      <WelcomePopup on:closeintromodal={function() {welcome_popup = false;}}></WelcomePopup>
+      {/if} -->
+
 
         <div class="embed-youtube">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/v4QuphODK-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -333,7 +349,7 @@ With a <input name="infrastructure" style="display: inline-block; width: {infras
 <br>
 <br>
 If a {infrastructure} costs $<input bind:value={capital} style="display: inline-block; width: {capital.toString().length * 11}px; min-width: 30px;" name="capital" placeholder="XXXXX.XX">, and creates <strong>${total_savings.toLocaleString()}</strong> in savings per year, we can share 
-<span class="range-div">{percent_savings_shared}% <input type="range" bind:value={percent_savings_shared} min={0} max={100}></span>of the savings and pay back the funding in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the funders a <input style="display: none;" type="range" bind:value={arr} min={0} max={100}><strong>{arr.toFixed(2)}% annual rate of return.</strong>
+<span class="range-div">{percent_savings_shared}% <input type="range" bind:value={percent_savings_shared} min={0} max={100}></span>of the savings and pay back the funding in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the program a <input style="display: none;" type="range" bind:value={arr} min={0} max={100}><strong>{arr.toFixed(2)}% annual rate of return.</strong>
 <br><br>
 And from then on, we enjoy the <strong>{infrastructure}</strong> and a full <strong>${total_savings.toLocaleString()} in yearly savings</strong> in our community.
 <br>
