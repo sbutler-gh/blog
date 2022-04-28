@@ -176,7 +176,7 @@ else {
 
 function shareProgram() {
 
-  let url = `${window.location}?service=${service}&infrastructure=${infrastructure}&capital=${capital}&users=${users}&users_per_month=${users_per_month}&use_cost=${use_cost}&percent_savings_shared=${percent_savings_shared}&payback_years=${payback_years}&per_time_unit=${per_time_unit}&percent_savings=${percent_savings}`;
+  let url = `${window.location.origin}${window.location.pathname}?service=${service}&infrastructure=${infrastructure}&capital=${capital}&users=${users}&users_per_month=${users_per_month}&use_cost=${use_cost}&percent_savings_shared=${percent_savings_shared}&payback_years=${payback_years}&per_time_unit=${per_time_unit}&percent_savings=${percent_savings}`;
 
   if (!navigator.clipboard){
                 // use old commandExec() way
