@@ -1,11 +1,14 @@
 <script>
 
   import supabase from "$lib/db.js";
+import { onMount } from "svelte";
 
 
 // You want to raise ______ to build a _____.  
 
 // [ Sell future credits ]
+
+let copy_tooltip = false;
 
 
  let service = "energy"
@@ -39,6 +42,39 @@ $: total_savings = community_cost_annual * (percent_savings/100);
 
  let profile_form = false;
  let new_user;
+
+ onMount(() => {
+
+  // If there is a parameter in the URL;
+  if (location.search) {
+  let str = location.search.substring(1);
+  const params = Object.fromEntries(new URLSearchParams(str));
+  console.log(params);
+
+ service = params.service;
+ infrastructure = params.infrastructure;
+ capital = params.capital;
+ users = params.users;
+ users_per_month = params.users_per_month;
+ use_cost = params.use_cost;
+
+ percent_savings_shared = params.percent_savings_shared;
+
+ payback_years = params.payback_years;
+
+ per_time_unit = parseInt(params.per_time_unit);
+
+ percent_savings = params.percent_savings;
+
+  }
+
+// var search = str;
+// console.log(search);
+// let params2 = JSON.parse('{"' + search.replace(/&/g, '","').replace(/=/g,'":"') + '"}', function(key, value) { return key===""?value:decodeURIComponent(value) });
+
+// console.log(params2);
+
+ })
 
  async function addEmail(e) {
 
@@ -122,6 +158,32 @@ else {
     console.log(error);
   }
 }
+}
+
+function shareProgram() {
+
+  let url = `${window.location}#program?service=${service}&infrastructure=${infrastructure}&capital=${capital}&users=${users}&users_per_month=${users_per_month}&use_cost=${use_cost}&percent_savings_shared=${percent_savings_shared}&payback_years=${payback_years}&per_time_unit=${per_time_unit}&percent_savings=${percent_savings}`;
+
+  if (!navigator.clipboard){
+                // use old commandExec() way
+                url.select();
+                // window.location.setSelectionRange(0, 99999)
+                document.execCommand("copy");
+                copy_tooltip = true;
+                setTimeout(function(){ copy_tooltip = false }, 2000)
+
+            } else{
+                navigator.clipboard.writeText(url).then(
+                    function(){
+                        console.log("Copied URL");
+                        copy_tooltip = true;
+                        setTimeout(function(){ copy_tooltip = false }, 2000)
+                    })
+                    .catch(
+                    function() {
+                        console.log("Couldn't copy, try right-clicking to copy the URL isntead."); // error
+                    });
+            }  
 }
 
 </script>
@@ -254,7 +316,11 @@ else {
             </div>
 
 <div class="program">
+  <!-- <div style="display: inline-flex">
 <h4 style="padding-left: 10px">Create your own Community Savings Program</h4>
+<button class="share" on:click={shareProgram}>Share Your Program</button>
+</div> -->
+<h4 id="program" style="padding-left: 10px">Create your own Community Savings Program</h4>
 <form class="variablesForm2" style="border-radius: 5px; padding: 0px 10px;">
 <p>I pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="XXXXX.XX"> <select bind:value={per_time_unit}><option value={12}>per month</option><option value={1}>per year</option><option value={52}>per week</option><option value={365}>per day</option><option value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * 11}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br>With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> <input style="display: inline-block; width: {users.length * 11}px; min-width: 30px;" name="users" bind:value={users} placeholder="XXXXX.XX"> in our community, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
 <br>
@@ -268,7 +334,13 @@ If a {infrastructure} costs $<input bind:value={capital} style="display: inline-
 <span class="range-div">{percent_savings_shared}% <input type="range" bind:value={percent_savings_shared} min={0} max={100}></span>of the savings and pay back the funding in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the funders a <input style="display: none;" type="range" bind:value={arr} min={0} max={100}><strong>{arr.toFixed(2)}% annual rate of return.</strong>
 <br><br>
 And from then on, we enjoy the <strong>{infrastructure}</strong> and a full <strong>${total_savings.toLocaleString()} in yearly savings</strong> in our community.
+<br>
+<br>
+<button type="button" class="share" on:click={shareProgram}>Share Your Result</button>
 </p>
+{#if copy_tooltip}
+<span style="width: fit-content; display: block; margin: auto; margin-top: 5px; white-space: nowrap; background: lightgrey; text-align: center; border-radius: 20px; padding: 5px; box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);" class="bg-gray-100 text-center rounded absolute p-1 shadow">Copied Link!</span>
+{/if}
 </form>
 </div>
 
@@ -276,6 +348,21 @@ And from then on, we enjoy the <strong>{infrastructure}</strong> and a full <str
 </article>
 
 <style>
+  .share {
+    border-radius: 20px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    background: #2d97a5;
+    padding: 0.5em 1em;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    /* float: right; */
+    /* height: 40px; */
+    display: block;
+    margin: auto;
+  }
 .program {
     border: solid 1px black;
     padding: 2px 10px;
