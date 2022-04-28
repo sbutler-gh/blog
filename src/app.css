@@ -91,6 +91,10 @@ p a {
 			top: 15%;
 			left: 45%;
 		}
+
+		.return-check {
+			position: absolute;
+		}
 	}
 
 	.modal_background_dim {
@@ -103,6 +107,10 @@ p a {
 		top: 0;
 		left: 0;
 		cursor: pointer;
+	}
+
+	.return-check {
+		vertical-align: bottom;
 	}
 
 	

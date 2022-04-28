@@ -14,6 +14,7 @@ let welcome_popup = false;
 let copy_tooltip = false;
 
 
+ let title = "Community Savings Program";
  let service = "energy"
  let infrastructure = "community microgrid"
  let capital = 4000000;
@@ -340,6 +341,7 @@ function shareProgram() {
 </div> -->
 <h4 id="" style="padding-left: 10px">Create your own Community Savings Program</h4>
 <form class="variablesForm2" style="border-radius: 5px; padding: 0px 10px;">
+<!-- <input bind:value={title} style="font-size: 20px;"> -->
 <p>I pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="XXXXX.XX"> <select bind:value={per_time_unit}><option value={12}>per month</option><option value={1}>per year</option><option value={52}>per week</option><option value={365}>per day</option><option value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * 11}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br>With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> <input style="display: inline-block; width: {users.length * 11}px; min-width: 30px;" name="users" bind:value={users} placeholder="XXXXX.XX"> in our community, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
 <br>
 <br>
@@ -349,7 +351,13 @@ With a <input name="infrastructure" style="display: inline-block; width: {infras
 <br>
 <br>
 If a {infrastructure} costs $<input bind:value={capital} style="display: inline-block; width: {capital.toString().length * 11}px; min-width: 30px;" name="capital" placeholder="XXXXX.XX">, and creates <strong>${total_savings.toLocaleString()}</strong> in savings per year, we can share 
-<span class="range-div">{percent_savings_shared}% <input type="range" bind:value={percent_savings_shared} min={0} max={100}></span>of the savings and pay back the funding in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the program a <input style="display: none;" type="range" bind:value={arr} min={0} max={100}><strong>{arr.toFixed(2)}% annual rate of return.</strong>
+<span class="range-div">{percent_savings_shared}% <input type="range" bind:value={percent_savings_shared} min={0} max={100}></span>of the savings and pay back the funding in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the program a <input style="display: none;" type="range" bind:value={arr} min={0} max={100}><strong>{arr.toFixed(2)}% annual rate of return. {#if arr.toFixed(2) > 0}
+  <svg xmlns="http://www.w3.org/2000/svg" class="return-check icon icon-tabler icon-tabler-circle-check" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#56e156" style="vertical-align: bottom:" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <circle cx="12" cy="12" r="9" />
+    <path d="M9 12l2 2l4 -4" />
+  </svg>
+  {/if}</strong>
 <br><br>
 And from then on, we enjoy the <strong>{infrastructure}</strong> and a full <strong>${total_savings.toLocaleString()} in yearly savings</strong> in our community.
 <br>
