@@ -9,26 +9,29 @@ import { onMount } from "svelte";
 
 // [ Sell future credits ]
 
-let welcome_popup = false;
+  export let params;
 
-let copy_tooltip = false;
+  let welcome_popup = false;
+
+  let copy_tooltip = false;
 
 
  let title = "Community Savings Program";
- let service = "energy"
- let infrastructure = "community microgrid"
- let capital = 4000000;
- let users = "homes";
- let users_per_month = 1000;
- let use_cost = 2000;
 
- let percent_savings_shared = 50;
+ export let service;
+ export let infrastructure;
+ export let capital;
+ export let users;
+ export let users_per_month;
+ export let use_cost;
 
- let payback_years = 12.5;
+ export let percent_savings_shared;
 
- let per_time_unit = 1;
+ export let payback_years;
 
-  let percent_savings = 40;
+ export let per_time_unit;
+
+ export let percent_savings;
 
 $: community_cost_annual = use_cost * users_per_month * per_time_unit;
 
@@ -49,35 +52,32 @@ $: total_savings = community_cost_annual * (percent_savings/100);
 
  onMount(() => {
 
-  // If there is a parameter in the URL;
-  if (location.search) {
-  let str = location.search.substring(1);
-  const params = Object.fromEntries(new URLSearchParams(str));
-  console.log(params);
+//   // If there is a parameter in the URL;
+    if (params) {
 
- service = params.service;
- infrastructure = params.infrastructure;
- capital = params.capital;
- users = params.users;
- users_per_month = params.users_per_month;
- use_cost = params.use_cost;
+      // service = params.service;
+      // infrastructure = params.infrastructure;
+      // capital = params.capital;
+      // users = params.users;
+      // users_per_month = params.users_per_month;
+      // use_cost = params.use_cost;
 
- percent_savings_shared = params.percent_savings_shared;
+      // percent_savings_shared = params.percent_savings_shared;
 
- payback_years = params.payback_years;
+      // payback_years = params.payback_years;
 
- per_time_unit = parseInt(params.per_time_unit);
+      // per_time_unit = parseInt(params.per_time_unit);
 
- percent_savings = params.percent_savings;
+      // percent_savings = params.percent_savings;
 
  document.getElementsByClassName("program")[0].scrollIntoView({behavior: 'smooth'});
 
 
-//  welcome_popup = true;
+// //  welcome_popup = true;
 
-//  setTimeout(function () {
-//    welcome_popup = false;
-//  }, 10000)
+// //  setTimeout(function () {
+// //    welcome_popup = false;
+// //  }, 10000)
  
 
   }
@@ -202,9 +202,110 @@ function shareProgram() {
 
 </script>
 
+<script context="module">
+    export const load = async ({ url, params }) => {
+
+      console.log(url);
+      console.log(params);
+      let urlparams = [];
+
+        // If there is a parameter in the URL;
+        if (url.search) {
+
+          console.log('hit');
+          // const params = Object.fromEntries(urlSearchParams.entries());
+        let str = new URLSearchParams(url.search);
+        urlparams = Object.fromEntries(str.entries());
+        console.log(urlparams);
+
+      // service = params.service;
+      // infrastructure = params.infrastructure;
+      // capital = params.capital;
+      // users = params.users;
+      // users_per_month = params.users_per_month;
+      // use_cost = params.use_cost;
+
+      // percent_savings_shared = params.percent_savings_shared;
+
+      // payback_years = params.payback_years;
+
+      // per_time_unit = parseInt(params.per_time_unit);
+
+      // percent_savings = params.percent_savings;
+
+
+      //  welcome_popup = true;
+
+      //  setTimeout(function () {
+      //    welcome_popup = false;
+      //  }, 10000)
+      
+
+        }
+
+        else {
+          urlparams.service = "energy"
+          urlparams.infrastructure = "community microgrid"
+          urlparams.capital = 4000000;
+          urlparams.users = "homes";
+          urlparams.users_per_month = 1000;
+          urlparams.use_cost = 2000;
+
+          urlparams.percent_savings_shared = 50;
+
+          urlparams.payback_years = 12.5;
+
+          urlparams.per_time_unit = 1;
+
+          urlparams.percent_savings = 40;
+        }
+
+      return {
+				props: { 
+          params: urlparams,
+          service: urlparams.service,
+          infrastructure: urlparams.infrastructure,
+          capital: urlparams.capital,
+          users: urlparams.users,
+          users_per_month: urlparams.users_per_month,
+          use_cost: urlparams.use_cost,
+          percent_savings_shared: urlparams.percent_savings_shared,
+          payback_years: urlparams.payback_years,
+          per_time_unit: parseInt(urlparams.per_time_unit),
+          percent_savings: urlparams.percent_savings
+        }
+			};
+    }
+</script>
+
 <svelte:head>
 	<script src="https://cdn.jsdelivr.net/npm/d3plus-text@1"></script>
+
+  
+  {#if params}
+  <title>{infrastructure}</title>
+
+  
+  <meta name="description" content="Building Back Better w/ Community Savings (That Pay for Themselves)">
+  
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://sambutler.us/community-savings/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{infrastructure}">
+  <meta property="og:description" content="Pays for itself in {payback_years} years and saves {percent_savings}% on costs">
+  <meta property="og:image" content="https://i.imgur.com/k7CqmBO.png">
+  
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="sambutler.us">
+  <meta property="twitter:url" content="https://sambutler.us/community-savings/">
+  <meta property="og:title" content="{infrastructure}">
+  <meta property="og:description" content="Pays for itself in {payback_years} years and saves {percent_savings}% on costs">
+  <meta name="twitter:image" content="https://i.imgur.com/k7CqmBO.png">
+  {:else}
   <title>Community Savings</title>
+
+  
   <meta name="description" content="Building Back Better w/ Community Savings (That Pay for Themselves)">
   
   <!-- Facebook Meta Tags -->
@@ -221,6 +322,7 @@ function shareProgram() {
   <meta name="twitter:title" content="Community Savings">
   <meta name="twitter:description" content="Building Back Better w/ Community Savings (That Pay for Themselves)">
   <meta name="twitter:image" content="https://i.imgur.com/k7CqmBO.png">
+  {/if}
   <!-- <script>
     !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
     posthog.init('phc_1vs44o3mad3tUwqV5nR6zO8sRwuC5HepCh696Jl2gWr',{api_host:'https://app.posthog.com'})
