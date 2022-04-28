@@ -9,7 +9,8 @@ import { onMount } from "svelte";
 
 // [ Sell future credits ]
 
-  export let params;
+  export let urlparams;
+  export let original;
 
   let welcome_popup = false;
 
@@ -52,8 +53,10 @@ $: total_savings = community_cost_annual * (percent_savings/100);
 
  onMount(() => {
 
+  console.log(original);
+
 //   // If there is a parameter in the URL;
-    if (params) {
+    if (!original) {
 
       // service = params.service;
       // infrastructure = params.infrastructure;
@@ -176,7 +179,13 @@ else {
 
 function shareProgram() {
 
-  let url = `${window.location.origin}${window.location.pathname}?service=${service}&infrastructure=${infrastructure}&capital=${capital}&users=${users}&users_per_month=${users_per_month}&use_cost=${use_cost}&percent_savings_shared=${percent_savings_shared}&payback_years=${payback_years}&per_time_unit=${per_time_unit}&percent_savings=${percent_savings}`;
+  // let window_path =  `${window.location.origin}${window.location.pathname}`
+
+  let params = `service=${service}&infrastructure=${infrastructure}&capital=${capital}&users=${users}&users_per_month=${users_per_month}&use_cost=${use_cost}&percent_savings_shared=${percent_savings_shared}&payback_years=${payback_years}&per_time_unit=${per_time_unit}&percent_savings=${percent_savings}`;
+
+  let updated_params = encodeURI(params);
+
+  let url = `${window.location.origin}${window.location.pathname}?${updated_params}`
 
   if (!navigator.clipboard){
                 // use old commandExec() way
@@ -208,11 +217,13 @@ function shareProgram() {
       console.log(url);
       console.log(params);
       let urlparams = [];
+      let original = true;
 
         // If there is a parameter in the URL;
         if (url.search) {
 
           console.log('hit');
+          original = false;
           // const params = Object.fromEntries(urlSearchParams.entries());
         let str = new URLSearchParams(url.search);
         urlparams = Object.fromEntries(str.entries());
@@ -272,7 +283,8 @@ function shareProgram() {
           percent_savings_shared: urlparams.percent_savings_shared,
           payback_years: urlparams.payback_years,
           per_time_unit: parseInt(urlparams.per_time_unit),
-          percent_savings: urlparams.percent_savings
+          percent_savings: urlparams.percent_savings,
+          original: original
         }
 			};
     }
@@ -281,8 +293,7 @@ function shareProgram() {
 <svelte:head>
 	<script src="https://cdn.jsdelivr.net/npm/d3plus-text@1"></script>
 
-  
-  {#if params}
+  {#if !original}
   <title>{infrastructure}</title>
 
   
@@ -292,7 +303,7 @@ function shareProgram() {
   <meta property="og:url" content="https://sambutler.us/community-savings/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{infrastructure}">
-  <meta property="og:description" content="Pays for itself in {payback_years} years and saves {percent_savings}% on costs">
+  <meta property="og:description" content="Pays for itself in {payback_years} years and saves {percent_savings}% on {service} bills">
   <meta property="og:image" content="https://i.imgur.com/k7CqmBO.png">
   
   <!-- Twitter Meta Tags -->
@@ -300,7 +311,7 @@ function shareProgram() {
   <meta property="twitter:domain" content="sambutler.us">
   <meta property="twitter:url" content="https://sambutler.us/community-savings/">
   <meta property="og:title" content="{infrastructure}">
-  <meta property="og:description" content="Pays for itself in {payback_years} years and saves {percent_savings}% on costs">
+  <meta property="og:description" content="Pays for itself in {payback_years} years and saves {percent_savings}% on {service} bills">
   <meta name="twitter:image" content="https://i.imgur.com/k7CqmBO.png">
   {:else}
   <title>Community Savings</title>
