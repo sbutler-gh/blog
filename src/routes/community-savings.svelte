@@ -66,6 +66,8 @@ $: total_savings = community_cost_annual * (percent_savings/100);
 
  percent_savings = params.percent_savings;
 
+ 
+
   }
 
 // var search = str;
@@ -162,7 +164,7 @@ else {
 
 function shareProgram() {
 
-  let url = `${window.location}#program?service=${service}&infrastructure=${infrastructure}&capital=${capital}&users=${users}&users_per_month=${users_per_month}&use_cost=${use_cost}&percent_savings_shared=${percent_savings_shared}&payback_years=${payback_years}&per_time_unit=${per_time_unit}&percent_savings=${percent_savings}`;
+  let url = `${window.location}?service=${service}&infrastructure=${infrastructure}&capital=${capital}&users=${users}&users_per_month=${users_per_month}&use_cost=${use_cost}&percent_savings_shared=${percent_savings_shared}&payback_years=${payback_years}&per_time_unit=${per_time_unit}&percent_savings=${percent_savings}`;
 
   if (!navigator.clipboard){
                 // use old commandExec() way
@@ -320,7 +322,7 @@ function shareProgram() {
 <h4 style="padding-left: 10px">Create your own Community Savings Program</h4>
 <button class="share" on:click={shareProgram}>Share Your Program</button>
 </div> -->
-<h4 id="program" style="padding-left: 10px">Create your own Community Savings Program</h4>
+<h4 id="" style="padding-left: 10px">Create your own Community Savings Program</h4>
 <form class="variablesForm2" style="border-radius: 5px; padding: 0px 10px;">
 <p>I pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="XXXXX.XX"> <select bind:value={per_time_unit}><option value={12}>per month</option><option value={1}>per year</option><option value={52}>per week</option><option value={365}>per day</option><option value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * 11}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br>With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> <input style="display: inline-block; width: {users.length * 11}px; min-width: 30px;" name="users" bind:value={users} placeholder="XXXXX.XX"> in our community, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
 <br>
