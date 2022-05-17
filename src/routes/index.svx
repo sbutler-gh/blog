@@ -13,6 +13,24 @@ Feel free to start a conversation [via email](hello@sambutler.us) or schedule a 
 <div class="project-row" style="display: flex; flex-wrap: wrap;  justify-content: space-between;">
 
 <div class="project">
+<img src="./freego_pic.png">
+
+[**Freego**](https://freego.netlify.app)
+
+Pick a location, and see nearby transit stations, bikeshares, transit routes, and bike paths — go where you want, car-free. (<em>In development</em>)
+
+</div>
+
+<div class="project">
+<img src="./spect_pic.png">
+
+[**Spect**](https://spect.netlify.app)
+
+Place your perspectives, insights, and experiences on a map — and create prompts for community surveys, participatory budgeting, resource maps, and more. (<em>In development</em>)
+
+</div>
+
+<div class="project">
 <img src="https://thefriend.org/assets/ugc/images/growing-pains.jpg">
 
 [**Just Start**](https://juststart.do)
