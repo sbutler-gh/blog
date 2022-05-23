@@ -114,7 +114,7 @@ Discussion of the Annotation Commons, what could go wrong, and approaches for su
 </div>
 
 <div class="project">
-<img src="https://flamboyant-dubinsky-d0db47.netlify.app/tts.png">
+<img src="./timetosolve_pic.png">
 
 [**Time to Solve**](https://timetosolve.com/)
 
