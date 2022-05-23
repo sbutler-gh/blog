@@ -19,6 +19,8 @@ import { onMount } from "svelte";
 
  let title = "Community Savings Program";
 
+ export let community;
+
  export let service;
  export let infrastructure;
  export let capital;
@@ -34,6 +36,8 @@ import { onMount } from "svelte";
 
  export let percent_savings;
 
+ export let cost_per_user;
+
 $: community_cost_annual = use_cost * users_per_month * per_time_unit;
 
 $: total_savings = community_cost_annual * (percent_savings/100);
@@ -43,7 +47,9 @@ $: total_savings = community_cost_annual * (percent_savings/100);
 
  $: absolute_return = yearly_return * payback_years;
 
- $: roi = ((absolute_return - capital) / capital) * 100;
+ $: capital_calculation = cost_per_user * users_per_month;
+
+ $: roi = ((absolute_return - (cost_per_user * users_per_month)) / (cost_per_user * users_per_month)) * 100;
 
  $: arr = roi / payback_years;
 
@@ -181,7 +187,7 @@ function shareProgram() {
 
   // let window_path =  `${window.location.origin}${window.location.pathname}`
 
-  let params = `service=${service}&infrastructure=${infrastructure}&capital=${capital}&users=${users}&users_per_month=${users_per_month}&use_cost=${use_cost}&percent_savings_shared=${percent_savings_shared}&payback_years=${payback_years}&per_time_unit=${per_time_unit}&percent_savings=${percent_savings}`;
+  let params = `service=${service}&infrastructure=${infrastructure}&cost_per_user=${cost_per_user}&capital=${capital}&users=${users}&users_per_month=${users_per_month}&use_cost=${use_cost}&percent_savings_shared=${percent_savings_shared}&payback_years=${payback_years}&per_time_unit=${per_time_unit}&percent_savings=${percent_savings}&community=${community}`;
 
   let updated_params = encodeURI(params);
 
@@ -228,6 +234,7 @@ function shareProgram() {
         let str = new URLSearchParams(url.search);
         urlparams = Object.fromEntries(str.entries());
         console.log(urlparams);
+        urlparams.users = urlparams.users.charAt(0).toUpperCase() + urlparams.users.slice(1);
 
       // service = params.service;
       // infrastructure = params.infrastructure;
@@ -250,15 +257,24 @@ function shareProgram() {
       //  setTimeout(function () {
       //    welcome_popup = false;
       //  }, 10000)
+
+      if (!urlparams.community) {
+        urlparams.community = "our community"
+      }
+
+      if (!urlparams.cost_per_user) {
+        urlparams.cost_per_user = urlparams.capital / urlparams.users_per_month;
+      }
       
 
         }
 
         else {
+          urlparams.community = "our community"
           urlparams.service = "energy"
           urlparams.infrastructure = "community microgrid"
           urlparams.capital = 4000000;
-          urlparams.users = "homes";
+          urlparams.users = "Homes";
           urlparams.users_per_month = 1000;
           urlparams.use_cost = 2000;
 
@@ -269,11 +285,14 @@ function shareProgram() {
           urlparams.per_time_unit = 1;
 
           urlparams.percent_savings = 40;
+          
+          urlparams.cost_per_user = 4000;
         }
 
       return {
 				props: { 
           params: urlparams,
+          community: urlparams.community,
           service: urlparams.service,
           infrastructure: urlparams.infrastructure,
           capital: urlparams.capital,
@@ -284,6 +303,7 @@ function shareProgram() {
           payback_years: urlparams.payback_years,
           per_time_unit: parseInt(urlparams.per_time_unit),
           percent_savings: urlparams.percent_savings,
+          cost_per_user: urlparams.cost_per_user,
           original: original
         }
 			};
@@ -455,15 +475,15 @@ function shareProgram() {
 <h4 id="" style="padding-left: 10px">Create your own Community Savings Program</h4>
 <form class="variablesForm2" style="border-radius: 5px; padding: 0px 10px;">
 <!-- <input bind:value={title} style="font-size: 20px;"> -->
-<p>I pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="XXXXX.XX"> <select bind:value={per_time_unit}><option value={12}>per month</option><option value={1}>per year</option><option value={52}>per week</option><option value={365}>per day</option><option value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * 11}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br>With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="XXXXXX"> <input style="display: inline-block; width: {users.length * 11}px; min-width: 30px;" name="users" bind:value={users} placeholder="XXXXX.XX"> in our community, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
+<p><input style="display: inline-block; width: {users.length * 12}px; min-width: 30px;" name="users" bind:value={users} placeholder="users"> in <input style="display: inline-block; width: {community.length * Math.log(14000)}px; min-width: 30px;" name="community" bind:value={community} placeholder="community"> pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="use cost"> <select bind:value={per_time_unit}><option value={12}>per month</option><option value={1}>per year</option><option value={52}>per week</option><option value={365}>per day</option><option value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * Math.log(14000)}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br>With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="users per month"> {users.toLowerCase()} in {community}, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
 <br>
 <br>
-With a <input name="infrastructure" style="display: inline-block; width: {infrastructure.length * 10}px; min-width: 30px;" bind:value={infrastructure} placeholder="">, we could save
+With a <input name="infrastructure" style="display: inline-block; width: {infrastructure.length * Math.log(14000)}px; min-width: 30px;" bind:value={infrastructure} placeholder="">, {users.toLowerCase()}  in {community} could save
 <span class="range-div">{percent_savings}%<input type="range" bind:value={percent_savings} min={0} max={100}></span> on {service}
 — creating <strong>${total_savings.toLocaleString()}</strong> in savings every year.
 <br>
 <br>
-If a {infrastructure} costs $<input bind:value={capital} style="display: inline-block; width: {capital.toString().length * 11}px; min-width: 30px;" name="capital" placeholder="XXXXX.XX">, and creates <strong>${total_savings.toLocaleString()}</strong> in savings per year, we can share 
+If a {infrastructure} costs $<input bind:value={cost_per_user} style="display: inline-block; width: {cost_per_user.toString().length * 11}px; min-width: 30px;" name="cost_per_user" placeholder="XXXXX.XX"> per {users.toLowerCase().slice(0,-1)} (${(users_per_month * cost_per_user).toLocaleString()} total), and creates <strong>${total_savings.toLocaleString()}</strong> in savings per year, we can share
 <span class="range-div">{percent_savings_shared}% <input type="range" bind:value={percent_savings_shared} min={0} max={100}></span>of the savings and pay back the funding in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the program a <input style="display: none;" type="range" bind:value={arr} min={0} max={100}><strong>{arr.toFixed(2)}% annual rate of return. {#if arr.toFixed(2) > 0}
   <svg xmlns="http://www.w3.org/2000/svg" class="return-check icon icon-tabler icon-tabler-circle-check" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#56e156" style="vertical-align: bottom:" stroke-linecap="round" stroke-linejoin="round">
     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -472,7 +492,7 @@ If a {infrastructure} costs $<input bind:value={capital} style="display: inline-
   </svg>
   {/if}</strong>
 <br><br>
-And from then on, we enjoy the <strong>{infrastructure}</strong> and a full <strong>${total_savings.toLocaleString()} in yearly savings</strong> in our community.
+And from then on, {users.toLowerCase()} enjoy the <strong>{infrastructure}</strong> and a full <strong>${total_savings.toLocaleString()} in yearly savings</strong> in {community}.
 <br>
 <br>
 <button type="button" class="share" on:click={shareProgram}>Share Your Result</button>
