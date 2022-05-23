@@ -314,7 +314,7 @@ function shareProgram() {
 	<script src="https://cdn.jsdelivr.net/npm/d3plus-text@1"></script>
 
   {#if !original}
-  <title>{infrastructure}</title>
+  <title>{infrastructure.charAt(0).toUpperCase()}{infrastructure.slice(1)} (Community Savings)</title>
 
   
   <meta name="description" content="Building Back Better w/ Community Savings (That Pay for Themselves)">
@@ -322,16 +322,16 @@ function shareProgram() {
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://sambutler.us/community-savings/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{infrastructure}">
-  <meta property="og:description" content="Pays for itself in {payback_years} years and saves {percent_savings}% on {service} bills">
+  <meta property="og:title" content="{infrastructure.charAt(0).toUpperCase()}{infrastructure.slice(1)} (Community Savings)">
+  <meta property="og:description" content="Pays for itself in {payback_years} years and saves {percent_savings}% on {service}">
   <meta property="og:image" content="https://i.imgur.com/k7CqmBO.png">
   
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="sambutler.us">
   <meta property="twitter:url" content="https://sambutler.us/community-savings/">
-  <meta property="og:title" content="{infrastructure}">
-  <meta property="og:description" content="Pays for itself in {payback_years} years and saves {percent_savings}% on {service} bills">
+  <meta property="og:title" content="{infrastructure.charAt(0).toUpperCase()}{infrastructure.slice(1)} (Community Savings)">
+  <meta property="og:description" content="Pays for itself in {payback_years} years and saves {percent_savings}% on {service}">
   <meta name="twitter:image" content="https://i.imgur.com/k7CqmBO.png">
   {:else}
   <title>Community Savings</title>
