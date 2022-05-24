@@ -4,8 +4,10 @@ import { children } from "svelte/internal";
 
 </script>
 
+<div style="display: none">
 <h4 style="margin-bottom: 0px;"><a href="/saves-for-itself">Saves for Itself</a></h4>
 <p style="margin-top: 5px;">Programs for resilience and making life better, that save for themselves.</p>
+</div>
 
 <h4 style="margin-bottom: 0px;"><a href="/community-savings">Community Savings</a></h4>
 <p style="margin-top: 5px;">Building local initiatives through the savings they create, without the need for extractive funding.</p>
