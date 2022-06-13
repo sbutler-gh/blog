@@ -1,5 +1,4 @@
 <script>
-    import Widget from "$lib/Widget.svelte";
     import { onMount } from "svelte";
 
     onMount(() => {
