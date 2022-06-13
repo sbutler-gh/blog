@@ -5,6 +5,16 @@
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!-- %svelte.head% -->
+		<style>
+			    
+    .mobile {
+        max-width: 300px;
+    }
+    img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+		</style>
 	</head>
 	<body>
 		<!-- <div id="svelte">%svelte.body%</div> -->
@@ -12,9 +22,9 @@
 		<p><a href="/">Home</a></p>
 		<p>This is a banner that can be embedded on any page (e.g. an organization website, a blog, a news site) in a single line of code:</p>
 		<script src="https://climatewidget.netlify.app/dist.js"></script>
-		<p>When people hit "submit", they can recieve automatic emails introducing them to groups in their area – helping them connect with direct action, and helping organizations connect with new members.</p>
+		<p>When people hit "submit", they can recieve automatic emails introducing them to groups in their area – helping them onboard into, and helping organizations connect with new members.</p>
 		<!-- <p>This benefits all groups that participate.  Wherever a person encounters the banner — an article on <em>The Guardian</em> or <em>The Intercept</em>, an independent climate media website, a direct action group website — the form will connect them with the groups in their local area, where they can get involved in action.</p> -->
-		<p>This doesn't require any changes for organizations.  They can keep their existing processes, and get the benefit of new members coming to their inbox.</p>
+		<p>This doesn't require anything from organizations.  They can keep their existing processes, and get the benefit of new members coming to their inbox.</p>
 
 		<!-- <ul>
 			<li>An automatic email introducing them to local direct action organizers (e.g. local XR chapter, Declare Emergency, mutual aid groups)</li>
@@ -32,12 +42,28 @@
 		<!-- <p>This lifts all boats and benefits all groups that participate.  If a New Yorker visits a Los Angeles website and fills out the form, it will connect the reader with relevant resources for New York.  If an Angeleno visits a NY website and fills out the form, it will connect the reader with relevant resources for LA.</p> -->
 		<!-- <p>Notably, this can be implemented anywhere, and give global benefits.  For example, organizations in New York and Paris could each utilize this tool on their website.</p> -->
 		<!-- <p>If a Parisian visits the New York website and fills out the form, it will connect the Parisian with relevant resources for Paris.  If an New Yorker visits the Paris website and fills out the form, it will connect the reader with relevant resources for New York.</p> -->
-		<p>The point is helping people engage and onboard with direct action — connecting people with the groups most relevant to them, wherever they access the banner from.</p>
-		<img src="./guardian_home.png">
+		<p>The point is helping people onboard direct action and helping organizations mobilize more people — connecting with each other, wherever they are.</p>
+		<p><em>What this could look like on Grist</em></p>
+		<img src="./grist_climate_widget_desktop.png" loading="lazy">
 		<p style="font-weight:bold">To embed this banner on your website, just copy <span style="display: inline-block; background: black; color: white; border-radius: 5px; padding: 5px;"><code>&lt;script src="https://climatewidget.netlify.app/dist.js"&gt;&lt;/script&gt;</code></span> <br/> and paste it into your HTML code.</p>
 		<p>(This is still just a demo, and the form data isn't submitted anywhere — but the embed works successfully, and you can try it on your own page.  All we need is organizations who want to use this to make it happen for real!)</p>
 		<p>Want to try this?  Questions or feedback?  Anything else?</p>
 		<p>Contact on Signal/WhatsApp (+1 seven zero three four eight nine one six nine seven) or hello@sambutler.us</p>
-		</div>
+		
+		<details><summary style="margin-bottom: 20px;"><em>Browse what this could look like on other sites</em></summary>
+            <p><em>The Intercept</em></p>
+           <img src="./intercept_climate_widget_desktop2.png" loading="lazy">
+           <p><em>Extinction Rebellion</em></p>
+           <img src="./xr_climate_widget_desktop.png" loading="lazy">
+           <p><em>Declare Emergency</em></p>
+           <img src="./de_climate_widget_desktop.png" loading="lazy">
+           <p><em>Hot Take Podcast</em></p>
+           <img src="./hottake_climate_widget_desktop.png" loading="lazy">
+           <p><em>The Guardian</em> (mobile)</p>
+           <img src="./guardian_climate_widget_mobile.png" loading="lazy" class="mobile">
+           <p><em>Grist</em> (mobile)</p>
+           <img src="./grist_climate_widget_mobile.png" loading="lazy" class="mobile">
+           </details>
+	</div>
 	</div>
 </html>

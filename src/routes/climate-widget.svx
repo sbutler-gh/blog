@@ -1,7 +1,0 @@
-<svelte:head>
-</svelte:head>
-<div>
-    <script src="https://climatewidget.netlify.app/dist.js"></script>
-</div>
-<p style="display: inline-block">To embed this tool on your website, just copy <span style="display: inline-block; background: black; color: white; border-radius: 5px; padding: 5px;"><code>&lt;script src="https://climatewidget.netlify.app/dist.js"&gt;&lt;/script&gt;</code></span> <br/> and paste in your HTML code.</p>
-
