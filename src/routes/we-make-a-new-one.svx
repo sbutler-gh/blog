@@ -1,4 +1,9 @@
-Sam Butler, 6/14/22
+<div style="display: none">Sam Butler, 6/14/22</div>
+
+<p>Concept sound:</p>
+<audio controls>
+    <source src="./wemakeanewone_61422_1.mp3">
+</audio>
 
 Dancehall x Major Lazer type beat, with bass and a lower pitch.  An emphatic, deep voice singer.  Could have a similar pitch to this: https://youtu.be/_Zr8aV_d1YA?t=130.  Could also have multiple people coming in on different verses, like: https://www.youtube.com/watch?v=6hGza1pWZ_E
 
@@ -87,6 +92,3 @@ It’s where we all meet
 Out to the street
 It’s where we all meet
 </div>
-<audio controls>
-<source src="./wemakeanewone_61422_1.mp3">
- </audio>
