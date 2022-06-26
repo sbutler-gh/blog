@@ -122,8 +122,9 @@ $: new_arr = (new_roi / payback_years) * 100;
 // //  setTimeout(function () {
 // //    welcome_popup = false;
 // //  }, 10000)
- 
-
+  }
+  else {
+    ipToCoordinates();
   }
 
 // var search = str;
@@ -133,6 +134,43 @@ $: new_arr = (new_roi / payback_years) * 100;
 // console.log(params2);
 
  })
+
+ async function ipToCoordinates() {
+
+
+const ip = await fetch("https://serene-journey-42564.herokuapp.com/https://api.ipify.org?format=json&callback=getIP");
+
+const ip_json = await ip.json();
+console.log(ip_json);
+
+const request = await fetch(`https://serene-journey-42564.herokuapp.com/ipinfo.io/${ip_json["ip"]}/geo?token=${import.meta.env.VITE_IP_INFO_KEY}`, {
+    method: 'GET',
+    "Content-Type": "application/json",
+    "charset": "utf-8",
+    "Access-Control-Allow-Headers": "X-Requested-With",
+    "X-Requested-With": "XMLHttpRequest"   
+});
+
+const json = await request.json()
+
+// community = json.city;
+
+console.log(json);
+
+community = json.region;
+
+// coordinates = json.loc.split(',');
+// console.log(coordinates);
+// coordinates = {"lat": coordinates[0], "lng": coordinates[1]};
+
+
+// city = json.city;
+// country = json.country;
+// geocoder_input = `${city}, ${country}`;
+// postal = json.postal;
+// content = true
+
+}
 
  async function addEmail(e) {
 
@@ -527,7 +565,7 @@ function shareProgram() {
 <h4 id="" style="padding-left: 10px">Create your own Community Savings Program</h4>
 <form class="variablesForm2" style="border-radius: 5px; padding: 0px 10px;">
 <!-- <input bind:value={title} style="font-size: 20px;"> -->
-<p><input style="display: inline-block; width: {users.length * 12}px; min-width: 30px;" name="users" bind:value={users} placeholder="users"> in <input style="display: inline-block; width: {community.length * Math.log(14000)}px; min-width: 30px;" name="community" bind:value={community} placeholder="community"> pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="use cost"> <select id="select_time_unit" bind:value={per_time_unit} on:change={function(e) { console.log(e); per_time_unit_label = e.target.selectedOptions[0].label; console.log(per_time_unit_label) }}><option label="per month" value={12}>per month</option><option label="per year" value={1}>per year</option><option label="per week" value={52}>per week</option><option label="per day" value={365}>per day</option><option label="per hour" value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * Math.log(14000)}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br><span style="visibility: hidden; height: 0px; display: none;">With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="users per month"> {users.toLowerCase()} in {community}, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
+<p><input style="display: inline-block; width: {users.length * 12}px; min-width: 30px;" name="users" bind:value={users} placeholder="users" type="text"> in <input style="display: inline-block; width: {community.length * Math.log(14000)}px; min-width: 30px;" name="community" bind:value={community} placeholder="community" type="text"> pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="use cost"> <select id="select_time_unit" bind:value={per_time_unit} on:change={function(e) { console.log(e); per_time_unit_label = e.target.selectedOptions[0].label; console.log(per_time_unit_label) }}><option label="per month" value={12}>per month</option><option label="per year" value={1}>per year</option><option label="per week" value={52}>per week</option><option label="per day" value={365}>per day</option><option label="per hour" value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * Math.log(14000)}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br><span style="visibility: hidden; height: 0px; display: none;">With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="users per month"> {users.toLowerCase()} in {community}, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
   <br>
 <br>
 </span>
@@ -543,7 +581,7 @@ If a {infrastructure} costs $<input bind:value={cost_per_user} style="display: i
 
 <span class="range-div">${dollar_savings_kept} <input type="range" bind:value={dollar_savings_kept} min={0} max={max_dollar_savings}></span>
 
-<span style="font-weight: 600">{per_time_unit_label}</span> and pay back the costs in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the project a <input style="display: none;" type="range" bind:value={new_arr} min={0} max={100}><strong>{new_arr.toFixed(2)}% annual rate of return. {#if new_arr.toFixed(2) > 0}
+<span style="font-weight: 600">{per_time_unit_label}</span> and pay back the {infrastructure} in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the project a <input style="display: none;" type="range" bind:value={new_arr} min={0} max={100}><strong>{new_arr.toFixed(2)}% annual rate of return. {#if new_arr.toFixed(2) > 0}
   <svg xmlns="http://www.w3.org/2000/svg" class="return-check icon icon-tabler icon-tabler-circle-check" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#56e156" style="vertical-align: bottom:" stroke-linecap="round" stroke-linejoin="round">
     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
     <circle cx="12" cy="12" r="9" />
@@ -551,7 +589,7 @@ If a {infrastructure} costs $<input bind:value={cost_per_user} style="display: i
   </svg>
   {/if}</strong>
 <br><br>
-And from then on, {users.toLowerCase()} enjoy a full <strong>${max_dollar_savings}</strong> in savings {per_time_unit_label}.
+And from then on, {users.toLowerCase()} enjoy a full <strong>${max_dollar_savings} in savings {per_time_unit_label}</strong> with a {infrastructure}.
 <!-- And from then on, {users.toLowerCase()} save <strong>${max_dollars_savings_shared}</strong> {per_time_unit_label} and a full <strong>${total_savings.toLocaleString()} in yearly savings</strong> in {community}. -->
 <br>
 <br>
