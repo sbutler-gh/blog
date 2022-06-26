@@ -538,12 +538,12 @@ With a <input name="infrastructure" style="display: inline-block; width: {infras
 as much as <strong>${max_dollar_savings.toLocaleString()} in savings {per_time_unit_label}</strong>.
 <br>
 <br>
-If a {infrastructure} costs $<input bind:value={cost_per_user} style="display: inline-block; width: {cost_per_user.toString().length * 11}px; min-width: 30px;" name="cost_per_user" placeholder="XXXXX.XX"> per {users.toLowerCase().slice(0,-1)} (${(users_per_month * cost_per_user).toLocaleString()} total)<!-- , and creates <strong>${total_savings.toLocaleString()}</strong> in savings per year, -->, <strong>every {users.toLowerCase().slice(0,-1)}</strong> can save
+If a {infrastructure} costs $<input bind:value={cost_per_user} style="display: inline-block; width: {cost_per_user.toString().length * 11}px; min-width: 30px;" name="cost_per_user" placeholder="XXXXX.XX"> per {users.toLowerCase().slice(0,-1)}<!-- (${(users_per_month * cost_per_user).toLocaleString()} total) --><!-- , and creates <strong>${total_savings.toLocaleString()}</strong> in savings per year, -->, every {users.toLowerCase().slice(0,-1)} can save
 <!-- <span class="range-div">{percent_savings_shared}% <input type="range" bind:value={percent_savings_shared} min={0} max={100}></span>  -->
 
 <span class="range-div">${dollar_savings_kept} <input type="range" bind:value={dollar_savings_kept} min={0} max={max_dollar_savings}></span>
 
-{per_time_unit_label} and pay back the costs in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the project a <input style="display: none;" type="range" bind:value={new_arr} min={0} max={100}><strong>{new_arr.toFixed(2)}% annual rate of return. {#if new_arr.toFixed(2) > 0}
+<span style="font-weight: 600">{per_time_unit_label}</span> and pay back the costs in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the project a <input style="display: none;" type="range" bind:value={new_arr} min={0} max={100}><strong>{new_arr.toFixed(2)}% annual rate of return. {#if new_arr.toFixed(2) > 0}
   <svg xmlns="http://www.w3.org/2000/svg" class="return-check icon icon-tabler icon-tabler-circle-check" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#56e156" style="vertical-align: bottom:" stroke-linecap="round" stroke-linejoin="round">
     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
     <circle cx="12" cy="12" r="9" />
