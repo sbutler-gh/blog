@@ -34,9 +34,13 @@ import { onMount } from "svelte";
 
  export let per_time_unit;
 
+ export let per_time_unit_label;
+
  export let percent_savings;
 
  export let cost_per_user;
+
+//  $: per_time_unit_label;
 
 $: community_cost_annual = use_cost * users_per_month * per_time_unit;
 
@@ -80,6 +84,8 @@ $: total_savings = community_cost_annual * (percent_savings/100);
       // percent_savings = params.percent_savings;
 
  document.getElementsByClassName("program")[0].scrollIntoView({behavior: 'smooth'});
+
+//  per_time_unit_label = document.getElementsByTagName("option")[document.getElementById("select_time_unit").selectedIndex].label
 
 
 // //  welcome_popup = true;
@@ -235,7 +241,6 @@ function shareProgram() {
         urlparams = Object.fromEntries(str.entries());
         console.log(urlparams);
         urlparams.users = urlparams.users.charAt(0).toUpperCase() + urlparams.users.slice(1);
-
       // service = params.service;
       // infrastructure = params.infrastructure;
       // capital = params.capital;
@@ -283,11 +288,21 @@ function shareProgram() {
           urlparams.payback_years = 12.5;
 
           urlparams.per_time_unit = 1;
+          
+          urlparams.per_time_unit_label = "per year";
 
           urlparams.percent_savings = 40;
           
           urlparams.cost_per_user = 4000;
         }
+
+      if (!urlparams.per_time_unit_label) {
+        urlparams.per_time_unit == 1 ? urlparams.per_time_unit_label = "per year" : null
+        urlparams.per_time_unit == 12 ? urlparams.per_time_unit_label = "per month" : null
+        urlparams.per_time_unit == 52 ? urlparams.per_time_unit_label = "per week" : null
+        urlparams.per_time_unit == 365 ? urlparams.per_time_unit_label = "per day" : null
+        urlparams.per_time_unit == 8760 ? urlparams.per_time_unit_label = "per hour" : null
+      }
 
       return {
 				props: { 
@@ -302,6 +317,7 @@ function shareProgram() {
           percent_savings_shared: urlparams.percent_savings_shared,
           payback_years: urlparams.payback_years,
           per_time_unit: parseInt(urlparams.per_time_unit),
+          per_time_unit_label: urlparams.per_time_unit_label,
           percent_savings: urlparams.percent_savings,
           cost_per_user: urlparams.cost_per_user,
           original: original
@@ -475,7 +491,7 @@ function shareProgram() {
 <h4 id="" style="padding-left: 10px">Create your own Community Savings Program</h4>
 <form class="variablesForm2" style="border-radius: 5px; padding: 0px 10px;">
 <!-- <input bind:value={title} style="font-size: 20px;"> -->
-<p><input style="display: inline-block; width: {users.length * 12}px; min-width: 30px;" name="users" bind:value={users} placeholder="users"> in <input style="display: inline-block; width: {community.length * Math.log(14000)}px; min-width: 30px;" name="community" bind:value={community} placeholder="community"> pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="use cost"> <select bind:value={per_time_unit}><option value={12}>per month</option><option value={1}>per year</option><option value={52}>per week</option><option value={365}>per day</option><option value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * Math.log(14000)}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br>With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="users per month"> {users.toLowerCase()} in {community}, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
+<p><input style="display: inline-block; width: {users.length * 12}px; min-width: 30px;" name="users" bind:value={users} placeholder="users"> in <input style="display: inline-block; width: {community.length * Math.log(14000)}px; min-width: 30px;" name="community" bind:value={community} placeholder="community"> pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="use cost"> <select id="select_time_unit" bind:value={per_time_unit} on:change={function(e) { console.log(e); per_time_unit_label = e.target.selectedOptions[0].label; console.log(per_time_unit_label) }}><option label="per month" value={12}>per month</option><option label="per year" value={1}>per year</option><option label="per week" value={52}>per week</option><option label="per day" value={365}>per day</option><option label="per hour" value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * Math.log(14000)}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br>With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="users per month"> {users.toLowerCase()} in {community}, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
 <br>
 <br>
 With a <input name="infrastructure" style="display: inline-block; width: {infrastructure.length * Math.log(14000)}px; min-width: 30px;" bind:value={infrastructure} placeholder="">, {users.toLowerCase()}  in {community} could save
@@ -483,8 +499,8 @@ With a <input name="infrastructure" style="display: inline-block; width: {infras
 — creating <strong>${total_savings.toLocaleString()}</strong> in savings every year.
 <br>
 <br>
-If a {infrastructure} costs $<input bind:value={cost_per_user} style="display: inline-block; width: {cost_per_user.toString().length * 11}px; min-width: 30px;" name="cost_per_user" placeholder="XXXXX.XX"> per {users.toLowerCase().slice(0,-1)} (${(users_per_month * cost_per_user).toLocaleString()} total), and creates <strong>${total_savings.toLocaleString()}</strong> in savings per year, we can share
-<span class="range-div">{percent_savings_shared}% <input type="range" bind:value={percent_savings_shared} min={0} max={100}></span>of the savings and pay back the funding in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the program a <input style="display: none;" type="range" bind:value={arr} min={0} max={100}><strong>{arr.toFixed(2)}% annual rate of return. {#if arr.toFixed(2) > 0}
+If a {infrastructure} costs $<input bind:value={cost_per_user} style="display: inline-block; width: {cost_per_user.toString().length * 11}px; min-width: 30px;" name="cost_per_user" placeholder="XXXXX.XX"> per {users.toLowerCase().slice(0,-1)} (${(users_per_month * cost_per_user).toLocaleString()} total), and creates <strong>${total_savings.toLocaleString()}</strong> in savings per year, {users.toLowerCase()} can enjoy
+<span class="range-div">{percent_savings_shared}% <input type="range" bind:value={percent_savings_shared} min={0} max={100}></span>{per_time_unit_label} in savings and pay back the funding in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the program a <input style="display: none;" type="range" bind:value={arr} min={0} max={100}><strong>{arr.toFixed(2)}% annual rate of return. {#if arr.toFixed(2) > 0}
   <svg xmlns="http://www.w3.org/2000/svg" class="return-check icon icon-tabler icon-tabler-circle-check" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#56e156" style="vertical-align: bottom:" stroke-linecap="round" stroke-linejoin="round">
     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
     <circle cx="12" cy="12" r="9" />
