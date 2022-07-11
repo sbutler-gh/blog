@@ -85,104 +85,105 @@ import { onMount } from "svelte";
 </svelte:head>
 
 <h3><em>We gonna make a new one</em></h3>
-<div class="contains-music"><p>Dancehall x Major Lazer type beat, with bass and a lower pitch.  An emphatic, deep voice singer.  Could have a similar pitch to this:</p>
+<div class="contains-music"><p>Major Lazer type beat, with bass and a lower pitch.  An emphatic, deep voice singer.  Could have a similar pitch to this:</p>
 <div data-video="_Zr8aV_d1YA" data-autoplay="0" data-loop="0" data-start="130" class="youtube-audio"></div>    (<a href="https://youtu.be/_Zr8aV_d1YA?t=130"><em>Compost</em></a>)
 Could also have multiple people coming in on different verses, like:
-<div data-video="6hGza1pWZ_E" data-autoplay="0" data-loop="0" class="youtube-audio"></div>(<a href="https://www.youtube.com/watch?v=6hGza1pWZ_E"><em>Watch Out For This — Bumaye</em>)</a>
+<div data-video="6hGza1pWZ_E" data-autoplay="0" data-loop="0" data-start="15" class="youtube-audio"></div>(<a href="https://www.youtube.com/watch?v=6hGza1pWZ_E?t=15"><em>Watch Out For This — Bumaye</em>)</a>
 </div>
-
-Similar voices and sounds: https://youtu.be/T1_iDT9KeYc?t=36, https://youtu.be/RZ_AhYNyUh0?t=23, https://youtu.be/6hGza1pWZ_E?t=83
-
-<div data-video="_Zr8aV_d1YA" data-autoplay="0" data-loop="0" data-start="130" class="youtube-audio"></div>
-<div data-video="KK2smasHg6w" data-autoplay="0" data-loop="0" class="youtube-audio"></div>
-
-<p>Concept sound:</p>
+<br>
+Other voice/sound references: <div data-video="T1_iDT9KeYc" data-autoplay="0" data-loop="0" data-start="37" class="youtube-audio"></div>(<a href="https://www.youtube.com/watch?v=T1_iDT9KeYc?t=37"><em>Blam Blam ft Chesire Cat - Kingston Express</em>)</a>, <div data-video="RZ_AhYNyUh0" data-autoplay="0" data-loop="0" data-start="23" class="youtube-audio"></div>(<a href="https://www.youtube.com/watch?v=RZ_AhYNyUh0?t=23"><em>Warning - R.Esistence In Dub & LongFingah</em>)</a>, <div data-video="6hGza1pWZ_E" data-autoplay="0" data-loop="0" data-start="83" class="youtube-audio"></div>(<a href="https://www.youtube.com/watch?v=6hGza1pWZ_E?t=83"><em>Another Bumaye verse</em>)</a>, <div data-video="8Azg9hNl594" data-autoplay="0" data-loop="0" data-start="11" class="youtube-audio"></div>(<a href="https://www.youtube.com/watch?v=8Azg9hNl594?t=11"><em>Deh Pon Yuh Own - Busy Signal</em>)</a>, <div data-video="X-FCcYUFMAY" data-autoplay="0" data-loop="0" data-start="12" class="youtube-audio"></div>(<a href="https://www.youtube.com/watch?v=X-FCcYUFMAY?t=12"><em>Ballroom - Voice Runners</em>)</a>
+<br>
+<br>
+<p>Lyrics</p>
+<div style="font-style: italic">
+The spot is getting hotter <br>
+Our job is to survive <br>    
+Biodiverse things <br>    
+Let us all thrive <br>
+Community is life <br>
+Water keeps us alive <br>
+We protect our waters <br>
+It gives all life <br>
+<br>
+Belonging to the world <br>
+Connected and alive <br>
+Fungus in a forest <br>
+Trees and fireflies <br>
+We make the world <br>
+Dead or alive <br>
+Now our world is dead <br>
+Lets bring it back to life <br>
+<br>
+We change the world <br>
+From behind our eyes <br>
+Now it is changed <br>
+Open up your eyes <br>
+We make the world <br>
+Dead or alive <br>
+Now the world is dead <br>
+Now we make it alive <br>
+<br>
+End the car traffic <br>
+Let the streets come alive <br>
+Children in the market <br>
+Finding places to hide <br>
+This is a world <br>
+We dream of inside <br>
+Play and love and dance <br>
+Make food and survive <br>
+<br>
+Flesh and politics <br>
+Limits, big tits <br>
+Deciding how we live <br>
+Playful rela-tions <br>
+Change perspectives <br>
+Open ears and eyes <br>
+Our world is always changing <br>
+Open paradigms <br>
+<br>
+Change behind your eyes <br>
+Go and vote your mind <br>
+Talk it out with neighbors <br>
+Make it in our lives <br>
+Meeting of the minds <br>
+Meeting of the people <br>
+The old world is dead <br>
+We make new worlds real <br>
+<br>
+Out into the streets <br>
+Where it all gets real <br>
+Raising up the heat <br>
+And it all gets real <br>
+Jail is where we meet <br>
+Till the jailers know we real <br>
+The old world is beat <br>
+We make new worlds real <br>
+<br>
+Get out of your cars <br>
+Dance in the street <br>
+All the stores are gone <br>
+Grow food so we eat <br>
+Solar in the park <br>
+So we still have heat <br>
+Gather after dark <br>
+Heart drum life beat_ <br>
+Out to the street <br>
+It’s where we all meet <br>
+<br>
+Out to the street <br>
+It’s where we all meet <br>
+Out to the street <br>
+It’s where we all meet <br>
+Out to the street <br>
+It’s where we all meet <br>
+</div>
+<p>Here's a concept sound:</p>
 <audio controls>
     <source src="./wemakeanewone_61422_1.mp3">
 </audio>
 
-<div style="font-style: italic">
-The spot is getting hotter
-Our job is to survive  
-Biodiverse things  
-Let us all thrive
-Community is life
-Water keeps us alive
-We protect our waters
-It gives all life
+<p>You can comment/leave any feedback <a href="https://docs.google.com/document/d/1u9XyVwsKjTPRFn6YCmKw9dDLHlhucK_kSeFs1MZUZoU/edit?usp=sharing">on this Google Doc</a>.</p>
 
-Belonging to the world
-Connected and alive
-Fungus in a forest
-Trees and fireflies
-We make the world
-Dead or alive
-Now our world is dead
-Lets bring it back to life
-
-We change the world
-From behind our eyes
-Now it is changed
-Open up your eyes
-We make the world
-Dead or alive
-Now the world is dead
-Now we make it alive
-
-End the car traffic
-Let the streets come alive
-Children in the market
-Finding places to hide
-This is a world
-We dream of inside
-Play and love and dance
-Make food and survive
-
-Flesh and politics
-Limits, big tits
-Deciding how we live
-Playful rela-tions
-Change perspectives
-Open ears and eyes
-Our world is always changing
-Open paradigms
-
-Change behind your eyes
-Go and vote your mind
-Talk it out with neighbors
-Make it in our lives
-Meeting of the minds
-Meeting of the people
-The old world is dead
-We make new worlds real
-
-Out into the streets
-Where it all gets real
-Raising up the heat
-And it all gets real
-Jail is where we meet
-Till the jailers know we real
-The old world is beat
-We make new worlds real
-
-Get out of your cars
-Dance in the street
-All the stores are gone
-Grow food so we eat
-Solar in the park
-So we still have heat
-Gather after dark
-Heart drum life beat_
-Out to the street
-It’s where we all meet
-
-Out to the street
-It’s where we all meet
-Out to the street
-It’s where we all meet
-Out to the street
-It’s where we all meet
-</div>
 
 <style>
     .youtube-audio {
