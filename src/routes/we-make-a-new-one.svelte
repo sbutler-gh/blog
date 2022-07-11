@@ -85,15 +85,10 @@ import { onMount } from "svelte";
 </svelte:head>
 
 <h3><em>We gonna make a new one</em></h3>
-<div class="contains-music"><p>Major Lazer type beat, with bass and a lower pitch.  An emphatic, deep voice singer.  Could have a similar pitch to this:</p>
-<div data-video="_Zr8aV_d1YA" data-autoplay="0" data-loop="0" data-start="130" class="youtube-audio"></div>    (<a href="https://youtu.be/_Zr8aV_d1YA?t=130"><em>Compost</em></a>)
-Could also have multiple people coming in on different verses, like:
-<div data-video="6hGza1pWZ_E" data-autoplay="0" data-loop="0" data-start="15" class="youtube-audio"></div>(<a href="https://www.youtube.com/watch?v=6hGza1pWZ_E?t=15"><em>Watch Out For This — Bumaye</em>)</a>
+<div class="contains-music"><p>Major Lazer type beat, with bass and a lower pitch.  An emphatic, deep voice singer.  Voice/sound references:</p>
+<div data-video="_Zr8aV_d1YA" data-autoplay="0" data-loop="0" data-start="130" class="youtube-audio"></div>    (<a href="https://youtu.be/_Zr8aV_d1YA?t=130"><em>Compost ft DiorNoel - Nate & Hila</em></a>), <div data-video="6hGza1pWZ_E" data-autoplay="0" data-loop="0" data-start="15" class="youtube-audio"></div>(<a href="https://www.youtube.com/watch?v=6hGza1pWZ_E?t=15"><em>Watch Out For This — Major Lazer</em>)</a>,
+<div data-video="T1_iDT9KeYc" data-autoplay="0" data-loop="0" data-start="37" class="youtube-audio"></div>(<a href="https://www.youtube.com/watch?v=T1_iDT9KeYc?t=37"><em>Blam Blam ft Chesire Cat - Kingston Express</em>)</a>
 </div>
-<br>
-Other voice/sound references: <div data-video="T1_iDT9KeYc" data-autoplay="0" data-loop="0" data-start="37" class="youtube-audio"></div>(<a href="https://www.youtube.com/watch?v=T1_iDT9KeYc?t=37"><em>Blam Blam ft Chesire Cat - Kingston Express</em>)</a>, <div data-video="RZ_AhYNyUh0" data-autoplay="0" data-loop="0" data-start="23" class="youtube-audio"></div>(<a href="https://www.youtube.com/watch?v=RZ_AhYNyUh0?t=23"><em>Warning - R.Esistence In Dub & LongFingah</em>)</a>, <div data-video="6hGza1pWZ_E" data-autoplay="0" data-loop="0" data-start="83" class="youtube-audio"></div>(<a href="https://www.youtube.com/watch?v=6hGza1pWZ_E?t=83"><em>Another Bumaye verse</em>)</a>, <div data-video="8Azg9hNl594" data-autoplay="0" data-loop="0" data-start="11" class="youtube-audio"></div>(<a href="https://www.youtube.com/watch?v=8Azg9hNl594?t=11"><em>Deh Pon Yuh Own - Busy Signal</em>)</a>, <div data-video="X-FCcYUFMAY" data-autoplay="0" data-loop="0" data-start="12" class="youtube-audio"></div>(<a href="https://www.youtube.com/watch?v=X-FCcYUFMAY?t=12"><em>Ballroom - Voice Runners</em>)</a>
-<br>
-<br>
 <p>Lyrics</p>
 <div style="font-style: italic">
 The spot is getting hotter <br>
