@@ -5,11 +5,11 @@ import { children } from "svelte/internal";
 </script>
 
 <div style="display: none">
-<h4 style="margin-bottom: 0px;"><a href="/community-energy-vision">Saves for Itself</a></h4>
+<h4 style="margin-bottom: 0px;"><a href="/saves-for-itself">Saves for Itself</a></h4>
 <p style="margin-top: 5px;">Programs for resilience and making life better, that save for themselves.</p>
 </div>
 
-<h4 style="margin-bottom: 0px;"><a href="/community-savings">Community Energy Vision</a></h4>
+<h4 style="margin-bottom: 0px;"><a href="/community-energy-vision">Community Energy Vision</a></h4>
 <p style="margin-top: 5px;">An introduction to community energy hubs — postgrowth paradigm, less consumption, better outcomes.</p>
 
 <h4 style="margin-bottom: 0px;"><a href="/community-savings">Community Savings</a></h4>
