@@ -1,3 +1,24 @@
+<svelte:head>
+  <title>Community Energy Vision</title>
+
+  
+  <meta name="description" content="Community energy hubs — postgrowth, less consumption, better outcomes.">
+  
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://sambutler.us/community-energy-vision/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Community Energy Vision">
+  <meta property="og:description" content="Community energy hubs — postgrowth, less consumption, better outcomes.">
+  <meta property="og:image" content="https://cdn.geekwire.com/wp-content/uploads/2012/03/Solar-Shelter-single-shelter-1024x615.jpg">
+  
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="sambutler.us">
+  <meta property="twitter:url" content="https://sambutler.us/community-energy-vision/">
+  <meta property="og:title" content="Community Energy Vision">
+  <meta property="og:description" content="Community energy hubs — postgrowth, less consumption, better outcomes.">
+  <meta name="twitter:image" content="https://cdn.geekwire.com/wp-content/uploads/2012/03/Solar-Shelter-single-shelter-1024x615.jpg">
+</svelte:head>
 <article class="h-entry">
   <h1 class="p-name"><a class="u-url" href="https://sambutler.us/community-energy-vision">Community Energy Vision</a></h1>
   <div class="e-content">     
