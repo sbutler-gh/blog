@@ -1,75 +1,127 @@
 <script>
+
   import supabase from "$lib/db.js";
 import WelcomePopup from "$lib/WelcomePopup.svelte";
 import { onMount } from "svelte";
+
+
 // You want to raise ______ to build a _____.  
+
 // [ Sell future credits ]
+
   export let urlparams;
   export let original;
+
   let welcome_popup = false;
+
   let copy_tooltip = false;
+
+
  let title = "Community Savings Program";
+
  export let community;
+
  export let service;
  export let infrastructure;
  export let capital;
  export let users;
  export let users_per_month;
  export let use_cost;
+
  export let percent_savings_shared;
+
  export let payback_years;
+
  export let per_time_unit;
+
  export let per_time_unit_label;
+
  export let percent_savings;
+
  export let cost_per_user;
+
  export let dollar_savings_kept;
+
 //  $: per_time_unit_label;
+
 $: max_dollar_savings = use_cost * (percent_savings/100);
+
 $: dollar_savings_shared = max_dollar_savings - dollar_savings_kept;
+
 $: community_cost_annual = use_cost * users_per_month * per_time_unit;
+
 $: total_savings = community_cost_annual * (percent_savings/100);
+
 $: yearly_return = total_savings * ((max_dollar_savings - dollar_savings_kept) / max_dollar_savings);
+
 //  $: yearly_return = total_savings * (percent_savings_shared/100);
+
  $: absolute_return = yearly_return * payback_years;
+
  $: capital_calculation = cost_per_user * users_per_month;
+
  $: roi = ((absolute_return - (cost_per_user * users_per_month)) / (cost_per_user * users_per_month)) * 100;
+
  $: arr = roi / payback_years;
+
  $: new_absolute_return = dollar_savings_shared * per_time_unit * payback_years;
+
  $: fvi = dollar_savings_shared * per_time_unit * payback_years;
+
  $: ivi = cost_per_user;
+
  $: new_roi = (fvi - ivi) / ivi;
+
 //  $: average_annual_profit = fvi / payback_years;
+
 //  $: new_arr = (average_annual_profit / fvi) * 100;
+
 $: new_arr = (new_roi / payback_years) * 100;
+
+
 //  $: new_roi1 = ((new_absolute_return - cost_per_user) / cost_per_user) * 100
+
 //  $: new_roi = ((dollar_savings_shared * payback_years) / cost_per_user) * 100;
+
 //  $: new_arr2 = (dollar_savings_shared * per_time_unit * payback_years) /
  
 //  $: new_arr = (cost_per_user / dollar_savings_shared) * payback_years;
+
  let profile_form = false;
  let new_user;
+
  onMount(() => {
+
   console.log(original);
+
 //   // If there is a parameter in the URL;
     if (!original) {
+
       // service = params.service;
       // infrastructure = params.infrastructure;
       // capital = params.capital;
       // users = params.users;
       // users_per_month = params.users_per_month;
       // use_cost = params.use_cost;
+
       // percent_savings_shared = params.percent_savings_shared;
+
       // payback_years = params.payback_years;
+
       // per_time_unit = parseInt(params.per_time_unit);
+
       // percent_savings = params.percent_savings;
+
  document.getElementsByClassName("program")[0].scrollIntoView({behavior: 'smooth'});
+
 //  per_time_unit_label = document.getElementsByTagName("option")[document.getElementById("select_time_unit").selectedIndex].label
+
+
 // //  welcome_popup = true;
+
 // //  setTimeout(function () {
 // //    welcome_popup = false;
 // //  }, 10000)
-
-
   }
   else {
     ipToCoordinates();
@@ -78,6 +130,7 @@ $: new_arr = (new_roi / payback_years) * 100;
 // var search = str;
 // console.log(search);
 // let params2 = JSON.parse('{"' + search.replace(/&/g, '","').replace(/=/g,'":"') + '"}', function(key, value) { return key===""?value:decodeURIComponent(value) });
+
 // console.log(params2);
 
  })
@@ -122,8 +175,11 @@ community = json.region;
  async function addEmail(e) {
 
 let formData = new FormData(e.target);
+
 profile_form = true;
+
 let random_password = Math.random().toString(36).substr(2, 8);
+
 const { data, error } = await supabase.auth.signUp(
   { email: formData.get('email'),
     password: random_password })
@@ -137,10 +193,15 @@ else {
   localStorage.setItem('email', formData.get('email'));
 }
 }
+
 async function addProfileInformation(e) {
+
 let formData = new FormData(e.target);
+
 // console.log(formData.get('email'));
+
 console.log([...formData]);
+
 if (new_user) {
   const { data, error } = await supabase
   .from('profiles')
@@ -155,6 +216,7 @@ if (new_user) {
     },
   ])
   .eq('user_id', new_user.id)
+
   if (data) {
     console.log(data);
     // let new_user = data;
@@ -165,8 +227,10 @@ if (new_user) {
     console.log(error);
   }
 }
+
 else {
   let random_password = Math.random().toString(36).substr(2, 8);
+
   const { data, error } = await supabase.auth.signUp(
     { email: localStorage.getItem('email'),
       password: random_password },
@@ -191,11 +255,17 @@ else {
   }
 }
 }
+
 function shareProgram() {
+
   // let window_path =  `${window.location.origin}${window.location.pathname}`
+
   let params = `service=${service}&infrastructure=${infrastructure}&cost_per_user=${cost_per_user}&capital=${capital}&users=${users}&users_per_month=${users_per_month}&use_cost=${use_cost}&percent_savings_shared=${percent_savings_shared}&payback_years=${payback_years}&per_time_unit=${per_time_unit}&percent_savings=${percent_savings}&community=${community}&dollar_savings_kept=${dollar_savings_kept}`;
+
   let updated_params = encodeURI(params);
+
   let url = `${window.location.origin}${window.location.pathname}?${updated_params}`
+
   if (!navigator.clipboard){
                 // use old commandExec() way
                 url.select();
@@ -203,6 +273,7 @@ function shareProgram() {
                 document.execCommand("copy");
                 copy_tooltip = true;
                 setTimeout(function(){ copy_tooltip = false }, 2000)
+
             } else{
                 navigator.clipboard.writeText(url).then(
                     function(){
@@ -216,15 +287,20 @@ function shareProgram() {
                     });
             }  
 }
+
 </script>
+
 <script context="module">
     export const load = async ({ url, params }) => {
+
       console.log(url);
       console.log(params);
       let urlparams = [];
       let original = true;
+
         // If there is a parameter in the URL;
         if (url.search) {
+
           console.log('hit');
           original = false;
           // const params = Object.fromEntries(urlSearchParams.entries());
@@ -238,20 +314,30 @@ function shareProgram() {
       // users = params.users;
       // users_per_month = params.users_per_month;
       // use_cost = params.use_cost;
+
       // percent_savings_shared = params.percent_savings_shared;
+
       // payback_years = params.payback_years;
+
       // per_time_unit = parseInt(params.per_time_unit);
+
       // percent_savings = params.percent_savings;
+
+
       //  welcome_popup = true;
+
       //  setTimeout(function () {
       //    welcome_popup = false;
       //  }, 10000)
+
       if (!urlparams.community) {
         urlparams.community = "our community"
       }
+
       if (!urlparams.cost_per_user) {
         urlparams.cost_per_user = urlparams.capital / urlparams.users_per_month;
       }
+
       if (!urlparams.per_time_unit_label) {
         urlparams.per_time_unit == 1 ? urlparams.per_time_unit_label = "per year" : null
         urlparams.per_time_unit == 12 ? urlparams.per_time_unit_label = "per month" : null
@@ -259,11 +345,14 @@ function shareProgram() {
         urlparams.per_time_unit == 365 ? urlparams.per_time_unit_label = "per day" : null
         urlparams.per_time_unit == 8760 ? urlparams.per_time_unit_label = "per hour" : null
       }
+
       if (!urlparams.dollar_savings_kept) {
         urlparams.dollar_savings_kept= (urlparams.use_cost * (urlparams.percent_savings/100)) / 2;
       }
       
+
         }
+
         else {
           urlparams.community = "our community"
           urlparams.service = "energy"
@@ -272,16 +361,22 @@ function shareProgram() {
           urlparams.users = "Homes";
           urlparams.users_per_month = 1000;
           urlparams.use_cost = 2000;
+
           urlparams.percent_savings_shared = 50;
+
           urlparams.payback_years = 12.5;
+
           urlparams.per_time_unit = 1;
           
           urlparams.per_time_unit_label = "per year";
+
           urlparams.percent_savings = 40;
           
           urlparams.cost_per_user = 4000;
+
           urlparams.dollar_savings_kept= (urlparams.use_cost * (urlparams.percent_savings/100)) / 2;
         }
+
       return {
 				props: { 
           params: urlparams,
@@ -304,10 +399,13 @@ function shareProgram() {
 			};
     }
 </script>
+
 <svelte:head>
 	<script src="https://cdn.jsdelivr.net/npm/d3plus-text@1"></script>
+
   {#if !original}
   <title>{infrastructure.charAt(0).toUpperCase()}{infrastructure.slice(1)} (Community Savings)</title>
+
   
   <meta name="description" content="Building Back Better w/ Community Savings (That Pay for Themselves)">
   
@@ -327,6 +425,7 @@ function shareProgram() {
   <meta name="twitter:image" content="https://i.imgur.com/k7CqmBO.png">
   {:else}
   <title>Community Savings</title>
+
   
   <meta name="description" content="Building Back Better w/ Community Savings (That Pay for Themselves)">
   
@@ -350,14 +449,20 @@ function shareProgram() {
     posthog.init('phc_1vs44o3mad3tUwqV5nR6zO8sRwuC5HepCh696Jl2gWr',{api_host:'https://app.posthog.com'})
 </script> -->
 </svelte:head>
+
 <article class="h-entry">
+
 <!-- <h3 class="p-name">Building Back Better w/ Community Savings (That Pay for Themselves)</h3> -->
 <h2 class="p-name">Building Back Better<br>with Community Savings</h2>
+
     <div class="e-content">
+
       <!-- {#if welcome_popup}
       <div class="modal_background_dim" on:click={function() {welcome_popup = false}}></div>
       <WelcomePopup on:closeintromodal={function() {welcome_popup = false;}}></WelcomePopup>
       {/if} -->
+
+
         <div class="embed-youtube">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/v4QuphODK-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -368,6 +473,7 @@ function shareProgram() {
   
               </div>
             </details>
+
             <div class="register register-2">
               {#if profile_form == true}
               <form class="profile-form" on:submit|preventDefault={addProfileInformation}>
@@ -450,6 +556,7 @@ function shareProgram() {
             </div>
               {/if}
             </div>
+
 <div class="program">
   <!-- <div style="display: inline-flex">
 <h4 style="padding-left: 10px">Create your own Community Savings Program</h4>
@@ -458,7 +565,6 @@ function shareProgram() {
 <h4 id="" style="padding-left: 10px">Create your own Community Savings Program</h4>
 <form class="variablesForm2" style="border-radius: 5px; padding: 0px 10px;">
 <!-- <input bind:value={title} style="font-size: 20px;"> -->
-<p><input style="display: inline-block; width: {users.length * 12}px; min-width: 30px;" name="users" bind:value={users} placeholder="users"> in <input style="display: inline-block; width: {community.length * Math.log(14000)}px; min-width: 30px;" name="community" bind:value={community} placeholder="community"> pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="use cost"> <select id="select_time_unit" bind:value={per_time_unit} on:change={function(e) { console.log(e); per_time_unit_label = e.target.selectedOptions[0].label; console.log(per_time_unit_label) }}><option label="per month" value={12}>per month</option><option label="per year" value={1}>per year</option><option label="per week" value={52}>per week</option><option label="per day" value={365}>per day</option><option label="per hour" value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * Math.log(14000)}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br><span style="visibility: hidden; height: 0px; display: none;">With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="users per month"> {users.toLowerCase()} in {community}, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
 <p><input style="display: inline-block; width: {users.length * 12}px; min-width: 30px;" name="users" bind:value={users} placeholder="users" type="text"> in <input style="display: inline-block; width: {community.length * Math.log(14000)}px; min-width: 30px;" name="community" bind:value={community} placeholder="community" type="text"> pay $<input class="" bind:value={use_cost} style="display: inline-block; width: {use_cost.toString().length * 11}px; min-width: 30px;" name="use_cost" placeholder="use cost"> <select id="select_time_unit" bind:value={per_time_unit} on:change={function(e) { console.log(e); per_time_unit_label = e.target.selectedOptions[0].label; console.log(per_time_unit_label) }}><option label="per month" value={12}>per month</option><option label="per year" value={1}>per year</option><option label="per week" value={52}>per week</option><option label="per day" value={365}>per day</option><option label="per hour" value={8760}>per hour</option></select> for <input style="width: 70px; display: inline-block; width: {service.length * Math.log(14000)}px; min-width: 30px;" name="service" bind:value={service} placeholder="{service}">. <br> <br><span style="visibility: hidden; height: 0px; display: none;">With <input style="display: inline-block; width: {users_per_month.toString().length * 11}px; min-width: 30px;" name="users_per_month" bind:value={users_per_month} placeholder="users per month"> {users.toLowerCase()} in {community}, all together, we spend <strong>${community_cost_annual.toLocaleString()} per year on {service}</strong>.
   <br>
 <br>
@@ -475,7 +581,6 @@ If a {infrastructure} costs $<input bind:value={cost_per_user} style="display: i
 
 <span class="range-div">${dollar_savings_kept} <input type="range" bind:value={dollar_savings_kept} min={0} max={max_dollar_savings}></span>
 
-<span style="font-weight: 600">{per_time_unit_label}</span> and pay back the costs in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the project a <input style="display: none;" type="range" bind:value={new_arr} min={0} max={100}><strong>{new_arr.toFixed(2)}% annual rate of return. {#if new_arr.toFixed(2) > 0}
 <span style="font-weight: 600">{per_time_unit_label}</span> and pay back the {infrastructure} in <span class="range-div">{payback_years}<input type="range" bind:value={payback_years} min={0} max={100}></span> years — giving the project a <input style="display: none;" type="range" bind:value={new_arr} min={0} max={100}><strong>{new_arr.toFixed(2)}% annual rate of return. {#if new_arr.toFixed(2) > 0}
   <svg xmlns="http://www.w3.org/2000/svg" class="return-check icon icon-tabler icon-tabler-circle-check" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#56e156" style="vertical-align: bottom:" stroke-linecap="round" stroke-linejoin="round">
     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -484,7 +589,6 @@ If a {infrastructure} costs $<input bind:value={cost_per_user} style="display: i
   </svg>
   {/if}</strong>
 <br><br>
-And from then on, {users.toLowerCase()} enjoy a full <strong>${max_dollar_savings}</strong> in savings {per_time_unit_label}.
 And from then on, {users.toLowerCase()} enjoy a full <strong>${max_dollar_savings} in savings {per_time_unit_label}</strong> with a {infrastructure}.
 <!-- And from then on, {users.toLowerCase()} save <strong>${max_dollars_savings_shared}</strong> {per_time_unit_label} and a full <strong>${total_savings.toLocaleString()} in yearly savings</strong> in {community}. -->
 <br>
@@ -496,8 +600,10 @@ And from then on, {users.toLowerCase()} enjoy a full <strong>${max_dollar_saving
 {/if}
 </form>
 </div>
+
 </div>
 </article>
+
 <style>
   .share {
     border-radius: 20px;
@@ -526,6 +632,7 @@ And from then on, {users.toLowerCase()} enjoy a full <strong>${max_dollar_saving
   height: 1.5rem;
   font-size: 18px;
 }
+
 .program .range-div {
     display: inline-grid; 
     text-align: center; 
@@ -542,17 +649,22 @@ And from then on, {users.toLowerCase()} enjoy a full <strong>${max_dollar_saving
     left: 50%;
     transform: translate(-50%);
 }
+
 .email-form {
     margin: 10px 0px;
 }
+
 @media only screen and (max-width: 800px) {
+
 /* .register button {
   margin: auto;
   text-align: center;
 }
+
 .profile-form {
   width: 100%;
 } */
+
 .embed-youtube {
 position: relative;
 padding-bottom: 56.25%; /* - 16:9 aspect ratio (most common) */
@@ -563,6 +675,7 @@ height: 0;
 overflow: hidden;
 width: 100%;
 }
+
 .embed-youtube iframe,
 .embed-youtube object,
 .embed-youtube embed {
@@ -573,26 +686,34 @@ left: 0;
 width: 100%;
 height: 100%;
 }
+
 .profile-form, .success-alert, .footnotes {
   width: 95%;
 }
+
 .p-name {
   width: 100%;
   text-align: center;
 }
+
 }
+
 @media only screen and (min-width: 801px) {
+
   .profile-form, .success-alert {
       width: 75%;
   }
+
   .p-name {
   width: 80%;
   text-align: center;
 }
+
 .footnotes {
   width: 85%;
 }
 }
+
 .register {
       /* padding: 20px 20px; */
       border-radius: 10px;
@@ -601,20 +722,24 @@ height: 100%;
       /* background: white; */
       /* width: 50%; */
     }
+
     .register-2 {
       /* text-align: center; */
       margin: 20px auto;
       /* box-shadow: 0 -1px 10px rgb(0 0 0 / 5%), 0 1px 4px rgb(0 0 0 / 10%), 0 10px 30px #f3ece8; */
     }
+
     .register-2 input:focus {
       border-color: #a4d2ff;
       box-shadow: 0 0 6px rgb(27 106 201 / 50%);
       outline: none;
     }
+
     .register-2 input {
       /* margin: auto; */
       width: 80%;
     }
+
     .profile-form {
       border-radius: 10px;
       padding: 10px;
@@ -622,24 +747,30 @@ height: 100%;
       /* text-align: center; */
       /* margin: auto; */
     }
+
     .email-form input {
       /* margin: auto !important; */
     }
+
     .profile-form input {
       max-width: 50%;
     }
+
     .profile-form textarea {
       height: 70px;
       width: 95%;
     }
+
     .profile-form div {
       text-align: left;
       margin: 0 !important;
       width: 100%;
     }
+
     .profile-form label {
       font-size: 16px;
     }
+
     .register-2 button {
       border-radius: 20px;
       color: white;
@@ -654,27 +785,33 @@ height: 100%;
       font-size: 16px;
       cursor: pointer;
     }
+
     .register label, .register input, .register button, .register textarea {
       display: block;
     }
+
     .register input {
       box-sizing: border-box;
       font-size: 16px;
       line-height: 1.5rem;
       padding: 1px 2px;
     }
+
     .register input {
       padding: 3px 3px;
     }
+
     .register textarea, .register input {
       border-radius: 5px;
       /* background: #fbfbfb; */
       border: solid lightgrey 1px;
     }
+
     .success-link:hover {
       border-bottom: solid 1px #003cff;
       text-decoration: none;
     }
+
     .footnotes {
       font-size: 14px;
       background: #f8f8f8;
