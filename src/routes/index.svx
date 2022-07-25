@@ -6,11 +6,12 @@ import { children } from "svelte/internal";
 
 Welcome!  You can explore my work below, and see more experiences [here](https://www.sambutler.us/resume.pdf).
 
-Feel free to start a conversation [via email](mailto:hello@sambutler.us) or schedule a [time to chat](https://calendly.com/sambutler8/meeting?month=2022-02).
+Feel free to start a conversation [via email](mailto:hello@sambutler.us) or schedule a [time to chat](https://cal.com/sambutler/meet).
 
 **Portfolio**
 
 <div class="project-row" style="display: flex; flex-wrap: wrap;  justify-content: space-between;">
+
 
 <div class="project">
 <img src="./climate-widget.png">
@@ -27,6 +28,15 @@ An embeddable banner, that allows people to connect with climate action anywhere
 [**Freego**](https://freego.netlify.app)
 
 Pick a location, and see nearby transit stations, bikeshares, transit routes, and bike paths — go where you want, car-free. (<em>In development</em>)
+
+</div>
+
+<div class="project">
+<img src="./navi_restaurant.png">
+
+[**Navi**](https://naviguide.netlify.app)
+
+An open-source and privacy-respecting alternative to Google Maps, based on Open Street Map data and the OSM api.
 
 </div>
 
