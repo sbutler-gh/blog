@@ -12,6 +12,9 @@ import { children } from "svelte/internal";
 <h4 style="margin-bottom: 0px;"><a href="/community-energy-vision">Community Energy Vision</a></h4>
 <p style="margin-top: 5px;">An introduction to community energy hubs — postgrowth paradigm, less consumption, better outcomes.</p>
 
+<h4 style="margin-bottom: 0px;"><a href="/climate-widget-blog">Climate Widget</a></h4>
+<p style="margin-top: 5px;">An embeddable banner, enabling people to connect with climate action anywhere on the Internet.</p>
+
 <h4 style="margin-bottom: 0px;"><a href="/community-savings">Community Savings</a></h4>
 <p style="margin-top: 5px;">Building local initiatives through the savings they create, without the need for extractive funding.</p>
 
