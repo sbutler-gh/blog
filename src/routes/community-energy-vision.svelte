@@ -57,16 +57,18 @@
 
 <p style="font-size: 13px; text-align: center"><em>Solar-powered battery charging station in Kokota. <strong>(Jeff Schnurr, via Permaculturenews.org)</strong></em></p>
 
-<p>When thinking about my own community, the communal hub approach often comes to mind.  Which is simpler and more antifragile: adding solar installation to a community center, or layering a renewable microgrid over all the houses in the neighborhood?</p>
+<p>When thinking about my own community, the communal hub approach often comes to mind.  Which is more feasible: adding solar panels to a hub in every community across the world, or adding roof-mounted solar panels to every house across the world?</p>
 <p>Given material constraints on resources like copper and the realities of these systems – an isolated unit is much simpler than connected units – perhaps we should be reorienting some of our paradigms away from <em>every house has its own electricity infrastructure and microgrid connection</em>, to, <strong>when you want electricity – for heat, cooling, devices, powering tools, charging, internet, any use – you go to the community hub</strong>.</p>
 <p>This approach likewise aligns with a postgrowth vision of community-centric, access-based paradigms — in contrast to individual-centric, ownership-based paradigms — and getting better at doing the things we want (e.g. heating, cooling, powering devices, working, getting Internet access) with less energy and resource consumption.</p>
 <p>A relevant context we could explore this is Germany.  As they cut back on gas from Russia, apartments will be limited to 17°C/62°F through gas heating.  As the country explores its possibilities and winter gets closer, what strategy would you choose to provide additional energy capacity?</p>
 <ul>
-<li>Implementing microgrids across ever neighborhood in Germany</li>
-<li>Implementing a renewable powered community center in every neighborhood in Germany -- where people can go when its cold, go to work with their laptop, take hot showers, cook on induction stoves, etc</li>
+<li>Implementing microgrids across every home in Germany</li>
+<li>Adding renewable energy to community centers across Germany
+  <ul><li>Where people can go for warmth, to work on their laptops, take hot showers, cook on induction stoves, play games and watch movies, etc</li></ul>
+</li>
 <li>Anything else?</li>
 </ul>
-<p>I would choose the community approach.  I came to this perspective through actually trying to implement renewable energy in my community, and learning about how much simpler it is to have all of the infrastructure at a single location, along with a paradigm of people coming to that location to access energy.</p>
+<p>I would choose the community approach — and that comes through the work of trying to actually learn how to bring a renewable transition to my community, and learning how much simpler it is to bring people to the energy.</p>
 
   </div>
 
