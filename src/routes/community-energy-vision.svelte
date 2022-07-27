@@ -9,7 +9,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Community Energy Vision">
   <meta property="og:description" content="Community energy hubs — postgrowth, less consumption, better outcomes.">
-  <meta property="og:image" content="/batteries_kokota.jpeg">
+  <meta property="og:image" content="/solar_shelter.jpeg">
   
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
@@ -17,11 +17,11 @@
   <meta property="twitter:url" content="https://sambutler.us/community-energy-vision/">
   <meta property="og:title" content="Community Energy Vision">
   <meta property="og:description" content="Community energy hubs — postgrowth, less consumption, better outcomes.">
-  <meta name="twitter:image" content="/batteries_kokota.jpeg">
+  <meta name="twitter:image" content="/solar_shelter.jpeg">
 </svelte:head>
 
 <article class="h-entry">
-  <h1 class="p-name"><a class="u-url" href="https://sambutler.us/community-energy-vision">Community Energy Vision</a></h1>
+  <h1 class="p-name"><a class="u-url" href="https://sambutler.us/community-energy-vision">Community Energy Vision</a></h1><span>(Add comments/edits here)</span>
   <div class="e-content">     
 
 <img src="./solar_shelter.jpeg" loading="lazy" style="max-width: 100%">
