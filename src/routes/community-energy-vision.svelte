@@ -21,7 +21,8 @@
 </svelte:head>
 
 <article class="h-entry">
-  <h1 class="p-name"><a class="u-url" href="https://sambutler.us/community-energy-vision">Community Energy Vision</a></h1><span>(Add comments/edits here)</span>
+  <h1 class="p-name"><a class="u-url" href="https://sambutler.us/community-energy-vision">Community Energy Vision</a></h1>
+  <!-- <p style="font-style: italic">Sam Butler, July 25th, 2022</p> -->
   <div class="e-content">     
 
 <img src="./solar_shelter.jpeg" loading="lazy" style="max-width: 100%">
@@ -70,6 +71,7 @@
 </ul>
 <p>I would choose the community approach — and that comes through the work of trying to actually learn how to bring a renewable transition to my community, and learning how much simpler it is to bring people to the energy.</p>
 
+<p><span style=""><em>Add <a href="https://docs.google.com/document/d/1JIO6QFzkEI7wKZ2yKyePYpCtxNl1iQN1uil_fy0Crq0/edit?usp=sharing">comments/edits</a> to this piece.</em></span></p>
   </div>
 
 <div style="display: none">
