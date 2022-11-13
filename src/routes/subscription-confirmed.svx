@@ -1,10 +1,8 @@
 <h4 class="success">Subscription Confirmed!</h4>
 
-Look forward to learning, exploring, and building together.
+Look forward to learning, exploring, and building together!
 
-In the meantime, feel free to jump in the Slack or Discord — made for people who are interested in ideas like these and putting them to use.
-
-You can also always reach me via email at sam@sambutler.us or [LinkedIn](https://linkedin.com/in/sambutler8).
+Feel free to reach me via email at sam@sambutler.us or on [Twitter](https://twitter.com/sambutlerUS).
 
 <style>
 .success {
