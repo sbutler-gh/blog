@@ -1,6 +1,6 @@
 <script>
 
-  import supabase from "$lib/db.js";
+  // import supabase from "$lib/db.js";
 import WelcomePopup from "$lib/WelcomePopup.svelte";
 import { onMount } from "svelte";
 
@@ -474,89 +474,6 @@ function shareProgram() {
               </div>
             </details>
 
-            <div class="register register-2">
-              {#if profile_form == true}
-              <form class="profile-form" on:submit|preventDefault={addProfileInformation}>
-                <p style="font-weight: bold;">About You — A Few More Details</p>
-                <!-- <label>Email</label> -->
-                <div>
-                <label for="full_name">Name</label>
-                <input style="padding: 0.5rem;" autofocus type="text" name="full_name" placeholder=""><br>
-                </div>
-        
-                <!-- <div>
-                  <label for="what_i_do">What do you do?</label>
-                  <input style="padding: 0.5rem;" type="text" name="what_i_do" placeholder="I'm a ..."><br>
-                  </div> -->
-        
-                  <div>
-                    <label for="introduction">Introduce yourself and your interests in Community Savings</label>
-                    <textarea type="text" name="introduction" placeholder=""></textarea><br>
-                    </div>
-        
-                <!-- <div>
-                  <label for="interests">What are your interests in Community Savings programs?</label>
-                  <textarea style="padding: 0.5rem;" type="text" name="interests" placeholder=""></textarea><br>
-                  </div> -->
-        
-                  <div>
-                    <label for="website_url">Website / Personal Page</label>
-                    <input style="padding: 0.5rem;" type="url" name="website_url" placeholder="https://..."><br>
-                  </div>
-        
-                  <div>
-                    <label for="linkedin_url">LinkedIn</label>
-                    <input style="padding: 0.5rem;" type="url" name="linkedin_url" placeholder="https://..."><br>
-                  </div>
-        
-                  <div>
-                    <label for="twitter_handle">Twitter Handle</label>
-                    <input style="padding: 0.5rem;" type="text" name="twitter_handle" placeholder="mytwittername"><br>
-                  </div>
-        
-        
-                  <!-- <div>
-                    <label for="site_url">GitHub Handle</label>
-                    <input style="padding: 0.5rem;" type="text" name="twitter_url" placeholder="mygithubname"><br>
-                  </div> -->
-        
-                  <div>
-                    <label for="contact_method">What's the best way to contact you?</label>
-                    <!-- <label style="font-size: 14px; padding-bottom: 2px;">If you want to chat ...</label> -->
-                    <textarea type="text" name="contact_method" placeholder="e.g. Message on me Signal at +1 555 555 5555 or via email at hey@example.com"></textarea>
-                  </div>
-        
-                  <!-- <div>
-                    <label for="name">LinkedIn URL</label>
-                    <input style="padding: 0.5rem;" type="url" name="name" placeholder="https://linkedin.com/in/..."><br>
-                  </div>
-        
-                  <div>
-                    <label for="name">Twitter Handle</label>
-                    <input style="padding: 0.5rem;" type="url" name="name" placeholder="https://twitter.com/..."><br>
-                  </div>
-        
-                  <div>
-                    <label for="name">GitHub Handle</label>
-                    <input style="padding: 0.5rem;" type="url" name="name" placeholder="https://github.com/..."><br>
-                  </div> -->
-                <button style="margin-left: auto;">Finish</button>
-              </form>
-              {:else if profile_form == false}
-            <form class="email-form" on:submit|preventDefault={addEmail}>
-              <p style="font-weight: bold;">Enter your email to collaborate and recieve updates</p>
-              <!-- <label>Email</label> -->
-              <input style="padding: 0.5rem;" autofocus type="email" name="email" placeholder="Your Email (hey@example.com)">
-              <button>Submit</button>
-            </form>
-            {:else if profile_form == "submitted"}
-            <div class="success-alert" style="background: #d1ffd1; color: #094609fc; padding: 5px 10px;">
-              <div style="text-align: center; margin: auto;"><p>Success!</p>
-              <p>Keep an eye out for updates.  In the meantime, you can <a class="success-link" href="mailto:sam@sambutler.us" style="color: #003cff;">send us an email</a>, share this page, and try the tool below!</p></div>
-            </div>
-              {/if}
-            </div>
-
 <div class="program">
   <!-- <div style="display: inline-flex">
 <h4 style="padding-left: 10px">Create your own Community Savings Program</h4>
@@ -600,6 +517,17 @@ And from then on, {users.toLowerCase()} enjoy a full <strong>${max_dollar_saving
 {/if}
 </form>
 </div>
+
+<div id="subscribe_div" style="margin: auto; width: max-content;">
+  <span class="text-gray-500 text-sm" style="width: max-content; font-size: 14px; color: gray; display: block; margin: 20px auto;">Stay up-to-date on future content    <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: bottom;" class="icon icon-tabler icon-tabler-mail" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="gray" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <rect x="3" y="5" width="18" height="14" rx="2" />
+    <polyline points="3 7 12 13 21 7" />
+  </svg></span>
+<div id="subscribe_form" style="display: flex; position: relative;">
+  <script async data-uid="2f4cd57383" src="https://successful-founder-8657.ck.page/2f4cd57383/index.js"></script>
+  </div>
+  </div>
 
 </div>
 </article>
