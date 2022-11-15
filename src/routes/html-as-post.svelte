@@ -52,7 +52,7 @@ let posts = [
     </svelte:head>
 
 <article class="h-entry">
-    <h1 class="p-name"><a class="u-url" href="/coop-template">HTML as Post</a></h1>
+    <h1 class="p-name"><a class="u-url" href="/html-as-post">HTML as Post</a></h1>
     <p style="font-style: italic">Sam Butler (November 15th, 2022)</p>
     <div class="e-content">   
 <p>Imagine a network for social interacation and sharing, where the messages are snippets of HTML.
