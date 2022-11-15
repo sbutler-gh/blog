@@ -16,7 +16,7 @@ let posts = [
         html: `<iframe
   width="100%"
   height="400px"
-  src='https://www.inkandswitch.com/potluck/demo/?openDocument=bar'
+  src='https://www.inkandswitch.com/potluck/demo/?openDocument=aeropress'
   title="Streets"
   style="border:none;"
 ></iframe>`,
