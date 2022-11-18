@@ -110,7 +110,7 @@ if (!navigator.clipboard){
   <meta property="og:type" content="website">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{description}">
-  <meta property="og:image" content="https://i.imgur.com/k7CqmBO.png">
+  <meta property="og:image" content="./coop_seven_principles.jpeg">
   
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
@@ -118,7 +118,7 @@ if (!navigator.clipboard){
   <meta property="twitter:url" content="https://sambutler.us/community-savings/">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{description}">
-  <meta name="twitter:image" content="https://i.imgur.com/k7CqmBO.png">
+  <meta name="twitter:image" content="./coop_seven_principles.jpeg">
   {:else}
   <title>{title}</title>
 
