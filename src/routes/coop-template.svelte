@@ -130,7 +130,7 @@ if (!navigator.clipboard){
   <meta property="og:type" content="website">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{description})">
-  <meta property="og:image" content="https://i.imgur.com/k7CqmBO.png">
+  <meta property="og:image" content="./coop_seven_principles.jpeg">
   
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
@@ -138,7 +138,7 @@ if (!navigator.clipboard){
   <meta property="twitter:url" content="https://sambutler.us/coop-template">
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{description})">
-  <meta name="twitter:image" content="https://i.imgur.com/k7CqmBO.png">
+  <meta name="twitter:image" content="./coop_seven_principles.jpeg">
   {/if}
 
 </svelte:head>
@@ -158,6 +158,8 @@ if (!navigator.clipboard){
 
 <p>In many cases, all of these can go together.  As a project gets better, and more people join, the cost of providing the services for each member (often) can decline — creating more available funding, to put towards efforts the members cooperatively decide.</p>
 
+<img src="./coop_seven_principles.jpeg" loading="lazy" style="max-width: 75%; margin: auto; display: block;">
+<em style="max-width: 50%; text-align: center; margin: auto; margin-top: 5px; display: block; font-size: 14px;">Original art by Hallie Zillman, courtesy of Willie St. Co-op, <a href="https://fci.coop/the-seven-cooperative-principles/">via Food-Coop Initiative</a></em>
 
 <p></p>
 
