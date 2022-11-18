@@ -12,6 +12,15 @@ Feel free to start a conversation [via email](mailto:hello@sambutler.us) or sche
 
 <div class="project-row" style="display: flex; flex-wrap: wrap;  justify-content: space-between;">
 
+<!-- <div class="project">
+<img src="./coop_seven_principles.jpeg">
+
+[**Coop Template**](/coop-template)
+
+An introduction to coops, with an interactive template.
+
+</div>
+-->
 
 <div class="project">
 <img src="./climate-widget.png">

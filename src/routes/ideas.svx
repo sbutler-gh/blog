@@ -9,6 +9,9 @@ import { children } from "svelte/internal";
 <p style="margin-top: 5px;">Programs for resilience and making life better, that save for themselves.</p>
 </div>
 
+<h4 style="margin-bottom: 0px;"><a href="/coop-template">Coop Template</a></h4>
+<p style="margin-top: 5px;">How cooperatives can sustainably fund projects — and a template, to start your own!</p>
+
 <h4 style="margin-bottom: 0px;"><a href="/community-energy-vision">Community Energy Vision</a></h4>
 <p style="margin-top: 5px;">An introduction to community energy hubs — postgrowth paradigm, less consumption, better outcomes.</p>
 
