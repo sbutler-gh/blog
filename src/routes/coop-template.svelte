@@ -110,7 +110,7 @@ if (!navigator.clipboard){
   <meta property="og:type" content="website">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{description}">
-  <meta property="og:image" content="./coop_seven_principles.jpeg">
+  <meta property="og:image" content="/coop_seven_principles.jpeg">
   
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
@@ -118,7 +118,7 @@ if (!navigator.clipboard){
   <meta property="twitter:url" content="https://sambutler.us/community-savings/">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{description}">
-  <meta name="twitter:image" content="./coop_seven_principles.jpeg">
+  <meta name="twitter:image" content="/coop_seven_principles.jpeg">
   {:else}
   <title>{title}</title>
 
@@ -130,7 +130,7 @@ if (!navigator.clipboard){
   <meta property="og:type" content="website">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{description})">
-  <meta property="og:image" content="./coop_seven_principles.jpeg">
+  <meta property="og:image" content="/coop_seven_principles.jpeg">
   
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
@@ -138,7 +138,7 @@ if (!navigator.clipboard){
   <meta property="twitter:url" content="https://sambutler.us/coop-template">
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{description})">
-  <meta name="twitter:image" content="./coop_seven_principles.jpeg">
+  <meta name="twitter:image" content="/coop_seven_principles.jpeg">
   {/if}
 
 </svelte:head>
