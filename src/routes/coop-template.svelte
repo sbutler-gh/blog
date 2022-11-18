@@ -1,7 +1,147 @@
 <script>
-    let coop_name = "[Insert cooperative name]"
-    let project_service_name = "[insert project/service]"
+    export let urlparams;
+    export let original;
+    
+    export let coop_name;
+    export let project_service_name;
+
+    export let title;
+    export let description;
+
+    let copy_tooltip = false;
+
+    // let title = "Cooperative Approach to Sustainable Funding";
+    // let description = "How cooperatives, funded by member dues, can sustainably fund projects"
+
+    function shareProgram() {
+
+// let window_path =  `${window.location.origin}${window.location.pathname}`
+
+let params = `coop_name=${coop_name}&project_service_name=${project_service_name}`;
+
+let updated_params = encodeURI(params);
+
+let url = `${window.location.origin}${window.location.pathname}?${updated_params}`
+
+if (!navigator.clipboard){
+              // use old commandExec() way
+              url.select();
+              // window.location.setSelectionRange(0, 99999)
+              document.execCommand("copy");
+              copy_tooltip = true;
+              setTimeout(function(){ copy_tooltip = false }, 2000)
+
+          } else{
+              navigator.clipboard.writeText(url).then(
+                  function(){
+                      console.log("Copied URL");
+                      copy_tooltip = true;
+                      setTimeout(function(){ copy_tooltip = false }, 2000)
+                  })
+                  .catch(
+                  function() {
+                      console.log("Couldn't copy, try right-clicking to copy the URL isntead."); // error
+                  });
+          }  
+}
 </script>
+
+<script context="module">
+    export const load = async ({ url, params }) => {
+
+      console.log(url);
+      console.log(params);
+      let urlparams = [];
+      let original = true;
+
+        // If there is a parameter in the URL;
+        if (url.search) {
+
+          console.log('hit');
+          original = false;
+          // const params = Object.fromEntries(urlSearchParams.entries());
+        let str = new URLSearchParams(url.search);
+        urlparams = Object.fromEntries(str.entries());
+        console.log(urlparams);
+
+      if (!urlparams.coop_name) {
+        urlparams.coop_name = "[Insert cooperative name]"
+      }
+
+      if (!urlparams.project_service_name) {
+        urlparams.project_service_name = "[insert project/service]";
+      }    
+
+      urlparams.title = `Coop template for ${urlparams.coop_name}`;
+      urlparams.description = `How ${urlparams.coop_name} can be sustainably funded as a cooperative`;
+
+        }
+
+        else {
+            urlparams.coop_name = "[Insert cooperative name]"
+            urlparams.project_service_name = "[insert project/service]";
+            urlparams.title = "Cooperative Approach to Sustainable Funding";
+            urlparams.description = "How cooperatives, funded by member dues, can sustainably fund projects";
+        }
+
+      return {
+				props: { 
+          params: urlparams,
+          coop_name: urlparams.coop_name,
+          project_service_name: urlparams.project_service_name,
+          title: urlparams.title,
+          description: urlparams.description,
+          original: original
+        }
+			};
+    }
+</script>
+
+<svelte:head>
+
+  {#if !original}
+  <title>{title}</title>
+
+  
+  <meta name="description" content="{description}">
+  
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://sambutler.us/community-savings/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{title}">
+  <meta property="og:description" content="{description}">
+  <meta property="og:image" content="https://i.imgur.com/k7CqmBO.png">
+  
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="sambutler.us">
+  <meta property="twitter:url" content="https://sambutler.us/community-savings/">
+  <meta property="og:title" content="{title}">
+  <meta property="og:description" content="{description}">
+  <meta name="twitter:image" content="https://i.imgur.com/k7CqmBO.png">
+  {:else}
+  <title>{title}</title>
+
+  
+  <meta name="description" content="{description}">
+  
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://sambutler.us/coop-template">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{title}">
+  <meta property="og:description" content="{description})">
+  <meta property="og:image" content="https://i.imgur.com/k7CqmBO.png">
+  
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="sambutler.us">
+  <meta property="twitter:url" content="https://sambutler.us/coop-template">
+  <meta name="twitter:title" content="{title}">
+  <meta name="twitter:description" content="{description})">
+  <meta name="twitter:image" content="https://i.imgur.com/k7CqmBO.png">
+  {/if}
+
+</svelte:head>
 
 <article class="h-entry">
     <h1 class="p-name"><a class="u-url" href="/coop-template">Cooperative Approach to Sustainable Funding</a></h1>
@@ -42,10 +182,34 @@
 <p>Of course, that would be variable.  If members of the cooperative voted to increase funding and investment in the project, we could also democratically choose to raise dues and explore other avenues to do so.  By the same token, we could democratically choose to lower member dues at a point in time, if we wish.</p>
 
 <p>This, in essence is the North Star of <strong>{coop_name}</strong>.  If you want to join the journey – we'll go far together.</p>
+
+<button type="button" class="share" on:click={shareProgram}>Share Your Template</button>
+
+{#if copy_tooltip}
+<span style="width: fit-content; font-size: 14px; display: block; margin: auto; margin-top: 10px; font-style: italic;">Copied Link!</span>
+{/if}
 </div>
 </article>
 
-
+<style>
+    .share {
+      border-radius: 20px;
+      border-radius: 20px;
+      color: white;
+      border: none;
+      /* background: #2d97a5; */
+      background: darkorchid;
+      padding: 0.5em 1em;
+      margin-top: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      /* float: right; */
+      /* height: 40px; */
+      display: block;
+      margin: auto;
+      box-shadow: 3px 3px 1px 1px lightpink;
+    }
+    </style>
 
 <!-- 
     
