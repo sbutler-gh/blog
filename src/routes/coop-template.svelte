@@ -1,16 +1,35 @@
+<script>
+    let coop_name = "[Insert cooperative name]"
+    let project_service_name = "[insert project/service]"
+</script>
+
 <article class="h-entry">
-    <h1 class="p-name"><a class="u-url" href="/coop-template">Cooperative Approach to Sustainable Project Funding</a></h1>
+    <h1 class="p-name"><a class="u-url" href="/coop-template">Cooperative Approach to Sustainable Funding</a></h1>
     <p style="font-style: italic">Sam Butler (November 7th, 2022)</p>
     <div class="e-content">   
-<h4>A template for a cooperative approach to funding public interest projects. This should probably be adjusted to fit different project and community contexts.</h4>
 
-<p><strong>[Insert name]</strong> cooperative exists to provide <strong>[insert project/service]</strong> to everybody in the world, equitably and without profit interests.</p>
+<p>In contrast to paid services where you are a customer, and free services which are often unsustainable, there is another way to fund important projects.</p>
+
+<p>A cooperative.  People pay recurring dues of be a member of the cooperative.  This gives them a vote in the project's operation (e.g. how to use available funds, setting priorities) on a one-person, one-vote basis.  These aren't customers — these are people, who cooperatively own and build a project, for their own interest in using it.</p>
+
+<p>That means as a project succeeds, people aren't looking for a financial return.  Their return is being able to enjoy a better and better project, at more and more affordable costs.  <strong>The means is the end.  The return is intrinsic.</strong></p>
+
+<p>What that means, specifically, is up to the cooperative to decide!  Do we want to put out dues towards making the service more affordable, and lowering our dues?  Do we want to put our dues towards making the project better for ourselves? Do we want to put our dues towards expanding equitable access to the project — e.g. subsidizing membership and services, in the spirit of equity and justice?</p>
+
+<p>In many cases, all of these can go together.  As a project gets better, and more people join, the cost of providing the services for each member (often) can decline — creating more available funding, to put towards efforts the members cooperatively decide.</p>
+
+
+<p></p>
+
+<h4>Here is a template for a cooperative approach to funding public interest projects. This should probably be adjusted to fit different project / community contexts.</h4>
+
+<p><strong><input bind:value={coop_name} style="width: {coop_name.length * Math.log(1000)}px" placeholder="Cooperative name"></strong> exists to provide <strong><input bind:value={project_service_name} style="width: {project_service_name.length * Math.log(1000)}px" placeholder="Cooperative name"></strong>  to everybody in the world, equitably and without profit interests.</p>
 
 <p>How does it work?</p>
 
-<p>People pay monthly dues to join the cooperative. This gives them a vote in the cooperative's operation (e.g. how to use available funding — one person, one vote) and likewise gives them access to <strong>[insert project/service]</strong>, which they would pay for otherwise.</p>
+<p>People pay monthly dues to join the cooperative. This gives them a vote in the cooperative's operation (one person, one vote), and likewise gives them access to <strong>{project_service_name}</strong>, which they would pay a subscription for otherwise.</p>
 
-<p>As the cooperative grows, the marginal cost for provisioning services decreases. 
+<!-- <p>As the cooperative grows, the marginal cost for providing services to each member declines.  -->
     
     <p>Surplus funds can be <em>invested in the project's development</em>, <em>providing services to people free of charge</em> (in alignment with the equity mission), and <em>lowering the cost of the services for members</em>.</p>
 
@@ -18,9 +37,11 @@
 
 <p>Rather, the cooperative's purpose is to sustainably fund a service that we want in our lives. By working together, we can 1) improve that service (through collective funding and effort), 2) make the service more affordable (through decreasing marginal costs), and 3) equitably expand access to the service (through decreasing marginal costs).</p>
 
-<p>It's concievable, at some point in the future, that decreasing marginal costs could make the service close to free, even while it is sustainably funded! And what would be better than that &mdash; a tool/service that we enjoy and depend on in our lives, and having it close to free?</p>
+<p>It's concievable, at some point in the future, that the cooperative's success could make the service close to free! And what would be better than that &mdash; a tool/service that we enjoy and depend on in our lives, and having it almost for free?</p>
 
-<p>That, in essence is the North Star of the [insert name] cooperative.  If you want to join the journey – we'll go farther together.</p>
+<p>Of course, that would be variable.  If members of the cooperative voted to increase funding and investment in the project, we could also democratically choose to raise dues and explore other avenues to do so.  By the same token, we could democratically choose to lower member dues at a point in time, if we wish.</p>
+
+<p>This, in essence is the North Star of <strong>{coop_name}</strong>.  If you want to join the journey – we'll go far together.</p>
 </div>
 </article>
 
