@@ -181,3 +181,138 @@ As we decarbonize and clean up th
 If we don't lower the amount of carbon in the atmosphere, plants will become less and less nutritious — for humans, for animals, insects, 
 
 But what happens when you add too much light into the recipe?  The plants produce less nutrients, and
+
+------------
+
+COLD OPEN
+
+You have a choice:
+
+Continue living normally, business as usual.  Or give up your home, and get to live in it for the rest of your life, for free - with roomates.
+
+What do you choose?
+
+CUT
+
+Here's the situation:
+
+We have to massively scale down our economies.  We have a responsibility to, as 10% of our planet's human societies — cultures and communities spanning about 800 million people across the Global North — are destroying worlds, across our world.
+
+We're already at 1.5C of locked-in global warming.  We see now, that this is genocide.  Land is falling into the ground under Indigenous nations.  Places that people and more-than-human people have called home for millenia, are underwater, deserted, hollowed, and burned to ash.  Don't look away.  Hold this.  For the past 500 years, industrial countries have been destroying worlds.  Places, cultures, communities, lands, relationships — worlds, that people called home.  This has not been through fighting or conquest or merit.  This has been through broken treaties, exploitation, and a lack of responsibilities, through and through.
+
+And to this day, we are destroying worlds in the same ways — faster than ever.
+
+We are already at 1.5C degrees of warming — which, on land, translates to the 5 degrees of warming that we've really been feeling (1.5C is a global temperature average — on land, temperature increases are 3x higher.  These numbers aren’t specific yet, just rough placeholders.)
+
+At the same time, increasing carbon dioxide levels in the atmosphere are already leading to plant malnutrition.  If you remember from school, plants require light and carbon dioxide to grow.  But what happens when you increase the amount of carbon dioxide in the recipe — say, twice as much CO2, compared to fifty years ago?  The plants produce less nutrients.  Less minerals and proteins, which are essential.
+
+This will only increase as more carbon dioxide enters the atmosphere.  And in the meantime, it may be one of the causes of insect die-off — insects can't get enough nutrients from plants, and those same plants are rapidly disappearing due to development and extraction.
+
+And if insects can’t eat, we won’t either.
+
+However, as we decarbonize and stop the death of plant and animal life, temperatures will get hotter — because there will be fewer aerosols in the air.  We already saw this effect occur during lockdowns in 2020, when decreasing pollution and aerosols increased temperatures in China.  We don't have an alternative — food and nutrition as we know it won't exist if we don't decarbonize.  And yet, as we decarbonize, the world will get hotter.
+
+Where does that leave us?
+
+The IPCC reports are bullshit.  It's 2022, and we're already at 1.5C.  We're already at tipping points, which weren't supposed to happen for decades.  It's now.
+
+Transitioning our economies to renewables won't put the nutrition back in our plants or address the locked-in warming we already have.  And more, only rarely, has there even been a transition — as we deploy renewables, we're also building more fossil fuel infrastructure.  Which is killing our plants, and killing our atmosphere, and killing us.
+
+All of that, to continue feeding a growth economy.  To continue feeding business as usual.  To get paid to keep the gas on under the hot tub — as worlds evaporate around us, every day.
+
+And that is the paradox.
+
+How can we scale down the economy — to rapidly decarbonize, so our plants and insects and relatives and worlds can all live — when in the very societies that are driving the problem, we are required to participate in the economy in order to live?
+
+How can we scale down the economy, if we must participate in the economy to have a place to live?
+
+To pay for a place to live?  To pay for a place to call home?
+
+It's a Gordian knot.  And here's one approach to cutting it.
+
+We give ourselves a choice.
+
+You can go on living, business as usual.  Or you can give up your home — to a municipality, or a public authority, or a government agency, or a community trust  — and go on living in your home  for the rest of your life, without payments, and with roommates.
+
+What does that mean?
+
+No rent.  No mortgage.  Changes to your home, to make it a home for more people.  And roommates, who will call it home with you.
+
+What would you do, if you knew you could live the rest of your life in a home — in your home — for free?
+
+First, you’d probably get used to new social arrangements.  A single-family home can be retrofitted and converted, to be a home for more people, while still giving people privacy — and adding, community, resilience, and something beyond the isolation and melancholy of modern life.  This will generate new ways of community, decisionmaking, culture, and relations in a place.  Exciting!
+
+Next, you'd probably ask yourself — if I'm not paying rent or a mortgage, what is my money good for?
+
+For food.  For electricity.  For heat.  For Internet.  For tools and services you depend on.
+
+And maybe you’d realize, that the way the world is headed now  — pretty soon, anybody who manages to have any of those things, won’t be taking your dollars for them anyway.
+
+So instead of going to work — and all the energy, gas, pollution, used in commuting, powering the office buildings, powering the work you do to feed the economy — you could go outside your home in the morning, and learn how to survive in a changing world.  Learn how to grow food.  Learn how to produce electricity, and heat, from the sun and wind.  Learn how to build grassroots Internet networks.  Learn how to make, borrow, and find the things you need.  And do it in a community.  Learn to do it as community.
+
+Now, instead of going to work, earning salaries, which go to our rents and mortgages and crappy processed foods and bullshit that’s advertised to us — we’re systemically and communally using less.  We're using drastically less energy.  We're growing food and making things locally.  We're producing significantly less carbon, pollution, and waste.  With nowhere to go, we're walking and riding our bikes around our neighborhood.  With nothing to do, we're spending more time together — and using less, of everything.  And life becomes so much more.
+
+It's not utopia. It’s not always good.  It’s work.  It's learning.  It's failing.  It's experimenting.  It's re-learning how to live on the land and live in a place, with values and cultures that have been dormant for many, many years.  It's risking. It's trying.  It's failing.  Iit's hunger.  It’s apprehensions.  It’s doubts.  It’s making the best decisions we can, when we don’t know what to do.  It's cold. It's heat. It's thriving. It's bugs. It's dirt. It's ticks. It’s tall grass. It's streams of water. It's fungal infections.  In a climate that continues to change, and amidst all kinds of new and old challenges to survive.
+
+And yet, it’s the way.
+
+You may like it.  You may not.
+
+(shrug)
+
+These are the worlds we’re moving towards.  And the more quickly we move there, the more worlds we’ll have left to call home.
+
+
+Now, you may be asking — how would people be able to just live for free?  Stop paying for rent, stop paying for mortgages?  How would that work?
+
+There’s a number of ways that could happen.  Public authorities, municipalities, community associations could buy up housing debt, and make that housing free — like cities in America have started doing with medical debt.
+
+We could cancel housing debt outright, like Jesus and our Christian teachers called for — jubilee.  
+
+“Now the whole group of those who believed were of one heart and soul, and no one claimed private ownership of any possessions, but everything they owned was held in common.  With great power the apostles gave their testimony to the resurrection of the Lord Jesus, and great grace was upon them all.  There was not a needy person among them, for as many as owned lands or houses sold them and brought the proceeds of what was sold.  They laid it at the apostles’ feet, and it was distributed to each as any had need.  There was a Levite, a native of Cyprus, Joseph, to whom the apostles gave the name Barnabas (which means “son of encouragement”).  He sold a field that belonged to him, then brought the money, and laid it at the apostles’ feet.”  (Could we get Samuel L Jackson to read this, in the style of the Pulp Fiction monologue?)
+
+Or, we can do whatever we want.  The past 100 years of demolished neighborhoods, highway expansion, stolen children, government corruption, gerrymandering, defying court orders, show that we can pretty much do whatever we want.  Eminent domain, executive authority, states rights, whatever you want to call it.  The past 500 years show it.  The Romans showed it — they just had jubilees, and cancelled debt.  The Indigenous nations of these lands showed it — they didn’t demarcate the land as private property.  How can we?  What part of nature respect property?
+
+Heck, even imperial England didn’t demarcate property until a bunch of aristocrats made th Enclosure Act in the 1600s, and kept people from living and grazing on public lands.
+
+So, there’s a lot of ways to do it — and private land is a very new phenomenon to begin with.  The important thing though, in the context we’re in today, is that it’s a choice.
+
+It’s your choice to give up your home, live in it for free, and get roomates.
+
+It’s choice.  It’s opt-in.  If you don’t want to participate, you don’t have to.
+
+Why?  Because it’s nice to have a choice.  We want to have a choice.  And a choice is all we need, even if plenty of people don’t take it at first.  Here’s how it could go down:
+
+As housing becomes public, it would be managed by the municipality — or maybe, community-led political processes.  This could help deal with some logistical and coordination issues, and potentially, provide essential support and services as this is happening (e.g. conflict resolution, retrofitting and conversions, continuing legacy political/administrative processes).
+
+The people who opt-in continue living in the same homes they always have - keeping neighborhoods and social webs in tact — while many new people join them, bringing new cultures and worlds and homes into those neighborhoods, as the physical structures change from single-family and single-person units to multi-person and multi-family units.
+
+Many people continue living in the same homes they always have, keeping neighborhoods and social relations in tact.  Many new people would join them, living in those same homes, converted from single-family to multi-person and multi-family units.
+
+Now, since fewer people need to pay for a home, a place to live, the protection of not being homeless, demand for housing drops. (Why would you pay rent, when you could live for free?)
+
+And in the meantime, those of you who chose to keep your properties – you’re seeing how that works out.  The value of your property is falling.  You’re recognizing that the notion of owning property is becoming antiquated.  It’s going out of style.
+
+But, you still have a choice.  You can opt-in anytime.  As you see the world changing around you — a new paradigm, where you can focus on surviving and learning and systems and community — you can reevaluate.  Do you want to keep paying your mortgage, for the right to live alone, and maybe an escape hatch or a lottery ticket if all this goes bust and we go back to capitalism and you’re sitting on a gold mine?
+
+Or do you want to join the community, start living for free, and meet some new roommates — while learning how to survive?
+
+And of course, you realize that the longer you wait to decide, the less your home becomes worth — because as more and more people can live in homes for free, there are less and less people who want to pay for yours.
+
+And as the cost of homes lowers, that enables the municipality or the community association or whatever the fuck we’re talking about to buy out and liberate more homes, and provide more housing, which further lowers the monetary value of the properties that have not yet sold, and makes it further easier to liberate those homes.  It’s a race to the bottom, of property valuations.
+
+And where does that race end?  What is the bottom?
+
+Homes, where people live together.  Communities, where people learn to survive together.  Places, that we reunite with.  Ways of life, that we r-learn.  People, friends, relatives, of all matter and constitutions, that we reacquaint with.  Politics, that come out of these transitions.  Cultures, that come out of these transitions.  Education, that comes out of these transitions.
+
+We're pulling more carbon out of the air then we're putting in — not through machines, but through plants and gardens everywhere we can see.
+
+We've significantly reduced the energy we're putting into the atmosphere — so while it's still getting hotter, we've addressed the root problem.  And on the ground, we’re adapting to the heat by putting mirrors on our homes, and adapting to the disasters by preparing and getting resilient and getting flexible.
+
+And that's life now.  These are our new worlds.  
+
+It's nothing new.  This is how our parents and grandparents lived, 80 years ago.  This is how cultures around the world live, to this day.  This is similar to the change that Cuba underwent in the 90s — from one of the most energy-intensive nations in the Americas, to having better life expectancy than the U.S., even amidst an embargo and while using 8x less energy.
+
+It’s subsistence.  It’s community.  It’s motion and groundlessness and change.  It’s diversity.  It’s progress.
+
+And perhaps, this is one of the ways we can start to address 500 years of genocide and disposession.  As lands and homes become liberated, perhaps these lands become the lands of Indigenous nations again.  The lands are not the same.  They are nothing like they were.  Unrecognizable.  Disconnected and dispossessed.  And perhaps, that can change too.
