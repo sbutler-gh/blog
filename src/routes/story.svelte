@@ -1,8 +1,8 @@
-<!-- <em>This is the beginning of a story about changing the way we see our worlds, changing our practices and values, changing our material and spiritual realities — because the way we see the world now is not working, and we must find (and re-discover) other ways of seeing, thinking, feeling, connecting, and living.</em> -->
+<!-- <em>This is a story about changing the ways we see our worlds — because the way we see the world now is not working, and we must find (and re-discover) new ways of seeing, feeling, connecting, and living.</em> -->
 
-<p><em>This is influenced by the lessons, stories, and perspectives of Leanne Betasamosake Simpson, Lyla June, Kyle Whyte, Nick Estes, and many other Indigenous writers and scholars.  It's also influenced by the work of Chris Baulmann and Alexander Baumann, in recognizing the fundamental contradiction of transcending growth and private property (where, having a place to live requires feeding the growth machine.) And from reflecting on these perspectives and lessons in my own life.</em>
+<p><em>This is influenced by the lessons, stories, and perspectives of Leanne Betasamosake Simpson, Lyla June, Kyle Whyte, Nick Estes, and many other Indigenous writers and scholars.  It's also influenced by the work of Chris Baulmann and Alexander Baumann, in recognizing the fundamental contradiction of transcending growth and private property (where, paying for a home/shelter requires feeding the growth machine.) And from reflecting on these perspectives and lessons.  And exploring how these changes could come into reality.</em>
     
-<p><em>This began while walking in a refuge of an old world, tucked beisde a gravel parking lot and a swimming pool.  Muddy hills, tall old trees, clean air.   Deep enough inside, you can lose the sound of gas motors on the weekend.  You can see that this world used to be everywhere.  This world used to be home.</em></p>
+<p><em>This began while walking in a refuge of an old world, tucked beside a gravel parking lot and swimming pool.  Muddy hills, old trees, clean air.   Deep enough inside, you can lose the sound of gas motors on the weekend.  You can see that this world used to be everywhere.  This world used to be home.</em></p>
 
 <p>There used to be worlds everywhere like this.</p>
 
@@ -30,7 +30,11 @@
 
 <p>Look at all the life that lives today, through it all.</p>
 
-<p>We found ways to thrive, survive, and live in relation through these challenges. We made mistakes, we learned, we practiced. We weaved cultures. We spun worlds.</p>
+<p>We found ways to thrive, survive, and live in relation through these challenges.
+    
+    <p>We made mistakes, we learned, we practiced.
+        
+        <p>We weaved cultures. We spun worlds.</p>
 
 <p>That is our choice today.</p>
 
@@ -38,11 +42,9 @@
 
 <p>Or can we see the worlds around us in new ways?</p>
 
-<p>Can we try a ritual fire, to honor a more-than-human relative in our society?</p>
+<p>Can we try a ritual fire, to honor a fellow animal in our society?</p>
 
 <p>Can we see time differently - the past as part of our present, and our present as part of our future?</p>
-
-<p>Can we give gifts to our descendants - things they will be grateful for - just as we are grateful for the gifts our ancestors left us?</p>
 
 <p>Can we see worlds differently, today, so they can become different - in the ways that our descendants will appreciate?  In ways they will rely on, and find joy in?</p>
 
@@ -52,24 +54,46 @@
 
 <p>Can we live in relationship - in consent, responsibility, and kinship - with the leafy and many-legged relatives in our worlds?</p>
 
-<p>Can we accept that life is change, fluid, motion, groundless - can we live kinetically, in motion, without seeking ground?</p>
+<p>Can we accept that life is change, fluid, motion, groundless?  Can we live kinetically, in motion, without seeking ground?</p>
 
-<p>Can we recognize that there is nothing new under the sun - and 40,000 years ago, our ancestors were doing these very same things? Can we hear their songs?  Can we remember, and sing with them? Can we carry on their fires?</p>
+<p>Can we recognize that there is nothing new under the sun - and 40,000 years ago, our ancestors were doing these very same things? 
+    
+    <p>Can we hear their songs?  Can we remember and sing with them? 
+        
+        <p>Can we carry on their fires?</p>
 
-<p>And like flames and fireflies lighting the path - dancing, crackling, almost extinguished, but not yet - can we talk with our descendants and light their path ahead, building as we walk, every day?</p>
+<p>And like flames and fireflies lighting the path - dancing, crackling, almost extinguished, but not yet - can we talk with our descendants, and light their path ahead? 
+    
+    <p>Building as we walk, every day?</p>
 
 <p>These are new oaths, new vows, new relations, new responsibilities.</p>
 
-<p>In reality, they are old - buried in the places beneath us, waiting to see the light of day again.</p>
-
-<p>And waiting to be sung by descendants to come.</p>
+<p>In reality, they are old - buried in the places beneath us, waiting to see the light of day again.  Waiting to be sung by descendants to come.</p>
 
 <p>You don't need to give up everything to begin this journey.
     
-    <p>(Though, if you believe in Jesus, he did say, "<em>Sell all that you own and distribute the money to the poor ... then come, follow me</em>", and 
-    "<em>Look at the birds of the air: they neither sow nor reap nor gather into barns, and yet your heavenly Father feeds them.</em>", and "<em>no one claimed private ownership of any possessions, but everything they owned was held in common</em>.")</p>
+    <p>(Though, if you believe in Christianity, the texts do say: "<em>Sell all that you own and distribute the money to the poor, then come, follow me</em> ...  <em>Look at the birds of the air: they neither sow nor reap nor gather into barns, and yet your heavenly Father feeds them</em> ... <em>No one claimed private ownership of any possessions, but everything they owned was held in common</em>.")</p>
 
-<p>You simply need to begin.</p>
+<p>You simply need to begin to see, and ask, and reflect, and listen, and ... <span class="box"></span>
+  </p>
+
+<p><em>Comment, add thoughts, and suggest changes to this text on <a href="https://docs.google.com/document/d/1IfMw7oW231-3-rklLgmb14u1sHsn_oe7OKOy-zW53zg/edit?usp=sharing"> Google Docs.</a></em></p>
+
+<style>
+    @keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+    .box:after {
+  content: "";
+  width: 5px;
+  height: 20px;
+  background: green;
+  display: inline-block;
+  animation: cursor-blink 1.5s steps(2) infinite;
+}
+</style>
 
 <!-- There used to be worlds everywhere like this.
 
@@ -156,4 +180,5 @@ And make kin with the forgotten members of our worlds, listen and learn their la
 
     <em>It is easier for a camel to go through the eye of a needle...</em>, and, <em>Look at the birds of the air: they neither sow nor reap nor gather into barns, and yet your heavenly Father feeds them.</em> and <em>Now the whole group of those who believed were of one heart and soul, and no one claimed private ownership of any possessions, but everything they owned was held in common. With great power the apostles gave their testimony to the resurrection of the Lord Jesus, and great grace was upon them all. There was not a needy person among them, for as many as owned lands or houses sold them and brought the proceeds of what was sold. They laid it at the apostles’ feet, and it was distributed to each as any had need. There was a Levite, a native of Cyprus, Joseph, to whom the apostles gave the name Barnabas (which means “son of encouragement”). He sold a field that belonged to him, then brought the money, and laid it at the apostles’ feet</em> and <em>When Jesus heard this, he said to him, ‘There is still one thing lacking. Sell all that you own and distribute the money to the poor, and you will have treasure in heaven; then come, follow me</em>.</p>
 
+    <p>Can we give gifts to our descendants - things they will be grateful for - just as we are grateful for the gifts our ancestors left us?</p>
 -->
