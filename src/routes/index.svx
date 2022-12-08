@@ -8,26 +8,34 @@ Welcome!  You can explore my work below, and see more experiences [here](https:/
 
 Feel free to start a conversation [via email](mailto:hello@sambutler.us) or schedule a [time to chat](https://cal.com/sambutler/meet).
 
-**Portfolio**
+**The Workshop**
 
 <div class="project-row" style="display: flex; flex-wrap: wrap;  justify-content: space-between;">
 
-<!-- <div class="project">
+<div class="project">
 <img src="./coop_seven_principles.jpeg">
 
 [**Coop Template**](/coop-template)
 
-An introduction to coops, with an interactive template.
+An introduction to coops, with an interactive template. (*Use it!*)
 
 </div>
--->
+
+<div class="project">
+<img src="https://lh3.googleusercontent.com/6gQX6G95zT1bUnk_Ug51IOCcXeuhZuXdgM2ZNIKpya6FttAoxVSyskP-5rqpkvmQeIUy5EafGYTQ5Q=w1200-h630-p">
+
+[**Liberate Homes**](https://rebrand.ly/liberate-homes)
+
+If we must work to live, how can our economies every stop growing? (*Looking for input and collaboration!*)
+
+</div>
 
 <div class="project">
 <img src="./climate-widget.png">
 
 [**Climate Widget**](/climate-widget-blog)
 
-An embeddable banner, that allows people to connect with climate action anywhere on the Internet.  (*Looking for webistes/blogs that want to pilot it.*)
+An embeddable banner, that allows people to connect with climate action anywhere on the Internet.  (*Looking for websites/blogs that want to pilot it.*)
 
 </div>
 
@@ -36,7 +44,7 @@ An embeddable banner, that allows people to connect with climate action anywhere
 
 [**Freego**](https://freego.netlify.app)
 
-Pick a location, and see nearby transit stations, bikeshares, transit routes, and bike paths — go where you want, car-free. (<em>In development</em>)
+Pick a location, and see nearby transit stations, bikeshares, transit routes, and bike paths — go where you want, car-free. (<em>Open for input and collaboration</em>)
 
 </div>
 
@@ -45,7 +53,7 @@ Pick a location, and see nearby transit stations, bikeshares, transit routes, an
 
 [**Navi**](https://naviguide.netlify.app)
 
-An open-source and privacy-respecting alternative to Google Maps, based on Open Street Map data and the OSM api.
+An open-source and privacy-respecting alternative to Google Maps, based on Open Street Map data and the OSM api. (*Open for input and collaboration*)
 
 </div>
 
@@ -54,13 +62,13 @@ An open-source and privacy-respecting alternative to Google Maps, based on Open 
 
 [**Community Savings**](https://sambutler.us/community-savings)
 
-An interactive model, showing how we can make transitions and build local initiatives through the savings they create.
+An interactive model, showing how we can make transitions and build local initiatives through the savings they create. (*Open for input and collaboration*)
 </div>
 
 <div class="project">
 <img src="https://thefriend.org/assets/ugc/images/growing-pains.jpg">
 
-[**Just Start**](https://juststart.do/about)
+[**Just Start**](https://just-start.pages.dev/about)
 
 See events from climate and community groups near you, so you can show up and get engaged.
 
@@ -71,7 +79,7 @@ See events from climate and community groups near you, so you can show up and ge
 
 [**Spect**](https://spect.netlify.app)
 
-Place your perspectives, insights, and experiences on a map — and create prompts for community surveys, participatory budgeting, resource maps, and more. (<em>In development</em>)
+Place your perspectives, insights, and experiences on a map — and create prompts for community surveys, participatory budgeting, resource maps, and more. (<em>Open for input and collaboration</em>)
 
 </div>
 
@@ -80,7 +88,7 @@ Place your perspectives, insights, and experiences on a map — and create promp
 
 [**Placeflow**](https://placeflow.net/welcome)
 
-Imagine the future of your community, and share visions of what your neighborhood could be.
+Imagine the future of your community, and share visions of what your neighborhood could be. (<em>Open for input and collaboration</em>)
 
 </div>
 
@@ -89,7 +97,7 @@ Imagine the future of your community, and share visions of what your neighborhoo
 
 [**Stories of New Paradigms**](https://rebrand.ly/stories-for-change)
 
-Narratives, stories, and media to help us transcend paradigms — and give us visions to work towards.
+Narratives, stories, and media to help us transcend paradigms — and give us visions to work towards. (<em>Open for input and collaboration</em>)
 
 </div>
 
