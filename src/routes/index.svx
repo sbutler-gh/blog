@@ -4,6 +4,28 @@ import { children } from "svelte/internal";
 
 </script>
 
+<svelte:head>
+
+  <title>Sam's Potfolio/Workshop</title>
+
+  
+  <meta name="description" content="Check out projects, essays, interactive tools, and more">
+  
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://sambutler.us/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sam's Garage">
+  <meta property="og:description" content="Check out projects, essays, interactive tools, and more">
+  
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="sambutler.us">
+  <meta property="twitter:url" content="https://sambutler.us//">
+  <meta property="og:title" content="Sam's Garage">
+  <meta property="og:description" content="Check out projects, essays, interactive tools, and more">
+
+</svelte:head>
+
 Welcome!  You can explore my work below, and see more experiences [here](https://www.sambutler.us/resume.pdf).
 
 Feel free to start a conversation [via email](mailto:hello@sambutler.us) or schedule a [time to chat](https://cal.com/sambutler/meet).
