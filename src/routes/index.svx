@@ -8,7 +8,7 @@ Welcome!  You can explore my work below, and see more experiences [here](https:/
 
 Feel free to start a conversation [via email](mailto:hello@sambutler.us) or schedule a [time to chat](https://cal.com/sambutler/meet).
 
-**The Workshop**
+**Portfolio / Workshop**
 
 <div class="project-row" style="display: flex; flex-wrap: wrap;  justify-content: space-between;">
 
