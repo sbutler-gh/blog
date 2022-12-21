@@ -11,5 +11,7 @@
         10-fan operation or 5-fan operation, using daisychain connector at top. Can also regulate through voltage.
 
         Daisychain for left-tower fans to right-tower fans seen in cord at the top.
+
+        When one tower is not operational, can add a shroud to cover any air leaks, essentially converting it into a 5-filter fan.
         </div>
         </article>
