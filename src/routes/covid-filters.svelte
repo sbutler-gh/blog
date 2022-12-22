@@ -15,7 +15,7 @@
         When one tower is not operational, can add a shroud to cover any air leaks, essentially converting it into a 5-filter fan.
 
         Here are specific designs and measureents
-        <img src="./static/10-fan-vertical.png" style="width: 100%;">
+        <img src="./static/10-fan-vertical-2.jpg" style="width: 100%;">
         <img src="./static/10-fan-wide-closeup.png" style="width: 100%;">
         <img src="./static/10-fan-wide.png" style="width: 100%;">
         </div>
