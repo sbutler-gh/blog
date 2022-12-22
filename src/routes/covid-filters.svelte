@@ -18,5 +18,8 @@
         <img src="./10-fan-vertical-2.jpg" style="width: 100%;">
         <img src="./10-fan-wide-closeup.png" style="width: 100%;">
         <img src="./10-fan-wide.png" style="width: 100%;">
+
+        And below, with 10 fans and 6 filters.
+        <img src="./10-fan-6-filter.jpg" style="width: 100%;">
         </div>
         </article>
