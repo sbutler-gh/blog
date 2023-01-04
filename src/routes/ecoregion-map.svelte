@@ -1,3 +1,38 @@
+As one of the first projects of an International Collective People's Movement (https://rebrand.ly/peoples-join), which anybody can begin:
+
+Maps of ecoregions, comprised of local watersheds.
+
+This builds on:
+
+* @cazort's @bPlantOrg ecoregional map (https://bplant.org/regions.php)
+
+* @matt_heberger's watershed map/tool (https://mghydro.com/watersheds/)
+
+* The Dept of Bioregions (https://deptofbioregion.org/bioregions/ecoregions-watersheds/)
+
+* The #Cascadia Bioregion (https://cascadiabioregion.org/)
+
+* Europe's map of ecological regions (https://www.eea.europa.eu/data-and-maps/figures/dmeer-digital-map-of-european-ecological-regions)
+
+Interested in contributing?  Want to get your classroom / students involved, or support with your skills and experience, or just connect and collaborate with others on something like this?
+
+Feel free to drop a reply below, or join the temporary group discussion forum where we're organizing for projects like these: https://rebrand.ly/peoples-join
+
+This work is in the spirit of the 2010 People's Agreement and Max Ajl's "A People's Green New Deal."
+
+#ecoregion #map #watershed #plants #flora #fauna #bioregions #foodshed #international #collective #greennewdeal #peoplesagreement #coops
+
+
+
+
+
+
+
+
+
+____________
+(in the spirit of the 2010 People's Agreement and Max Ajl's "A People's Green New Deal"), 
+
 A map to show ecoregions (supersets of watersheds — with common plants, animals, climactic conditions, and human settlement patterns)?
 
 An ecoregion is "an area with characteristic flora, fauna, and climatic conditions, and related human settlement patterns, and can be comprised of several different watersheds, if the plants and animals are similar."  (More on [watersheds, ecoregions, and bioregions](https://deptofbioregion.org/bioregions/ecoregions-watersheds/)).
