@@ -192,6 +192,7 @@ Building urgent solutions for climate change and the sustainable transition.
 }
 .project {
     max-width: 300px;
+    margin-bottom: 40px;
 }
 
 .project img {
@@ -210,6 +211,7 @@ Building urgent solutions for climate change and the sustainable transition.
 .project {
   margin: auto;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .project img {
