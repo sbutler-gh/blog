@@ -6,29 +6,44 @@
   <title>Home Again</title>
 
   
-  <meta name="description" content="Home Again: How Social Housing Can Help Us Live">
+  <meta name="description" content="How social housing can help us live again">
   
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://sambutler.us/home-again">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Home Again: How Social Housing Can Help Us Live">
-  <meta property="og:description" content="You can continue living as you do.  Or you can live in your home for the rest of your life, for a fraction of what you pay today, with other people in your community ...">
-  <meta property="og:image" content="">
+  <meta property="og:title" content="Home Again">
+  <meta property="og:description" content="How social housing can help us live again">
+  <meta property="og:image" content="/vienna.jpeg">
   
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="sambutler.us">
   <meta property="twitter:url" content="https://sambutler.us/home-again">
-  <meta property="og:title" content="Home Again: How Social Housing Can Help Us Live">
-  <meta property="og:description" content="You can continue living as you do.  Or you can live in your home for the rest of your life, for a fraction of what you pay today, with other people in your community ...">
-  <meta name="twitter:image" content="">
+  <meta property="og:title" content="Home Again">
+  <meta property="og:description" content="How social housing can help us live again">
+  <meta name="twitter:image" content="/vienna.jpeg">
 </svelte:head>
 
 <article class="h-entry">
   <div>
     <h1 class="p-name"><a class="u-url" href="/home-again">Home Again</a></h1> <span style="display: inline-block;">
-      
-      <a href="#acknowledgements" style="display: inline-block;"><em>Acknowledgements</em></a>
+      <div class="side-subscribe">
+      <div style="max-width: 330px;">
+      <img src="/vienna.jpeg" style="max-height: 500px; display: block;">
+      <label style="font-style: italic; font-size: 14px; color: grey; display: block; margin: auto; text-align: center;">Photo by <a href="https://unsplash.com/@rickgovic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rick Govic</a> on <a href="https://unsplash.com/s/photos/vienna-apartment?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></label>
+      </div>
+      <div class="subscriber-call side">
+        <span class="text-gray-500 text-sm" style="display: block; margin: auto; width: max-content; font-size: 14px; color: gray;">Read future content like this 
+          <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: bottom;" class="icon icon-tabler icon-tabler-mail" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="gray" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <rect x="3" y="5" width="18" height="14" rx="2" />
+          <polyline points="3 7 12 13 21 7" />
+        </svg></span>
+            <PlainSubscribe></PlainSubscribe>
+        </div>
+        </div>
+      <br>
+      <a href="#acknowledgements" style="display: block;"><em>Acknowledgements</em></a>
     <!-- <p style="font-style: italic">Sam Butler (February 2ndth, 2022 at 11:45am CEST)</p> -->
 
 <h3><blockquote><em>"You can continue living as you do. <br> <br>Or you can live in your home for the rest of your life, for a fraction of what you pay today, with other people in your community."</em></blockquote></h3>
@@ -126,3 +141,23 @@
     <p><em>Working list of acknowledgements: Julia Steinberger&#39;s work on</em> <a href="https://www.sciencedirect.com/science/article/pii/S0959378020307512?via%3Dihub#b0145"><em>&quot;Decent Living with Minimum Energy&quot;</em></a><em>, Chris Baulman and Alexander Baumann&#39;s work on the paradox of housing and degrowth, Peter Dynes on repeated calls to scale down our economies, MEER and Peter Yao on locked-in warming, Rhodri for sharing the information about</em> <a href="https://www.sciencedaily.com/releases/2022/11/221103120048.htm"><em>CO2-linked plant malnutrition</em></a><em>, Leanne Betasamosake Simpson&#39;s stories from</em> <a href="https://www.amazon.com/Have-Always-Done-Indigenous-Resistance/dp/1517903866"><em>As We Have Always Done</em></a><em>, Kyle Whyte&#39;s perspectives and</em> <a href="https://journals.sagepub.com/doi/abs/10.1177/2514848618777621?journalCode=ene"><em>research</em></a> <em>(which point to Simpson!), learning about subsistence cultures from many voices in the Global South and Indigenous communities, Kris De Decker&#39;s work on</em> <a href="https://solar.lowtechmagazine.com/2021/03/urban-fish-ponds-low-tech-sewage-treatment-for-towns-and-cities.html"><em>Low Tech Magazine,</em></a> <em>Cory Doctorow&#39;s explanation of England&#39;s Enclosure Act on the Douglas Rushkoff/Team Human podcast, David Graeber for perspectives on jubilee and cultural experimentation, a person who I can&#39;t remember who tied the absence of property to</em> <a href="https://biblehub.com/matthew/6-26.htm"><em>several bible passages</em></a> <em>(need to remember who this was!), Donella Meadows for highlighting the importance of changing the way we see, Daniel Nichanian&#39;s reporting on ballot referendums to cancel medical debt, Max Ajl&#39;s work in</em> <a href="https://library.oapen.org/handle/20.500.12657/48775"><em>&quot;A People&#39;s Green New Deal&quot;</em></a> <em>and on the</em> <a href="https://pwccc.wordpress.com/support/"><em>People&#39;s Agreement of Cochabamba</em></a><em>, Kirsty Lang&#39;s</em> <a href="https://www.ft.com/content/05719602-89c6-4bbc-9bbe-5842fd0c3693"><em>writing on the Vienna housing system</em></a><em>, and many more influences be thanked and named, in a coherent way!</em></p>
     
     </details>  -->
+
+    <style>
+        @media only screen and (min-width: 701px) {
+      .subscriber-call.side {
+        height: min-content;
+        vertical-align: middle;
+       margin: 20% 5%;
+      }
+
+      .side-subscribe {
+        display: flex;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      .subscriber-call.side {
+        margin-top: 20px;
+      }
+    }
+    </style>
