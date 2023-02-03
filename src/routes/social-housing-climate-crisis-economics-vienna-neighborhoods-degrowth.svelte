@@ -14,7 +14,7 @@
   <meta property="og:title" content="How Social Housing Can Help Us Face the Climate Crisis — From Vienna, to Our Local Neighborhoods">
   <meta property="og:description" content="How are we supposed to transform our economies, when we're stuck working 40 hours per week?
   ">
-  <meta property="og:image" content="/vienna.jpeg">
+  <meta property="og:image" content="/home_again_thumb.png">
   
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
@@ -23,7 +23,7 @@
   <meta property="og:title" content="How Social Housing Can Help Us Face the Climate Crisis — From Vienna, to Our Local Neighborhoods">
   <meta property="og:description" content="How are we supposed to transform our economies, when we're stuck working 40 hours per week?
   ">
-  <meta name="twitter:image" content="/vienna.jpeg">
+  <meta name="twitter:image" content="/home_again_thumb.png">
 </svelte:head>
 
 <article class="h-entry">
@@ -144,7 +144,7 @@
   </svg></span>
       <PlainSubscribe></PlainSubscribe>
   </div>
-  
+
   <div id="acknowledgements">
         <p><em>Working list of acknowledgements: Julia Steinberger&#39;s work on</em> <a href="https://www.sciencedirect.com/science/article/pii/S0959378020307512?via%3Dihub#b0145"><em>&quot;Decent Living with Minimum Energy&quot;</em></a><em>, Chris Baulman and Alexander Baumann&#39;s work on the paradox of housing and degrowth, Peter Dynes on repeated calls to scale down our economies, MEER and Peter Yao on locked-in warming, Rhodri for pointing to research on </em> <a href="https://www.sciencedaily.com/releases/2022/11/221103120048.htm"><em>CO2-linked plant malnutrition</em></a><em>, Leanne Betasamosake Simpson&#39;s stories from</em> <a href="https://www.leannesimpson.ca/book/as-we-have-always-done"><em>As We Have Always Done</em></a><em>, Kyle Whyte&#39;s perspectives and</em> <a href="https://journals.sagepub.com/doi/abs/10.1177/2514848618777621?journalCode=ene"><em>research</em></a> <em>(which point to Simpson!), learning about subsistence cultures from many voices in the Global South and Indigenous communities, Kris De Decker&#39;s work on</em> <a href="https://solar.lowtechmagazine.com/2021/03/urban-fish-ponds-low-tech-sewage-treatment-for-towns-and-cities.html"><em>Low Tech Magazine,</em></a> <em>Cory Doctorow&#39;s explanation of England&#39;s Enclosure Act on the Douglas Rushkoff/Team Human podcast, David Graeber for perspectives on jubilee and cultural experimentation, a person who I can&#39;t remember who tied the absence of property to</em> <a href="https://biblehub.com/matthew/6-26.htm"><em>several bible passages</em></a> <em>(need to remember who this was!), Donella Meadows for highlighting the importance of changing the way we see, Daniel Nichanian&#39;s reporting on ballot referendums to cancel medical debt, Max Ajl&#39;s work in</em> <a href="https://library.oapen.org/handle/20.500.12657/48775"><em>&quot;A People&#39;s Green New Deal&quot;</em></a> <em>and on the</em> <a href="https://pwccc.wordpress.com/support/"><em>People&#39;s Agreement of Cochabamba</em></a><em>, Kirsty Lang&#39;s</em> <a href="https://www.ft.com/content/05719602-89c6-4bbc-9bbe-5842fd0c3693"><em>writing on the Vienna housing system</em></a><em>, and many more influences be thanked and named, in a coherent way!</em></p>
   </div>
