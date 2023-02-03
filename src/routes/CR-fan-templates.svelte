@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Corsi Rosenthal Fan Templates (Arctic P14)">
   <meta property="og:description" content="An Acrtic P14 fan template you can use for designing and cutting fan layouts">
-  <meta property="og:image" content="/arctic_p14.png"">
+  <meta property="og:image" content="/arctic_p14.png">
   
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">

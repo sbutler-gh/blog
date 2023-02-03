@@ -1,6 +1,7 @@
 <script>
   import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
 </script>
+
 <svelte:head>
   <title>Home Again</title>
 
