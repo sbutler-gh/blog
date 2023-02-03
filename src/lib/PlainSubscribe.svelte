@@ -12,9 +12,24 @@
     margin: 10px auto !important;
 }
 
+
+@media only screen and (min-width: 701px) {
+
 #subscribe_div {
     max-width: 100%;
     width: 400px;
     margin: auto;
+}
+
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    #subscribe_div {
+    max-width: 75%;
+    margin: auto;
+}
+
 }
 </style>
