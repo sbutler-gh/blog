@@ -9,7 +9,7 @@
   <meta name="description" content="How social housing can help us live again">
   
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://sambutler.us/social-housing-climate-crisis-economics-vienna-neighborhoods-degrowth">
+  <meta property="og:url" content="https://sambutler.us/social-housing-climate-crisis-vienna-neighborhoods">
   <meta property="og:type" content="website">
   <meta property="og:title" content="How Social Housing Can Help Us Face the Climate Crisis — From Vienna, to Our Local Neighborhoods">
   <meta property="og:description" content="How are we supposed to transform our economies, when we're stuck working 40 hours per week?
@@ -19,7 +19,7 @@
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="sambutler.us">
-  <meta property="twitter:url" content="https://sambutler.us/social-housing-climate-crisis-economics-vienna-neighborhoods-degrowth">
+  <meta property="twitter:url" content="https://sambutler.us/social-housing-climate-crisis-vienna-neighborhoods">
   <meta property="og:title" content="How Social Housing Can Help Us Face the Climate Crisis — From Vienna, to Our Local Neighborhoods">
   <meta property="og:description" content="How are we supposed to transform our economies, when we're stuck working 40 hours per week?
   ">
@@ -28,7 +28,7 @@
 
 <article class="h-entry">
   <div>
-    <h1 class="p-name"><a class="u-url" href="/social-housing-climate-crisis-economics-vienna-neighborhoods-degrowth">How Social Housing Can Help Us Face the Climate Crisis — From Vienna, to Our Local Neighborhoods</a></h1> <span style="display: inline-block;">
+    <h1 class="p-name"><a class="u-url" href="/social-housing-climate-crisis-vienna-neighborhoods">How Social Housing Can Help Us Face the Climate Crisis — From Vienna, to Our Local Neighborhoods</a></h1> <span style="display: inline-block;">
       <br>
       <div class="side-subscribe">
       <div style="max-width: 330px;">
