@@ -2,6 +2,8 @@
 
 import { children } from "svelte/internal";
 
+import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
+
 </script>
 
 <svelte:head>
@@ -27,7 +29,26 @@ import { children } from "svelte/internal";
 </svelte:head>
 <p>Welcome!  You can explore my work below, and see more experiences <a href="https://www.sambutler.us/resume.pdf">here</a>.</p>
 <p>Feel free to start a conversation <a href="mailto:hello@sambutler.us">via email</a> or schedule a <a href="https://cal.com/sambutler/meet">time to chat</a>.</p>
-<p><strong>Portfolio / Workshop</strong></p>
+
+<br>
+
+<span class="text-gray-500 text-sm" style="display: block; margin: auto; margin-bottom: 7px; width: max-content; font-size: 14px; color: gray;">Stay up-to-date on future content
+  <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: bottom;" class="icon icon-tabler icon-tabler-mail" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="gray" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="3" y="5" width="18" height="14" rx="2" />
+  <polyline points="3 7 12 13 21 7" />
+</svg></span>
+<PlainSubscribe></PlainSubscribe>
+
+<br>
+
+<h2>Featured</h2>
+<h3><em>How Social Housing Can Help Us Face the Climate Crisis — From Vienna, to Our Local Neighborhoods</em> (<a href="/social-housing-climate-crisis-vienna-neighborhoods">Read</a>)</h3>
+<!-- <img src="/home_again_thumb.png" style="max-width: 100%;"> -->
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795386597?h=fe6bb47e59&title=0&byline=0&portrait=0&speed=0&badge=0&autopause=0&player_id=0&app_id=58479/embed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
+<hr>
+<br>
+<h3><strong>Portfolio / Workshop</strong></h3>
 <div class="project-row" style="display: flex; flex-wrap: wrap;  justify-content: space-between;">
 
 <div class="project">
@@ -44,7 +65,7 @@ An introduction to coops, with an interactive template. (<em>Use it!</em>)
 
 <a href="https://rebrand.ly/liberate-homes"><strong>Liberate Homes</strong></a>
 
-If we must work to live, how can our economies every stop growing? (<em>Looking for input and collaboration!</em>)
+If we must work to live, how can our economies every stop growing?
 
 </div>
 
