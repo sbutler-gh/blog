@@ -61,13 +61,22 @@ An introduction to coops, with an interactive template. (<em>Use it!</em>)
 </div>
 
 <div class="project">
+  <img src="/bioregion_thumb.png">
+  
+  <a href="https://docs.google.com/document/d/1tncP0omXFTdoZ7Uux3rGJnoYpfFlFAWwwjFzgQLy0SY/edit?usp=sharing"><strong>Bioregional Mapping Workshop</strong></a>
+  
+  Find your local bioregion, and start seeing your world in a new way.
+  
+  </div>
+
+<!-- <div class="project">
 <img src="https://lh3.googleusercontent.com/6gQX6G95zT1bUnk_Ug51IOCcXeuhZuXdgM2ZNIKpya6FttAoxVSyskP-5rqpkvmQeIUy5EafGYTQ5Q=w1200-h630-p">
 
 <a href="https://rebrand.ly/liberate-homes"><strong>Liberate Homes</strong></a>
 
 If we must work to live, how can our economies every stop growing?
 
-</div>
+</div> -->
 
 <div class="project">
 <img src="./climate-widget.png">
