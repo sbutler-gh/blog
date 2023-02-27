@@ -4,6 +4,12 @@ import { children } from "svelte/internal";
 
 import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
 
+// function showFeaturedVideoPlayer () {
+//   // document.getElementById('featuredPreviewThumbnail').style.opacity = 0;
+//   document.getElementById('featuredPreviewThumbnail').style.display = "none";
+//   document.getElementById('featuredVideo').style.display = "block";
+// }
+
 </script>
 
 <svelte:head>
@@ -44,8 +50,8 @@ import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
 
 <h2>Featured</h2>
 <h3><em>How Social Housing Can Help Us Face the Climate Crisis — From Vienna, to Our Local Neighborhoods</em> (<a href="/social-housing-climate-crisis-vienna-neighborhoods">Read</a>)</h3>
-<!-- <img src="/home_again_thumb.png" style="max-width: 100%;"> -->
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795386597?h=fe6bb47e59&title=0&byline=0&portrait=0&speed=0&badge=0&autopause=0&player_id=0&app_id=58479/embed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
+<!-- <img on:mouseover={showFeaturedVideoPlayer} on:click={showFeaturedVideoPlayer} id="featuredPreviewThumbnail" src="/home_again_video_preview.png" style="max-width: 100%;"> -->
+<div id="featuredVideo" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795386597?h=fe6bb47e59&title=0&byline=0&portrait=0&speed=0&badge=0&autopause=0&player_id=0&app_id=58479/embed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
 <hr>
 <br>
 <h3><strong>Portfolio / Workshop</strong></h3>
@@ -68,6 +74,24 @@ An introduction to coops, with an interactive template. (<em>Use it!</em>)
   Find your local bioregion, and start seeing your world in a new way.
   
   </div>
+
+  <div class="project">
+    <img src="/anti-inflationary.png">
+    
+    <a href="https://antiinflationary.com"><strong>Anti Inflationary</strong></a>
+    
+    The best policies for fighting inflation and making life better.
+    
+    </div>
+
+    <div class="project">
+      <img src="/progress2.png">
+      
+      <a href="https://rebrand.ly/webuild-content"><strong>Building What We Want</strong></a>
+      
+      A workshop to better understand what we want, and take steps to start building it.
+      
+      </div>
 
 <!-- <div class="project">
 <img src="https://lh3.googleusercontent.com/6gQX6G95zT1bUnk_Ug51IOCcXeuhZuXdgM2ZNIKpya6FttAoxVSyskP-5rqpkvmQeIUy5EafGYTQ5Q=w1200-h630-p">
@@ -257,4 +281,13 @@ Building urgent solutions for climate change and the sustainable transition.
   display: block;
   margin: 1em 0em;
 }
+
+/* #featuredPreviewThumbnail {
+  cursor: pointer;
+}
+
+#featuredVideo {
+  display: none;
+} */
+
 </style>
