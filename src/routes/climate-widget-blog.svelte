@@ -30,7 +30,7 @@
 
 		<p>(This is still just a demo, and the form data isn't submitted anywhere — but the embed works successfully, and you can try it on your own page.  All we need is organizations who want to use this to make it happen for real!)</p>
 		<p>Want to try this?  Questions or feedback?  Anything else?</p>
-		<p>Contact on Signal/WhatsApp (+1 seven zero three four eight nine one six nine seven) or hello@sambutler.us</p>
+		<p>Write to contact@sambutler.us</p>
 
         <details><summary style="margin-bottom: 20px;"><em>Browse what this could look like on other sites</em></summary>
             <p><em>The Intercept</em></p>
