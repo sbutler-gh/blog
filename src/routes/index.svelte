@@ -58,7 +58,7 @@ import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
 <div class="project-row" style="display: flex; flex-wrap: wrap;  justify-content: space-between;">
 
   <div class="project">
-    <img src="./RIDE_story_cover_image.png">
+    <img src="./RIDE_story_cover_image.png" loading="lazy">
     
     <a href="https://twitter.com/sambutlerUS/status/1625230157391732747"><strong>"RIDE" — A New Story</strong></a>
     
@@ -67,7 +67,7 @@ import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
     </div>
 
   <div class="project">
-  <img src="./costs-car-economy-bike-transit-image.png">
+  <img src="./costs-car-economy-bike-transit-image.png" loading="lazy">
   
   <a href="/costs-of-car-economy-bike-transit"><strong>Costs of the Car Economy</strong></a>
   
@@ -76,7 +76,7 @@ import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
   </div>
 
 <div class="project">
-<img src="./coop_seven_principles.jpeg">
+<img src="./coop_seven_principles.jpeg" loading="lazy">
 
 <a href="/coop-template"><strong>Coop Template</strong></a>
 
@@ -85,7 +85,7 @@ An introduction to coops, with an interactive template. (<em>Use it!</em>)
 </div>
 
 <div class="project">
-  <img src="/bioregion_thumb.png">
+  <img src="/bioregion_thumb.png" loading="lazy">
   
   <a href="https://docs.google.com/document/d/1tncP0omXFTdoZ7Uux3rGJnoYpfFlFAWwwjFzgQLy0SY/edit?usp=sharing"><strong>Bioregional Mapping Workshop</strong></a>
   
@@ -94,7 +94,7 @@ An introduction to coops, with an interactive template. (<em>Use it!</em>)
   </div>
 
   <div class="project">
-    <img src="/anti-inflationary.png">
+    <img src="/anti-inflationary.png" loading="lazy">
     
     <a href="https://antiinflationary.com"><strong>Anti Inflationary</strong></a>
     
@@ -103,7 +103,7 @@ An introduction to coops, with an interactive template. (<em>Use it!</em>)
     </div>
 
     <div class="project">
-      <img src="/progress2.png">
+      <img src="/progress2.png" loading="lazy">
       
       <a href="https://rebrand.ly/webuild-content"><strong>Building What We Want</strong></a>
       
@@ -121,7 +121,7 @@ If we must work to live, how can our economies every stop growing?
 </div> -->
 
 <div class="project">
-<img src="./climate-widget.png">
+<img src="./climate-widget.png" loading="lazy">
 
 <a href="/climate-widget-blog"><strong>Climate Widget</strong></a>
 
@@ -130,7 +130,7 @@ An embeddable banner, that allows people to connect with climate action anywhere
 </div>
 
 <div class="project">
-<img src="./freego_pic.png">
+<img src="./freego_pic.png" loading="lazy">
 
 <a href="https://freego.netlify.app"><strong>Freego</strong></a>
 
@@ -139,7 +139,7 @@ Pick a location, and see nearby transit stations, bikeshares, transit routes, an
 </div>
 
 <div class="project">
-<img src="./navi_restaurant.png">
+<img src="./navi_restaurant.png" loading="lazy">
 
 <a href="https://naviguide.netlify.app"><strong>Navi</strong></a>
 
@@ -148,7 +148,7 @@ An open-source and privacy-respecting alternative to Google Maps, based on Open 
 </div>
 
 <div class="project">
-<img src="https://i.imgur.com/k7CqmBO.png">
+<img src="https://i.imgur.com/k7CqmBO.png" loading="lazy">
 
 <a href="https://sambutler.us/community-savings"><strong>Community Savings</strong></a>
 
@@ -156,7 +156,7 @@ An interactive model, showing how we can make transitions and build local initia
 </div>
 
 <div class="project">
-<img src="https://thefriend.org/assets/ugc/images/growing-pains.jpg">
+<img src="https://thefriend.org/assets/ugc/images/growing-pains.jpg" loading="lazy">
 
 <a href="https://just-start.pages.dev/about"><strong>Just Start</strong></a>
 
@@ -165,7 +165,7 @@ See events from climate and community groups near you, so you can show up and ge
 </div>
 
 <div class="project">
-<img src="./spect_pic.png">
+<img src="./spect_pic.png" loading="lazy">
 
 <a href="https://spect.netlify.app"><strong>Spect</strong></a>
 
@@ -174,7 +174,7 @@ Place your perspectives, insights, and experiences on a map — and create promp
 </div>
 
 <div class="project">
-<img src="https://i.imgur.com/ck3Yja2.png?fb">
+<img src="https://i.imgur.com/ck3Yja2.png?fb" loading="lazy">
 
 <a href="https://placeflow.net/welcome"><strong>Placeflow</strong></a>
 
@@ -183,7 +183,7 @@ Imagine the future of your community, and share visions of what your neighborhoo
 </div>
 
 <div class="project">
-<img src="https://lh6.googleusercontent.com/3nqQ1roSSbdatXLRQV-LTPSF-uBxYtoEra34PNXSub_tOz-Eu0zPnLmNffVSEnzPrTND3HkHv1fn_A=w1200-h630-p">
+<img src="https://lh6.googleusercontent.com/3nqQ1roSSbdatXLRQV-LTPSF-uBxYtoEra34PNXSub_tOz-Eu0zPnLmNffVSEnzPrTND3HkHv1fn_A=w1200-h630-p" loading="lazy">
 
 <a href="https://rebrand.ly/stories-for-change"><strong>Stories of New Paradigms</strong></a>
 
@@ -192,7 +192,7 @@ Narratives, stories, and media to help us transcend paradigms — and give us vi
 </div>
 
 <div class="project">
-<img src="https://c.gitcoin.co/grants/bfb81cd51aa73b308e3ce1e5e32f5310/Screen_Shot_2021-11-29_at_12.29.47_PM.png">
+<img src="https://c.gitcoin.co/grants/bfb81cd51aa73b308e3ce1e5e32f5310/Screen_Shot_2021-11-29_at_12.29.47_PM.png" loading="lazy">
 
 <a href="https://rebrand.ly/solidarity-game"><strong>Solidarity and Resistance</strong></a>
 
@@ -200,7 +200,7 @@ Coordinating international solidarity and agency to support environmental resist
 </div>
 
 <div class="project">
-<img src="https://i.imgur.com/cSBO2CB.png">
+<img src="https://i.imgur.com/cSBO2CB.png" loading="lazy">
 
 <a href="https://manyworlds.pages.dev/about"><strong>Manyworlds</strong></a>
 
@@ -208,7 +208,7 @@ Creating projects and initiatives together, and moving towards new ways of worki
 </div>
 
 <div class="project">
-<img src="https://imgur.com/TuEKpXT.png">
+<img src="https://imgur.com/TuEKpXT.png" loading="lazy">
 
 <a href="https://situation-earth.netlify.app/"><strong>Situation Earth</strong></a>
 
@@ -216,7 +216,7 @@ A global situation room for environmental challenges.
 </div>
 
 <div class="project">
-<img src="https://roumupdesign.com/wp-content/uploads/2019/12/ROUM_LOGO.png">
+<img src="https://roumupdesign.com/wp-content/uploads/2019/12/ROUM_LOGO.png" loading="lazy">
 
 <a href="https://roumupdesign.com/virtual-expo/"><strong>Roum / Mattereum Project</strong></a>
 
@@ -224,7 +224,7 @@ Working with Mattereum (led by Vinay Gupta) and artists on the ground in Europe 
 </div>
 
 <div class="project">
-<img src="https://referralrock.com/hub/wp-content/uploads/2020/03/blueRRicon300.png">
+<img src="https://referralrock.com/hub/wp-content/uploads/2020/03/blueRRicon300.png" loading="lazy">
 
 <a href="https://referralrock.com/"><strong>Referral Rock</strong></a>
 
@@ -232,7 +232,7 @@ Led product and design industry-leading referral marketing software, with custom
 </div>
 
 <div class="project">
-<iframe width="200" height="200" src="https://www.youtube.com/embed/E735Zio8w-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="200" height="200" loading="lazy" src="https://www.youtube.com/embed/E735Zio8w-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <a href="https://youtu.be/E735Zio8w-s/"><strong>Presentation at iAnno</strong></a>
 
@@ -240,7 +240,7 @@ Discussion of the Annotation Commons, what could go wrong, and approaches for su
 </div>
 
 <div class="project">
-<img src="./timetosolve_pic.png">
+<img src="./timetosolve_pic.png" loading="lazy">
 
 <a href="https://timetosolve.com/"><strong>Time to Solve</strong></a>
 
@@ -250,7 +250,7 @@ Building urgent solutions for climate change and the sustainable transition.
 
 </div>
 <hr>
-<p>hello@sambutler.us </p>
+<p>contact at sambutler dot us </p>
 <p><a href="https://linkedin.com/in/sambutler8">https://linkedin.com/in/sambutler8</a></p>
 <p><a href="https://twitter.com/sambutlerUS">Twitter</a>
 
