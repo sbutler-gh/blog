@@ -57,6 +57,15 @@ import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
 <h3><strong>Portfolio / Workshop</strong></h3>
 <div class="project-row" style="display: flex; flex-wrap: wrap;  justify-content: space-between;">
 
+  <div class="project">
+  <img src="./costs-car-economy-bike-transit-image.png">
+  
+  <a href="/costs-of-car-economy-bike-transit"><strong>Costs of the Car Economy</strong></a>
+  
+  The public + private costs of the car economy — and how we can change.
+  
+  </div>
+
 <div class="project">
 <img src="./coop_seven_principles.jpeg">
 
