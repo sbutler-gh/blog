@@ -58,7 +58,7 @@ import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
 <div class="project-row" style="display: flex; flex-wrap: wrap;  justify-content: space-between;">
 
   <div class="project">
-    <img src="./RIDE_preview.png">
+    <img src="./RIDE_story_cover_image.png">
     
     <a href="https://twitter.com/sambutlerUS/status/1625230157391732747"><strong>"RIDE" — A New Story</strong></a>
     
