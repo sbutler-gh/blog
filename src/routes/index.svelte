@@ -58,6 +58,15 @@ import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
 <div class="project-row" style="display: flex; flex-wrap: wrap;  justify-content: space-between;">
 
   <div class="project">
+    <img src="./RIDE_preview.png">
+    
+    <a href="https://twitter.com/sambutlerUS/status/1625230157391732747"><strong>"RIDE" — A New Story</strong></a>
+    
+    A story about bikes, local organizing, and change — that people can tell and adapt in their own communities.
+    
+    </div>
+
+  <div class="project">
   <img src="./costs-car-economy-bike-transit-image.png">
   
   <a href="/costs-of-car-economy-bike-transit"><strong>Costs of the Car Economy</strong></a>
