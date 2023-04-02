@@ -58,6 +58,15 @@ import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
 <div class="project-row" style="display: flex; flex-wrap: wrap;  justify-content: space-between;">
 
   <div class="project">
+    <img src="./biden-video-thumb.jpg" loading="lazy">
+    
+    <a href="https://media.sambutler.us/climate-ecosystem-rights-of-nature-biden-ecosocial"><strong>Biden Climate Speech</strong></a>
+    
+    A fictional video from the president, showing the policies that anybody sane would be taking during this time.
+    
+    </div>
+
+  <div class="project">
     <img src="./RIDE_story_cover_image.png" loading="lazy">
     
     <a href="https://twitter.com/sambutlerUS/status/1625230157391732747"><strong>"RIDE" — A New Story</strong></a>
@@ -87,7 +96,7 @@ An introduction to coops, with an interactive template. (<em>Use it!</em>)
 <div class="project">
   <img src="/bioregion_thumb.png" loading="lazy">
   
-  <a href="https://docs.google.com/document/d/1tncP0omXFTdoZ7Uux3rGJnoYpfFlFAWwwjFzgQLy0SY/edit?usp=sharing"><strong>Bioregional Mapping Workshop</strong></a>
+  <a href="/bioregional-mapping-workshop-watersheds-ecoregions-intro"><strong>Bioregional Mapping Workshop</strong></a>
   
   Find your local bioregion, and start seeing your world in a new way.
   
