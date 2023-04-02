@@ -34,7 +34,7 @@
               <br>
 
               <p>This document will guide you in finding your own local watershed and bioregion (and even ecoregion, if you like) &mdash; so you can start planning your bioregional future. &nbsp;At the end, you&rsquo;ll also be able to share your work with others, so we can connect and collaborate on these efforts as a community.</p>
-              <p>If you want a fuller guide, including more discussion and details, you can visit this resource:&nbsp;<a href="https://rebrand.ly/bioregion-workshop">https://rebrand.ly/bioregion-workshop</a> (which can also be useful for teaching, classroom contexts, social gatherings, and events around bioregional mapping).</p>
+              <p>If you want more details and discussion, you can try this <a href="https://rebrand.ly/bioregion-workshop">1-hour mapping workshop</a>, which can be useful for teaching, classroom contexts, social gatherings, and events around bioregional mapping.</p>
               <p>(You can also access this page on Google Docs to <a href="https://docs.google.com/document/d/1tncP0omXFTdoZ7Uux3rGJnoYpfFlFAWwwjFzgQLy0SY/edit?usp=sharing">make comments, suggestions, or follow along there.</a>)</p>
               <h3>What is a bioregion?</h3>
               <p></p>
@@ -202,7 +202,7 @@
               <p></p>
               <p>If a bioregion is a house, ecoregions are like rooms in the house &mdash; in administrative language, a scale between counties and countries.</p>
               <p></p>
-              <p>And whether your bioregion feels a little&nbsp;too&nbsp;large to identify with, or you&rsquo;d just like to explore other scales of commonality and shared experience around you, you can look to local ecoregions!Ecoregions of different scales can be found in every bioregion. &nbsp;They are more subjective and opinionated, based on soft layers and human cultural bounds (see more:&nbsp;<a href="https://rebrand.ly/bioregion-workshop#heading=h.yzz12cwcz1z2">https://rebrand.ly/bioregion-workshop#heading=h.yzz12cwcz1z2</a>)</p>
+              <p>And whether your bioregion feels a little&nbsp;too&nbsp;large to identify with, or you&rsquo;d just like to explore other scales of commonality and shared experience around you, you can look to local ecoregions!Ecoregions of different scales can be found in every bioregion. &nbsp;They are more subjective and opinionated, based on soft layers and human cultural bounds (<a href="https://rebrand.ly/bioregion-workshop#heading=h.yzz12cwcz1z2">see more</a>)</p>
                 
                 <h4>Finding your ecoregion (in Turtle Island)</h4>
               <ol>
@@ -254,7 +254,7 @@
               <p></p>
               <p>You would find the Sava River Basin features many of the criteria discussed above. &nbsp;It features common ecosystems, languages, histories, and cultures.</p>
               <p></p>
-              <p>And looking at more soft natural layers and cultural layers (<a href="https://rebrand.ly/bioregion-workshop#heading=h.yzz12cwcz1z2">https://rebrand.ly/bioregion-workshop#heading=h.yzz12cwcz1z2</a>), we can find even more ecoregions within it &mdash; for example, ecoregions based on common pronunciations of the word &ldquo;bread&rdquo;!</p>
+              <p>And looking at more <a href="https://rebrand.ly/bioregion-workshop#heading=h.yzz12cwcz1z2">soft natural layers and cultural layers</a>, we can find even more ecoregions within it &mdash; for example, ecoregions based on common pronunciations of the word &ldquo;bread&rdquo;!</p>
               <p></p>
               <p></p>
               <p></p>
