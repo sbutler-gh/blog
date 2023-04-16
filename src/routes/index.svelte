@@ -58,6 +58,15 @@ import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
 <div class="project-row" style="display: flex; flex-wrap: wrap;  justify-content: space-between;">
 
   <div class="project">
+    <img src="./pgnd-cover.jpeg" loading="lazy">
+    
+    <a href="/peoples-green-new-deal-summary-max-ajl"><strong><em>People's Green New Deal</em> Summary</strong></a>
+    
+    A primer on a visionary guide for an ecosocial future, from Max Ajl.
+    
+    </div>
+
+  <div class="project">
     <img src="./biden-video-thumb.jpg" loading="lazy">
     
     <a href="https://media.sambutler.us/climate-ecosystem-rights-of-nature-biden-ecosocial"><strong>Biden Climate Speech</strong></a>
