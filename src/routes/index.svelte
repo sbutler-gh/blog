@@ -69,7 +69,7 @@ import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
   <div class="project">
     <img src="./biden-video-thumb.jpg" loading="lazy">
     
-    <a href="https://media.sambutler.us/climate-ecosystem-rights-of-nature-biden-ecosocial"><strong>Biden Climate Speech</strong></a>
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7054549469144465408/?originTrackingId=aUDQ7NVeT2OPcGH14yL9%2BA%3D%3D"><strong>Biden Climate Speech</strong></a>
     
     A fictional video from the president, showing the policies that anybody sane would be taking during this time.
     
