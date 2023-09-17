@@ -69,7 +69,7 @@ import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
   <div class="project">
     <img src="./biden-video-thumb.jpg" loading="lazy">
     
-    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7054549469144465408/?originTrackingId=aUDQ7NVeT2OPcGH14yL9%2BA%3D%3D"><strong>Biden Climate Speech</strong></a>
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7048323735505764352/"><strong>Biden Climate Speech</strong></a>
     
     A fictional video from the president, showing the policies that anybody sane would be taking during this time.
     
@@ -78,7 +78,7 @@ import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
   <div class="project">
     <img src="./RIDE_story_cover_image.png" loading="lazy">
     
-    <a href="https://twitter.com/sambutlerUS/status/1625230157391732747"><strong>"RIDE" — A New Story</strong></a>
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7054549469144465408/"><strong>"RIDE" — A New Story</strong></a>
     
     A story about bikes, local organizing, and change — that people can tell and adapt in their own communities.
     
