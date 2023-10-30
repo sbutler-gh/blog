@@ -40,6 +40,7 @@
               <p><strong>We have a right to daily services, goods, and food -&mdash; without needing to get in a car.</strong></p>
 
               <img src="https://forumcontent.paradoxplaza.com/public/986176/1687333092339.png" loading="lazy" style="max-width: 100%;">
+              <span style="font-size: 14px; color: grey;"><em>Credit: <a href="https://www.youtube.com/watch?v=wzBL85kTwwo">About Here</a></em></span>
 
               <br>
               <span class="text-gray-500 text-sm" style="width: max-content; font-size: 14px; color: gray; text-align: center; display: block; margin: auto;">Recieve future content like this
