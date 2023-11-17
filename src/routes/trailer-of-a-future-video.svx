@@ -1,0 +1,54 @@
+<script>
+    import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
+    import ShareButton from "/src/lib/ShareButton.svelte";
+    import TopMatter from "/src/lib/TopMatter.svelte";  
+    
+    let title = "Trailer of a Future";
+    let description = "What happens when Biden declares a climate emergency and governments start taking things seriously?  Start living it.";
+    let og_image = "https://i.vimeocdn.com/video/1755416257-d6e3c9e9b64e4d6038ff3cc591a2f1946ca701c0609f6e2853dc693f8b5126a1-d?mw=1300&mh=732&q=70";
+    let local_url = "trailer-of-a-future-video"
+    let domain = "https://sambutler.us"
+    let full_url = {domain} + "/" + {local_url};
+  </script>
+
+  <style>
+    h4 > span {
+      font-weight: normal;
+    }
+
+    /* h4 {
+      display: inline;
+    } */
+
+    h4 + p {
+      display: inline;
+    }
+
+    /* previous:has(+ p){
+      display: inline;
+    } */
+
+  </style>
+  
+  <TopMatter title={title} description={description} og_image={og_image} full_url={full_url} local_url={local_url} domain={domain}></TopMatter>
+  <article class="h-entry">
+    <h1 class="p-name"><a class="u-url" href={local_url}>{title}</a></h1>
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/885749113?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>    <div class="e-content">
+            
+            <br>
+
+    <p>What happens when Biden declares a climate emergency and governments start taking things seriously?  Start living it.</p>
+
+            <span class="text-gray-500 text-sm" style="width: max-content; font-size: 14px; color: gray; text-align: center; display: block; margin: auto;">Subscribe for updates
+                <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: bottom;" class="icon icon-tabler icon-tabler-mail" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="gray" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <polyline points="3 7 12 13 21 7" />
+              </svg></span>
+                  <PlainSubscribe></PlainSubscribe>
+              <br>
+            </div>
+
+<ShareButton></ShareButton>
+
+    </article>
