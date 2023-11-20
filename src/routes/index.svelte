@@ -49,9 +49,11 @@ import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
 <br>
 
 <h2>Featured</h2>
-<h3><em>How Social Housing Can Help Us Face the Climate Crisis — From Vienna, to Our Local Neighborhoods</em> (<a href="/social-housing-climate-crisis-vienna-neighborhoods">Read</a>)</h3>
-<!-- <img on:mouseover={showFeaturedVideoPlayer} on:click={showFeaturedVideoPlayer} id="featuredPreviewThumbnail" src="/home_again_video_preview.png" style="max-width: 100%;"> -->
-<div id="featuredVideo" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795386597?h=fe6bb47e59&title=0&byline=0&portrait=0&speed=0&badge=0&autopause=0&player_id=0&app_id=58479/embed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
+<!-- <h3>November Updates <a href="/nov18"><em>(Explore)</em></a></h3> -->
+<div id="featuredVideo" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/885749113?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
+<p>What happens when Biden declares a climate emergency and governments start taking things seriously? Start living it.</p>
+<!-- <h3><em>How Social Housing Can Help Us Face the Climate Crisis — From Vienna, to Our Local Neighborhoods</em> (<a href="/social-housing-climate-crisis-vienna-neighborhoods">Read</a>)</h3>
+<div id="featuredVideo" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795386597?h=fe6bb47e59&title=0&byline=0&portrait=0&speed=0&badge=0&autopause=0&player_id=0&app_id=58479/embed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div> -->
 <hr>
 <br>
 <h3><strong>Portfolio / Workshop</strong></h3>
