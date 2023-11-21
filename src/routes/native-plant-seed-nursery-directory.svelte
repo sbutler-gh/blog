@@ -6,7 +6,7 @@ import TopMatter from "/src/lib/TopMatter.svelte";
 
 let title = "Native Plant Nurseries Near You";
 let description = "Find a native plant his holiday season, and celebrate it.  We need them.";
-let og_image = "/native-tree-small.jpg";
+let og_image = "/native-tree-og-3.jpg";
 let local_url = "native-plant-seed-nursery-directory"
 let domain = "https://sambutler.us"
 let full_url = {domain} + "/" + {local_url};
