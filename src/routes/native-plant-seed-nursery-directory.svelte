@@ -1,5 +1,6 @@
 <!-- svelte-ignore a11y-missing-attribute -->
 <script>
+  import { object_without_properties } from "svelte/internal";
 import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
 import ShareButton from "/src/lib/ShareButton.svelte";
 import TopMatter from "/src/lib/TopMatter.svelte";  
@@ -32447,8 +32448,25 @@ function fetchPoints(myLocation) {
         geojson.features.splice(nearest.properties.featureIndex, 1);
         console.log(geojson.features[nearest.properties.featureIndex]);
 
-        output = output + `<h3>${nearest.properties.NurseryName}</h3><p>${nearest.properties.Address}</p>
-        <p>${nearest.properties.Phone}, ${nearest.properties.Email}, ${nearest.properties.Website}</p>`;
+        output = output + `<h3>${nearest.properties.NurseryName}</h3>`;
+
+        if (nearest.properties.Website) {
+          output = output + `<p><a href="${nearest.properties.Website}">${nearest.properties.Website}</a></p>`
+        }
+        
+        output = output + `<p>${nearest.properties.Address}</p>`
+
+        if (nearest.properties.Phone) {
+          output = output + `<span>${nearest.properties.Phone}</span>, `
+        }
+
+        if (nearest.properties.Email) {
+          output = output + `<span>${nearest.properties.Email}</span>`
+        }
+
+        if (i < 6) {
+          output = output + `<br><br>`
+        }
     }
 
     console.log(nearestPoints);
