@@ -1,4 +1,16 @@
 <!-- svelte-ignore a11y-missing-attribute -->
+<script>
+import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
+import ShareButton from "/src/lib/ShareButton.svelte";
+import TopMatter from "/src/lib/TopMatter.svelte";  
+
+let title = "Native Plant Nurseries Near You";
+let description = "Find a native plant his holiday season, and celebrate it.  We need them.";
+let og_image = "/native-tree-small.jpg";
+let local_url = "native-plant-seed-nursery-directory"
+let domain = "https://sambutler.us"
+let full_url = {domain} + "/" + {local_url};
+</script>
 <html>
 <head>
 <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
@@ -32502,9 +32514,14 @@ function updateLocation() {
 }
 </script>
 
-<body onload="geolocate()">
+<body onload="geolocate()" style="margin-top: 0px;">
 
-  <h1>Native Plant Nurseries Near You</h1>
+  <TopMatter title={title} description={description} og_image={og_image} full_url={full_url} local_url={local_url} domain={domain}></TopMatter>
+  <article class="h-entry">
+
+    <img src={og_image} style="max-width: 100%" loading="lazy">
+  
+    <h1 class="p-name"><a class="u-url" href={local_url}>{title}</a></h1>
 
   <!-- <em>Showing results for <span id="postal"></span></em><br> -->
   <!-- <input id="zipCode">
@@ -32512,10 +32529,21 @@ function updateLocation() {
 <p><em>Browse the nurseries below near you, or update your location on the map.</em></p>
 <div id="map"></div>
 <br>
-<button type="button" onclick="updateLocation()" style="margin: auto; display: block;">Update location</button>
+<button type="button" onclick="updateLocation()" style="margin: auto; display: block; font-size: 18px;">Update location</button>
+<br>
+<span class="text-gray-500 text-sm" style="width: max-content; font-size: 14px; color: gray; text-align: center; display: block; margin: auto;">Subscribe for tools and content like this
+  <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: bottom;" class="icon icon-tabler icon-tabler-mail" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="gray" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h44v24H0z" fill="none"/>
+  <rect x="3" y="5" width="18" height="14" rx="2" />
+  <polyline points="3 7 12 13 21 7" />
+</svg></span>
+    <PlainSubscribe></PlainSubscribe>
+    <br>
 <div id="nurseries">
 
 </div>
+
+</article>
 </body>
 <style>
   #map { height: 300px; }
