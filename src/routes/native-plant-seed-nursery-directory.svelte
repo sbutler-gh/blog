@@ -32519,14 +32519,14 @@ function updateLocation() {
   <TopMatter title={title} description={description} og_image={og_image} full_url={full_url} local_url={local_url} domain={domain}></TopMatter>
   <article class="h-entry">
 
-    <img src={og_image} style="max-width: 100%" loading="lazy">
+    <img src="/native-cover.jpg" style="max-width: 100%" loading="lazy">
   
     <h1 class="p-name"><a class="u-url" href={local_url}>{title}</a></h1>
 
   <!-- <em>Showing results for <span id="postal"></span></em><br> -->
   <!-- <input id="zipCode">
 <button onclick="updateZipCode()">Update ZIP Code</button> -->
-<p><em>Browse the nurseries below near you, or update your location on the map.</em></p>
+<p><em>Browse the nurseries below to find a plant near you, or update your location.</em></p>
 <div id="map"></div>
 <br>
 <button type="button" onclick="updateLocation()" style="margin: auto; display: block; font-size: 18px;">Update location</button>
