@@ -76,7 +76,7 @@
             <p class="large">
             THERE IS NOTHING THAT&rsquo;S GOING TO WAKE US UP FROM THIS.</p>
             
-            <p class="large">NOT STORMS. NOT HOLOCAST.&nbsp; NOT APOCALYPESES OR FIRES IN THE SKY.</p>
+            <p class="large">NOT STORMS. NOT HOLOCAUST.&nbsp; NOT APOCALYPSES OR FIRES IN THE SKY.</p>
             
             <p class="large">WE WILL TURN, HALF-SEDATED AS COGS, INTO AN EVER GRIMMER AND MORE DESPERATE REALITY.</p>
             
@@ -88,7 +88,7 @@
             
             <p>Reaching for a phone - then putting it back, face down.&nbsp; At rest.&nbsp; Bored.</p>
             
-            <p>In the park.&nbsp; In the morning.&nbsp; Looking at the strange way the cars drive down the road.&nbsp; Little pods of metal, made and only possible with the extraction and unfairness throughout the world.</p>
+            <p> &nbsp;&nbsp; &nbsp; &nbsp;    In the park.&nbsp; In the morning.&nbsp; Looking at the strange way the cars drive down the road.&nbsp; Little pods of metal, made and only possible with the extraction and unfairness throughout the world.</p>
             
             <p> &nbsp;&nbsp; &nbsp; &nbsp;    A bird shivers its wings and twitches its head.&nbsp; Calling.&nbsp; Singing.&nbsp; In the morning quiet.</p>
             
