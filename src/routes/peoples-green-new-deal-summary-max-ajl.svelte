@@ -51,7 +51,10 @@
                   <PlainSubscribe></PlainSubscribe>
               <br>
 
-            <h3><em>We are ready for a more radical message.</em></h3>
+            <h3><em>Building a new world does not happen overnight, but to build a new world one must have an idea of the world one wishes to see and take steps to get to that world.
+            </em></h3>
+
+            <p>We are ready for a more radical message.</p>
             
             <p>Ready to demand sovereignty for the Third and Fourth Worlds &mdash; and struggle to secure that respect in the First World.</p>
             <p>Understand how this world was created and made unjust.&nbsp; Unequal economic exchange, resource use, and economic-environmental histories.&nbsp;</p>
