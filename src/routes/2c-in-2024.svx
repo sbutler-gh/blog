@@ -1,0 +1,167 @@
+<script>
+  import { onMount } from "svelte";
+    import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
+    import ShareButton from "/src/lib/ShareButton.svelte";
+    import TopMatter from "/src/lib/TopMatter.svelte";
+    import SetupMap from "/src/lib/SetupMap.svelte";
+
+    
+    let title = "2°C in 2024";
+    let description = "When we had our third child, it was 2°C in 2024.  We wondered ...";
+    let og_image = "/2c-in-2024.jpg"
+    let local_url = "2c-in-2024"
+    let domain = "https://sambutler.us"
+    let full_url = {domain} + "/" + {local_url};
+
+    onMount(() => {
+
+      var script = document.createElement("script");
+          // Add script content
+
+          script.src = "src/routes/setupMap.js";
+
+      // Append
+
+      document.body.appendChild(script);
+
+    })
+  </script>
+  <!-- svelte-ignore a11y-missing-attribute -->
+  <html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="/src/routes/setupMap.js" type="script"></script>
+        </head>
+        <script>
+        </script>
+    <style>
+    img, video {
+        max-width: 100%;
+    }
+
+    h4 > span {
+      font-weight: normal;
+    }
+
+    /* h4 {
+      display: inline;
+    } */
+
+    h4 + p {
+      display: inline;
+    }
+
+    #map {
+        height: 200px;
+        width: auto;
+    }
+
+
+    #latlng {
+        margin-top: 3px;
+        border: none;
+    }
+
+    /* previous:has(+ p){
+      display: inline;
+    } */
+
+  </style>
+  <body  onload="setupMap()">
+  <TopMatter title={title} description={description} og_image={og_image} full_url={full_url} local_url={local_url} domain={domain}></TopMatter>
+  <article class="h-entry">
+    <h1 class="p-name"><a class="u-url" href={local_url}>{title}</a></h1>
+    <!-- <p style="font-style: italic">Sam Butler (February 20th, 2024 at 11:20am EST)</p> -->
+    <div class="e-content">
+      <br>
+      <p id="map_section" style="text-align: center;"><em>Want to bring this story to life?  Send an email to <strong>climate@sambutler.us</strong> to start organizing.</em></p>
+
+<!-- <p id="map_section" style="text-align: center;"><em>Want to bring this story to life?</em></p>
+
+<p style="text-align: center;"><em>Add your email and general location on the map, so we can organize.</em></p>
+
+<form class="volunteer" id="volunteerForm" hx-trigger="submit" hx-post="/.netlify/functions/signUp">
+<div id="map" style="height: 300px; width: auto;"></div>
+<input readonly style="text-align: center; border: none; margin-top: 3px; display: none;" id="latlng" name="latlng"><br>
+<div style="margin: auto; text-align: center;"><label for="email">Email </label><input name="email" type="email" required/><button type="submit" style="margin-left: 3px;">Submit</button></div>
+</form> -->
+
+<br>
+
+**... When** we had our third child, it was 2°C in 2024.
+
+We wondered how we would survive, as right-wing militias paraded in American streets, food crises and storms got closer to us, and our governments and media ignored the genocides taking place right before our eyes. Showing us the plan they had ... for us ...
+
+How could we organize, when there was so much to do?
+
+The things we needed to do were clear enough.
+
+Getting out the *candidates*, as a different kind of political organizing. In many places, it wasn't even hard. Just file a form or a few signatures to get an accountable candidate on the ballot in a state or local election ... and start getting people in positions where we could materially figure the policy, programs, and funds that we needed to survive.
+<!-- 
+[@RunForSomething](https://runforsomething.net/) -->
+
+Figuring out a plan for food ... since the government wasn't doing it for us. Collaborations with regional food producers and cooperatives, to buy foods at larger scale. Cutting out the costs of distribution and marketing on their end, making it more affordable for ourselves through our own organizing. This started with food, and expanded into other areas ... supplies, raw materials, tools, bikes ... anything we found we need ...
+
+Reducing car dependency, as we realized how much cars were hurting us. Gas cars or EVs, it was all the same --- they were dumping microplastics in our water, making it harder to get food in our lands, taking up our public space, killing our neighbors and children indiscriminately. This was a difficult problem, as cars were perhaps the core and tightest-held feature of American life. We started by talking about it --- sharing what we knew. That got into refusing cars in our own lives, and finding other ways to get around instead ... which was instrumental, in helping others do the same.
+
+We even started learning medicine --- understanding the fragility (and harms) of the modern healthcare industry, and what that would mean for us when we were in need of care. We focused on preventative medicine, as [Max Ajl advised](https://www.sambutler.us/peoples-green-new-deal-summary-max-ajl#construction) --- nutrition, lowering the pollution in our communities and diets, and developing basic medical and first aid competency in our communities. Preparing ourselves and our neighbors, for situations that were bound to come at some point ... and which would be much better to prepared for.
+
+Like self-defense ...
+
+White supremacist ideologies had infiltrated our police, our military, and government positions, bringing their heritage with them into those institutions. Everyday right-wing militias were organizing on the streets with AKs and ghost guns. Christofascist public officials were dictating state policies, banning everything except for themselves from the curriculum and the Internet ... we had to start being real about it. Acknowledging it. It wouldn't help us to pretend the problem wasn't there.
+
+So we started talking, and learning some things, and getting comfortable in some ways we would not have imagined a few years before. Not comfortable ... more like *familiar*. Sober. Pragmatic. It was a luxury we didn't need to get there earlier, as so many communities and peoples we'd learned from had already had to do.
+
+These conversations --- from car dependency, to buying clubs, to first aid and self-defense --- often started with food on warm evenings. (Every evening was warm, at that point.) Pizza parties, potlucks, sunsets around a campfire. Pretty much always outside, to reduce the transmission of the viruses going around. (Lots of people were against masking back then .. a lot of social engineering went into it .. finally started changing once TB and measles and the fungal illnesses started going around.) Before that, it was always a question: do we require masks at these gatherings or not? Different folks had different policies, but in general, organizers set things up to lower risks of transmission ... protecting themselves with N95 masks, teaching people about measures like well-fitting masks, indoor air quality, reducing exposure, and tools that proved effective in research studies like off-the-shelf sprays and gargles. So these gatherings, about saving ourselves and making worlds we could live in, ended up being vehicles of public health too — just as the government was giving up on all that (*"for the economy"*, they said.)
+
+It was a lot more than talk. It was practice. That's what everyone was there for, that's why we showed up.  A teaching called "generative refusal", from [Leanne Betasamosake Simpson](https://www.leannesimpson.ca/book/as-we-have-always-done) at [@Dechinta_](https://www.dechinta.ca/), proved instrumental in that. Any time we felt our work was too insignificant, too minor --- we just remembered we were refusing the status quo, and generating our ways of life and alternative in the process. And once we were living in our ways,  more possibilities always came to mind ... to fix the problems we'd encounter, to share with others what we'd learned, and to get into practice of how we wanted to live.
+
+We learned to identify, manage, and make art and food from invasive plants, from elders like [Patterson Clark](https://www.alienweeds.com/). We worked to restore native ecosystems and streams --- rescuing trees along the banks that were subdued by English ivy, learning about the good native vines, getting to know the plants and animals and more-than-human life in the worlds around us. We worked in parklands, backyards, across watersheds --- removing the invasives, giving life and opportunity and sun for the native plants and seedlings underneath. Watersheds were how we organized the work --- it was the way that made the most sense, when the streams crossed city and property lines.
+
+And still, we had to protect our streams from the pollution upstream ... and the biggest source of that, was cars.
+
+Pretty much all the microplastics in the water came from car tire particles flowing into the storm drains, killing the fish and making our drinking water carcinogenic. More junk came from take-out containers, cans and bottles and cups, plastic forks, hot-sauce packets, all that "to go" stuff as part of our to-go society.
+
+To deal with these issues and get healthier --- in our waters, in our bodies, in our souls --- we had to reduce car dependency across our communities. And reduce it a lot.
+
+We actually started with housing, recognizing that where we lived and what was around us determined how much we needed to drive. It was an approach inspired by something [@AmyWestervelt](https://drilled.media/) picked out from an IPCC document, about [demand destruction](https://orionmagazine.org/article/system-reboot-climate-change-power-structure-shift/).  Destroying the root demand for cars and all the energy and harms that came with them, by making them unnecessary.
+
+Thinking with the watersheds and the floodplain, we found areas that could use more density --- and started building co-housing there. We built from natural materials like strawbale, which sequestered carbon in the walls, like [@TheLastFarm](https://thelastfarm.substack.com/p/this-is-the-root-of-the-housing-crisis) talked about. The more experienced builders like [Living Energy Farm](https://livingenergyfarm.org/) were able to teach the home-building practices to workers in the area ... making more local jobs too. (The building methods often reminded the workers, usually diaspora or migrants, of building methods from their heritage ... which made the work more natural, and enjoyable to learn.  *Note: Almost everybody on Turtle Island were diaspora ... some were just more connected to it*.)
+
+These co-housing units usually cost around $15,000 per resident, which made housing a lot more affordable and accessible. The way the LEF folks did it, was to make the whole apartment offgrid too ... not with a bunch of solar panels and batteries, but by designing the home to need minimal energy in the first place, and get the rest it needed when the sun was shining. Solar thermal panels for heating, direct drive blowers to push heat under the floors. Just a little bit of solar electric to run the lights, the computers and phones, the fridge, with some old-school nickel iron batteries that lasted forever, with maintenance ... that the residents learned to do themselves. People actually learned how to maintain their homes ... again.  (It was almost a lost art, for 50 years there)  Pretty much what the same methods we use today, owing to the help of media outlets like [@lowtechmagazine](https://solar.lowtechmagazine.com/) and [@UndeniableNtwrk](https://undeniablenetwork.com/) and [@weareyellowdot](https://yellowdotstudios.com/) and some self-aware voices of influence for popularizing the construction methods.
+
+We paired the housing with front-yard and driveway businesses. Grocery walk-ins. Tool libraries. Hardware and supply shops. Bike repairs. Hairdressers, cafes, clothing alterations, tatoo artists. Everything we needed a car for, we could get in a walk down the block. That created local jobs too --- everybody could work remotely (or at least, from a house on their block), whether they had a computer or not.
+
+The buying clubs for food had already cut down our grocery trips. The front-yard shops eliminated our need to drive .. anywhere, basically. Coffee, haircuts, a relaxing walk, something to do --- it was all right on our blocks where we lived. Those walks were a lot nicer too, with less cars on the street. People strolled down the middle of the block. Kids played soccer on the road. Neighborhood volunteers [depaved and softened the ground](https://twitter.com/postcarbonsteve/status/1678856396379668481), exposing the long suppressed soil underneath, and started planting in it --- helping mitigate the floods and deal with stormwater, and growing things that we all needed too. That had downstream benefits, of slowing the flow of water through the stormdrains, and slowing the erosion of our streambeds as a result.
+
+(At the start of all this, some people were arrested and taken to trial over front-yard businesses ... especially the people who had the least power and voice already. But our communities stood by them, as we recognized this was essential ... and court decisions started coming back, from sympathetic juries, right-wing anti-government judges, and more progressives judges for up-zoning ... that effectively overturned the laws that made it illegal for people to sell lemonade or tomatoes or bicycles or coffee from their front-yards.)
+
+From there, things started getting pretty localized, pretty quickly.
+
+There were still shops and strip malls on the main corridors, legacies of the post-WWII era. Most exchange, commerce, and recreation happened in the neighborhoods though, where people lived.  Sharing tools. Sharing bikes. Home expansions and retrofits, to make more rooms for more people. Haircuts. Coffee dates. 
+
+A lot more sharing started happening in general ... as supply chains started becoming sort of like mirages. And yet once the sharing started, people realized it felt better too. If the cost was a little communication, that was a good price to pay, coming out of the era of lonliness and isolation.  Once we remembered that riding a bike to borrow a tool from a neighbor is more enjoyable than driving alone through traffic to buy something from the hardware store, most days, it was great. It's what a lot of people had been doing already to get by anyway ... now, it was just culture.
+
+All of this was happening in a bubble, of course. One of the human-climate niches still alive. Outside of it, people across the world were risking their life, everything they had, and leaving their worlds behind, to get to places where their children could have a chance to survive. In a sick twist of fate (or decades of deliberate policy decisions, made under-the-table), that often meant going to the very places that were responsible for the ends of their worlds ... the territories and municipalities of the very people who were responsible.
+
+That meant a lot of work and organizing, in the spirit of so many yard signs that decorated these places: *"In this home, we believe that no human being is illegal."* The people who had those signs, were asked to live their truths ... getting comfortable with refugee accommodations on their properties, often tents. It was kind of hard to sleep in an empty 6-bedroom house when refugees who lost everything as a result of your system were sleeping outside on the grass, so this often led to people sharing their homes and making accommodation for those who had been displaced. Making new families, in a way. More like making *community*.
+
+In the places where this took hold, where people received migrants and refugees and [welcomed them](https://welcomingamerica.org/initiatives/certified-welcoming/) with integrity, communities become much more resilient.
+
+Multi-ethnic societies like these held a wealth of experiences from different parts of the world, all relevant to surviving and living well together ... which were the core challenges of the communities they arrived. Of course, the capacity to integrate perspectives and cooperate across ethnicities and cultures didn't come overnight. There was significant practice and learning from everybody, inspired by the social and cultural work in the Autonomous Administration of North and East Syria, also known as [@RojavaIC](https://rojavainformationcenter.org/). There were some foundations we all agreed on, we all learned to agree on, to live together. From the Rojava tradition, as articulated by leader Abdullah Öcalan --- who was eventually freed from his life-long solitary confinement in Turkey --- this included pillars like women's liberation, ecological society, cooperative economics, and grassroots decisionmaking. It wasn't exactly the same as the democratic confederalism you'd find in Rojava --- it was a learning from that system, adjusted to the places and contexts it arose in the North American suburbs.
+
+And as that work took root, possibilities came to life, born from the constellation of worlds that different peoples brought to those American suburbs ... which now held a lot more culture and life. Cottage food gardens. Home-building methods, with different kinds of natural materials. Artisan craft-making, musical instruments. Child-care practices and medical knowledge. Public arts, like plays and performances and murals. Hands-on engineering, to maintain existing infrastructures, and bring useful new infrastructure to life. It was a bit like browsing the internet, the fascinating videos and posts you see of human ingenuity around the world ... just seeing it in a walk down your block on a Tuesday.
+
+Will all this be enough?  (It's not all — there's plenty more I have to write.)  We don't know, and it doesn't really matter.  We had our third child, and it was 2°C in 2024.  This was life, if we wanted to survive.  It isn't easy.  It isn't safe.  It's real.  And looking back, the sooner we started, the better things were.
+
+<p style="text-align: center;"><em><a href="#map_section">Want to bring this story to life?</a></em></p>
+
+</div>
+</article>
+</body>
+</html>
