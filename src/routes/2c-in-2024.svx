@@ -13,32 +13,7 @@
     let domain = "https://sambutler.us"
     let full_url = {domain} + "/" + {local_url};
 
-    onMount(() => {
-
-      var script = document.createElement("script");
-          // Add script content
-
-          script.src = "src/routes/setupMap.js";
-
-      // Append
-
-      document.body.appendChild(script);
-
-    })
   </script>
-  <!-- svelte-ignore a11y-missing-attribute -->
-  <html>
-    <head>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-        crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
-    <script src="/src/routes/setupMap.js" type="script"></script>
-        </head>
-        <script>
-        </script>
     <style>
     img, video {
         max-width: 100%;
@@ -72,9 +47,8 @@
     } */
 
   </style>
-  <body  onload="setupMap()">
   <TopMatter title={title} description={description} og_image={og_image} full_url={full_url} local_url={local_url} domain={domain}></TopMatter>
-  <article class="h-entry">
+  <article class="h-entry" style="padding: 8px 10px;">
     <h1 class="p-name"><a class="u-url" href={local_url}>{title}</a></h1>
     <!-- <p style="font-style: italic">Sam Butler (February 20th, 2024 at 11:20am EST)</p> -->
     <div class="e-content">
@@ -159,9 +133,7 @@ And as that work took root, possibilities came to life, born from the constellat
 
 Will all this be enough?  (It's not all — there's plenty more I have to write.)  We don't know, and it doesn't really matter.  We had our third child, and it was 2°C in 2024.  This was life, if we wanted to survive.  It isn't easy.  It isn't safe.  It's real.  And looking back, the sooner we started, the better things were.
 
-<p style="text-align: center;"><em><a href="#map_section">Want to bring this story to life?</a></em></p>
+<p style="text-align: center;"><em>Want to bring this story to life?  Send an email to <strong>climate@sambutler.us</strong> to start organizing.</em></p>
 
 </div>
 </article>
-</body>
-</html>

@@ -283,7 +283,7 @@ Building urgent solutions for climate change and the sustainable transition.
   display: flex;
 }
 .project {
-    max-width: 300px;
+    max-width: 250px;
     margin-bottom: 40px;
 }
 
