@@ -2,6 +2,11 @@
   command = "npm run build"
   publish = "build"
 
+[[redirects]]
+  from = "/2c-in-2024"
+  to = "https://docs.google.com/document/d/1YgEsQgLQigStb_XwZ-3iQwS1jnxxH-xUjU0_KW5KtQQ/edit?usp=sharing"
+  status = 200
+
 [functions]
   node_bundler = "esbuild"
 
