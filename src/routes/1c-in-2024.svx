@@ -1,0 +1,155 @@
+<script>
+  import { onMount } from "svelte";
+    import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
+    import ShareButton from "/src/lib/ShareButton.svelte";
+    import TopMatter from "/src/lib/TopMatter.svelte";
+    import SetupMap from "/src/lib/SetupMap.svelte";
+
+    
+    let title = "1.5°C in 2024";
+    let description = "It was 1.5°C in 2024, and everything was burning.  We wondered ...";
+    let og_image = "/1c-in-2024.jpg"
+    let local_url = "1c-in-2024"
+    let domain = "https://sambutler.us"
+    let full_url = {domain} + "/" + {local_url};
+
+  </script>
+    <style>
+    img, video {
+        max-width: 100%;
+    }
+
+    h4 > span {
+      font-weight: normal;
+    }
+
+    /* h4 {
+      display: inline;
+    } */
+
+    h4 + p {
+      display: inline;
+    }
+
+    #map {
+        height: 200px;
+        width: auto;
+    }
+
+
+    #latlng {
+        margin-top: 3px;
+        border: none;
+    }
+
+    /* previous:has(+ p){
+      display: inline;
+    } */
+
+  </style>
+  <TopMatter title={title} description={description} og_image={og_image} full_url={full_url} local_url={local_url} domain={domain}></TopMatter>
+  <article class="h-entry" style="padding: 8px 10px;">
+    <!-- <h1 class="p-name"><a class="u-url" href={local_url}>{title}</a></h1> -->
+    <!-- <p style="font-style: italic">Sam Butler (February 20th, 2024 at 11:20am EST)</p> -->
+    <div class="e-content">
+      <p id="map_section" style="text-align: center;"><em>Want to bring this story to life?  Send an email to <a href="">climate@sambutler.us</a> to start organizing.</em></p>
+    <br>
+
+**It was 1.5°C in 2024, and everything was burning.**
+
+We wondered how we would survive, as right-wing militias paraded in streets, food crises and wildfires moved closer to us, and governments and media ignored the genocides taking place right before our eyes. Showing us the plan they had ... for us ...
+
+How could we organize, when there was so much to do?
+
+When we started thinking with clarity, the things we needed were clear enough.
+
+Getting out the *candidates*, as a different form of political organizing. In many places, all you needed was a form or a few signatures to get a candidate on the ballot ... and start putting people in offices, where we could make the policies and programs we needed to survive ...
+
+![](https://lh7-us.googleusercontent.com/M7qkl7iJADXhMQu4fgzpjI4q-z4ZLnmU4Rkdlj8dPGMUQfThg-JkevP2tpPTPhCDmytj9t-VstjwrAnO7amgXpiLctsyq2YfzJjnAtqmdGo1cQFC-Y4zXg8KTGqKsY6iNCsWfoehWLXAtAuQkD2kiFY)
+
+<p style="color: grey; font-size: 12px; text-align: right"><em>Deadlines and requirements to get on primary ballots.  DO IT!  (Source: <a href="https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Virginia" target="_blank">Ballotpedia</a>)</em></p>
+
+Standing up to genocide, with the clarity Aaron Bushnell called for. Boycotts. Disruptions. Strikes. Direct actions. This became part of community life, as it had in past generations ... and fit into all the work to come ...
+
+Figuring out a plan for food ... since the government wasn't doing it for us. Collaborating with regional food producers, to buy produce at larger scale. Cutting out the costs of distribution and marketing on their end, and making it affordable through our own organizing. This started with food, and expanded into other areas ... tools, supplies, medicine, bikes ... anything we found we need ...
+
+... Reducing *car dependency*, as we realized how much cars were hurting us. They put microplastics in our water, made our lands incapable of life, took up our public space, and killed our neighbors and children indiscriminately. This was a difficult problem, as cars were the core and most tightly held feature of American life. We started by talking about it --- sharing what we knew. That got into refusing cars in our own lives, and finding other ways to get around instead ... which was instrumental, in helping others learn the same ...
+
+We even started learning medicine --- understanding the fragility and harms of the modern healthcare industry, and what that would mean for us when we would need care. We focused on preventative medicine, as Max Ajl advised --- nutrition, lowering the pollution in our communities, and developing first aid capacity. Preparing our neighborhoods for situations that were bound to come ... and which would be much better to be prepared for.
+
+Like self-defense ...
+
+White supremacist ideologies had infiltrated our police and government, bringing their culture with them into those institutions. Right-wing militias were organizing on the streets and shutting down community gatherings. Christofascist public officials were dictating state policies, banning history from the curriculum, and targeting the Internet as a whole ...
+
+We had to start being real about it. It wouldn't help us to pretend the problem wasn't there.
+
+So we started talking, and learning some things, and getting comfortable in some ways we wouldn't have imagined a few years before. Not comfortable ... more like *practical*. Sober. Accepting. It was a luxury we didn't need to get there earlier, as so many communities and peoples we'd learned from had already had to do.
+
+There were other aspects to self-defense, when **cop cities** were going up everywhere, children were being forced into factories, labor protections were getting scrapped, and the powers at be were forcing pipelines and data centers into every backyard. A lot of people went to jail (*without bond, they took that away*) ... a lot of people went to prison. Many are still there. So our communities could have water. So our children could have lives. So we could have power and a voice to do what we needed to do.
+
+<p>* Many of <em>us</em> are still there. Links in a chain, as Rojava would say.</p>
+
+These conversations --- from car dependency, to buying clubs, to first aid and self-defense --- often started with food on warm evenings. (Most evenings were warm at that point.) Pizza parties, potlucks, sunsets around a campfire. Pretty much always outside, to reduce the transmission of the viruses going around. (Lots of people were uncomfortable masking back then .. a lot of social engineering went into it .. started changing when TB and measles were going around again.) Before that, it was always a question: do we require masks at these gatherings or not? Different folks had different policies, but in general, organizers set things up to lower risks of transmission ... protecting themselves with N95 masks, teaching others about well-fitting masks and indoor air quality, along with how to reduce risk factors and tools that proved effective like off-the-shelf sprays and gargles. So gatherings about saving ourselves and making worlds we could live in, ended up being about public health too --- just as the government was giving up on that (*"for the economy"*, they said.)
+
+It was a lot more than talk. It was practice. That's what everyone was there for. A teaching called "generative refusal", from Leanne Betasamosake Simpson at the Dechinta Centre, proved instrumental in that. Any time we felt an action in our lives was minor or marginal (but generative, from a strategic lens) --- we remembered we were refusing the status quo, and making our world in the process. And once we were living in our world, more possibilities always came to mind ... to fix the problems we'd encounter, to share the solutions we'd discover (useful for later), and to get into practice of our ways of life.
+
+We learned to identify and manage invasive plants and vines. We worked to restore native ecosystems and streams --- rescuing trees along the banks covered in English ivy, learning about the fruitful native vines, getting to know the more-than-human worlds around us. We worked in parklands, backyards, across watersheds --- removing the invasives, giving life and sun for native seedlings buried in the soil. Watersheds were how we organized the work --- it was what made sense, when stream channels crossed city and property lines.
+
+![](https://lh7-us.googleusercontent.com/xnk24DheYzeme-M97IG7YEJHnevDqz9Dpv-Q8kKSS5t-SjbCTBuvc6aJ42mY5TuRFYJJ0FcGqa48go8YpOBVSpBhXMdSlRyYekuDbiZ5itJ37U5t3QUV3RoPsvOeG1-0ee_izi77seTvtaiXDQM0DEA)
+
+(We've also had to assist migration and make other efforts for native plants, with climate zones shifting 12 miles north every year. The Soviet Union had gotten fruit trees growing in Russia, so we knew acclimation was possible ... experts like Build Soil could tell you more about the specifics behind it. In some ways, it's looked like how we prepared ourselves. Building resilience for the temperatures. Being proactive about fungi and vulnerabilities. Making practices and plans for the heatwaves and flash freezes. Attuning to the worlds around us and the changing conditions, to help us all survive ... recognizing native trees and pollinators and fruits and us, we're all bound up together ...)
+
+And still, we had to protect our water from the biggest source of pollution upstream ... and that was still cars.
+
+Pretty much all the microplastic in the water came from tire dust flowing into the storm drains, killing fish and making our drinking water carcinogenic. Drivers killed beavers in the street. Roadways separated the land, trapping life on either side. Junk piled up along the streambeds — chip bags, plastic wraps, bottles and containers — all that “to go” stuff as part of our to-go society.
+
+Drivers killed beavers in the street. Roads separated life across the land. Expansions and widening made these problems worse, along with paving for new parking lots --- which had already eaten up entire cities.
+
+To deal with these issues, and build health --- in our waters, in our bodies, in our souls --- we had to reduce car dependency across our communities. And reduce it a lot.
+
+We actually started with housing, recognizing that where we lived and what was around us determined how much driving we needed in the first place. It was inspired by something Amy Westervelt picked out from an IPCC document, about "[demand mitigation.](https://orionmagazine.org/article/system-reboot-climate-change-power-structure-shift/)" Destroying the *demand* for cars, by making them unnecessary.
+
+We started by finding areas that could use more density (thinking about more-than-human life, like the streams that beavers would return to and call home again) --- and started building co-housing out of the floodplains, where it made sense. We built from natural materials like strawbales, which sequestered carbon in the walls like The Last Farm talked about, and the experienced builders like Living Energy Farm were able to teach the skills to local workers ... making an ongoing source of jobs. (The building methods often reminded the workers, usually migrants or diaspora, of practices from somewhere in their heritage ... which made the work more natural, and even enjoyable at times. *Note: Almost everybody on Turtle Island was diaspora ... some were just more connected to it.*)
+
+Co-housing units usually cost around $15,000 per resident, which made shelter a lot more accessible to folks. The way Living Energy Farm did it, was to make [the whole apartment offgrid ](https://pss.pm/lef)... not with solar panels and batteries, but by designing the home to need minimal energy in the first place. Solar thermal panels for heating, direct drive blowers to push heat under the floors, a little bit of PV to run the lights, computers, phones, and the fridge, with some old-school nickel iron batteries that residents actually learned to run themselves.This was the basis for many of the methods we use today — thanks to publishers like Low Tech Magazine, Teen Vogue, and climate media makers popularizing these methods, along with writers like The Last Farm and Cory Doctorow broadening their appeal. Even some musicians supported the cultural effort ...
+
+We paired the co-housing with front-yard and driveway businesses. Grocery shops next to homes. Tool libraries on the block. Repair clinics at tables, hair salons on porches, cafe tables in lawns, medical tents in driveways. Everything we needed a car for, we could get in a walk down the street. That created local jobs too --- everybody could work remotely now (from a house on their block, at least), whether they had a computer or not.
+
+The buying clubs already cut down our grocery trips. The front-yard economies eliminated our need to drive ... anywhere, basically. Coffee, haircuts, a relaxing walk, something to do in the afternoon --- it was all right on our streets. Those walks were a lot nicer too, with less cars around. Couples strolled down the middle of the road. Kids played soccer and rode bikes. Neighbors depaved and softened the asphalt (as post carbon Steve Austin and Depave advocated), exposing the long buried soil, and started planting in the dirt --- helping mitigate the floods and stormwater, and growing things we all needed too. That had downstream effects, of slowing water through the storm drains, and slowing erosion of our streambeds as a result.
+
+![](https://lh7-us.googleusercontent.com/wv4436yR7bIsjSU4edyYsRFmMyS0lTcWCOZskH1GwqyhNw8mm4e7Wjj2pMB-y51lBANj24hc8SRQKSAchbL51-BeS-MEmoRkID1RjXVSpYbdSSTS5zsbA0Ak2wCusgGiEJRoUAZSquaZYukolSeYWCE)
+
+From there, things started getting pretty localized, pretty quickly.
+
+Sharing tools. Sharing bikes. Home expansions to make more rooms for more people. Haircuts in yards. Coffee hangouts with friends. Salsa lessons under the stars.
+
+A lot more sharing started happening, as storms made supply chains sort of like mirages, and items started becoming inaccessible. Once it started, people realized sharing often felt better too. If the cost was a little inconvenience or asking someone for a favor, that was a good hassle, coming out of an era of isolation and loneliness. It's what a lot of people had been doing anyway ... now, it was just culture.
+
+All of this was happening in a bubble, of course. Outside of it, people across the world were risking their life, everything they had, leaving their worlds behind, to get to places where their children could survive. In a awful twist of fate (or more accurately, centuries of unequal environmental and economic exchange), that often meant going to the very places that were responsible for the ends of their worlds ... the municipalities and suburbs of the people who were responsible.
+
+That meant a lot of work and organizing, in the spirit of so many yard signs that had decorated those places: **"In this home, we believe that no human is illegal."**
+
+The people who had those signs were asked to live their maxims ... getting comfortable with refugee accommodations on their properties. It was hard to sleep consciously when refugees who lost everything due to your country's extraction and pollution were sleeping outside in tents, so this often led to people making accommodation --- making rooms --- for those who had been displaced. Making family, in a way. Making community.
+
+In the places where this took hold, where communities welcomed newcomers as [Place Initiative](https://placeinitiative.org/receiver-places/) talked about --- and empowered housing and local economies from people already on the margins in those places --- communities became more resilient, too.
+
+Multi-ethnic societies cradled a wealth of experiences from around the world, generally related to surviving and living well together ... which were core gaps in the communities they arrived to. Of course, the capacity to integrate perspectives and cultures didn't come overnight. There was significant practice and learning, inspired by the social and cultural work done in the Autonomous Administration of North and East Syria (also known as Rojava). From the Rojava tradition, as articulated by leader Abdullah Öcalan --- who wrote these teachings from solitary confinement in Turkey, which he was eventually freed from after increasing pressure from Western governments and their grassroots-elected officials, like George Galloway --- the pillars included women's liberation, ecological society, cooperative economics, and grassroots decision-making. It wasn't exactly the democratic confederalism you'd find in Rojava --- more of a learning from that system, adjusted to the places it arose and adapted in North America. All this would have made Murray Bookchin very proud, whose ideas written from the "North and East" of the USA inspired some of Öcalan's own work.
+
+As solidarity and cooperation took root, possibilities came to life, born from constellations of cultures in those American suburbs. Cottage gardens. Home-building artisanry, with methods sourced from cultures around the world. Crafts and weaving, musical instruments, child-care exchanges, medical knowledge and practices. Public art and street plays. Hands-on engineering, to maintain existing infrastructures, and to bring useful new structures to life. It was a bit like TikTok, the fascinating videos of craftmanship and ingenuity you see all around the world ... just seeing it in a walk down your block on a Tuesday.
+
+I didn't get a chance to write everything down here. From Gidim'ten Checkpoint and Stop the MVP land defenders, to Defend the Atlanta Forest and the National Lawyers Guild (whose work proved instrumental in exposing cop cities being planned across the country, along with strategies for communities to defend themselves), to Climate Defiance making greenwashing rich folk unwelcomable in public life, to people like Fergie Chambers putting their wealth and resources towards these fights --- a model that other wealthy people soon found inevitable, if they wanted any semblance of a world to live in. To all the people who sided with the land over those years, and still do to this day, per the words that Tawinikay once shared in a Peter Gelderloos book.
+
+This was more about sharing what we didn't know then. What the governments weren't telling us. What they weren't preparing us for. What we were in the process of finding out, all on our own. What Max Ajl had mostly predicted, in the vision he shared in *"A People's Green New Deal."* We always talk less about the hard times in this kind of writing. We hadn't experienced it yet, not in the same way. But as Rojava and the Zapatistas and MST made clear, it was better to be prepared, no matter when we started ...
+
+So we started, as best we could.
+
+With specificity. With reason. With clear thinking. With care. Learning from the teachings of Max Ajl and Samir Amin, from the practices that Kyle Powys Whyte talked about. Considering our moment, seeing the relationship of it across time. What would our ancestors think of our world today, and do? What is the world our descendants are living in now, and what can we do to make their world better? Survivable? .. Because it was coming for us, and soon.
+
+It was 1.5°C in 2024, and the world was burning. We knew much of what we had to do ... the sooner, the better. It was as good a time as any that would come.
+
+*This piece is open to syndication and adaptation in other mediums (graphic novels, songs, film, resources and guides)*
+
+      <p id="map_section" style="text-align: center;"><em>Want to bring this story to life?  Send an email to <a href="">climate@sambutler.us</a> to start organizing.</em></p>
+
+</div>
+</article>
