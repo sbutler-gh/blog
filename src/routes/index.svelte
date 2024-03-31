@@ -14,27 +14,32 @@ import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
 
 <svelte:head>
 
-  <title>Sam's Potfolio/Workshop</title>
+  <title>Sam Butler</title>
 
   
-  <meta name="description" content="Check out projects, essays, interactive tools, and more">
+  <meta name="description" content="Learn more about Sam, along with leading work, tools, and more ...">
   
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://sambutler.us/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Sam's Garage">
-  <meta property="og:description" content="Check out projects, essays, interactive tools, and more">
+  <meta property="og:title" content="Sam Butler">
+  <meta property="og:description" content="Learn more about Sam, along with leading work, tools, and more ...">
   
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="sambutler.us">
   <meta property="twitter:url" content="https://sambutler.us//">
-  <meta property="og:title" content="Sam's Garage">
-  <meta property="og:description" content="Check out projects, essays, interactive tools, and more">
+  <meta property="og:title" content="Sam Butler">
+  <meta property="og:description" content="Learn more about Sam, along with leading work, tools, and more ...">
 
 </svelte:head>
-<p>Welcome!  You can explore my work below, and see more experiences <a href="https://www.sambutler.us/resume.pdf">here</a>.</p>
-<p>Feel free to start a conversation <a href="mailto:hello@sambutler.us">via email</a> or schedule a <a href="https://cal.com/sambutler/meet">time to chat</a>.</p>
+<!-- <h2><img src=""> Hi!  I'm Sam</h2> -->
+<p><em>Sam (he/him) is Associate Director of the <a href="https://www.fairfaxcounty.gov/soil-water-conservation/">Northern Virginia Soil and Water Conservation District</a>, supporting initiatives across the Potomac region and beyond.</em></p>
+<p><em>He works with leading organizations to help make the world we want to live in.</em></p>
+<div class="orgs">
+
+</div>
+<p><em>You can see more experiences <a href="https://pss.pm/resume">here</a>, and feel free to start a conversation <a href="mailto:contact@sambutler.us">via email</a> or schedule a <a href="https://cal.com/sambutler/meet">time to chat</a></em></p>
 
 <br>
 
@@ -56,7 +61,7 @@ import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
 <div id="featuredVideo" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795386597?h=fe6bb47e59&title=0&byline=0&portrait=0&speed=0&badge=0&autopause=0&player_id=0&app_id=58479/embed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div> -->
 <hr>
 <br>
-<h3><strong>Portfolio / Workshop</strong></h3>
+<h3><strong>Independent Projects</strong></h3>
 <div class="project-row" style="display: flex; flex-wrap: wrap;  justify-content: space-between;">
 
   <div class="project">
