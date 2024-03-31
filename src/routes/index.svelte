@@ -36,10 +36,22 @@ import PlainSubscribe from "/src/lib/PlainSubscribe.svelte";
 <!-- <h2><img src=""> Hi!  I'm Sam</h2> -->
 <p><em>Sam (he/him) is Associate Director of the <a href="https://www.fairfaxcounty.gov/soil-water-conservation/">Northern Virginia Soil and Water Conservation District</a>, supporting initiatives across the Potomac region and beyond.</em></p>
 <p><em>He works with leading organizations to help make the world we want to live in.</em></p>
-<div class="orgs">
-
-</div>
-<p><em>You can see more experiences <a href="https://pss.pm/resume">here</a>, and feel free to start a conversation <a href="mailto:contact@sambutler.us">via email</a> or schedule a <a href="https://cal.com/sambutler/meet">time to chat</a></em></p>
+<!-- <div class="orgs">
+    - Soil and Water Conservation District
+    - OSS Capital
+    - Free Donziger
+    - Yellow Dot Studios
+    - Undeniable Network
+    - Living Energy Farm
+    - Plant NOVA Natives
+    - NOVA Tree Rescue
+    - Bike Bus
+    - Degrowth Collective
+    - Area 42
+    - International Degrowth Network
+    - Friends of Holmes Run
+  </div> -->
+<p><em>You can see more experiences <a href="https://pss.pm/resume">here</a>, and feel free to start a conversation <a href="mailto:contact@sambutler.us">via email</a> or schedule a <a href="https://cal.com/sambutler/meet">time to chat.</a></em></p>
 
 <br>
 
