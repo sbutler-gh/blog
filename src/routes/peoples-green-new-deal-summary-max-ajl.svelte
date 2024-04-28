@@ -73,11 +73,11 @@
             <p>We are ready for a more radical message.</p>
             
             <p>Ready to demand sovereignty for the Third and Fourth Worlds &mdash; and struggle to secure that respect in the First World.</p>
-            <p>Understand how this world was created and made unjust.&nbsp; Unequal economic exchange, resource use, and economic-environmental histories.&nbsp;</p>
-            <p>Center the plans of <a href="https://pwccc.wordpress.com/2010/04/24/peoples-agreement/">the most oppressed, excluded, and harmed by our current system</a>.</p>
-            <p>End interventions in the affairs of other nations, as a starting point for world-wide environmental revolution. The US, EU, and UK no longer deciding who rules other countries. Fighting for other countries' rights to determine their own paths.&nbsp; Ending intervention, demanding respect for international law, and dismantling militaries in the economic core.</p>
-            <p>Recognize that the rich &mdash;&nbsp;whether countries, people, or corporations &mdash; are only rich by keeping the poor poor, through colonization, coups, war, and unequal exchange.</p>
-            <p>Pay the climate debts that northern countries owe to southern countries &mdash; between $112 and $450 trillion dollars, or more&hellip;.</p>
+            <p>To understand how this world was created and made unjust — unequal economic exchange, resource use, and economic-environmental histories.&nbsp;</p>
+            <p>To center <a href="https://pwccc.wordpress.com/2010/04/24/peoples-agreement/">the plans </a> of the most oppressed, excluded, and harmed by our current system.</p>
+            <p>To end interventions in the affairs of other nations, as a starting point for world-wide environmental revolution: The US, EU, and UK no longer deciding who rules other countries. Fighting for other countries' rights to determine their own paths.&nbsp; Ending intervention, demanding respect for international law, and dismantling militaries in the economic core.</p>
+            <p>To recognize that the rich &mdash;&nbsp;whether countries, people, or corporations &mdash; are only rich by keeping the poor poor, through colonization, coups, war, and unequal exchange.</p>
+            <p>To pay the climate debts that northern countries owe to southern countries &mdash; between $112 and $450 trillion dollars, or more&hellip;.</p>
             <p id="landback"><strong>LandBack as the fast route to safeguarding the future.</strong>  Restoring treaty rights and decolonizing continents. Struggle from us in settler colonial states, to demand our governments restore land and treaty rights. Rights to access and use the environment, intertwined with rights to land and LandBack.</p>
             <p>LandBack as a shift which makes the world big enough for all of us.</p>
             <p id="sovereignty"><strong>National sovereignty,</strong> and the right for people to determine their own histories throughout the Third and Fourth worlds &mdash; and in the Third and Fourth worlds within settler colonial states.</p>
